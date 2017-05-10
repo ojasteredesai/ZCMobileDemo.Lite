@@ -10,11 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace ZCMobileDemo.Lite.Views.Timesheet
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NeedMoreInfoPage : ContentPage
+    public partial class Page4 : ContentPage
     {
-        public NeedMoreInfoPage()
+        public Page4()
         {
             InitializeComponent();
+        }
+        private void Button_Clicked(object sender, EventArgs e)
+        {
         }
     }
 }

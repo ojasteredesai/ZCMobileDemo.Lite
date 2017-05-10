@@ -6,7 +6,6 @@ C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Li
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\ZCMobileDemo.Lite.dll
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\ZCMobileDemo.Lite.pdb
-C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\ZCMobileDemo.Lite.dll.mdb
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll.mdb

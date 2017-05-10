@@ -8,20 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ZCMobileDemo.Lite.Views {
+namespace ZCMobileDemo.Lite.Views.Timesheet {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Ojas_Teredesai\\XamarinGit\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\ZCMobileDemo.Lit" +
-        "e\\Views\\MasterDetail.xaml")]
-    public partial class MasterDetail : global::ZCMobileDemo.Lite.Views.MasterDetailControl {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::ZCMobileDemo.Lite.Controls.Accordion one;
+        "e\\Views\\Timesheet\\Page4.xaml")]
+    public partial class Page4 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MasterDetail));
-            one = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ZCMobileDemo.Lite.Controls.Accordion>(this, "one");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page4));
         }
     }
 }

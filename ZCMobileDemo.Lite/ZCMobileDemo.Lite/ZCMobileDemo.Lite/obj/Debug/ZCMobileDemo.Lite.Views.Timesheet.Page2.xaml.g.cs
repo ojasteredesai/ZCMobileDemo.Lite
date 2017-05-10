@@ -11,13 +11,13 @@
 namespace ZCMobileDemo.Lite.Views.Timesheet {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Ojas_Teredesai\\XamPrac\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\V" +
-        "iews\\Timesheet\\TimesheetDetailPage.xaml")]
-    public partial class TimesheetDetailPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Ojas_Teredesai\\XamarinGit\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\ZCMobileDemo.Lit" +
+        "e\\Views\\Timesheet\\Page2.xaml")]
+    public partial class Page2 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TimesheetDetailPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page2));
         }
     }
 }

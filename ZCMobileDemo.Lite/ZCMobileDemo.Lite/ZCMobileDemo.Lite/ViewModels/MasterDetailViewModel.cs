@@ -69,14 +69,15 @@ namespace ZCMobileDemo.Lite.ViewModels
                             {
                                 Header = "View Timesheet";
                                 RightButton = "...";
-                                var page = new ViewTimesheetPage();
+                                var page = new Page1();
                               //  page.MasterDetailVM = this;
                                 //ViewTimesheetViewModel vm = new ViewTimesheetViewModel();
                                 //vm.MasterDetailViewModel = this;
                                 // App.ContentModel = vm;
                                 //page.BindingContext = vm;
                                 //vm.FilterTimesheet();
-                                Detail = page;                              
+                               // Detail = page;
+                                PushAsync(page);                           
                             }
 
                             if (App.Current.MainPage.Height > App.Current.MainPage.Width)

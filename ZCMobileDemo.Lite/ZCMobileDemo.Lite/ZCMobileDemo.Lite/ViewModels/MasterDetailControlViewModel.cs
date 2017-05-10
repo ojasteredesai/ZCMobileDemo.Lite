@@ -30,7 +30,18 @@ namespace ZCMobileDemo.Lite.ViewModels
             {
                 if (_detail != value)
                 {
-                    _pages.Push(Detail);
+                    //if (Detail != null && Detail.StyleId != value.StyleId)
+                    //{
+                    //    _pages.Push(Detail);
+                    //}
+                    if (Detail != null && (_pages.Any() && _pages.Any(x => x.StyleId == value.StyleId)))
+                    {
+                        _pages.Pop();
+                    }
+                    if (Detail != null)
+                    {
+                        _pages.Push(Detail);
+                    }
                     _detail = value;
                     RaisePropertyChanged();
                 }
@@ -44,7 +55,15 @@ namespace ZCMobileDemo.Lite.ViewModels
             {
                 if (_detail1 != value)
                 {
-                    _pages.Push(Detail1);
+                    //  if (Detail1 != null && Detail1.StyleId != value.StyleId)
+                    if (Detail1 != null && (_pages.Any() && _pages.Any(x => x.StyleId == value.StyleId)))
+                    {
+                        _pages.Pop();
+                    }
+                    if (Detail1 != null)
+                    {
+                        _pages.Push(Detail1);
+                    }
                     _detail1 = value;
                     RaisePropertyChanged();
                 }

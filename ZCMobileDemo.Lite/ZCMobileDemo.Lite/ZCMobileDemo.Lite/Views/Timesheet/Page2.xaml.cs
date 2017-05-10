@@ -11,21 +11,21 @@ using ZCMobileDemo.Lite.ViewModels;
 namespace ZCMobileDemo.Lite.Views.Timesheet
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ViewTimesheetPage : ContentPage
+    public partial class Page2 : ContentPage
     {
-     //   public MasterDetailViewModel MasterDetailVM { get; set; }
-
-        public ViewTimesheetPage()
+      //  public MasterDetailViewModel MasterDetailVM { get; set; }
+        public Page2()
         {
             InitializeComponent();
         }
 
-
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var page = new TimesheetDetailPage();
-            //  page.MasterDetailVM = this.MasterDetailVM;            
-            App.MasterDetailVM.Detail1 = page;
+            // MasterDetailVM.Detail = this;
+            //MasterDetailVM.Detail1 = new NeedMoreInfoPage();
+            //MasterDetailVM.Detail = MasterDetailVM.NavigationStack.Last(); 
+            App.MasterDetailVM.PushAsync(this);
+            App.MasterDetailVM.PushAsync1(new Page3());
         }
     }
 }
