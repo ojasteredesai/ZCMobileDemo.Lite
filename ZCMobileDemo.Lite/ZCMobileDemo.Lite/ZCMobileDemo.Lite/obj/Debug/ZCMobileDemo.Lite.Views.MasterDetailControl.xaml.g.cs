@@ -11,8 +11,8 @@
 namespace ZCMobileDemo.Lite.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Ojas_Teredesai\\XamPrac\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\V" +
-        "iews\\MasterDetailControl.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Ojas_Teredesai\\XamarinGit\\ZCMobileDemo.Lite\\ZCMobileDemo.Lite\\ZCMobileDemo.Lit" +
+        "e\\Views\\MasterDetailControl.xaml")]
     public partial class MasterDetailControl : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

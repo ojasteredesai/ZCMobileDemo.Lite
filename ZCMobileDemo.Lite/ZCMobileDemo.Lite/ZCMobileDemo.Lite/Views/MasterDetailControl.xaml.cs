@@ -128,5 +128,10 @@ namespace ZCMobileDemo.Lite.Views
             App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
             OnPropertyChanged("SideContentVisible");
         }
+
+        void TapGestureRecognizerBack_Tapped(object sender, EventArgs e)
+        {
+            App.MasterDetailVM.PopAsync();
+        }
     }
 }

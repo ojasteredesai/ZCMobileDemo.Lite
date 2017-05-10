@@ -4,6 +4,6 @@
              x:Class="ZCMobileDemo.Lite.Views.Timesheet.Page4"  StyleId="page4">
     <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Page 4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
-        <Button Text="Go to Page 5" Clicked="Button_Clicked"></Button>
+        <Button Text="Go to Page 5" Clicked="Button_Clicked" FontSize="Large"></Button>
     </StackLayout>
 </ContentPage>

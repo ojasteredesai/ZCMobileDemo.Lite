@@ -48,7 +48,7 @@
             </Image>
             <Image Source="back.png" HeightRequest="20"  Grid.Column="1">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" />
                 </Image.GestureRecognizers>
             </Image>
             <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="2" Margin="0,0,22,0">
@@ -63,7 +63,7 @@
         <!--</StackLayout>-->
 
         <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="Khaki" Grid.Row="1" IsVisible="True"/>
-        <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="Gray" Grid.Row="1" IsVisible="True"/>
+        <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="LightCoral" Grid.Row="1" IsVisible="True"/>
         <!--<ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="Gray" Grid.Row="1" IsVisible="{Binding SecondDetailPageVisible, Source={x:Reference Name=Parent}"/>-->
 
 

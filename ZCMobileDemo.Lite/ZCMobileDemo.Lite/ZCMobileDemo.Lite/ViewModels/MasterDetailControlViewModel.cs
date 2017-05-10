@@ -100,13 +100,39 @@ namespace ZCMobileDemo.Lite.ViewModels
             set { _RightButton1 = value; RaisePropertyChanged(); }
         }
 
-        public Task<Page> PopAsync()
+        public Task<Page> PopAsync1()
         {
             Page page = null;
             if (_pages.Count > 0)
             {
                 page = _pages.Pop();
                 _detail = page;
+                RaisePropertyChanged("Detail");
+            }
+            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+        }
+
+        public Task<Page> PopAsync()
+        {
+            Page page = null;
+            Page page1 = null;
+            if (_pages.Count > 0)
+            {
+                if (_pages != null && _pages.Count > 2)
+                {
+                    _pages.Pop();
+                    page = _pages.Pop();
+                    page1 = _pages.Pop();
+                    PushAsync(page1);
+                    PushAsync1(page);
+                }
+                if (_pages != null && _pages.Count == 1)
+                {
+                    page = _pages.Pop();
+                    PushAsync(page);
+                    PushAsync1(Detail);
+                }
+                //_detail = page;
                 RaisePropertyChanged("Detail");
             }
             return page != null ? Task.FromResult(page) : _navigation.PopAsync();

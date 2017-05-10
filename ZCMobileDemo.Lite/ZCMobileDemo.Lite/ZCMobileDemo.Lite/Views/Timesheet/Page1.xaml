@@ -5,6 +5,6 @@
   
     <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Page 1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
-        <Button Text="Go to Page 2" Clicked="Button_Clicked"></Button>
+        <Button Text="Go to Page 2" Clicked="Button_Clicked" FontSize="Large"></Button>
     </StackLayout>
 </ContentPage>
