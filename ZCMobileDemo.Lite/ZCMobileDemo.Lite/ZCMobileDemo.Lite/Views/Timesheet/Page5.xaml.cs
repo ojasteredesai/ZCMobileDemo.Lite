@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace ZCMobileDemo.Lite.Views.Timesheet
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page4 : ContentPage
+    public partial class Page5 : ContentPage
     {
-        public Page4()
+        public Page5()
         {
             InitializeComponent();
         }
         private void Button_Clicked(object sender, EventArgs e)
         {
             App.MasterDetailVM.PushAsync(this);
-            App.MasterDetailVM.PushAsync1(new Page5());
+            App.MasterDetailVM.PushAsync1(new Page6());
         }
     }
 }

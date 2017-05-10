@@ -41,5 +41,7 @@ C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Li
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\obj\Debug\ZCMobileDemo.Lite.Views.Timesheet.Page1.xaml.g.cs
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\obj\Debug\ZCMobileDemo.Lite.Views.Timesheet.Page2.xaml.g.cs
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\obj\Debug\ZCMobileDemo.Lite.Views.Timesheet.Page3.xaml.g.cs
+C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\obj\Debug\ZCMobileDemo.Lite.Views.Timesheet.Page5.xaml.g.cs
+C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\obj\Debug\ZCMobileDemo.Lite.Views.Timesheet.Page6.xaml.g.cs
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\obj\Debug\ZCMobileDemo.Lite.dll.mdb
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite\bin\Debug\ZCMobileDemo.Lite.dll.mdb

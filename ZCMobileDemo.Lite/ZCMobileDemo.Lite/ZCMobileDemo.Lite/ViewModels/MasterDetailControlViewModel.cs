@@ -38,9 +38,9 @@ namespace ZCMobileDemo.Lite.ViewModels
                     {
                         _pages.Pop();
                     }
-                    if (Detail != null)
+                    if (value != null)
                     {
-                        _pages.Push(Detail);
+                        _pages.Push(value);
                     }
                     _detail = value;
                     RaisePropertyChanged();
@@ -60,9 +60,9 @@ namespace ZCMobileDemo.Lite.ViewModels
                     {
                         _pages.Pop();
                     }
-                    if (Detail1 != null)
+                    if (value != null)
                     {
-                        _pages.Push(Detail1);
+                        _pages.Push(value);
                     }
                     _detail1 = value;
                     RaisePropertyChanged();
