@@ -131,7 +131,7 @@ namespace ZCMobileDemo.Lite.Views
 
         void TapGestureRecognizerBack_Tapped(object sender, EventArgs e)
         {
-            App.MasterDetailVM.PopAsync();
+            App.MasterDetailVM.PopAsync1();
         }
     }
 }

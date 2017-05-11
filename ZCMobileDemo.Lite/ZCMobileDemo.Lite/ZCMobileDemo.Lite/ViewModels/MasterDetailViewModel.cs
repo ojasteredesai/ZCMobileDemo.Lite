@@ -67,16 +67,10 @@ namespace ZCMobileDemo.Lite.ViewModels
 
                             if (label.Text == "View Timesheet")
                             {
+                                RemoveAllPages();                         
                                 Header = "View Timesheet";
                                 RightButton = "...";
                                 var page = new Page1();
-                              //  page.MasterDetailVM = this;
-                                //ViewTimesheetViewModel vm = new ViewTimesheetViewModel();
-                                //vm.MasterDetailViewModel = this;
-                                // App.ContentModel = vm;
-                                //page.BindingContext = vm;
-                                //vm.FilterTimesheet();
-                               // Detail = page;
                                 PushAsync(page);                           
                             }
 

@@ -24,7 +24,7 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         private void Button_Clicked(object sender, EventArgs e)
         {
             var page = new Page2();
-            //  page.MasterDetailVM = this.MasterDetailVM;            
+            //  page.MasterDetailVM = this.MasterDetailVM;  
             App.MasterDetailVM.PushAsync1(page);
         }
     }

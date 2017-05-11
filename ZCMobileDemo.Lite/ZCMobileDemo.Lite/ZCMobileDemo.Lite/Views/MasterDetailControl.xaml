@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ZCMobileDemo.Lite.Views.MasterDetailControl"
              x:Name="Parent">
-    <Grid>
+    <Grid x:Name="masterGrid">
         <Grid.RowDefinitions>
             <RowDefinition>
                 <RowDefinition.Height>
@@ -46,30 +46,30 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                 </Image.GestureRecognizers>
             </Image>
-            <Image Source="back.png" HeightRequest="20"  Grid.Column="1">
+            <Image Source="back.png" HeightRequest="20"  Grid.Column="1" IsVisible="{Binding SecondContentVisibility}">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" />
+                    <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" /> 
                 </Image.GestureRecognizers>
             </Image>
-            <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="2" Margin="0,0,22,0">
+            <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="2" Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
             </Label>
-            <Label x:Name="headerTitle" HeightRequest="20" Text="Header" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2">
+            <Label x:Name="headerTitle" HeightRequest="20" Text="Header" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
             </Label>
-            <Label x:Name="headerTitle1" HeightRequest="20" Text="Header1" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3">
+            <Label x:Name="headerTitle1" HeightRequest="20" Text="Header1" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3" IsVisible="{Binding SecondContentVisibility}">
             </Label>
-            <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0">
+            <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding SecondContentVisibility}">
             </Label>
         </Grid>
         <!--</StackLayout>-->
 
-        <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="Khaki" Grid.Row="1" IsVisible="True"/>
-        <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="LightCoral" Grid.Row="1" IsVisible="True"/>
+        <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="Khaki" Grid.Row="1" IsVisible="True" Grid.ColumnSpan="{Binding DetailGridColSpan}"/>
+        <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="LightCoral" Grid.Row="1" IsVisible="{Binding SecondContentVisibility}"/>
         <!--<ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="Gray" Grid.Row="1" IsVisible="{Binding SecondDetailPageVisible, Source={x:Reference Name=Parent}"/>-->
 
 
         <!--<StackLayout Grid.Column="1" Grid.Row="1" Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
             <ContentView  x:Name="DetailContainer" BackgroundColor="White"/>
-            <ContentView x:Name="DetailContainer1" BackgroundColor="Gray" IsVisible="{Binding SecondDetailPageVisible, Source={x:Reference Name=Parent},Mode=TwoWay}"/>
+            <ContentView x:Name="DetailContainer1" BackgroundColor="Gray" IsVisible="{Binding SecondContentVisibility, Source={x:Reference Name=Parent},Mode=TwoWay}"/>
         </StackLayout>-->
     </Grid>
 </ContentPage>

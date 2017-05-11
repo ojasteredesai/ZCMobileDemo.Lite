@@ -15,69 +15,88 @@ namespace ZCMobileDemo.Lite.ViewModels
     public class MasterDetailControlViewModel : BaseViewModel, INavigation
     {
         #region Private Members
-        private Page _detail, _detail1;
+        private string header;
+        private string header1;
+        private string rightButton;
+        private string rightButton1;
+        private Page detail, detail1;
         private INavigation _navigation;
-
-        private Stack<Page> _pages = new Stack<Page>();
+        private Stack<Page> pages = new Stack<Page>();
+        private bool secondContentVisibility = false;
+        private int detailGridColSpan = 2;
+        private int detailGridHeaderColSpan = 4;
         #endregion
 
-        #region Properties
-
+        #region Public Properties
+        #region Detail Container properties
         public Page Detail
         {
-            get { return _detail; }
+            get { return detail; }
             set
             {
-                if (_detail != value)
+                if (detail != value)
                 {
                     //if (Detail != null && Detail.StyleId != value.StyleId)
                     //{
                     //    _pages.Push(Detail);
                     //}
-                    if (Detail != null && (_pages.Any() && _pages.Any(x => x.StyleId == value.StyleId)))
+                    if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
                     {
-                        _pages.Pop();
+                        pages.Pop();
                     }
                     if (value != null)
                     {
-                        _pages.Push(value);
+                        pages.Push(value);
                     }
-                    _detail = value;
+                    detail = value;
                     RaisePropertyChanged();
                 }
+
+                //This will maintain visibility of second detail page.
+                App.MasterDetailVM.SecondContentVisibility = (pages.Count > 1);
+                App.MasterDetailVM.DetailGridColSpan = pages.Count > 1 ? 1 : 2;
+                App.MasterDetailVM.DetailGridHeaderColSpan = pages.Count > 1 ? 1 : 4;
             }
         }
 
         public Page Detail1
         {
-            get { return _detail1; }
+            get { return detail1; }
             set
             {
-                if (_detail1 != value)
+                if (detail1 != value)
                 {
                     //  if (Detail1 != null && Detail1.StyleId != value.StyleId)
-                    if (Detail1 != null && (_pages.Any() && _pages.Any(x => x.StyleId == value.StyleId)))
+                    if (Detail1 != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
                     {
-                        _pages.Pop();
+                        pages.Pop();
                     }
                     if (value != null)
                     {
-                        _pages.Push(value);
+                        pages.Push(value);
+                        App.MasterDetailVM.SecondContentVisibility = true;
+                        App.MasterDetailVM.DetailGridColSpan = 1;
+                        App.MasterDetailVM.DetailGridHeaderColSpan = 1;
                     }
-                    _detail1 = value;
+                    detail1 = value;
                     RaisePropertyChanged();
                 }
             }
         }
+        #endregion
 
-        private string header;
-
+        #region Right Button and Header Properties
         public string Header
         {
             get { return header; }
             set { header = value; RaisePropertyChanged(); }
         }
-        private string rightButton;
+
+        public string Header1
+        {
+            get { return header1; }
+            set { header1 = value; RaisePropertyChanged(); }
+        }
 
         public string RightButton
         {
@@ -85,65 +104,21 @@ namespace ZCMobileDemo.Lite.ViewModels
             set { rightButton = value; RaisePropertyChanged(); }
         }
 
-        private string header1;
-
-        public string Header1
-        {
-            get { return header1; }
-            set { header1 = value; RaisePropertyChanged(); }
-        }
-        private string _RightButton1;
-
         public string RightButton1
         {
-            get { return _RightButton1; }
-            set { _RightButton1 = value; RaisePropertyChanged(); }
+            get { return rightButton1; }
+            set { rightButton1 = value; RaisePropertyChanged(); }
         }
+        #endregion
 
-        public Task<Page> PopAsync1()
-        {
-            Page page = null;
-            if (_pages.Count > 0)
-            {
-                page = _pages.Pop();
-                _detail = page;
-                RaisePropertyChanged("Detail");
-            }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
-        }
-
-        public Task<Page> PopAsync()
-        {
-            Page page = null;
-            Page page1 = null;
-            if (_pages.Count > 0)
-            {
-                if (_pages != null && _pages.Count > 2)
-                {
-                    _pages.Pop();
-                    page = _pages.Pop();
-                    page1 = _pages.Pop();
-                    PushAsync(page1);
-                    PushAsync1(page);
-                }
-                if (_pages != null && _pages.Count == 1)
-                {
-                    page = _pages.Pop();
-                    PushAsync(page);
-                    PushAsync1(Detail);
-                }
-                //_detail = page;
-                RaisePropertyChanged("Detail");
-            }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
-        }
+        #region Navigation Properties
         public IReadOnlyList<Page> ModalStack { get { return _navigation.ModalStack; } }
 
         public IReadOnlyList<Page> NavigationStack
         {
             get
             {
-                if (_pages.Count == 0)
+                if (pages.Count == 0)
                 {
                     return _navigation.NavigationStack;
                 }
@@ -154,7 +129,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                     master = d as MasterDetailControl;
                     return master != null || d.GetType() == typeof(MasterDetailControl);
                 }).ToList();
-                beforeMaster.AddRange(_pages);
+                beforeMaster.AddRange(pages);
                 beforeMaster.AddRange(implPages.Where(d => !beforeMaster.Contains(d)
                     && d != master));
                 return new ReadOnlyCollection<Page>(_navigation.NavigationStack.ToList());
@@ -162,30 +137,115 @@ namespace ZCMobileDemo.Lite.ViewModels
         }
         #endregion
 
-        #region Public Methods
-        public void InsertPageBefore(Page page, Page before)
+        #region Visibility Control and Grid ColumnSpan Properties
+        public bool SecondContentVisibility
         {
-            if (_pages.Contains(before))
+            get
             {
-                var list = _pages.ToList();
-                var indexOfBefore = list.IndexOf(before);
-                list.Insert(indexOfBefore, page);
-                _pages = new Stack<Page>(list);
+                return secondContentVisibility;
             }
-            else
+            set
             {
-                _navigation.InsertPageBefore(page, before);
+                secondContentVisibility = value;
+                RaisePropertyChanged();
             }
         }
+        public int DetailGridColSpan
+        {
+            get
+            {
+                return detailGridColSpan;
+            }
+            set
+            {
+                detailGridColSpan = value;
+                RaisePropertyChanged();
+            }
+        }
+        public int DetailGridHeaderColSpan
+        {
+            get
+            {
+                return detailGridHeaderColSpan;
+            }
+            set
+            {
+                detailGridHeaderColSpan = value;
+                RaisePropertyChanged();
+            }
+        }
+        #endregion
+        #endregion
 
+        #region Push and Pop Methods
+        public Task PushAsync(Page page)
+        {
+            Detail = page;
+            return Task.FromResult(page);
+        }
+        public Task PushAsync1(Page page)
+        {
+            Detail1 = page;
+            return Task.FromResult(page);
+        }
+
+        public Task PushAsync(Page page, bool animated)
+        {
+            Detail = page;
+            return Task.FromResult(page);
+        }
+
+        public Task PushAsync1(Page page, bool animated)
+        {
+            Detail1 = page;
+            return Task.FromResult(page);
+        }
+
+        public Task<Page> PopAsync1()
+        {
+            Page page = null;
+            Page page1 = null;
+            if (pages.Count > 0)
+            {
+                if (pages != null && pages.Count > 2)
+                {
+                    pages.Pop();
+                    page = pages.Pop();
+                    page1 = pages.Pop();
+                    PushAsync(page1);
+                    PushAsync1(page);
+                }
+                else//if (pages != null && pages.Count == 1)
+                {
+                    page = pages.Pop();
+                    PushAsync(Detail);
+                    // PushAsync1(Detail);
+                }
+                //_detail = page;
+                RaisePropertyChanged("Detail");
+            }
+            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+        }
+
+        public Task<Page> PopAsync()
+        {
+            Page page = null;
+            if (pages.Count > 0)
+            {
+                page = pages.Pop();
+                detail = page;
+                RaisePropertyChanged("Detail");
+            }
+            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+        }
 
         public Task<Page> PopAsync(bool animated)
         {
             Page page = null;
-            if (_pages.Count > 0)
+            if (pages.Count > 0)
             {
-                page = _pages.Pop();
-                _detail = page;
+                page = pages.Pop();
+                detail = page;
                 RaisePropertyChanged("Detail");
             }
             return page != null ? Task.FromResult(page) : _navigation.PopAsync(animated);
@@ -194,13 +254,28 @@ namespace ZCMobileDemo.Lite.ViewModels
         public Task<Page> PopAsync1(bool animated)
         {
             Page page = null;
-            if (_pages.Count > 0)
+            if (pages.Count > 0)
             {
-                page = _pages.Pop();
-                _detail1 = page;
+                page = pages.Pop();
+                detail1 = page;
                 RaisePropertyChanged("Detail1");
             }
             return page != null ? Task.FromResult(page) : _navigation.PopAsync(animated);
+        }
+
+        public void InsertPageBefore(Page page, Page before)
+        {
+            if (pages.Contains(before))
+            {
+                var list = pages.ToList();
+                var indexOfBefore = list.IndexOf(before);
+                list.Insert(indexOfBefore, page);
+                pages = new Stack<Page>(list);
+            }
+            else
+            {
+                _navigation.InsertPageBefore(page, before);
+            }
         }
 
         public Task<Page> PopModalAsync()
@@ -219,7 +294,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             if (firstPage is MasterDetailControl
                 || firstPage.GetType() == typeof(MasterDetailControl))
             {
-                _pages = new Stack<Page>(new[] { _pages.FirstOrDefault() });
+                pages = new Stack<Page>(new[] { pages.FirstOrDefault() });
                 return Task.FromResult(firstPage);
             }
             return _navigation.PopToRootAsync();
@@ -231,34 +306,10 @@ namespace ZCMobileDemo.Lite.ViewModels
             if (firstPage is MasterDetailControl
                 || firstPage.GetType() == typeof(MasterDetailControl))
             {
-                _pages = new Stack<Page>(new[] { _pages.FirstOrDefault() });
+                pages = new Stack<Page>(new[] { pages.FirstOrDefault() });
                 return Task.FromResult(firstPage);
             }
             return _navigation.PopToRootAsync(animated);
-        }
-
-        public Task PushAsync1(Page page)
-        {
-            Detail1 = page;
-            return Task.FromResult(page);
-        }
-
-        public Task PushAsync(Page page)
-        {
-            Detail = page;
-            return Task.FromResult(page);
-        }
-
-        public Task PushAsync(Page page, bool animated)
-        {
-            Detail = page;
-            return Task.FromResult(page);
-        }
-
-        public Task PushAsync1(Page page, bool animated)
-        {
-            Detail1 = page;
-            return Task.FromResult(page);
         }
 
         public Task PushModalAsync(Page page)
@@ -273,25 +324,27 @@ namespace ZCMobileDemo.Lite.ViewModels
 
         public void RemovePage(Page page)
         {
-            if (_pages.Contains(page))
+            if (pages.Contains(page))
             {
-                var list = _pages.ToList();
+                var list = pages.ToList();
                 list.Remove(page);
-                _pages = new Stack<Page>(list);
+                pages = new Stack<Page>(list);
             }
             _navigation.RemovePage(page);
+        }
+
+        public void RemoveAllPages()
+        {
+            if (pages.Count > 0)
+            {
+                pages.Clear();
+            }
         }
 
         public void SetNavigation(INavigation navigation)
         {
             _navigation = navigation;
         }
-
-        //protected virtual void RaisePropertyChanged([CallerMemberName] string propertyName = null)
-        //{
-        //    var handler = PropertyChanged;
-        //    if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        //}
         #endregion
     }
 }
