@@ -68,7 +68,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                             if (label.Text == "View Timesheet")
                             {
                                 RemoveAllPages();                         
-                                Header = "View Timesheet";
+                                Header = "Page 1";
                                 RightButton = "...";
                                 var page = new Page1();
                                 PushAsync(page);                           

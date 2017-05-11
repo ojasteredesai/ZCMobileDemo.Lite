@@ -23,8 +23,11 @@ namespace ZCMobileDemo.Lite.ViewModels
         private INavigation _navigation;
         private Stack<Page> pages = new Stack<Page>();
         private bool secondContentVisibility = false;
+        private bool backButtonVisibility = false;
         private int detailGridColSpan = 2;
         private int detailGridHeaderColSpan = 4;
+        private const int BACK_BUTTON_PAGE_COUNT = 2;
+        private const int SECOND_CONTENT_PAGE_COUNT = 1;
         #endregion
 
         #region Public Properties
@@ -53,9 +56,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 }
 
                 //This will maintain visibility of second detail page.
-                App.MasterDetailVM.SecondContentVisibility = (pages.Count > 1);
-                App.MasterDetailVM.DetailGridColSpan = pages.Count > 1 ? 1 : 2;
-                App.MasterDetailVM.DetailGridHeaderColSpan = pages.Count > 1 ? 1 : 4;
+                GetSecondContentVisibility();
             }
         }
 
@@ -74,9 +75,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                     if (value != null)
                     {
                         pages.Push(value);
-                        App.MasterDetailVM.SecondContentVisibility = true;
-                        App.MasterDetailVM.DetailGridColSpan = 1;
-                        App.MasterDetailVM.DetailGridHeaderColSpan = 1;
+                        GetSecondContentVisibility();
                     }
                     detail1 = value;
                     RaisePropertyChanged();
@@ -150,6 +149,18 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
+        public bool BackButtonVisibility
+        {
+            get
+            {
+                return backButtonVisibility;
+            }
+            set
+            {
+                backButtonVisibility = value;
+                RaisePropertyChanged();
+            }
+        }
         public int DetailGridColSpan
         {
             get
@@ -205,25 +216,30 @@ namespace ZCMobileDemo.Lite.ViewModels
         {
             Page page = null;
             Page page1 = null;
-            if (pages.Count > 0)
+            //if (pages.Count > 0)
+            // {
+            if (pages.Count > 2)
             {
-                if (pages != null && pages.Count > 2)
-                {
-                    pages.Pop();
-                    page = pages.Pop();
-                    page1 = pages.Pop();
-                    PushAsync(page1);
-                    PushAsync1(page);
-                }
-                else//if (pages != null && pages.Count == 1)
-                {
-                    page = pages.Pop();
-                    PushAsync(Detail);
-                    // PushAsync1(Detail);
-                }
-                //_detail = page;
+                pages.Pop();
+                page = pages.Pop();
+                page1 = pages.Pop();
+                Header = App.PageTitels[page1.StyleId];
+                Header1 = App.PageTitels[page.StyleId];
+                PushAsync(page1);
+                PushAsync1(page);
                 RaisePropertyChanged("Detail");
             }
+            else//if (pages != null && pages.Count == 1)
+            {
+                page = pages.Pop();
+                Header = App.PageTitels[page.StyleId];
+                PushAsync(Detail);
+                RaisePropertyChanged("Detail");
+                // PushAsync1(Detail);
+            }
+            //_detail = page;
+          //  RaisePropertyChanged("Detail");
+            //  }
             return page != null ? Task.FromResult(page) : _navigation.PopAsync();
         }
 
@@ -344,6 +360,16 @@ namespace ZCMobileDemo.Lite.ViewModels
         public void SetNavigation(INavigation navigation)
         {
             _navigation = navigation;
+        }
+        #endregion
+
+        #region Private Methods
+        private void GetSecondContentVisibility()
+        {
+            App.MasterDetailVM.SecondContentVisibility = (pages.Count > SECOND_CONTENT_PAGE_COUNT);
+            App.MasterDetailVM.BackButtonVisibility = (pages.Count > BACK_BUTTON_PAGE_COUNT);
+            App.MasterDetailVM.DetailGridColSpan = pages.Count > SECOND_CONTENT_PAGE_COUNT ? 1 : 2;
+            App.MasterDetailVM.DetailGridHeaderColSpan = pages.Count > SECOND_CONTENT_PAGE_COUNT ? 1 : 4;
         }
         #endregion
     }

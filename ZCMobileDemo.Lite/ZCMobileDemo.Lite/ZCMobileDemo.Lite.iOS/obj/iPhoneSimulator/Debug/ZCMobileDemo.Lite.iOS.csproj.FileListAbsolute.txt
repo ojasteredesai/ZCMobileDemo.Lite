@@ -105,5 +105,6 @@ C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Li
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\obj\iPhoneSimulator\Debug\ZCMobileDemo.Lite.iOS.csprojResolveAssemblyReference.cache
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\obj\iPhoneSimulator\Debug\ZCMobileDemo.Lite.iOS.exe
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\obj\iPhoneSimulator\Debug\ZCMobileDemo.Lite.iOS.pdb
+C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\ZCMobileDemo.Lite.dll.mdb
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\obj\iPhoneSimulator\Debug\ZCMobileDemo.Lite.iOS.exe.mdb
 C:\Ojas_Teredesai\XamarinGit\ZCMobileDemo.Lite\ZCMobileDemo.Lite\ZCMobileDemo.Lite.iOS\bin\iPhoneSimulator\Debug\ZCMobileDemo.Lite.iOS.exe.mdb

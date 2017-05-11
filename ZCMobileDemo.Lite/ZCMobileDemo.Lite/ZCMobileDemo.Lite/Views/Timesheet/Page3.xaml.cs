@@ -18,6 +18,9 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         }
         private void Button_Clicked(object sender, EventArgs e)
         {
+            App.MasterDetailVM.Header = App.MasterDetailVM.Header1;
+            //App.MasterDetailVM.Header1 = "Page 4";
+            App.MasterDetailVM.Header1 = App.PageTitels["page4"];
             App.MasterDetailVM.PushAsync(this);
             App.MasterDetailVM.PushAsync1(new Page4());
         }

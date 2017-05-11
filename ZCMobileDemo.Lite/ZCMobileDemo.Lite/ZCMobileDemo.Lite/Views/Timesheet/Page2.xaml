@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ZCMobileDemo.Lite.Views.Timesheet.Page2" StyleId="page2">
     <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label x:Name="PageTitle" Text="{Binding Header1}" IsVisible="False"></Label>
         <Label Text="Page 2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
         <Button Text="Go to Page3" Clicked="Button_Clicked" FontSize="Large"></Button>
     </StackLayout>

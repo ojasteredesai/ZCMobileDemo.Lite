@@ -46,16 +46,16 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                 </Image.GestureRecognizers>
             </Image>
-            <Image Source="back.png" HeightRequest="20"  Grid.Column="1" IsVisible="{Binding SecondContentVisibility}">
+            <Image Source="back.png" HeightRequest="20"  Grid.Column="1" IsVisible="{Binding BackButtonVisibility}">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" /> 
                 </Image.GestureRecognizers>
             </Image>
             <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="2" Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
             </Label>
-            <Label x:Name="headerTitle" HeightRequest="20" Text="Header" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
+            <Label x:Name="headerTitle" HeightRequest="20" Text="{Binding Header}" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
             </Label>
-            <Label x:Name="headerTitle1" HeightRequest="20" Text="Header1" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3" IsVisible="{Binding SecondContentVisibility}">
+            <Label x:Name="headerTitle1" HeightRequest="20" Text="{Binding Header1}" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3" IsVisible="{Binding SecondContentVisibility}">
             </Label>
             <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding SecondContentVisibility}">
             </Label>
