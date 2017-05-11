@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZCMobileDemo.Lite.Model;
 using ZCMobileDemo.Lite.Views;
 
 namespace ZCMobileDemo.Lite.ViewModels
@@ -12,7 +13,7 @@ namespace ZCMobileDemo.Lite.ViewModels
     /// <summary>
     /// MasterDetailControlViewModel class.
     /// </summary>
-    public class MasterDetailControlViewModel : BaseViewModel, INavigation
+    public class MasterDetailControlViewModel : BaseViewModel//, INavigation
     {
         #region Private Members
         private string header;
@@ -26,7 +27,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private bool backButtonVisibility = false;
         private int detailGridColSpan = 2;
         private int detailGridHeaderColSpan = 4;
-        private const int BACK_BUTTON_PAGE_COUNT = 2;
+        private const int BACK_BUTTON_PAGE_COUNT = 1;
         private const int SECOND_CONTENT_PAGE_COUNT = 1;
         #endregion
 
@@ -37,7 +38,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             get { return detail; }
             set
             {
-                if (detail != value)
+                if (detail != value || pages.Count == 0)
                 {
                     //if (Detail != null && Detail.StyleId != value.StyleId)
                     //{
@@ -111,6 +112,13 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Navigation Properties
+        public bool Isportrait
+        {
+            get
+            {
+                return (App.Current.MainPage.Height > App.Current.MainPage.Width);
+            }
+        }
         public IReadOnlyList<Page> ModalStack { get { return _navigation.ModalStack; } }
 
         public IReadOnlyList<Page> NavigationStack
@@ -189,12 +197,28 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Push and Pop Methods
-        public Task PushAsync(Page page)
+
+        public void PushAsync(ZCMobileNavigationData navigationData)
+        {
+            if (Isportrait || pages.Count == 0) // This is for potrait mode
+            {
+                Header = navigationData.NextPageTitle;
+                PushAsync(navigationData.NextPage);
+            }
+            else//This is for landscape mode
+            {
+                Header = navigationData.CurrentPageTitle;
+                Header1 = navigationData.NextPageTitle;
+                PushAsync(navigationData.CurrentPage);
+                PushAsync1(navigationData.NextPage);
+            }
+        }
+        private Task PushAsync(Page page)
         {
             Detail = page;
             return Task.FromResult(page);
         }
-        public Task PushAsync1(Page page)
+        private Task PushAsync1(Page page)
         {
             Detail1 = page;
             return Task.FromResult(page);
@@ -218,27 +242,46 @@ namespace ZCMobileDemo.Lite.ViewModels
             Page page1 = null;
             //if (pages.Count > 0)
             // {
-            if (pages.Count > 2)
+            if (Isportrait && pages.Count > BACK_BUTTON_PAGE_COUNT)
             {
                 pages.Pop();
                 page = pages.Pop();
-                page1 = pages.Pop();
-                Header = App.PageTitels[page1.StyleId];
-                Header1 = App.PageTitels[page.StyleId];
-                PushAsync(page1);
-                PushAsync1(page);
-                RaisePropertyChanged("Detail");
+                Header = App.PageTitels[page.StyleId];
+                PushAsync(page);
+             //   RaisePropertyChanged("Detail");
+            }
+            else if (pages.Count > BACK_BUTTON_PAGE_COUNT)
+            {
+                if (pages.Count == 2)
+                {
+                    page1 = pages.Pop();
+                    page = pages.Pop();
+                    Header = App.PageTitels[page.StyleId];
+                    PushAsync(page);
+                  //  pages.Push(page1);
+                }
+                else
+                {
+                    pages.Pop();
+                    page = pages.Pop();
+                    page1 = pages.Pop();
+                    Header = App.PageTitels[page1.StyleId];
+                    Header1 = App.PageTitels[page.StyleId];
+                    PushAsync(page1);
+                    PushAsync1(page);
+                }
+            //    RaisePropertyChanged("Detail");
             }
             else//if (pages != null && pages.Count == 1)
             {
                 page = pages.Pop();
                 Header = App.PageTitels[page.StyleId];
                 PushAsync(Detail);
-                RaisePropertyChanged("Detail");
+             //   RaisePropertyChanged("Detail");
                 // PushAsync1(Detail);
             }
             //_detail = page;
-          //  RaisePropertyChanged("Detail");
+            //  RaisePropertyChanged("Detail");
             //  }
             return page != null ? Task.FromResult(page) : _navigation.PopAsync();
         }
@@ -366,10 +409,10 @@ namespace ZCMobileDemo.Lite.ViewModels
         #region Private Methods
         private void GetSecondContentVisibility()
         {
-            App.MasterDetailVM.SecondContentVisibility = (pages.Count > SECOND_CONTENT_PAGE_COUNT);
+            App.MasterDetailVM.SecondContentVisibility = (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT);
             App.MasterDetailVM.BackButtonVisibility = (pages.Count > BACK_BUTTON_PAGE_COUNT);
-            App.MasterDetailVM.DetailGridColSpan = pages.Count > SECOND_CONTENT_PAGE_COUNT ? 1 : 2;
-            App.MasterDetailVM.DetailGridHeaderColSpan = pages.Count > SECOND_CONTENT_PAGE_COUNT ? 1 : 4;
+            App.MasterDetailVM.DetailGridColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2);
+            App.MasterDetailVM.DetailGridHeaderColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4);
         }
         #endregion
     }

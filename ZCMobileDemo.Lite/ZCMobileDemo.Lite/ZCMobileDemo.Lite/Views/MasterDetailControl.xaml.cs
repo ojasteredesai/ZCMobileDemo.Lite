@@ -110,7 +110,7 @@ namespace ZCMobileDemo.Lite.Views
                 viewModel.Header = "Dashboard";
                 viewModel.RightButton = string.Empty;
                 masterDetail.BindingContext = viewModel;
-                App.MasterDetailVM = viewModel;
+                App.MasterDetailVM = viewModel;           
                 return navigationPage;
             }
             catch (Exception ex)

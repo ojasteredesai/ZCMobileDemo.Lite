@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
 using ZCMobileDemo.Lite.Controls;
+using ZCMobileDemo.Lite.Model;
 using ZCMobileDemo.Lite.Views.Timesheet;
 
 namespace ZCMobileDemo.Lite.ViewModels
@@ -24,7 +25,6 @@ namespace ZCMobileDemo.Lite.ViewModels
         public List<AccordionSource> GetSampleData()
         {
             var vResult = new List<AccordionSource>();
-
 
             foreach (var item in PreparedObject())
             {
@@ -68,13 +68,21 @@ namespace ZCMobileDemo.Lite.ViewModels
                             if (label.Text == "View Timesheet")
                             {
                                 RemoveAllPages();                         
-                                Header = "Page 1";
-                                RightButton = "...";
-                                var page = new Page1();
-                                PushAsync(page);                           
+                                //Header = "Page 1";
+                                //RightButton = "...";
+                                //var page = new Page1();
+                                var navigationData = new ZCMobileNavigationData
+                                {
+                                    CurrentPage = null,
+                                    CurrentPageTitle = string.Empty,
+                                    NextPage = new Page1(),
+                                    NextPageTitle = App.PageTitels["page1"]
+                                };
+
+                                PushAsync(navigationData);                           
                             }
 
-                            if (App.Current.MainPage.Height > App.Current.MainPage.Width)
+                            if (App.MasterDetailVM.Isportrait)
                             {
                                 App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
                                 RaisePropertyChanged("SideContentVisible");

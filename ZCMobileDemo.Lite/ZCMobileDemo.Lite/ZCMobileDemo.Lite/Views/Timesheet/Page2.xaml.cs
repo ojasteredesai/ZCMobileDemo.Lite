@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ZCMobileDemo.Lite.Model;
 using ZCMobileDemo.Lite.ViewModels;
 
 namespace ZCMobileDemo.Lite.Views.Timesheet
@@ -21,11 +22,21 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            App.MasterDetailVM.Header = App.MasterDetailVM.Header1;
-            //App.MasterDetailVM.Header1 = "Page 3";
-            App.MasterDetailVM.Header1 = App.PageTitels["page3"];
-            App.MasterDetailVM.PushAsync(this);
-            App.MasterDetailVM.PushAsync1(new Page3());
+            //App.MasterDetailVM.Header = App.MasterDetailVM.Header1;
+            ////App.MasterDetailVM.Header1 = "Page 3";
+            //App.MasterDetailVM.Header1 = App.PageTitels["page3"];
+            //App.MasterDetailVM.PushAsync(this);
+            //App.MasterDetailVM.PushAsync1(new Page3());
+
+            var navigationData = new ZCMobileNavigationData
+            {
+                CurrentPage = this,
+                CurrentPageTitle = App.MasterDetailVM.Header1,
+                NextPage = new Page3(),
+                NextPageTitle= App.PageTitels["page3"]
+            };
+
+            App.MasterDetailVM.PushAsync(navigationData);
         }
     }
 }
