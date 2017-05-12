@@ -65,8 +65,8 @@ namespace ZCMobileDemo.Lite.ViewModels
                         {
                             var label = ea as Label;
 
-                            if (label.Text == "View Timesheet")
-                            {
+                           // if (label.Text == "View Timesheet")
+                          //  {
                                 RemoveAllPages();                         
                                 //Header = "Page 1";
                                 //RightButton = "...";
@@ -80,7 +80,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                                 };
 
                                 PushAsync(navigationData);                           
-                            }
+                           // }
 
                             if (App.MasterDetailVM.Isportrait)
                             {
