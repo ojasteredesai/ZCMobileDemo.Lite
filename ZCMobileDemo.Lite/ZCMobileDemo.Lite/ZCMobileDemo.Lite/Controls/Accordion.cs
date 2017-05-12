@@ -19,6 +19,7 @@ namespace ZCMobileDemo.Lite.Controls
 
 
         #endregion
+
         #region Constructors
         public Accordion()
         {
@@ -31,6 +32,7 @@ namespace ZCMobileDemo.Lite.Controls
             DataBind();
         }
         #endregion
+
         #region Properties
         public List<AccordionSource> DataSource
         {
@@ -43,6 +45,7 @@ namespace ZCMobileDemo.Lite.Controls
             set { mFirstExpaned = value; }
         }
         #endregion
+
         #region Public Methods
         public void DataBind()
         {

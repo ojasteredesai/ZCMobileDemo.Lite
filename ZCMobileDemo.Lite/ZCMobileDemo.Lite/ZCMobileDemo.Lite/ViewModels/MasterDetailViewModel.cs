@@ -10,17 +10,20 @@ namespace ZCMobileDemo.Lite.ViewModels
 {
     public class MasterDetailViewModel : MasterDetailControlViewModel
     {
+        #region Private Members
+        private ObservableCollection<AccordionSource> checking;
+        #endregion
+        #region Constructors
         public MasterDetailViewModel()
         {
 
         }
-
-        private ObservableCollection<AccordionSource> _Checking;
+        #endregion
 
         public ObservableCollection<AccordionSource> Checking
         {
-            get { return _Checking ?? (_Checking = new ObservableCollection<AccordionSource>()); }
-            set { _Checking = value; RaisePropertyChanged(); }
+            get { return checking ?? (checking = new ObservableCollection<AccordionSource>()); }
+            set { checking = value; RaisePropertyChanged(); }
         }
         public List<AccordionSource> GetSampleData()
         {
@@ -65,22 +68,19 @@ namespace ZCMobileDemo.Lite.ViewModels
                         {
                             var label = ea as Label;
 
-                           // if (label.Text == "View Timesheet")
-                          //  {
-                                RemoveAllPages();                         
-                                //Header = "Page 1";
-                                //RightButton = "...";
-                                //var page = new Page1();
-                                var navigationData = new ZCMobileNavigationData
-                                {
-                                    CurrentPage = null,
-                                    CurrentPageTitle = string.Empty,
-                                    NextPage = new Page1(),
-                                    NextPageTitle = App.PageTitels["page1"]
-                                };
+                            RemoveAllPages();
+                            //Header = "Page 1";
+                            //RightButton = "...";
+                            //var page = new Page1();
+                            var navigationData = new ZCMobileNavigationData
+                            {
+                                CurrentPage = null,
+                                CurrentPageTitle = string.Empty,
+                                NextPage = new Page1(),
+                                NextPageTitle = App.PageTitels["page1"]
+                            };
 
-                                PushAsync(navigationData);                           
-                           // }
+                            PushAsync(navigationData);
 
                             if (App.MasterDetailVM.Isportrait)
                             {

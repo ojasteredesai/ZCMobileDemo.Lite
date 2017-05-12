@@ -14,8 +14,10 @@ namespace ZCMobileDemo.Lite.Views
     public partial class MasterDetailControl 
     {
         #region Private Members
-        private bool _sideContentView = false;
+        private bool secondDetailPageVisible = false;
         #endregion
+
+        #region Public Bindable Properties
 
         public static readonly BindableProperty SideContentProperty = BindableProperty.Create("SideContent",
             typeof(Xamarin.Forms.View), typeof(MasterDetailControl), null, propertyChanged: (bindable, value, newValue) =>
@@ -59,7 +61,7 @@ namespace ZCMobileDemo.Lite.Views
 
             });
 
-        public Xamarin.Forms.View SideContent
+        public View SideContent
         {
             get { return (Xamarin.Forms.View)GetValue(SideContentProperty); }
             set { SetValue(SideContentProperty, value); }
@@ -73,7 +75,6 @@ namespace ZCMobileDemo.Lite.Views
             }
         }
 
-        private bool secondDetailPageVisible = false;
         public bool SecondDetailPageVisible
         {
             get
@@ -85,13 +86,17 @@ namespace ZCMobileDemo.Lite.Views
                 secondDetailPageVisible = value;
             }
         }
+        #endregion
 
+        #region Constructors
         public MasterDetailControl()
         {
             InitializeComponent();
             SetBinding(DetailProperty, new Binding("Detail", BindingMode.TwoWay));
             SetBinding(DetailProperty1, new Binding("Detail1", BindingMode.TwoWay));
         }
+        #endregion
+
         #region Public Methods
         public static Page Create<TView, TViewModel>() where TView : MasterDetailControl, new()
             where TViewModel : MasterDetailControlViewModel, new()
@@ -123,6 +128,7 @@ namespace ZCMobileDemo.Lite.Views
         }
         #endregion
 
+        #region Private Methods
         void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
@@ -133,5 +139,6 @@ namespace ZCMobileDemo.Lite.Views
         {
             App.MasterDetailVM.PopAsync1();
         }
+        #endregion
     }
 }

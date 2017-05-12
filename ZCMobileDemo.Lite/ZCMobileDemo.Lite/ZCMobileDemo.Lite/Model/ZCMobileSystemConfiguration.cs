@@ -11,9 +11,11 @@ namespace ZCMobileDemo.Lite.Model
     /// </summary>
     public class ZCMobileSystemConfiguration
     {
+        #region Public Properties
         public string SelectedDataCenter { get; set; }
         public bool RememberUser { get; set; }
         public string RememberedUser { get; set; }
         public bool SideContentVisibility { get; set; }
+        #endregion
     }
 }

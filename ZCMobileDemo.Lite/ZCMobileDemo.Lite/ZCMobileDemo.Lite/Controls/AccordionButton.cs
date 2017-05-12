@@ -25,6 +25,7 @@ namespace ZCMobileDemo.Lite.Controls
             BorderWidth = 0;
         }
         #endregion 
+
         #region Properties
         public bool Expand
         {

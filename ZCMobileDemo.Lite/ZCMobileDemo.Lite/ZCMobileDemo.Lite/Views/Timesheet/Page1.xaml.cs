@@ -14,19 +14,20 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page1 : ContentPage
     {
-        //   public MasterDetailViewModel MasterDetailVM { get; set; }
-
+        #region Constructors
         public Page1()
         {
             InitializeComponent();
+            var model = App.ApplicationDataViewModel as Page1ViewModel;
+            this.BindingContext = (model != null ? model : (new Page1ViewModel()));
         }
+        #endregion
 
-
+        #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //var page = new Page2();
-            //App.MasterDetailVM.Header1 =App.PageTitels["page2"];
-            //App.MasterDetailVM.PushAsync1(page);
+            var bindingContext = this.BindingContext as Page1ViewModel;
+            App.ApplicationDataViewModel = new Page2ViewModel { Messsge1 = bindingContext.Messsge1, Messsge2 = bindingContext.Messsge2 };
 
             var navigationData = new ZCMobileNavigationData
             {
@@ -38,5 +39,6 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
 
             App.MasterDetailVM.PushAsync(navigationData);
         }
+        #endregion
     }
 }

@@ -13,18 +13,16 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page4 : ContentPage
     {
+        #region Constructors
         public Page4()
         {
             InitializeComponent();
         }
+        #endregion
+
+        #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //App.MasterDetailVM.Header = App.MasterDetailVM.Header1;
-            ////App.MasterDetailVM.Header1 = "Page 5";
-            //App.MasterDetailVM.Header1 = App.PageTitels["page5"];
-            //App.MasterDetailVM.PushAsync(this);
-            //App.MasterDetailVM.PushAsync1(new Page5());
-
             var navigationData = new ZCMobileNavigationData
             {
                 CurrentPage = this,
@@ -35,5 +33,6 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
 
             App.MasterDetailVM.PushAsync(navigationData);
         }
+        #endregion
     }
 }

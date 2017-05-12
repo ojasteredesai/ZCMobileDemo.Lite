@@ -40,10 +40,6 @@ namespace ZCMobileDemo.Lite.ViewModels
             {
                 if (detail != value || pages.Count == 0)
                 {
-                    //if (Detail != null && Detail.StyleId != value.StyleId)
-                    //{
-                    //    _pages.Push(Detail);
-                    //}
                     if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
                     {
                         pages.Pop();
@@ -213,6 +209,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 PushAsync1(navigationData.NextPage);
             }
         }
+
         private Task PushAsync(Page page)
         {
             Detail = page;
@@ -236,6 +233,61 @@ namespace ZCMobileDemo.Lite.ViewModels
             return Task.FromResult(page);
         }
 
+        /// <summary>
+        /// This method handles submit event when the submitted data is to the previous page.
+        /// PopAsync is not useful as it retreives the previous page and setting updated binding context can not be set.
+        /// </summary>
+        /// <param name="previousPage"></param>
+        /// <returns></returns>
+        public Task<Page> PushAsyncPreviousPage(Page previousPage = null)
+        {
+            Page page = null;
+            Page page1 = null;
+            //if (pages.Count > 0)
+            // {
+            if (Isportrait && pages.Count > BACK_BUTTON_PAGE_COUNT)
+            {
+                pages.Pop();
+                pages.Pop();
+                Header = App.PageTitels[previousPage.StyleId];
+                PushAsync(previousPage);
+                //   RaisePropertyChanged("Detail");
+            }
+            else if (pages.Count > BACK_BUTTON_PAGE_COUNT)
+            {
+                if (pages.Count == 2)
+                {
+                    page1 = pages.Pop();
+                    page = pages.Pop();
+                    Header = App.PageTitels[page.StyleId];
+                    PushAsync(previousPage);
+                }
+                else
+                {
+                    pages.Pop();
+                    page = pages.Pop();
+                    page1 = pages.Pop();
+                    Header = App.PageTitels[page1.StyleId];
+                    Header1 = App.PageTitels[page.StyleId];
+                    PushAsync(page1);
+                    PushAsync1(previousPage);
+                }
+                //    RaisePropertyChanged("Detail");
+            }
+            else//if (pages != null && pages.Count == 1)
+            {
+                page = pages.Pop();
+                Header = App.PageTitels[page.StyleId];
+                PushAsync(Detail);
+                //   RaisePropertyChanged("Detail");
+                // PushAsync1(Detail);
+            }
+            //_detail = page;
+            //  RaisePropertyChanged("Detail");
+            //  }
+            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+        }
+
         public Task<Page> PopAsync1()
         {
             Page page = null;
@@ -248,7 +300,6 @@ namespace ZCMobileDemo.Lite.ViewModels
                 page = pages.Pop();
                 Header = App.PageTitels[page.StyleId];
                 PushAsync(page);
-             //   RaisePropertyChanged("Detail");
             }
             else if (pages.Count > BACK_BUTTON_PAGE_COUNT)
             {
@@ -258,7 +309,6 @@ namespace ZCMobileDemo.Lite.ViewModels
                     page = pages.Pop();
                     Header = App.PageTitels[page.StyleId];
                     PushAsync(page);
-                  //  pages.Push(page1);
                 }
                 else
                 {
@@ -270,19 +320,13 @@ namespace ZCMobileDemo.Lite.ViewModels
                     PushAsync(page1);
                     PushAsync1(page);
                 }
-            //    RaisePropertyChanged("Detail");
             }
-            else//if (pages != null && pages.Count == 1)
+            else
             {
                 page = pages.Pop();
                 Header = App.PageTitels[page.StyleId];
                 PushAsync(Detail);
-             //   RaisePropertyChanged("Detail");
-                // PushAsync1(Detail);
             }
-            //_detail = page;
-            //  RaisePropertyChanged("Detail");
-            //  }
             return page != null ? Task.FromResult(page) : _navigation.PopAsync();
         }
 

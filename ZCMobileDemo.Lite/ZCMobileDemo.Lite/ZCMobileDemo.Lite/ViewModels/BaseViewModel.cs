@@ -22,9 +22,11 @@ namespace ZCMobileDemo.Lite.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 
+        #region Events
         public void RaisePropertyChanged([CallerMemberName] String propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
     }
 }

@@ -11,9 +11,14 @@ namespace ZCMobileDemo.Lite
 {
     public partial class App : Application
     {
+        #region Public Properties
+        public static object ApplicationDataViewModel { get; set; }
         public static ZCMobileSystemConfiguration UserSession { get; set; }
         public static MasterDetailControlViewModel MasterDetailVM { get; set; }
-        public static Dictionary<string, string> PageTitels = new Dictionary<string, string>();
+        public static Dictionary<string, string> PageTitels;
+        #endregion
+
+        #region Constructors
         public App()
         {
             InitializeComponent();
@@ -25,7 +30,9 @@ namespace ZCMobileDemo.Lite
             GetPageTitles();
             MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>(); 
         }
+        #endregion
 
+        #region Xamarin App Events
         protected override void OnStart()
         {
             // Handle when your app starts            
@@ -40,9 +47,12 @@ namespace ZCMobileDemo.Lite
         {
             // Handle when your app resumes
         }
+        #endregion
 
+        #region Private Methods
         private void GetPageTitles()
         {
+            PageTitels = new Dictionary<string, string>();
             PageTitels.Add("page1", "Page 1");
             PageTitels.Add("page2", "Page 2");
             PageTitels.Add("page3", "Page 3");
@@ -50,5 +60,6 @@ namespace ZCMobileDemo.Lite
             PageTitels.Add("page5", "Page 5");
             PageTitels.Add("page6", "Page 6");
         }
+        #endregion
     }
 }

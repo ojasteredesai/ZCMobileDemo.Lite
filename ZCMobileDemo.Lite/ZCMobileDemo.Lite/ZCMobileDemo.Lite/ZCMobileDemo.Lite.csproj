@@ -50,6 +50,9 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MasterDetailControlViewModel.cs" />
     <Compile Include="ViewModels\MasterDetailViewModel.cs" />
+    <Compile Include="ViewModels\Page1ViewModel.cs" />
+    <Compile Include="ViewModels\Page2ViewModel.cs" />
+    <Compile Include="ViewModels\Page3ViewModel.cs" />
     <Compile Include="Views\MasterDetail.xaml.cs">
       <DependentUpon>MasterDetail.xaml</DependentUpon>
     </Compile>
