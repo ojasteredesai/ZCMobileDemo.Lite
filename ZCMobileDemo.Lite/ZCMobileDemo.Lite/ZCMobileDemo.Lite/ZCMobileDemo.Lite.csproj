@@ -44,6 +44,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\ChildItems.cs" />
+    <Compile Include="Model\ListDataViewCell.cs" />
+    <Compile Include="Model\SimpleObject.cs" />
     <Compile Include="Model\ZCMobileNavigationData.cs" />
     <Compile Include="Model\ZCMobileSystemConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

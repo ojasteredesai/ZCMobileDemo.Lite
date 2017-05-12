@@ -20,11 +20,15 @@ namespace ZCMobileDemo.Lite.ViewModels
         }
         #endregion
 
+        #region Public Properties
         public ObservableCollection<AccordionSource> Checking
         {
             get { return checking ?? (checking = new ObservableCollection<AccordionSource>()); }
             set { checking = value; RaisePropertyChanged(); }
         }
+        #endregion
+
+        #region Public Methods
         public List<AccordionSource> GetSampleData()
         {
             var vResult = new List<AccordionSource>();
@@ -141,6 +145,9 @@ namespace ZCMobileDemo.Lite.ViewModels
 
             return vResult;
         }
+        #endregion
+
+        #region Private Methods
         private List<SimpleObject> PreparedObject()
         {
             var dummyData = new List<SimpleObject>();
@@ -192,46 +199,7 @@ namespace ZCMobileDemo.Lite.ViewModels
 
             return dummyData;
         }
+        #endregion
     }
 
-    public class SimpleObject
-    {
-        public SimpleObject()
-        {
-            ChildItemList = new List<ChildItems>();
-        }
-        public string HeaderText { get; set; }
-        public List<ChildItems> ChildItemList { get; set; }
-    }
-    public class ChildItems
-    {
-        public string TextValue { get; set; }
-        public string DataValue { get; set; }
-        public int BubbleCount { get; set; }
-    }
-    public class ListDataViewCell : ViewCell
-    {
-        public ListDataViewCell()
-        {
-
-
-            var label = new Label()
-            {
-                Font = Font.SystemFontOfSize(NamedSize.Default),
-                TextColor = Color.FromHex("#c1eaf6"),
-                Margin = new Thickness(3, 0, 0, 0)
-
-            };
-            label.SetBinding(Label.TextProperty, new Binding("TextValue"));
-            label.SetBinding(Label.ClassIdProperty, new Binding("DataValue"));
-            View = new StackLayout()
-            {
-                Orientation = StackOrientation.Vertical,
-                VerticalOptions = LayoutOptions.StartAndExpand,
-                // Padding = new Thickness(12, 8),
-                Children = { label },
-                BackgroundColor = Color.FromHex("#01446b")
-            };
-        }
-    }
 }
