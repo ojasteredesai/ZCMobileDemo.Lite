@@ -29,6 +29,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private int detailGridHeaderColSpan = 4;
         private const int BACK_BUTTON_PAGE_COUNT = 1;
         private const int SECOND_CONTENT_PAGE_COUNT = 1;
+        private bool isExecuting = false;
         #endregion
 
         #region Public Properties
@@ -189,6 +190,28 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
+        
+        public bool IsExecuting
+        {
+            get
+            {
+                return isExecuting;
+            }
+            set
+            {
+                isExecuting = value;
+                RaisePropertyChanged();
+                RaisePropertyChanged(nameof(IsPageEnabled));
+            }
+        }
+        public bool IsPageEnabled
+        {
+            get
+            {
+                return !IsExecuting;
+            }
+        }
+
         #endregion
         #endregion
 

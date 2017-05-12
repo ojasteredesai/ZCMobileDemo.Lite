@@ -24,8 +24,10 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         #endregion
 
         #region Private Methods
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
+            App.MasterDetailVM.IsExecuting = true;
+            await Task.Delay(10000);
             var navigationData = new ZCMobileNavigationData
             {
                 CurrentPage = this,
@@ -35,13 +37,16 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
             };
 
             App.MasterDetailVM.PushAsync(navigationData);
+            App.MasterDetailVM.IsExecuting = false;
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
+            App.MasterDetailVM.IsExecuting = true;
             var bindingContext = this.BindingContext as Page2ViewModel;
             App.ApplicationDataViewModel = new Page1ViewModel { Messsge1 = bindingContext.Messsge1, Messsge2 = bindingContext.Messsge2 };
             App.MasterDetailVM.PushAsyncPreviousPage(new Page1());
+            App.MasterDetailVM.IsExecuting = false;
         }
         #endregion
     }
