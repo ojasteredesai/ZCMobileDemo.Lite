@@ -27,7 +27,7 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         private async void Button_Clicked(object sender, EventArgs e)
         {
             App.MasterDetailVM.IsExecuting = true;
-            await Task.Delay(10000);
+            await Task.Delay(3000);
             var navigationData = new ZCMobileNavigationData
             {
                 CurrentPage = this,

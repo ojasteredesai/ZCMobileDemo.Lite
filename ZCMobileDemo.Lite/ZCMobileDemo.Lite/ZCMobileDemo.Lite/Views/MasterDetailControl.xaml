@@ -52,17 +52,17 @@
                         <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" />
                     </Image.GestureRecognizers>
                 </Image>
-                <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="2" Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
+                <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="2" Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}"  IsVisible="{Binding FirstContentVisibility}">
                 </Label>
-                <Label x:Name="headerTitle" HeightRequest="20" Text="{Binding Header}" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}">
+                <Label x:Name="headerTitle" HeightRequest="20" Text="{Binding Header}" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}" IsVisible="{Binding FirstContentVisibility}">
                 </Label>
                 <Label x:Name="headerTitle1" HeightRequest="20" Text="{Binding Header1}" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3" IsVisible="{Binding SecondContentVisibility}">
                 </Label>
                 <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding SecondContentVisibility}">
                 </Label>
             </Grid>
-            <!--</StackLayout>-->          
-            <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="Khaki" Grid.Row="1" IsVisible="True" Grid.ColumnSpan="{Binding DetailGridColSpan}"/>
+            <!--</StackLayout>-->
+            <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="Khaki" Grid.Row="1" Grid.ColumnSpan="{Binding DetailGridColSpan}"  IsVisible="{Binding FirstContentVisibility}"/>
             <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="LightCoral" Grid.Row="1" IsVisible="{Binding SecondContentVisibility}"/>
             <!--<ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="Gray" Grid.Row="1" IsVisible="{Binding SecondDetailPageVisible, Source={x:Reference Name=Parent}"/>-->
 

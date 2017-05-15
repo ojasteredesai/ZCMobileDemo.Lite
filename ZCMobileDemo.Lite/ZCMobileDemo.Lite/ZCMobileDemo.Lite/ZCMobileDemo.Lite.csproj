@@ -41,6 +41,7 @@
     <Compile Include="Controls\Accordion.cs" />
     <Compile Include="Controls\AccordionButton.cs" />
     <Compile Include="Controls\AccordionSource.cs" />
+    <Compile Include="Interfaces\IZCMobileNavigation.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZCMobileDemo.Lite.Interfaces;
 using ZCMobileDemo.Lite.Model;
 using ZCMobileDemo.Lite.Views;
 
@@ -13,7 +14,7 @@ namespace ZCMobileDemo.Lite.ViewModels
     /// <summary>
     /// MasterDetailControlViewModel class.
     /// </summary>
-    public class MasterDetailControlViewModel : BaseViewModel//, INavigation
+    public class MasterDetailControlViewModel : BaseViewModel, IZCMobileNavigation
     {
         #region Private Members
         private string header;
@@ -21,7 +22,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private string rightButton;
         private string rightButton1;
         private Page detail, detail1;
-        private INavigation _navigation;
+        private INavigation navigation;
         private Stack<Page> pages = new Stack<Page>();
         private bool secondContentVisibility = false;
         private bool backButtonVisibility = false;
@@ -116,7 +117,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 return (App.Current.MainPage.Height > App.Current.MainPage.Width);
             }
         }
-        public IReadOnlyList<Page> ModalStack { get { return _navigation.ModalStack; } }
+        public IReadOnlyList<Page> ModalStack { get { return navigation.ModalStack; } }
 
         public IReadOnlyList<Page> NavigationStack
         {
@@ -124,9 +125,9 @@ namespace ZCMobileDemo.Lite.ViewModels
             {
                 if (pages.Count == 0)
                 {
-                    return _navigation.NavigationStack;
+                    return navigation.NavigationStack;
                 }
-                var implPages = _navigation.NavigationStack;
+                var implPages = navigation.NavigationStack;
                 MasterDetailControl master = null;
                 var beforeMaster = implPages.TakeWhile(d =>
                 {
@@ -136,7 +137,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 beforeMaster.AddRange(pages);
                 beforeMaster.AddRange(implPages.Where(d => !beforeMaster.Contains(d)
                     && d != master));
-                return new ReadOnlyCollection<Page>(_navigation.NavigationStack.ToList());
+                return new ReadOnlyCollection<Page>(navigation.NavigationStack.ToList());
             }
         }
         #endregion
@@ -216,7 +217,6 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Push and Pop Methods
-
         public void PushAsync(ZCMobileNavigationData navigationData)
         {
             if (Isportrait || pages.Count == 0) // This is for potrait mode
@@ -233,12 +233,12 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
         }
 
-        private Task PushAsync(Page page)
+        public Task PushAsync(Page page)
         {
             Detail = page;
             return Task.FromResult(page);
         }
-        private Task PushAsync1(Page page)
+        public Task PushAsync1(Page page)
         {
             Detail1 = page;
             return Task.FromResult(page);
@@ -308,7 +308,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             //_detail = page;
             //  RaisePropertyChanged("Detail");
             //  }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+            return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
         public Task<Page> PopAsync1()
@@ -350,7 +350,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 Header = App.PageTitels[page.StyleId];
                 PushAsync(Detail);
             }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+            return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
         public Task<Page> PopAsync()
@@ -362,7 +362,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 detail = page;
                 RaisePropertyChanged("Detail");
             }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync();
+            return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
         public Task<Page> PopAsync(bool animated)
@@ -374,7 +374,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 detail = page;
                 RaisePropertyChanged("Detail");
             }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync(animated);
+            return page != null ? Task.FromResult(page) : navigation.PopAsync(animated);
         }
 
         public Task<Page> PopAsync1(bool animated)
@@ -386,7 +386,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 detail1 = page;
                 RaisePropertyChanged("Detail1");
             }
-            return page != null ? Task.FromResult(page) : _navigation.PopAsync(animated);
+            return page != null ? Task.FromResult(page) : navigation.PopAsync(animated);
         }
 
         public void InsertPageBefore(Page page, Page before)
@@ -400,52 +400,52 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
             else
             {
-                _navigation.InsertPageBefore(page, before);
+                navigation.InsertPageBefore(page, before);
             }
         }
 
         public Task<Page> PopModalAsync()
         {
-            return _navigation.PopModalAsync();
+            return navigation.PopModalAsync();
         }
 
         public Task<Page> PopModalAsync(bool animated)
         {
-            return _navigation.PopModalAsync(animated);
+            return navigation.PopModalAsync(animated);
         }
 
         public Task PopToRootAsync()
         {
-            var firstPage = _navigation.NavigationStack[0];
+            var firstPage = navigation.NavigationStack[0];
             if (firstPage is MasterDetailControl
                 || firstPage.GetType() == typeof(MasterDetailControl))
             {
                 pages = new Stack<Page>(new[] { pages.FirstOrDefault() });
                 return Task.FromResult(firstPage);
             }
-            return _navigation.PopToRootAsync();
+            return navigation.PopToRootAsync();
         }
 
         public Task PopToRootAsync(bool animated)
         {
-            var firstPage = _navigation.NavigationStack[0];
+            var firstPage = navigation.NavigationStack[0];
             if (firstPage is MasterDetailControl
                 || firstPage.GetType() == typeof(MasterDetailControl))
             {
                 pages = new Stack<Page>(new[] { pages.FirstOrDefault() });
                 return Task.FromResult(firstPage);
             }
-            return _navigation.PopToRootAsync(animated);
+            return navigation.PopToRootAsync(animated);
         }
 
         public Task PushModalAsync(Page page)
         {
-            return _navigation.PushModalAsync(page);
+            return navigation.PushModalAsync(page);
         }
 
         public Task PushModalAsync(Page page, bool animated)
         {
-            return _navigation.PushModalAsync(page, animated);
+            return navigation.PushModalAsync(page, animated);
         }
 
         public void RemovePage(Page page)
@@ -456,7 +456,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 list.Remove(page);
                 pages = new Stack<Page>(list);
             }
-            _navigation.RemovePage(page);
+            navigation.RemovePage(page);
         }
 
         public void RemoveAllPages()
@@ -469,16 +469,23 @@ namespace ZCMobileDemo.Lite.ViewModels
 
         public void SetNavigation(INavigation navigation)
         {
-            _navigation = navigation;
+            this.navigation = navigation;
+        }
+        #endregion
+
+        #region Orientation change handling methods
+        public void AdjustScreenOnOrientationChange(bool orientationChanges = false)
+        {
+            this.GetSecondContentVisibility(orientationChanges);
         }
         #endregion
 
         #region Private Methods
-        private void GetSecondContentVisibility()
+        private void GetSecondContentVisibility(bool orientationChanges = false)
         {
             App.MasterDetailVM.SecondContentVisibility = (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT);
-            App.MasterDetailVM.BackButtonVisibility = (pages.Count > BACK_BUTTON_PAGE_COUNT);
-            App.MasterDetailVM.DetailGridColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2);
+            App.MasterDetailVM.BackButtonVisibility = (pages.Count > BACK_BUTTON_PAGE_COUNT);           
+            App.MasterDetailVM.DetailGridColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2);            
             App.MasterDetailVM.DetailGridHeaderColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4);
         }
         #endregion
