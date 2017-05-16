@@ -10,14 +10,18 @@ namespace ZCMobileDemo.Lite
 {
     public partial class MainPage : ContentPage
     {
+        #region Constructors
         public MainPage()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
             App.Current.MainPage = new LoginPage();
         }
+        #endregion
     }
 }

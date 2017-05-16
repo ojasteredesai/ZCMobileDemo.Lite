@@ -13,14 +13,18 @@ namespace ZCMobileDemo.Lite.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        #region Constructors
         public LoginPage()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
           App.Current.MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>();
         }
+        #endregion
     }
 }
