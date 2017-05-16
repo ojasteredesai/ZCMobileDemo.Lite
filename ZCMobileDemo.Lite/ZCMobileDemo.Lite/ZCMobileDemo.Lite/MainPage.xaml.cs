@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZCMobileDemo.Lite.Views;
 
 namespace ZCMobileDemo.Lite
 {
@@ -12,6 +13,11 @@ namespace ZCMobileDemo.Lite
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new LoginPage();
         }
     }
 }

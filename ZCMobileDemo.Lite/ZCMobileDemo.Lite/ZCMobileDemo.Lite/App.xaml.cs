@@ -22,13 +22,13 @@ namespace ZCMobileDemo.Lite
         public App()
         {
             InitializeComponent();
+            MainPage = new MainPage();
             if (App.UserSession == null)
             {
                 App.UserSession = new ZCMobileSystemConfiguration { SideContentVisibility = true};
             }
 
             GetPageTitles();
-            MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>(); 
         }
         #endregion
 

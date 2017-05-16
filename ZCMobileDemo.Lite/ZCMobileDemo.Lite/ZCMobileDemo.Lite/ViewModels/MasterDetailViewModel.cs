@@ -4,6 +4,7 @@ using System.Linq;
 using Xamarin.Forms;
 using ZCMobileDemo.Lite.Controls;
 using ZCMobileDemo.Lite.Model;
+using ZCMobileDemo.Lite.Views;
 using ZCMobileDemo.Lite.Views.Timesheet;
 
 namespace ZCMobileDemo.Lite.ViewModels
@@ -71,20 +72,26 @@ namespace ZCMobileDemo.Lite.ViewModels
                         tg.Tapped += (ea, sa) =>
                         {
                             var label = ea as Label;
-
-                            RemoveAllPages();
-                            //Header = "Page 1";
-                            //RightButton = "...";
-                            //var page = new Page1();
-                            var navigationData = new ZCMobileNavigationData
+                            if (label.Text != "Logout")
                             {
-                                CurrentPage = null,
-                                CurrentPageTitle = string.Empty,
-                                NextPage = new Page1(),
-                                NextPageTitle = App.PageTitels["page1"]
-                            };
+                                RemoveAllPages();
+                                //Header = "Page 1";
+                                //RightButton = "...";
+                                //var page = new Page1();
+                                var navigationData = new ZCMobileNavigationData
+                                {
+                                    CurrentPage = null,
+                                    CurrentPageTitle = string.Empty,
+                                    NextPage = new Page1(),
+                                    NextPageTitle = App.PageTitels["page1"]
+                                };
 
-                            PushAsync(navigationData);
+                                PushAsync(navigationData);
+                            }
+                            else
+                            {
+                                App.Current.MainPage = new LoginPage();
+                            }
 
                             if (App.MasterDetailVM.Isportrait)
                             {

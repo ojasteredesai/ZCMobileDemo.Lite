@@ -3,9 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ZCMobileDemo.Lite"
              x:Class="ZCMobileDemo.Lite.MainPage">
-
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout x:Name="mainStack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+        <Label Text="Application Startup Page" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
+        <Button Text="Go to Login Page" Clicked="Button_Clicked" FontSize="Large"></Button>
+    </StackLayout>
 </ContentPage>
