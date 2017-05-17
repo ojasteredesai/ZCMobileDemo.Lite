@@ -23,7 +23,7 @@ namespace ZCMobileDemo.Lite.Views
         #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
-          App.Current.MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>();
+            App.Current.MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>();
         }
         #endregion
     }

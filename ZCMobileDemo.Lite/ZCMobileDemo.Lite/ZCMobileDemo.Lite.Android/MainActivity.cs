@@ -22,6 +22,11 @@ namespace ZCMobileDemo.Lite.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
+
+        public override void OnBackPressed()
+        {
+            App.MasterDetailVM.PopAsync1();
+        }
     }
 }
 
