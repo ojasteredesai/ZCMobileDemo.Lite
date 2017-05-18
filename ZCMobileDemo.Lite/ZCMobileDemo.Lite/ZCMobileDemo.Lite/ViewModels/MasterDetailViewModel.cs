@@ -33,8 +33,8 @@ namespace ZCMobileDemo.Lite.ViewModels
         public List<AccordionSource> GetSampleData()
         {
             var vResult = new List<AccordionSource>();
-
-            foreach (var item in PreparedObject())
+            var accordianObject = PreparedObject();
+            foreach (var item in accordianObject)
             {
 
                 Grid gd = new Grid();
@@ -44,7 +44,9 @@ namespace ZCMobileDemo.Lite.ViewModels
                     foreach (var child in item.ChildItemList)
                     {
                         gd.RowDefinitions.Add(new RowDefinition { Height = 25 });
-
+                        gd.RowSpacing = 1;
+                        gd.ColumnSpacing = 1; 
+                        gd.Margin = new Thickness(2, 0, 0, 0);
                     }
                     if (item.ChildItemList.Any(q => q.BubbleCount > 0))
                     {
@@ -66,7 +68,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                         lbl.Text = actual.TextValue;
                         //lbl.HeightRequest = 30;
                         lbl.StyleId = actual.DataValue;
-                        lbl.Margin = new Thickness(5, 0, 0, 0);
+                        lbl.Margin = new Thickness(2, 0, 0, 0);
                         lbl.TextColor = Color.FromHex("#c1eaf6");
                         TapGestureRecognizer tg = new TapGestureRecognizer();
                         tg.Tapped += (ea, sa) =>
@@ -145,7 +147,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                         HeaderText = item.HeaderText,
                         HeaderTextColor = Color.FromHex("#c1eaf6"),
                         HeaderBackGroundColor = Color.FromHex("#3c9ece"),
-                        ContentItems = gd
+                        ContentItems = gd,                       
                     });
                 }
             }
