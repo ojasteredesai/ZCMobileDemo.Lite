@@ -140,6 +140,17 @@ namespace ZCMobileDemo.Lite.ViewModels
                 return new ReadOnlyCollection<Page>(navigation.NavigationStack.ToList());
             }
         }
+
+        /// <summary>
+        /// Gets the page count of the stack.
+        /// </summary>
+        public int PageCount
+        {
+            get
+            {
+                return pages.Count;
+            }
+        }
         #endregion
 
         #region Visibility Control and Grid ColumnSpan Properties
@@ -191,7 +202,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
-        
+
         public bool IsExecuting
         {
             get
@@ -484,8 +495,8 @@ namespace ZCMobileDemo.Lite.ViewModels
         private void GetSecondContentVisibility(bool orientationChanges = false)
         {
             App.MasterDetailVM.SecondContentVisibility = (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT);
-            App.MasterDetailVM.BackButtonVisibility = (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT);           
-            App.MasterDetailVM.DetailGridColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2);            
+            App.MasterDetailVM.BackButtonVisibility = (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT);
+            App.MasterDetailVM.DetailGridColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2);
             App.MasterDetailVM.DetailGridHeaderColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4);
         }
         #endregion

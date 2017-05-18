@@ -25,13 +25,13 @@ namespace ZCMobileDemo.Lite.Droid
 
         public override void OnBackPressed()
         {
-            if (App.MasterDetailVM.NavigationStack.Count < 2)
+            if (App.MasterDetailVM.PageCount < 2)
             {
-                App.MasterDetailVM.PopAsync1();
+                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
             }
             else
             {
-                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+                App.MasterDetailVM.PopAsync1();
             }
         }
     }
