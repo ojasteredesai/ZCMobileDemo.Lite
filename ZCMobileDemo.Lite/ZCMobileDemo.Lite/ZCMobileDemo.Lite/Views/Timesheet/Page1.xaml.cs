@@ -27,7 +27,7 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         private async void Button_Clicked(object sender, EventArgs e)
         {
             App.MasterDetailVM.IsExecuting = true;
-            await Task.Delay(3000);
+            await Task.Delay(1800);
             var bindingContext = this.BindingContext as Page1ViewModel;
             App.ApplicationDataViewModel = new Page2ViewModel { Messsge1 = bindingContext.Messsge1, Messsge2 = bindingContext.Messsge2 };
 
