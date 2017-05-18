@@ -25,9 +25,16 @@ namespace ZCMobileDemo.Lite.Droid
 
         public override void OnBackPressed()
         {
-            if (App.MasterDetailVM.PageCount < 2)
+            if (App.MasterDetailVM == null || App.MasterDetailVM.PageCount < 2)
             {
-                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+                if (App.Current.MainPage.StyleId == "datacenter")
+                {
+                    Process.KillProcess(Android.OS.Process.MyPid());
+                }
+                else
+                {
+                    App.Current.MainPage = new MainPage();
+                }
             }
             else
             {
