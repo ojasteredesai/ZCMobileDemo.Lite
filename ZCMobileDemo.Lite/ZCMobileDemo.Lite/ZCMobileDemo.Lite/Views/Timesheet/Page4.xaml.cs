@@ -23,6 +23,7 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
+            App.MasterDetailVM.IsExecuting = true;
             var navigationData = new ZCMobileNavigationData
             {
                 CurrentPage = this,
@@ -32,6 +33,7 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
             };
 
             App.MasterDetailVM.PushAsync(navigationData);
+            App.MasterDetailVM.IsExecuting = false;
         }
         #endregion
     }

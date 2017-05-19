@@ -41,9 +41,11 @@ namespace ZCMobileDemo.Lite.Views.Timesheet
         }
         private void Button_Clicked_1(object sender, EventArgs e)
         {
+            App.MasterDetailVM.IsExecuting = true;
             var bindingContext = this.BindingContext as Page3ViewModel;
             App.ApplicationDataViewModel = new Page2ViewModel { Messsge1 = bindingContext.Messsge1, Messsge2 = bindingContext.Messsge2 };
             App.MasterDetailVM.PushAsyncPreviousPage(new Page2());
+            App.MasterDetailVM.IsExecuting = false;
         }
         #endregion
     }

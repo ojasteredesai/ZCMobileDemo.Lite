@@ -112,9 +112,9 @@ namespace ZCMobileDemo.Lite.Views
                 //This condition sets the visibility of the side bar as per device orientation. For portrait mode side content is not shown.
                 App.UserSession.SideContentVisibility = (!viewModel.Isportrait);
                 var masterDetail = new TView();
-                //var navigationPage = new NavigationPage(masterDetail);
+              //  var navigationPage = new NavigationPage(masterDetail);
                 var navigationPage = masterDetail;
-              //  viewModel.SetNavigation(navigationPage.Navigation);
+                //viewModel.SetNavigation(navigationPage.Navigation);
                 viewModel.Header = "Dashboard";
                 viewModel.RightButton = string.Empty;
                 masterDetail.BindingContext = viewModel;
@@ -134,13 +134,17 @@ namespace ZCMobileDemo.Lite.Views
         #region Private Methods
         void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
+            App.MasterDetailVM.IsExecuting = true;
             App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
             OnPropertyChanged("SideContentVisible");
+            App.MasterDetailVM.IsExecuting = false;
         }
 
         void TapGestureRecognizerBack_Tapped(object sender, EventArgs e)
         {
+            App.MasterDetailVM.IsExecuting = true;
             App.MasterDetailVM.PopAsync1();
+            App.MasterDetailVM.IsExecuting = false;
         }
         #endregion
     }

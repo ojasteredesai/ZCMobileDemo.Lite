@@ -319,7 +319,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             //_detail = page;
             //  RaisePropertyChanged("Detail");
             //  }
-            return page != null ? Task.FromResult(page) : navigation.PopAsync();
+            return page != null ? Task.FromResult(page) : Task.FromResult(previousPage);
         }
 
         public Task<Page> PopAsync1()
