@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZCMobileDemo.Lite.ViewModels;
+using ZCMobileDemo.Lite.Views.Module;
 
 namespace ZCMobileDemo.Lite.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterDetailControl 
+    public partial class MasterDetailControl
     {
         #region Private Members
         private bool secondDetailPageVisible = false;
@@ -98,27 +99,44 @@ namespace ZCMobileDemo.Lite.Views
         #endregion
 
         #region Public Methods
-        public static Page Create<TView, TViewModel>() where TView : MasterDetailControl, new()
+        public static Page Create<TView, TViewModel>(bool userLoggedIn = true, Page page = null) where TView : MasterDetailControl, new()
             where TViewModel : MasterDetailControlViewModel, new()
         {
-            return Create<TView, TViewModel>(new TViewModel());
+            return Create<TView, TViewModel>(new TViewModel(), userLoggedIn, page);
         }
 
-        public static Page Create<TView, TViewModel>(TViewModel viewModel) where TView : MasterDetailControl, new()
+        public static Page Create<TView, TViewModel>(TViewModel viewModel, bool userLoggedIn = true, Page page = null) where TView : MasterDetailControl, new()
             where TViewModel : MasterDetailControlViewModel
         {
             try
             {
                 //This condition sets the visibility of the side bar as per device orientation. For portrait mode side content is not shown.
-                App.UserSession.SideContentVisibility = (!viewModel.Isportrait);
+                //if (userLoggedIn)
+                //{
+                //    App.IsUSerLoggedIn = true;
+                //    App.UserSession.SideContentVisibility = (!viewModel.Isportrait);
+                //}
+                //else
+                //{
+                //    App.UserSession.SideContentVisibility = false;
+                //}
                 var masterDetail = new TView();
-              //  var navigationPage = new NavigationPage(masterDetail);
+               // var navigationPage = new NavigationPage(masterDetail);
                 var navigationPage = masterDetail;
-                //viewModel.SetNavigation(navigationPage.Navigation);
-                viewModel.Header = "Dashboard";
+                viewModel.SetNavigation(navigationPage.Navigation);
+                viewModel.Header = (userLoggedIn ? "Dashboard" : "Login Page");
                 viewModel.RightButton = string.Empty;
                 masterDetail.BindingContext = viewModel;
                 App.MasterDetailVM = viewModel;
+                if (userLoggedIn)
+                {
+                    App.MasterDetailVM.PushAsync(new Dashboard());
+                }
+                else
+                {
+                    App.UserSession.SideContentVisibility = false;
+                    App.MasterDetailVM.PushAsync(page);
+                }
                 return navigationPage;
             }
             catch (Exception ex)
@@ -142,9 +160,16 @@ namespace ZCMobileDemo.Lite.Views
 
         void TapGestureRecognizerBack_Tapped(object sender, EventArgs e)
         {
-            App.MasterDetailVM.IsExecuting = true;
-            App.MasterDetailVM.PopAsync1();
-            App.MasterDetailVM.IsExecuting = false;
+            if (App.IsUSerLoggedIn)
+            {
+                App.MasterDetailVM.IsExecuting = true;
+                App.MasterDetailVM.PopAsync1();
+                App.MasterDetailVM.IsExecuting = false;
+            }
+            else
+            {
+                App.MasterDetailVM.PopAsyncInitialPages();
+            }
         }
         #endregion
     }

@@ -42,7 +42,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="menumedium.png" HeightRequest="20"  Grid.Column="0">
+                <Image Source="menumedium.png" HeightRequest="20"  Grid.Column="0" IsVisible="{Binding HamburgerVisibility}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                     </Image.GestureRecognizers>

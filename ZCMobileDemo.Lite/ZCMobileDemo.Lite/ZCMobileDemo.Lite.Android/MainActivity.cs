@@ -25,20 +25,40 @@ namespace ZCMobileDemo.Lite.Droid
 
         public override void OnBackPressed()
         {
-            if (App.MasterDetailVM == null || App.MasterDetailVM.PageCount < 2)
+            var styleIds = new string[] { "datacenter" , "loginpage", "dashboard" };
+
+            if (App.IsUSerLoggedIn)
             {
-                if (App.Current.MainPage.StyleId == "datacenter")
+                if (App.MasterDetailVM != null && App.MasterDetailVM.PageCount > 1)
                 {
-                    Process.KillProcess(Android.OS.Process.MyPid());
+                    App.MasterDetailVM.PopAsync1();
                 }
-                else
+                else //if (Array.IndexOf(styleIds, App.MasterDetailVM.Detail.StyleId) > -1)
                 {
-                    App.Current.MainPage = new MainPage();
+                    if (App.UserSession.SideContentVisibility)
+                    {
+                        Process.KillProcess(Android.OS.Process.MyPid());
+                    }
+                    else
+                    {
+                        App.UserSession.SideContentVisibility = true;
+                    }
+                    //else if (App.Current.MainPage.StyleId == "logintypepage")
+                    //{
+                    //    App.Current.MainPage = new MainPage();
+                    //}             
                 }
             }
             else
             {
-                App.MasterDetailVM.PopAsync1();
+                if (App.MasterDetailVM.InitialPageCount > 1)
+                {
+                    App.MasterDetailVM.PopAsyncInitialPages();
+                }
+                else
+                {
+                    Process.KillProcess(Android.OS.Process.MyPid());
+                }
             }
         }
     }

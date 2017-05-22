@@ -89,16 +89,20 @@ namespace ZCMobileDemo.Lite.ViewModels
                                 };
 
                                 PushAsync(navigationData);
+
+                                if (App.MasterDetailVM.Isportrait)
+                                {
+                                    App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
+                                    RaisePropertyChanged("SideContentVisible");
+                                }
                             }
                             else
                             {
-                                App.Current.MainPage = new LoginPage();
-                            }
-
-                            if (App.MasterDetailVM.Isportrait)
-                            {
-                                App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
-                                RaisePropertyChanged("SideContentVisible");
+                                RemoveAllPages();
+                                App.MasterDetailVM.HamburgerVisibility = false;
+                                App.IsUSerLoggedIn = false;
+                                App.UserSession.SideContentVisibility = false;
+                                App.MasterDetailVM.PopAsyncInitialPages(true);
                             }
                         };
 

@@ -16,18 +16,35 @@ namespace ZCMobileDemo.Lite
         public static ZCMobileSystemConfiguration UserSession { get; set; }
         public static MasterDetailControlViewModel MasterDetailVM { get; set; }
         public static Dictionary<string, string> PageTitels;
+        public const string SelectedDataCenter = "SelectedDataCenter";
+        public static bool IsUSerLoggedIn = false;
         #endregion
 
         #region Constructors
         public App()
         {
+            Page page;
             InitializeComponent();
-            MainPage = new MainPage();
             if (App.UserSession == null)
             {
                 App.UserSession = new ZCMobileSystemConfiguration { SideContentVisibility = true};
             }
 
+            if (Properties.ContainsKey(SelectedDataCenter))
+            {
+                App.UserSession.SelectedDataCenter = (string)Properties[SelectedDataCenter];
+            }
+
+            if (!string.IsNullOrEmpty(App.UserSession.SelectedDataCenter))
+            {
+                page = new LoginPage();
+            }
+            else
+            {
+                page = new MainPage();
+            }
+
+            App.Current.MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>(App.IsUSerLoggedIn, page);
             GetPageTitles();
         }
         #endregion
@@ -41,6 +58,7 @@ namespace ZCMobileDemo.Lite
         protected override void OnSleep()
         {
             // Handle when your app sleeps
+            Properties[SelectedDataCenter] = App.UserSession.SelectedDataCenter;
         }
 
         protected override void OnResume()

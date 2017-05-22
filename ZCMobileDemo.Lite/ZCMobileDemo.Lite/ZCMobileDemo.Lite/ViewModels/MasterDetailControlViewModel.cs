@@ -24,6 +24,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private Page detail, detail1;
         private INavigation navigation;
         private Stack<Page> pages = new Stack<Page>();
+        private Stack<Page> initialPages = new Stack<Page>();
         private bool secondContentVisibility = false;
         private bool backButtonVisibility = false;
         private int detailGridColSpan = 2;
@@ -31,6 +32,8 @@ namespace ZCMobileDemo.Lite.ViewModels
         private const int BACK_BUTTON_PAGE_COUNT = 1;
         private const int SECOND_CONTENT_PAGE_COUNT = 1;
         private bool isExecuting = false;
+        private bool hamburgerVisibility = false;
+       // private bool popAsyncRequest = false;
         #endregion
 
         #region Public Properties
@@ -40,22 +43,37 @@ namespace ZCMobileDemo.Lite.ViewModels
             get { return detail; }
             set
             {
-                if (detail != value || pages.Count == 0)
+                if (!App.IsUSerLoggedIn)
                 {
-                    if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+                    if (detail != value || initialPages.Count == 0)
                     {
-                        pages.Pop();
-                    }
-                    if (value != null)
-                    {
-                        pages.Push(value);
+                        if (value != null)// && value.StyleId != "logintypepage" && !popAsyncRequest)
+                        {
+                            initialPages.Push(value);
+                        }
                     }
                     detail = value;
                     RaisePropertyChanged();
                 }
+                else
+                {
+                    if (detail != value || pages.Count == 0)
+                    {
+                        if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+                        {
+                            pages.Pop();
+                        }
+                        if (value != null && value.StyleId != "dashboard")
+                        {
+                            pages.Push(value);
+                        }
+                        detail = value;
+                        RaisePropertyChanged();
+                    }
+                }
 
                 //This will maintain visibility of second detail page.
-                GetSecondContentVisibility();
+                GetSecondContentVisibility(App.IsUSerLoggedIn);
             }
         }
 
@@ -74,7 +92,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                     if (value != null)
                     {
                         pages.Push(value);
-                        GetSecondContentVisibility();
+                        GetSecondContentVisibility(App.IsUSerLoggedIn);
                     }
                     detail1 = value;
                     RaisePropertyChanged();
@@ -151,9 +169,33 @@ namespace ZCMobileDemo.Lite.ViewModels
                 return pages.Count;
             }
         }
+
+        /// <summary>
+        /// Gets the page count of the stack.
+        /// </summary>
+        public int InitialPageCount
+        {
+            get
+            {
+                return initialPages.Count;
+            }
+        }
         #endregion
 
         #region Visibility Control and Grid ColumnSpan Properties
+
+        public bool HamburgerVisibility
+        {
+            get
+            {
+                return hamburgerVisibility; 
+            }
+            set
+            {
+                hamburgerVisibility = value;
+                RaisePropertyChanged();
+            }
+        }
         public bool SecondContentVisibility
         {
             get
@@ -249,6 +291,13 @@ namespace ZCMobileDemo.Lite.ViewModels
             Detail = page;
             return Task.FromResult(page);
         }
+
+        //public Task PushAsyncInitialPage(Page page)
+        //{
+        //    Detail = page;
+        //    return Task.FromResult(page);
+        //}
+
         public Task PushAsync1(Page page)
         {
             Detail1 = page;
@@ -376,6 +425,20 @@ namespace ZCMobileDemo.Lite.ViewModels
             return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
+        public Task<Page> PopAsyncInitialPages(bool logoutRequest = false)
+        {
+            Page page = null;
+
+            if (!logoutRequest && initialPages.Count > 1)
+            {
+                initialPages.Pop();
+            }
+
+            page = initialPages.Pop();
+            Detail = page;
+            return page != null ? Task.FromResult(page) : navigation.PopAsync();
+        }
+
         public Task<Page> PopAsync(bool animated)
         {
             Page page = null;
@@ -487,17 +550,17 @@ namespace ZCMobileDemo.Lite.ViewModels
         #region Orientation change handling methods
         public void AdjustScreenOnOrientationChange(bool orientationChanges = false)
         {
-            this.GetSecondContentVisibility(orientationChanges);
+            this.GetSecondContentVisibility(true, orientationChanges);
         }
         #endregion
 
         #region Private Methods
-        private void GetSecondContentVisibility(bool orientationChanges = false)
+        private void GetSecondContentVisibility(bool isUSerLoggedIn, bool orientationChanges = false)
         {
-            App.MasterDetailVM.SecondContentVisibility = (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT);
-            App.MasterDetailVM.BackButtonVisibility = (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT);
-            App.MasterDetailVM.DetailGridColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2);
-            App.MasterDetailVM.DetailGridHeaderColSpan = ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4);
+            App.MasterDetailVM.SecondContentVisibility = (isUSerLoggedIn ? (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) : false);
+            App.MasterDetailVM.BackButtonVisibility = (isUSerLoggedIn ? (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT) : (Device.OS == TargetPlatform.iOS && initialPages.Count > 1));
+            App.MasterDetailVM.DetailGridColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2) : 2);
+            App.MasterDetailVM.DetailGridHeaderColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4) : 4);            
         }
         #endregion
     }

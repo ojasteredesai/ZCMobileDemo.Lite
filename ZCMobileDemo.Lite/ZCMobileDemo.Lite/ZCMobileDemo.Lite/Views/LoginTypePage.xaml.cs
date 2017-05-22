@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
-using ZCMobileDemo.Lite.Views;
 
-namespace ZCMobileDemo.Lite
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace ZCMobileDemo.Lite.Views
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class LoginTypePage : ContentPage
     {
-        #region Constructors
-        public MainPage()
+        #region Constructor
+        public LoginTypePage()
         {
             InitializeComponent();
         }
@@ -20,7 +22,8 @@ namespace ZCMobileDemo.Lite
         #region Private Methods
         private void Button_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new LoginPage();
+            //App.Current.MainPage = new LoginPage();
+            App.MasterDetailVM.PushAsync(new LoginPage());
         }
         #endregion
     }
