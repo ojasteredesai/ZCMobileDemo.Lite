@@ -18,6 +18,10 @@ namespace ZCMobileDemo.Lite.Views
         public LoginPage()
         {
             InitializeComponent();
+            if (App.MasterDetailVM != null)
+            {
+                App.MasterDetailVM.Header = "Login Page";
+            }
         }
         #endregion
 
