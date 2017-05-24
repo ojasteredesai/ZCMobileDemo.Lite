@@ -26,7 +26,7 @@
                  IsVisible="{Binding SideContentVisible, Source={x:Reference Name=Parent},Mode=TwoWay}" BackgroundColor="#01446b" Grid.Row="1"/>
             </ScrollView>
             <!--<StackLayout  Grid.Column="1" Grid.Row="0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand" BackgroundColor="Chocolate">-->
-            <Grid Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="Chocolate">
+            <Grid Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="#01446b">
                 <Grid.RowDefinitions>
                     <RowDefinition>
                         <RowDefinition.Height>
@@ -52,21 +52,23 @@
                         <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" />
                     </Image.GestureRecognizers>
                 </Image>
-                <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="10"
+                <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="12"
                        HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="End" Grid.Column="2" 
-                       Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}"  IsVisible="True" TextColor="Black" BackgroundColor="GreenYellow">
+                       Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}"  IsVisible="True" TextColor="White">
                 </Label>
-                <Label x:Name="headerTitle" HeightRequest="20" Text="{Binding Header}" BackgroundColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}" IsVisible="True">
+                <Label x:Name="headerTitle" HeightRequest="30" Text="{Binding Header}" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}" IsVisible="True">
                 </Label>
-                <Label x:Name="headerTitle1" HeightRequest="20" Text="{Binding Header1}" BackgroundColor="Yellow" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3" IsVisible="{Binding SecondContentVisibility}">
+                <Label x:Name="headerTitle1" HeightRequest="30" Text="{Binding Header1}" FontSize="Large"  TextColor="White"  VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="3" IsVisible="{Binding SecondContentVisibility}">
                 </Label>
-                <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding SecondContentVisibility}" TextColor="Black">
+                <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="12" 
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                       VerticalOptions="Center" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding SecondContentVisibility}" TextColor="White">
                 </Label>
             </Grid>
             <!--</StackLayout>-->
-            <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="Khaki" Grid.Row="1" Grid.ColumnSpan="{Binding DetailGridColSpan}"  IsVisible="True"/>
-            <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="LightCoral" Grid.Row="1" IsVisible="{Binding SecondContentVisibility}"/>
+            <ContentView Grid.Column="1"  x:Name="DetailContainer" BackgroundColor="LightGray" Grid.Row="1" Grid.ColumnSpan="{Binding DetailGridColSpan}"  IsVisible="True"/>
+            <ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="LightCyan" Grid.Row="1" IsVisible="{Binding SecondContentVisibility}"/>
             <!--<ContentView Grid.Column="2"  x:Name="DetailContainer1" BackgroundColor="Gray" Grid.Row="1" IsVisible="{Binding SecondDetailPageVisible, Source={x:Reference Name=Parent}"/>-->
 
 
@@ -77,7 +79,15 @@
         </Grid>
         <!-- Overlay -->
         <ContentView x:Name="overlay" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" IsVisible="{Binding IsExecuting}" BackgroundColor="Transparent">
-            <ActivityIndicator x:Name="activityIndicator" IsRunning="{Binding IsExecuting}" IsVisible="{Binding IsExecuting}" BackgroundColor="Transparent" HeightRequest="300" WidthRequest="300"></ActivityIndicator>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Black">
+                <ActivityIndicator  x:Name="activityIndicator" IsRunning="{Binding IsExecuting}" IsVisible="{Binding IsExecuting}" Color="White">
+                    <ActivityIndicator.Margin>
+                        <OnPlatform iOS="10" Android="5" x:TypeArguments="Thickness"></OnPlatform>
+                    </ActivityIndicator.Margin>
+                </ActivityIndicator>
+                <Label Text="Loading...." TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="5">
+                </Label>
+            </StackLayout>
         </ContentView>
     </AbsoluteLayout>
 </ContentPage>

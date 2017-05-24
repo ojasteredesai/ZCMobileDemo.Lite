@@ -35,6 +35,7 @@ namespace ZCMobileDemo.Lite.Views
         {
             //App.Current.MainPage = new MainPage(true);
             // App.MasterDetailVM.PopAsyncInitialPages();
+            App.MasterDetailVM.Header = "Data Center Page";
             App.MasterDetailVM.PushAsync(new MainPage());
         }
     }

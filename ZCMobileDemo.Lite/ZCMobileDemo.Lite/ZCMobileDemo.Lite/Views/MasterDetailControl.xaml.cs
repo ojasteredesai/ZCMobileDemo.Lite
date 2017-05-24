@@ -124,7 +124,7 @@ namespace ZCMobileDemo.Lite.Views
                // var navigationPage = new NavigationPage(masterDetail);
                 var navigationPage = masterDetail;
                 viewModel.SetNavigation(navigationPage.Navigation);
-                viewModel.Header = (userLoggedIn ? "Dashboard" : "Login Page");
+                viewModel.Header = (!string.IsNullOrEmpty(App.UserSession.SelectedDataCenter) ? "Login Page" : "Data Center Page");
                 viewModel.RightButton = string.Empty;
                 masterDetail.BindingContext = viewModel;
                 App.MasterDetailVM = viewModel;

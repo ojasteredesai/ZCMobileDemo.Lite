@@ -18,6 +18,7 @@ namespace ZCMobileDemo.Lite.Views.Module
             App.IsUSerLoggedIn = true;
             App.MasterDetailVM.HamburgerVisibility = App.IsUSerLoggedIn;
             App.UserSession.SideContentVisibility = (!App.MasterDetailVM.Isportrait);
+            App.MasterDetailVM.Header = "Dashboard";
         }
     }
 }

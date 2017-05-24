@@ -16,6 +16,7 @@ namespace ZCMobileDemo.Lite.Views
         public LoginTypePage()
         {
             InitializeComponent();
+            App.MasterDetailVM.Header = "Login Type Page";
         }
         #endregion
 

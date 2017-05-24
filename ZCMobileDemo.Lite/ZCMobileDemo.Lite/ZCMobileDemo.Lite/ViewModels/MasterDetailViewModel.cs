@@ -99,6 +99,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                             else
                             {
                                 RemoveAllPages();
+                                App.MasterDetailVM.Header = "Login Page";
                                 App.MasterDetailVM.HamburgerVisibility = false;
                                 App.IsUSerLoggedIn = false;
                                 App.UserSession.SideContentVisibility = false;
