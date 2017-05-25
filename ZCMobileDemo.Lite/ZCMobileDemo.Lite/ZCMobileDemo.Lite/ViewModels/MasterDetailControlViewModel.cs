@@ -33,11 +33,15 @@ namespace ZCMobileDemo.Lite.ViewModels
         private const int SECOND_CONTENT_PAGE_COUNT = 1;
         private bool isExecuting = false;
         private bool hamburgerVisibility = false;
-       // private bool popAsyncRequest = false;
+        // private bool popAsyncRequest = false;
         #endregion
 
         #region Public Properties
         #region Detail Container properties
+        /// <summary>
+        /// Property to set the application pages. e.g list and detail pages.
+        /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property.
+        /// </summary>
         public Page Detail
         {
             get { return detail; }
@@ -77,6 +81,10 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
         }
 
+        /// <summary>
+        /// Property to set the application pages. e.g list and detail pages.
+        /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property. 
+        /// </summary>
         public Page Detail1
         {
             get { return detail1; }
@@ -102,24 +110,36 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Right Button and Header Properties
+        /// <summary>
+        /// Header property for first content view.
+        /// </summary>
         public string Header
         {
             get { return header; }
             set { header = value; RaisePropertyChanged(); }
         }
 
+        /// <summary>
+        /// Header property for second content view.
+        /// </summary>
         public string Header1
         {
             get { return header1; }
             set { header1 = value; RaisePropertyChanged(); }
         }
 
+        /// <summary>
+        /// ... button for first content view.
+        /// </summary>
         public string RightButton
         {
             get { return rightButton; }
             set { rightButton = value; RaisePropertyChanged(); }
         }
 
+        /// <summary>
+        /// ... button for second content view.
+        /// </summary>
         public string RightButton1
         {
             get { return rightButton1; }
@@ -128,6 +148,9 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Navigation Properties
+        /// <summary>
+        /// This property returns current device orientation.
+        /// </summary>
         public bool Isportrait
         {
             get
@@ -183,7 +206,9 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Visibility Control and Grid ColumnSpan Properties
-
+        /// <summary>
+        /// HamburgerVisibility property
+        /// </summary>
         public bool HamburgerVisibility
         {
             get
@@ -196,6 +221,10 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
+
+        /// <summary>
+        /// SecondContentVisibility property
+        /// </summary>
         public bool SecondContentVisibility
         {
             get
@@ -208,6 +237,10 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
+
+        /// <summary>
+        /// BackButtonVisibility property.
+        /// </summary>
         public bool BackButtonVisibility
         {
             get
@@ -220,6 +253,10 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
+
+        /// <summary>
+        /// DetailGridColSpan property to set the page as per orientation. It defines the colspan for grid for proper display as per orientation.
+        /// </summary>
         public int DetailGridColSpan
         {
             get
@@ -232,6 +269,10 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged();
             }
         }
+
+        /// <summary>
+        ///  DetailGridColSpan property to set the page as per orientation. It defines the colspan for grid for proper display header as per orientation.
+        /// </summary>
         public int DetailGridHeaderColSpan
         {
             get
@@ -245,6 +286,9 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
         }
 
+        /// <summary>
+        /// returns true if any operation is being executed. it is used to manage activity indicator
+        /// </summary>
         public bool IsExecuting
         {
             get
@@ -258,6 +302,10 @@ namespace ZCMobileDemo.Lite.ViewModels
                 RaisePropertyChanged(nameof(IsPageEnabled));
             }
         }
+
+        /// <summary>
+        ///  returns false if any operation is being executed. it is used to disable events when activity indicator is running.
+        /// </summary>
         public bool IsPageEnabled
         {
             get
@@ -270,6 +318,11 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Push and Pop Methods
+        /// <summary>
+        /// This is the method to push pages for navigation.
+        /// It manages the navigation stack to push pages as per orientation and size of stack.
+        /// </summary>
+        /// <param name="navigationData"></param>
         public void PushAsync(ZCMobileNavigationData navigationData)
         {
             if (Isportrait || pages.Count == 0) // This is for potrait mode
@@ -286,6 +339,11 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
         }
 
+        /// <summary>
+        /// Use this method for navigation before login where there is no need dealing with second detail container.
+        /// </summary>
+        /// <param name="page"></param>
+        /// <returns></returns>
         public Task PushAsync(Page page)
         {
             Detail = page;
@@ -319,6 +377,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// <summary>
         /// This method handles submit event when the submitted data is to the previous page.
         /// PopAsync is not useful as it retreives the previous page and setting updated binding context can not be set.
+        /// We will make this method obsolete as message center seems the better approach.
         /// </summary>
         /// <param name="previousPage"></param>
         /// <returns></returns>
@@ -371,6 +430,11 @@ namespace ZCMobileDemo.Lite.ViewModels
             return page != null ? Task.FromResult(page) : Task.FromResult(previousPage);
         }
 
+        /// <summary>
+        /// This method is used to pop pages on pressing back button.
+        /// It pops up the pages as per orientation and detail container visibility.
+        /// </summary>
+        /// <returns></returns>
         public Task<Page> PopAsync1()
         {
             Page page = null;
@@ -413,6 +477,10 @@ namespace ZCMobileDemo.Lite.ViewModels
             return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
+        /// <summary>
+        /// This method pops up the pages where there is no need dealing with second container.
+        /// </summary>
+        /// <returns></returns>
         public Task<Page> PopAsync()
         {
             Page page = null;
@@ -425,6 +493,11 @@ namespace ZCMobileDemo.Lite.ViewModels
             return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
+        /// <summary>
+        /// This method is for poping up pages for navigation before login.
+        /// </summary>
+        /// <param name="logoutRequest"></param>
+        /// <returns></returns>
         public Task<Page> PopAsyncInitialPages(bool logoutRequest = false)
         {
             Page page = null;
@@ -533,11 +606,25 @@ namespace ZCMobileDemo.Lite.ViewModels
             navigation.RemovePage(page);
         }
 
+        /// <summary>
+        /// Clears the page stack.
+        /// </summary>
         public void RemoveAllPages()
         {
             if (pages.Count > 0)
             {
                 pages.Clear();
+            }
+        }
+
+        /// <summary>
+        /// Clears the initial page stack.
+        /// </summary>
+        public void RemoveAllInitialPages()
+        {
+            if (initialPages.Count > 0)
+            {
+                initialPages.Clear();
             }
         }
 
@@ -548,6 +635,10 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Orientation change handling methods
+        /// <summary>
+        /// To do
+        /// </summary>
+        /// <param name="orientationChanges"></param>
         public void AdjustScreenOnOrientationChange(bool orientationChanges = false)
         {
             this.GetSecondContentVisibility(true, orientationChanges);
@@ -555,6 +646,11 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Private Methods
+        /// <summary>
+        /// Manages second content visibility.
+        /// </summary>
+        /// <param name="isUSerLoggedIn"></param>
+        /// <param name="orientationChanges"></param>
         private void GetSecondContentVisibility(bool isUSerLoggedIn, bool orientationChanges = false)
         {
             App.MasterDetailVM.SecondContentVisibility = (isUSerLoggedIn ? (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) : false);

@@ -104,6 +104,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                                 App.IsUSerLoggedIn = false;
                                 App.UserSession.SideContentVisibility = false;
                                 App.MasterDetailVM.PopAsyncInitialPages(true);
+                                RemoveAllInitialPages();
                             }
                         };
 

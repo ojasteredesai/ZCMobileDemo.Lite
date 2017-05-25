@@ -19,7 +19,9 @@ namespace ZCMobileDemo.Lite.Views
         #endregion
 
         #region Public Bindable Properties
-
+        /// <summary>
+        /// Bindable property for navigation slider.
+        /// </summary>
         public static readonly BindableProperty SideContentProperty = BindableProperty.Create("SideContent",
             typeof(Xamarin.Forms.View), typeof(MasterDetailControl), null, propertyChanged: (bindable, value, newValue) =>
             {
@@ -29,6 +31,9 @@ namespace ZCMobileDemo.Lite.Views
             });
 
 
+        /// <summary>
+        /// Bindable property for contentview. When the orientation is landscape it holds pages like listview and divison/requisition selector
+        /// </summary>
         public BindableProperty DetailProperty = BindableProperty.Create("Detail",
             typeof(ContentPage), typeof(MasterDetailControl),
             propertyChanged: (bindable, value, newValue) =>
@@ -45,7 +50,10 @@ namespace ZCMobileDemo.Lite.Views
 
             });
 
-
+        /// <summary>
+        ///  Bindable property for contentview1. When the orientation is landscape it holds pages like detail view and filters.
+        ///  It is not visible for portrait mode.
+        /// </summary>
         public BindableProperty DetailProperty1 = BindableProperty.Create("Detail1",
             typeof(ContentPage), typeof(MasterDetailControl),
             propertyChanged: (bindable, value, newValue) =>
@@ -62,6 +70,9 @@ namespace ZCMobileDemo.Lite.Views
 
             });
 
+        /// <summary>
+        /// Gets and sets the navigation slider.
+        /// </summary>
         public View SideContent
         {
             get { return (Xamarin.Forms.View)GetValue(SideContentProperty); }
@@ -76,17 +87,17 @@ namespace ZCMobileDemo.Lite.Views
             }
         }
 
-        public bool SecondDetailPageVisible
-        {
-            get
-            {
-                return secondDetailPageVisible;
-            }
-            set
-            {
-                secondDetailPageVisible = value;
-            }
-        }
+        //public bool SecondDetailPageVisible
+        //{
+        //    get
+        //    {
+        //        return secondDetailPageVisible;
+        //    }
+        //    set
+        //    {
+        //        secondDetailPageVisible = value;
+        //    }
+        //}
         #endregion
 
         #region Constructors
@@ -99,17 +110,35 @@ namespace ZCMobileDemo.Lite.Views
         #endregion
 
         #region Public Methods
+        /// <summary>
+        /// This is the method that initiates masterdetail page. It binds the page with the master view model that is being used across the application code.
+        /// </summary>
+        /// <typeparam name="TView"></typeparam>
+        /// <typeparam name="TViewModel"></typeparam>
+        /// <param name="userLoggedIn"></param>
+        /// <param name="page"></param>
+        /// <returns></returns>
         public static Page Create<TView, TViewModel>(bool userLoggedIn = true, Page page = null) where TView : MasterDetailControl, new()
             where TViewModel : MasterDetailControlViewModel, new()
         {
             return Create<TView, TViewModel>(new TViewModel(), userLoggedIn, page);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TView"></typeparam>
+        /// <typeparam name="TViewModel"></typeparam>
+        /// <param name="viewModel"></param>
+        /// <param name="userLoggedIn"></param>
+        /// <param name="page"></param>
+        /// <returns></returns>
         public static Page Create<TView, TViewModel>(TViewModel viewModel, bool userLoggedIn = true, Page page = null) where TView : MasterDetailControl, new()
             where TViewModel : MasterDetailControlViewModel
         {
             try
             {
+                #region commented code
                 //This condition sets the visibility of the side bar as per device orientation. For portrait mode side content is not shown.
                 //if (userLoggedIn)
                 //{
@@ -120,6 +149,7 @@ namespace ZCMobileDemo.Lite.Views
                 //{
                 //    App.UserSession.SideContentVisibility = false;
                 //}
+                #endregion
                 var masterDetail = new TView();
                // var navigationPage = new NavigationPage(masterDetail);
                 var navigationPage = masterDetail;
@@ -150,6 +180,11 @@ namespace ZCMobileDemo.Lite.Views
         #endregion
 
         #region Private Methods
+        /// <summary>
+        /// Hamgurger icon method. This method to be converted to ICommand implementation.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             App.MasterDetailVM.IsExecuting = true;
@@ -158,6 +193,11 @@ namespace ZCMobileDemo.Lite.Views
             App.MasterDetailVM.IsExecuting = false;
         }
 
+        /// <summary>
+        /// Back button method for IOS. To be converted to ICommand implementation.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void TapGestureRecognizerBack_Tapped(object sender, EventArgs e)
         {
             if (App.IsUSerLoggedIn)
