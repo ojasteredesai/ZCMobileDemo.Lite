@@ -13,7 +13,7 @@ namespace ZCMobileDemo.Lite.Controls
     public class AccordionButton : Button
     {
         #region Private Variables
-        bool mExpand = false;
+        bool expand = false;
         #endregion
 
         #region Constructors
@@ -29,8 +29,8 @@ namespace ZCMobileDemo.Lite.Controls
         #region Properties
         public bool Expand
         {
-            get { return mExpand; }
-            set { mExpand = value; }
+            get { return expand; }
+            set { expand = value; }
         }
         public ContentView AssosiatedContent
         { get; set; }

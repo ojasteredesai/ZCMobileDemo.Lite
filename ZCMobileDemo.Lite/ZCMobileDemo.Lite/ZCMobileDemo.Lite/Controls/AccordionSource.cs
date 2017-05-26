@@ -14,7 +14,7 @@ namespace ZCMobileDemo.Lite.Controls
     public class AccordionSource
     {
         #region Private Members
-        private View _ContentItems;
+        private View contentItems;
         #endregion
 
         #region Properties
@@ -24,12 +24,12 @@ namespace ZCMobileDemo.Lite.Controls
 
         public View ContentItems
         {
-            get { return _ContentItems; }
+            get { return contentItems; }
             set
             {
-                _ContentItems = value;
-                if (_ContentItems != null)
-                    _ContentItems.BackgroundColor = Color.FromHex("#01446b");
+                contentItems = value;
+                if (contentItems != null)
+                    contentItems.BackgroundColor = Color.FromHex("#01446b");
             }
         }
         #endregion
