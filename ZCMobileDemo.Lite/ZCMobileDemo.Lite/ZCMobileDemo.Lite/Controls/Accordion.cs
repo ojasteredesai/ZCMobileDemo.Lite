@@ -13,9 +13,9 @@ namespace ZCMobileDemo.Lite.Controls
     public class Accordion : ContentView
     {
         #region Private Variables
-        List<AccordionSource> mDataSource;
-        bool mFirstExpaned = false;
-        StackLayout mMainLayout;
+        List<AccordionSource> accordianDataSource;
+        bool firstExpaned = false;
+        StackLayout MainLayout;
 
 
         #endregion
@@ -23,12 +23,12 @@ namespace ZCMobileDemo.Lite.Controls
         #region Constructors
         public Accordion()
         {
-            var mMainLayout = new StackLayout();
-            Content = mMainLayout;
+            var mainLayout = new StackLayout();
+            Content = mainLayout;
         }
         public Accordion(List<AccordionSource> aSource)
         {
-            mDataSource = aSource;
+            accordianDataSource = aSource;
             DataBind();
         }
         #endregion
@@ -36,75 +36,69 @@ namespace ZCMobileDemo.Lite.Controls
         #region Properties
         public List<AccordionSource> DataSource
         {
-            get { return mDataSource; }
-            set { mDataSource = value; }
+            get { return accordianDataSource; }
+            set { accordianDataSource = value; }
         }
         public bool FirstExpaned
         {
-            get { return mFirstExpaned; }
-            set { mFirstExpaned = value; }
+            get { return firstExpaned; }
+            set { firstExpaned = value; }
         }
         #endregion
 
         #region Public Methods
         public void DataBind()
         {
-            var vMainLayout = new StackLayout();
+            var mainLayout = new StackLayout();
 
-            var vFirst = true;
-            if (mDataSource != null)
+            var first = true;
+            if (accordianDataSource != null)
             {
-                foreach (var vSingleItem in mDataSource)
+                foreach (var singleItem in accordianDataSource)
                 {
 
-                    var vHeaderButton = new AccordionButton()
+                    var headerButton = new AccordionButton()
                     {
-                        Text = vSingleItem.HeaderText,
-                        TextColor = vSingleItem.HeaderTextColor,
-                        BackgroundColor = vSingleItem.HeaderBackGroundColor
+                        Text = singleItem.HeaderText,
+                        TextColor = singleItem.HeaderTextColor,
+                        BackgroundColor = singleItem.HeaderBackGroundColor
                     };
 
-                    var vAccordionContent = new ContentView()
+                    var accordionContent = new ContentView()
                     {
-                        Content = vSingleItem.ContentItems,
+                        Content = singleItem.ContentItems,
                         IsVisible = false
                     };
-                    if (vFirst)
+                    if (first)
                     {
-                        vHeaderButton.Expand = mFirstExpaned;
-                        vAccordionContent.IsVisible = mFirstExpaned;
-                        vFirst = false;
+                        headerButton.Expand = firstExpaned;
+                        accordionContent.IsVisible = firstExpaned;
+                        first = false;
                     }
-                    vHeaderButton.AssosiatedContent = vAccordionContent;
-                    vHeaderButton.Clicked += OnAccordionButtonClicked;
-                    vMainLayout.Children.Add(vHeaderButton);
-                    vMainLayout.Children.Add(vAccordionContent);
+                    headerButton.AssosiatedContent = accordionContent;
+                    headerButton.Clicked += OnAccordionButtonClicked;
+                    mainLayout.Children.Add(headerButton);
+                    mainLayout.Children.Add(accordionContent);
                 }
             }
-            mMainLayout = vMainLayout;
-            Content = mMainLayout;
+            MainLayout = mainLayout;
+            Content = MainLayout;
         }
 
         void OnAccordionButtonClicked(object sender, EventArgs args)
         {
-            foreach (var vChildItem in mMainLayout.Children)
-            {
-                if (vChildItem.GetType() == typeof(ContentView))
-                    vChildItem.IsVisible = false;
-                if (vChildItem.GetType() == typeof(AccordionButton))
-                {
-                    var vButton = (AccordionButton)vChildItem;
-                    vButton.Expand = false;
-                }
-            }
-            var vSenderButton = (AccordionButton)sender;
+            var senderButton = (AccordionButton)sender;
 
-            if (vSenderButton.Expand)
+            if (senderButton.Expand)
             {
-                vSenderButton.Expand = false;
+                senderButton.Expand = false;
             }
-            else vSenderButton.Expand = true;
-            vSenderButton.AssosiatedContent.IsVisible = vSenderButton.Expand;
+            else
+            {
+                senderButton.Expand = true;
+            }
+
+            senderButton.AssosiatedContent.IsVisible = senderButton.Expand;
         }
         #endregion
     }
