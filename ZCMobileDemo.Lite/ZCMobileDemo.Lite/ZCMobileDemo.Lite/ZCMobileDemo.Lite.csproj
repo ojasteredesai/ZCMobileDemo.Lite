@@ -42,7 +42,23 @@
     <Compile Include="Controls\Accordion.cs" />
     <Compile Include="Controls\AccordionButton.cs" />
     <Compile Include="Controls\AccordionSource.cs" />
+    <Compile Include="Extension\TranslateExtension.cs" />
+    <Compile Include="Interfaces\ILocalization.cs" />
     <Compile Include="Interfaces\IZCMobileNavigation.cs" />
+    <Compile Include="Model\Language.cs" />
+    <Compile Include="Resources\UIPageResources.de.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIPageResources.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UIPageResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIPageResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\CultureUtility.cs" />
+    <Compile Include="Utility\LinqExtensions.cs" />
+    <Compile Include="ViewModels\DossierViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Views\LoginTypePage.xaml.cs">
@@ -76,6 +92,9 @@
     <Compile Include="Views\Module\Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Module\Dossier.xaml.cs">
+      <DependentUpon>Dossier.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Module\Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
     </Compile>
@@ -96,6 +115,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\UIPageResources.de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UIPageResources.de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UIPageResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UIPageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -184,6 +211,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\LoginTypePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Module\Dossier.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

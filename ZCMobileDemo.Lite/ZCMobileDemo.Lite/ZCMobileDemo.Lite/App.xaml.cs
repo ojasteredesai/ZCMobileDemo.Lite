@@ -77,6 +77,7 @@ namespace ZCMobileDemo.Lite
             PageTitels.Add("page4", "Page 4");
             PageTitels.Add("page5", "Page 5");
             PageTitels.Add("page6", "Page 6");
+            PageTitels.Add("dossier", "Dossier");
         }
         #endregion
     }

@@ -5,9 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZCMobileDemo.Lite.Controls;
 using ZCMobileDemo.Lite.Interfaces;
 using ZCMobileDemo.Lite.Model;
+using ZCMobileDemo.Lite.Utility;
 using ZCMobileDemo.Lite.Views;
+using ZCMobileDemo.Lite.Views.Module;
+using ZCMobileDemo.Lite.Views.Timesheet;
 
 namespace ZCMobileDemo.Lite.ViewModels
 {
@@ -313,6 +317,34 @@ namespace ZCMobileDemo.Lite.ViewModels
                 return !IsExecuting;
             }
         }
+
+        #endregion
+
+        #region Accordion
+        private StackLayout _AccordionContent;
+
+        public StackLayout AccordionContent
+        {
+            get { return _AccordionContent; }
+            set { _AccordionContent = value; }
+        }
+
+        private ObservableCollection<AccordionSource> _AccordionItems;
+
+        public ObservableCollection<AccordionSource> AccordionItems
+        {
+            get { return _AccordionItems ?? (_AccordionItems = new ObservableCollection<AccordionSource>()); }
+            set { _AccordionItems = value; }
+        }
+        private bool _FirstExpaned;
+
+        public bool FirstExpaned
+        {
+            get { return _FirstExpaned; }
+            set { _FirstExpaned = value; }
+        }
+
+
 
         #endregion
         #endregion
@@ -699,6 +731,276 @@ namespace ZCMobileDemo.Lite.ViewModels
             App.MasterDetailVM.BackButtonVisibility = (isUSerLoggedIn ? (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT) : (Device.OS == TargetPlatform.iOS && initialPages.Count > 1));
             App.MasterDetailVM.DetailGridColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2) : 2);
             App.MasterDetailVM.DetailGridHeaderColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4) : 4);
+        }
+
+        /// <summary>
+        /// Prepared a Sample Object for Accrodion control
+        /// </summary>
+        /// <returns></returns>
+        private List<AccordionSource> GetSampleData()
+        {
+            var vResult = new List<AccordionSource>();
+            var accordianObject = PreparedObject();
+            foreach (var item in accordianObject)
+            {
+
+                Grid gd = new Grid();
+                // gd.BackgroundColor = Color.FromHex("#01446b");
+                if (item.ChildItemList.Count > 0)
+                {
+                    foreach (var child in item.ChildItemList)
+                    {
+                        gd.RowDefinitions.Add(new RowDefinition { Height = 25 });
+                        gd.RowSpacing = 1;
+                        gd.ColumnSpacing = 1;
+                        gd.Margin = new Thickness(2, 0, 0, 0);
+                    }
+                    if (item.ChildItemList.Any(q => q.BubbleCount > 0))
+                    {
+                        gd.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                        Device.OnPlatform(iOS: () =>
+                        {
+                            gd.ColumnDefinitions.Add(new ColumnDefinition { Width = 25 });
+                        }, Android: () =>
+                        {
+                            gd.ColumnDefinitions.Add(new ColumnDefinition { Width = 30 });
+                        });
+
+
+                    }
+                    int rowCount = 0;
+                    foreach (var actual in item.ChildItemList)
+                    {
+                        Label lbl = new Label();
+                        lbl.Text = actual.TextValue;
+                        //lbl.HeightRequest = 30;
+                        lbl.StyleId = actual.DataValue;
+                        lbl.Margin = new Thickness(2, 0, 0, 0);
+                        lbl.TextColor = Color.FromHex("#c1eaf6");
+                        TapGestureRecognizer tg = new TapGestureRecognizer();
+                        tg.Tapped += (ea, sa) =>
+                        {
+                            var label = ea as Label;
+                            if (label.Text != "Logout" && label.Text != "Information")
+                            {
+                                RemoveAllPages();
+                                //Header = "Page 1";
+                                //RightButton = "...";
+                                //var page = new Page1();
+                                var navigationData = new ZCMobileNavigationData
+                                {
+                                    CurrentPage = null,
+                                    CurrentPageTitle = string.Empty,
+                                    NextPage = new Page1(),
+                                    NextPageTitle = App.PageTitels["page1"]
+                                };
+
+                                PushAsync(navigationData);
+
+                                if (App.MasterDetailVM.Isportrait)
+                                {
+                                    App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
+                                    RaisePropertyChanged("SideContentVisible");
+                                }
+                            }
+                            else if (label.Text == "Information")
+                            {
+                                //de
+                                var navigationData = new ZCMobileNavigationData
+                                {
+                                    CurrentPage = null,
+                                    CurrentPageTitle = string.Empty,
+                                    NextPage = new Dossier(),
+                                    NextPageTitle = App.PageTitels["dossier"]
+                                };
+
+                                PushAsync(navigationData);
+                                if (App.MasterDetailVM.Isportrait)
+                                {
+                                    App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
+                                    RaisePropertyChanged("SideContentVisible");
+                                }
+
+                            }
+
+                            else
+                            {
+                                RemoveAllPages();
+                                App.MasterDetailVM.Header = "Login Page";
+                                App.MasterDetailVM.HamburgerVisibility = false;
+                                App.IsUSerLoggedIn = false;
+                                App.UserSession.SideContentVisibility = false;
+                                App.MasterDetailVM.PopAsyncInitialPages(true);
+                                RemoveAllInitialPages();
+                            }
+                        };
+
+                        lbl.GestureRecognizers.Add(tg);
+                        Grid.SetRow(lbl, rowCount);
+                        if (actual.BubbleCount > 0)
+                        {
+                            BoxView bx = new BoxView();
+                            bx.HeightRequest = 5;
+                            bx.WidthRequest = 5;
+
+                            bx.BackgroundColor = Color.White;
+                            Grid.SetColumn(bx, 1);
+                            Grid.SetRow(bx, rowCount);
+
+                            gd.Children.Add(bx);
+
+                            Label bubblecount = new Label();
+                            //bubblecount.HeightRequest = 10;
+                            //bubblecount.WidthRequest = 10;
+                            bubblecount.Text = actual.BubbleCount.ToString();
+                            bubblecount.VerticalTextAlignment = TextAlignment.Center;
+                            bubblecount.HorizontalOptions = LayoutOptions.Center;
+                            bubblecount.VerticalOptions = LayoutOptions.Center;
+
+                            Grid.SetColumn(bubblecount, 1);
+                            Grid.SetRow(bubblecount, rowCount);
+                            gd.Children.Add(bubblecount);
+                        }
+                        gd.Children.Add(lbl);
+                        rowCount++;
+                    }
+
+                    vResult.Add(new AccordionSource
+                    {
+                        HeaderText = item.HeaderText,
+                        HeaderTextColor = Color.FromHex("#c1eaf6"),
+                        HeaderBackGroundColor = Color.FromHex("#3c9ece"),
+                        ContentItems = gd
+                    });
+                }
+                else
+                {
+                    vResult.Add(new AccordionSource
+                    {
+                        HeaderText = item.HeaderText,
+                        HeaderTextColor = Color.FromHex("#c1eaf6"),
+                        HeaderBackGroundColor = Color.FromHex("#3c9ece"),
+                        ContentItems = gd,
+                    });
+                }
+            }
+
+            return vResult;
+        }
+      
+        /// <summary>
+        /// Dummy data for side panel
+        /// </summary>
+        /// <returns></returns>
+        private List<SimpleObject> PreparedObject()
+        {
+            var dummyData = new List<SimpleObject>();
+
+            SimpleObject obj = new SimpleObject();
+            obj.HeaderText = CultureUtility.GetResxNameByValue("Submissions");
+            obj.ChildItemList.Add(new ChildItems { TextValue = CultureUtility.GetResxNameByValue("ManageSubmissions"), DataValue = "MS1" });
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = CultureUtility.GetResxNameByValue("Timesheet");
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Timesheet", DataValue = "T1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Create Timesheet", DataValue = "T2", BubbleCount = 5 });
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = "Expense";
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Expense Report", DataValue = "E1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Create Expense Report", DataValue = "E2" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Approve Expense Report", DataValue = "E3", BubbleCount = 2 });
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = "Engagement";
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Engagement", DataValue = "Eg1" });
+
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = "Payment";
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Payment History", DataValue = "P1" });
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = "Dossier";
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Information", DataValue = "D1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Security", DataValue = "D2" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Contact Us", DataValue = "D3" });
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = "Dashboard";
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Dashboard", DataValue = "D1" });
+            dummyData.Add(obj);
+
+            obj = new SimpleObject();
+            obj.HeaderText = "Logout";
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Logout", DataValue = "D1" });
+            dummyData.Add(obj);
+
+            return dummyData;
+        }
+
+        /// <summary>
+        /// Bind the data with ContentView of Side Panel
+        /// </summary>
+        public void LoadAccordian()
+        {
+
+            AccordionItems = GetSampleData().ToObservableCollection();
+            AccordionContent = new StackLayout();
+            var vFirst = true;
+            foreach (var vSingleItem in AccordionItems)
+            {
+
+                var vHeaderButton = new AccordionButton()
+                {
+                    Text = vSingleItem.HeaderText,
+                    TextColor = vSingleItem.HeaderTextColor,
+                    BackgroundColor = vSingleItem.HeaderBackGroundColor
+                };
+
+                var vAccordionContent = new ContentView()
+                {
+                    Content = vSingleItem.ContentItems,
+                    IsVisible = false
+                };
+                if (vFirst)
+                {
+                    vHeaderButton.Expand = _FirstExpaned;
+                    vAccordionContent.IsVisible = _FirstExpaned;
+                    vFirst = false;
+                }
+                vHeaderButton.AssosiatedContent = vAccordionContent;
+                vHeaderButton.Clicked += OnAccordionButtonClicked;
+                AccordionContent.Children.Add(vHeaderButton);
+                AccordionContent.Children.Add(vAccordionContent);
+            }
+        }
+
+        /// <summary>
+        /// Handle the Header click of Accordion control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        void OnAccordionButtonClicked(object sender, EventArgs args)
+        {
+            var senderButton = (AccordionButton)sender;
+
+            if (senderButton.Expand)
+            {
+                senderButton.Expand = false;
+            }
+            else
+            {
+                senderButton.Expand = true;
+            }
+
+            senderButton.AssosiatedContent.IsVisible = senderButton.Expand;
         }
         #endregion
     }

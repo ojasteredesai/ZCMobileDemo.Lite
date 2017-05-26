@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,8 +24,8 @@ namespace ZCMobileDemo.Lite.Controls
         #region Constructors
         public Accordion()
         {
-            var mainLayout = new StackLayout();
-            Content = mainLayout;
+            //var mMainLayout = new StackLayout();
+           // Content = mMainLayout;
         }
         public Accordion(List<AccordionSource> aSource)
         {
@@ -34,11 +35,25 @@ namespace ZCMobileDemo.Lite.Controls
         #endregion
 
         #region Properties
-        public List<AccordionSource> DataSource
+        public static readonly BindableProperty DataSourceProperty = BindableProperty.Create("DataSource", typeof(IEnumerable), typeof(Accordion), null);
+
+        public IList DataSource
         {
-            get { return accordianDataSource; }
-            set { accordianDataSource = value; }
+            get { return (IList)GetValue(DataSourceProperty); }
+            set { SetValue(DataSourceProperty, value); }
         }
+        public static readonly BindableProperty AccordianContentProperty = BindableProperty.Create("AccordianContent", typeof(Page), typeof(Accordion), null);
+
+        public Page AccordianContent
+        {
+            get { return (Page)GetValue(AccordianContentProperty); }
+            set { SetValue(AccordianContentProperty, value); }
+        }
+         /* public List<AccordionSource> DataSource
+          {
+              get { return mDataSource; }
+              set { mDataSource = value; }
+          }*/
         public bool FirstExpaned
         {
             get { return firstExpaned; }
