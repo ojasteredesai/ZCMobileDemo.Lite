@@ -4,7 +4,7 @@
              xmlns:b="clr-namespace:ZCMobileDemo.Lite.Behaviors"
              x:Class="ZCMobileDemo.Lite.Views.Module.Dossier">
     <ContentPage.Content>
-        <Grid>
+        <Grid VerticalOptions="Start">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35" />
             </Grid.RowDefinitions>
