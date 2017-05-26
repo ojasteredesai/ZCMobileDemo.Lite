@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZCMobileDemo.Lite.ViewModels;
 using ZCMobileDemo.Lite.Views;
 
 namespace ZCMobileDemo.Lite
@@ -14,27 +15,15 @@ namespace ZCMobileDemo.Lite
         public MainPage()
         {
             InitializeComponent();
+            this.BindingContext = new MainPageViewModel();
         }
         public MainPage(bool show)
         {
             InitializeComponent();
             backButton.IsVisible = show;
+            
         }
         #endregion
 
-        #region Private Methods
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            App.UserSession.SelectedDataCenter = "US";
-            App.Current.Properties[App.SelectedDataCenter] = App.UserSession.SelectedDataCenter;
-           // App.Current.MainPage = new LoginTypePage();
-            App.MasterDetailVM.PushAsync(new LoginTypePage());
-        }
-        #endregion
-
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new LoginPage();
-        }
     }
 }

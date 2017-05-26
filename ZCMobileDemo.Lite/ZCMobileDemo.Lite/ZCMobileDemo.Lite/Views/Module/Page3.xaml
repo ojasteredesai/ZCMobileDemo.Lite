@@ -7,7 +7,7 @@
         <Label Text="Page3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
         <Entry Text="{Binding Messsge1}" HeightRequest="40" WidthRequest="300" BackgroundColor="LightSlateGray" HorizontalOptions="Center"></Entry>
         <Entry Text="{Binding Messsge2}" HeightRequest="40" WidthRequest="300" BackgroundColor="LightSlateGray" HorizontalOptions="Center"></Entry>
-        <Button Text="Go to Page 4" Clicked="Button_Clicked" FontSize="Large"></Button>
-        <Button Text="Go to Previous Page" Clicked="Button_Clicked_1" FontSize="Large"></Button>
+        <Button Text="Go to Page 4" Command="{Binding Next}"  FontSize="Large"></Button>
+        <Button Text="Go to Previous Page" Command="{Binding Previous}" FontSize="Large"></Button>
     </StackLayout>  
 </ContentPage>

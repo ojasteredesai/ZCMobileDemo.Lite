@@ -38,10 +38,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviors\EventToCommand.cs" />
     <Compile Include="Controls\Accordion.cs" />
     <Compile Include="Controls\AccordionButton.cs" />
     <Compile Include="Controls\AccordionSource.cs" />
     <Compile Include="Interfaces\IZCMobileNavigation.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Views\LoginTypePage.xaml.cs">
       <DependentUpon>LoginTypePage.xaml</DependentUpon>
     </Compile>

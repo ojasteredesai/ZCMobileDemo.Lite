@@ -4,7 +4,7 @@
              x:Class="ZCMobileDemo.Lite.Views.LoginPage" StyleId="loginpage">
     <StackLayout x:Name="mainStack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
         <Label Text="Login Page" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
-        <Button Text="Go to Dashboard Page" Clicked="Button_Clicked" FontSize="Large"></Button>
-        <Button Text="Select Data Center" Clicked="Button_Clicked_1" FontSize="Large"></Button>
+        <Button Text="Go to Dashboard Page" Command="{Binding Dashboard}" FontSize="Large"></Button>
+        <Button Text="Select Data Center" Command="{Binding Datacenter}"  FontSize="Large"></Button>
     </StackLayout>
 </ContentPage>

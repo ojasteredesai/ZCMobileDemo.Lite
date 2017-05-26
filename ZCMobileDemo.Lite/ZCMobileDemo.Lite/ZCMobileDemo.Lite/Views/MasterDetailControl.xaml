@@ -49,7 +49,7 @@
                 </Image>
                 <Image Source="back.png" HeightRequest="20"  Grid.Column="1" IsVisible="{Binding BackButtonVisibility}">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizerBack_Tapped" />
+                        <TapGestureRecognizer Command="{Binding Back}" />
                     </Image.GestureRecognizers>
                 </Image>
                 <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="12"

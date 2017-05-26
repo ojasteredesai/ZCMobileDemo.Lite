@@ -22,25 +22,8 @@ namespace ZCMobileDemo.Lite.Views
             {
                 App.MasterDetailVM.Header = "Login Page";
             }
+            this.BindingContext = new LoginViewModel();
         }
         #endregion
-
-        #region Private Methods
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            //  App.MasterDetailVM.IsExecuting = true;
-            //App.Current.MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>();
-            App.MasterDetailVM.PushAsync(new Dashboard());
-            // App.MasterDetailVM.IsExecuting = false;
-        }
-        #endregion
-
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            //App.Current.MainPage = new MainPage(true);
-            // App.MasterDetailVM.PopAsyncInitialPages();
-            App.MasterDetailVM.Header = "Data Center Page";
-            App.MasterDetailVM.PushAsync(new MainPage());
-        }
     }
 }

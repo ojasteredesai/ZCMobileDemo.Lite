@@ -213,7 +213,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         {
             get
             {
-                return hamburgerVisibility; 
+                return hamburgerVisibility;
             }
             set
             {
@@ -315,6 +315,47 @@ namespace ZCMobileDemo.Lite.ViewModels
         }
 
         #endregion
+        #endregion
+        #region Commands
+        private RelayCommand _Back;
+
+        public RelayCommand Back
+        {
+            get
+            {
+                return _Back ?? (_Back = new RelayCommand(() =>
+                {
+                    if (App.IsUSerLoggedIn)
+                    {
+                        App.MasterDetailVM.IsExecuting = true;
+                        App.MasterDetailVM.PopAsync1();
+                        App.MasterDetailVM.IsExecuting = false;
+                    }
+                    else
+                    {
+                        App.MasterDetailVM.PopAsyncInitialPages();
+                    }
+                }));
+            }
+            set { _Back = value; }
+        }
+        private RelayCommand _Hamburger;
+
+        public RelayCommand Hamburger
+        {
+            get
+            {
+                return _Hamburger ?? (_Hamburger = new RelayCommand(() =>
+                {
+                    App.MasterDetailVM.IsExecuting = true;
+                    App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
+                    App.MasterDetailVM.RaisePropertyChanged("SideContentVisible");
+                    App.MasterDetailVM.IsExecuting = false;
+                }));
+            }
+            set { _Hamburger = value; }
+        }
+
         #endregion
 
         #region Push and Pop Methods
@@ -656,7 +697,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             App.MasterDetailVM.SecondContentVisibility = (isUSerLoggedIn ? (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) : false);
             App.MasterDetailVM.BackButtonVisibility = (isUSerLoggedIn ? (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT) : (Device.OS == TargetPlatform.iOS && initialPages.Count > 1));
             App.MasterDetailVM.DetailGridColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 2) : 2);
-            App.MasterDetailVM.DetailGridHeaderColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4) : 4);            
+            App.MasterDetailVM.DetailGridHeaderColSpan = (isUSerLoggedIn ? ((!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) ? 1 : 4) : 4);
         }
         #endregion
     }

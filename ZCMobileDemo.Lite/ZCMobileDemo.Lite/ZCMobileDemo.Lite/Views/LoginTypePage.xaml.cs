@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ZCMobileDemo.Lite.ViewModels;
 
 namespace ZCMobileDemo.Lite.Views
 {
@@ -17,14 +18,7 @@ namespace ZCMobileDemo.Lite.Views
         {
             InitializeComponent();
             App.MasterDetailVM.Header = "Login Type Page";
-        }
-        #endregion
-
-        #region Private Methods
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            //App.Current.MainPage = new LoginPage();
-            App.MasterDetailVM.PushAsync(new LoginPage());
+            this.BindingContext = new LoginViewModel();
         }
         #endregion
     }
