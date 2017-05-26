@@ -13,52 +13,60 @@ namespace ZCMobileDemo.Lite.ViewModels
     /// </summary>
     public class LoginViewModel : BaseViewModel
     {
-        #region Command
-        private RelayCommand _Dashboard;
+        #region Private Members
+        private RelayCommand dashboardCommand;
+        private RelayCommand datacenterCommand;
+        private RelayCommand loginCommand;
+        #endregion
 
-        public RelayCommand Dashboard
+        #region Commands
+        /// <summary>
+        /// Dashboard
+        /// </summary>
+        public RelayCommand DashboardCommand
         {
             get
             {
-                return _Dashboard ?? (_Dashboard = new RelayCommand(() =>
+                return dashboardCommand ?? (dashboardCommand = new RelayCommand(() =>
                 {
                     App.MasterDetailVM.PushAsync(new Dashboard());
 
                 }));
             }
-            set { _Dashboard = value; }
+            set { dashboardCommand = value; }
         }
 
-        private RelayCommand _Datacenter;
-
-        public RelayCommand Datacenter
+        /// <summary>
+        /// DataCenter
+        /// </summary>
+        public RelayCommand DatacenterCommand
         {
             get
             {
-                return _Datacenter ?? (_Datacenter = new RelayCommand(() =>
+                return datacenterCommand ?? (datacenterCommand = new RelayCommand(() =>
                 {
                     App.MasterDetailVM.Header = "Data Center Page";
                     App.MasterDetailVM.PushAsync(new MainPage());
 
                 }));
             }
-            set { _Datacenter = value; }
+            set { datacenterCommand = value; }
         }
 
-        private RelayCommand _Login;
-
-        public RelayCommand Login
+        /// <summary>
+        /// Login
+        /// </summary>
+        public RelayCommand LoginCommand
         {
             get
             {
-                return _Login ?? (_Login = new RelayCommand(() =>
+                return loginCommand ?? (loginCommand = new RelayCommand(() =>
                 {
                     App.MasterDetailVM.PushAsync(new LoginPage());
                 }));
             }
-            set { _Login = value; }
+            set { loginCommand = value; }
         }
-
         #endregion
     }
 }

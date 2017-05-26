@@ -13,6 +13,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         #region Private Members
         private string message1 = "Message 1 - Page 1";
         private string message2 = "Message 2 - Page 1";
+        private RelayCommand nextcommand;
         #endregion
 
         #region Public Properties
@@ -42,14 +43,13 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
         }
         #endregion
-        #region Commands
-        private RelayCommand _Next;
 
-        public RelayCommand Next
+        #region Commands
+        public RelayCommand NextCommand
         {
             get
             {
-                return _Next ?? (_Next = new RelayCommand(async () =>
+                return nextcommand ?? (nextcommand = new RelayCommand(async () =>
                 {
                     App.MasterDetailVM.IsExecuting = true;
                     await Task.Delay(1800);
@@ -68,7 +68,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                     App.MasterDetailVM.IsExecuting = false;
                 }));
             }
-            set { _Next = value; }
+            set { nextcommand = value; }
         }
 
         #endregion

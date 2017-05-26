@@ -316,6 +316,7 @@ namespace ZCMobileDemo.Lite.ViewModels
 
         #endregion
         #endregion
+
         #region Commands
         private RelayCommand _Back;
 
