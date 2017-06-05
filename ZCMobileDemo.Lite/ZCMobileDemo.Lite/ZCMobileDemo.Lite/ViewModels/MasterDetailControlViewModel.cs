@@ -985,7 +985,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             dummyData.Add(obj);
 
             obj = new SimpleObject();
-            obj.HeaderText = cus.GetResxNameByValue("Timesheet");
+            obj.HeaderText = "Timesheet"; //cus.GetResxNameByValue("Timesheet");
             obj.ChildItemList.Add(new ChildItems { TextValue = "View Timesheet", DataValue = "T1" });
             obj.ChildItemList.Add(new ChildItems { TextValue = "Create Timesheet", DataValue = "T2", BubbleCount = 5 });
             dummyData.Add(obj);
