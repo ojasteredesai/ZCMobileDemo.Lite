@@ -11,13 +11,14 @@ namespace ZCMobileDemo.Lite.Extension
     public class TranslateExtension : IMarkupExtension
     {
         public string Text { get; set; }
+        CultureUtility cust = new CultureUtility();
         public object ProvideValue(IServiceProvider serviceProvider)
         {
             if (Text == null)
                 return null;
 
             // Do your translation lookup here, using whatever method you require
-            var translated = CultureUtility.GetResxNameByValue(Text);
+            var translated = cust.GetResxNameByValue(Text);
 
             return translated;
         }

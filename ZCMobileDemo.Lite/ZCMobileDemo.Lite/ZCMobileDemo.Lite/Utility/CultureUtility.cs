@@ -17,10 +17,10 @@ namespace ZCMobileDemo.Lite.Utility
     public  class CultureUtility
     {
         const string ResourceId = "ZCMobileDemo.Lite.Resources.UIPageResources";
-        public static string GetResxNameByValue(string value)
+        public  string GetResxNameByValue(string value)
         {
             ResourceManager resmgr = new ResourceManager(ResourceId
-                               , typeof(TranslateExtension).GetTypeInfo().Assembly);
+                               , typeof(CultureUtility).GetTypeInfo().Assembly);
 
             CultureInfo ci = DependencyService.Get<ILocalization>().GetCurrentCulture();
 

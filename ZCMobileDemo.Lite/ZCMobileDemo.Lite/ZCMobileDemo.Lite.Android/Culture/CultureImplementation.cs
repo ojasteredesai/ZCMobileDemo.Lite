@@ -29,6 +29,7 @@ namespace ZCMobileDemo.Lite.Droid.Culture
             try
             {
                 ci = new System.Globalization.CultureInfo(Thread.CurrentThread.CurrentCulture.Name);
+               
             }
             catch (CultureNotFoundException e1)
             {
@@ -36,10 +37,38 @@ namespace ZCMobileDemo.Lite.Droid.Culture
             }
             return ci;
         }
-
-        public void SetCulture(CultureInfo cl)
+        public void SetLocale()
         {
-            Thread.CurrentThread.CurrentCulture = cl;
+
+            var androidLocale = Java.Util.Locale.Default; // user's preferred locale
+            var netLocale = androidLocale.ToString().Replace("_", "-");
+            var ci = new System.Globalization.CultureInfo(netLocale);
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
+           
+        }
+        public string GetCurrent()
+        {
+            var androidLocale = Java.Util.Locale.Default;
+
+            //var netLanguage = androidLocale.Language.Replace ("_", "-");
+            var netLanguage = androidLocale.ToString().Replace("_", "-");
+
+            //var netLanguage = androidLanguage.Replace ("_", "-");
+            Console.WriteLine("ios:" + androidLocale.ToString());
+            Console.WriteLine("net:" + netLanguage);
+
+            Console.WriteLine(Thread.CurrentThread.CurrentCulture);
+            Console.WriteLine(Thread.CurrentThread.CurrentUICulture);
+
+            return netLanguage;
+        }
+        public void SetCulture(string netLocale)
+        {
+            var ci = new System.Globalization.CultureInfo(netLocale);
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
+           
         }
     }
 }

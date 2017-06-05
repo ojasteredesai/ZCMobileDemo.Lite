@@ -10,6 +10,6 @@ namespace ZCMobileDemo.Lite.Interfaces
     public interface ILocalization
     {
         CultureInfo GetCurrentCulture();
-        void SetCulture(CultureInfo cl);
+        void SetCulture(string cl);
     }
 }

@@ -7,12 +7,19 @@
         <Grid VerticalOptions="Start">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Picker ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" ItemDisplayBinding="{Binding Name}" Title="Select Language" Grid.Row="1" >
+            <Picker ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" ItemDisplayBinding="{Binding Name}" Title="Select Language" Grid.Row="0" >
                 <Picker.Behaviors>
                     <b:EventToCommandBehavior EventName="SelectedIndexChanged" Command="{Binding LanguageSelected}"  />
                 </Picker.Behaviors>
             </Picker>
+            <Label FontSize="Large" Text="Culture Changes Demo" Grid.Row="1" />
+            <Frame Grid.Row="2">
+                <ContentView Content="{Binding DateContent}" />
+               
+            </Frame>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

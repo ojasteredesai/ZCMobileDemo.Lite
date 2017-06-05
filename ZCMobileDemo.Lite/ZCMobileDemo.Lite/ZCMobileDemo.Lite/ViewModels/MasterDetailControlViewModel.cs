@@ -887,7 +887,7 @@ namespace ZCMobileDemo.Lite.ViewModels
 
             return vResult;
         }
-      
+
         /// <summary>
         /// Dummy data for side panel
         /// </summary>
@@ -897,12 +897,13 @@ namespace ZCMobileDemo.Lite.ViewModels
             var dummyData = new List<SimpleObject>();
 
             SimpleObject obj = new SimpleObject();
-            obj.HeaderText = CultureUtility.GetResxNameByValue("Submissions");
-            obj.ChildItemList.Add(new ChildItems { TextValue = CultureUtility.GetResxNameByValue("ManageSubmissions"), DataValue = "MS1" });
+            CultureUtility cus = new CultureUtility();
+            obj.HeaderText = "Submissions"; //cus.GetResxNameByValue("Submissions");
+            obj.ChildItemList.Add(new ChildItems { TextValue = "ManageSubmissions"/*cus.GetResxNameByValue("ManageSubmissions")*/, DataValue = "MS1" });
             dummyData.Add(obj);
 
             obj = new SimpleObject();
-            obj.HeaderText = CultureUtility.GetResxNameByValue("Timesheet");
+            obj.HeaderText = cus.GetResxNameByValue("Timesheet");
             obj.ChildItemList.Add(new ChildItems { TextValue = "View Timesheet", DataValue = "T1" });
             obj.ChildItemList.Add(new ChildItems { TextValue = "Create Timesheet", DataValue = "T2", BubbleCount = 5 });
             dummyData.Add(obj);
