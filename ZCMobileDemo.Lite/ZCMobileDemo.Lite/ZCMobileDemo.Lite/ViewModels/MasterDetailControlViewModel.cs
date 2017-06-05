@@ -25,7 +25,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private string header1;
         private string rightButton;
         private string rightButton1;
-        private Page detail, detail1;
+        private Page detail, detail1, rotatedTemporaryPage;
         private INavigation navigation;
         private Stack<Page> pages = new Stack<Page>();
         private Stack<Page> initialPages = new Stack<Page>();
@@ -37,6 +37,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private const int SECOND_CONTENT_PAGE_COUNT = 1;
         private bool isExecuting = false;
         private bool hamburgerVisibility = false;
+        private bool isRotating = false;
         // private bool popAsyncRequest = false;
         #endregion
 
@@ -67,13 +68,16 @@ namespace ZCMobileDemo.Lite.ViewModels
                 {
                     if (detail != value || pages.Count == 0)
                     {
-                        if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+                        if (!IsRotating)
                         {
-                            pages.Pop();
-                        }
-                        if (value != null && value.StyleId != "dashboard")
-                        {
-                            pages.Push(value);
+                            if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+                            {
+                                pages.Pop();
+                            }
+                            if (value != null && value.StyleId != "dashboard")
+                            {
+                                pages.Push(value);
+                            }
                         }
                         detail = value;
                         RaisePropertyChanged();
@@ -94,21 +98,58 @@ namespace ZCMobileDemo.Lite.ViewModels
             get { return detail1; }
             set
             {
-                if (detail1 != value)
+                if (detail1 != value || RotatedTemporaryPage != null)
                 {
                     //  if (Detail1 != null && Detail1.StyleId != value.StyleId)
-                    if (Detail1 != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+                    if (!IsRotating)
                     {
-                        pages.Pop();
+                        if (Detail1 != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+                        {
+                            pages.Pop();
+                        }
+                        if (value != null)
+                        {
+                            pages.Push(value);
+                        }
                     }
-                    if (value != null)
-                    {
-                        pages.Push(value);
-                        GetSecondContentVisibility(App.IsUSerLoggedIn);
-                    }
+
                     detail1 = value;
                     RaisePropertyChanged();
                 }
+
+                GetSecondContentVisibility(App.IsUSerLoggedIn);
+            }
+        }
+
+        /// <summary>
+        /// Property to set the application pages. e.g list and detail pages.
+        /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property. 
+        /// </summary>
+        public Page RotatedTemporaryPage
+        {
+            get
+            {
+                return rotatedTemporaryPage;
+            }
+            set
+            {
+                rotatedTemporaryPage = value;
+            }
+        }
+
+        /// <summary>
+        /// Property to set the application pages. e.g list and detail pages.
+        /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property. 
+        /// </summary>
+        public bool IsRotating
+        {
+            get
+            {
+                return isRotating;
+            }
+            set
+            {
+                isRotating = value;
             }
         }
         #endregion
@@ -399,7 +440,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// <param name="navigationData"></param>
         public void PushAsync(ZCMobileNavigationData navigationData)
         {
-            if (Isportrait || pages.Count == 0) // This is for potrait mode
+            if ((Isportrait || pages.Count == 0) && RotatedTemporaryPage == null) // This is for potrait mode
             {
                 Header = navigationData.NextPageTitle;
                 PushAsync(navigationData.NextPage);
@@ -410,6 +451,8 @@ namespace ZCMobileDemo.Lite.ViewModels
                 Header1 = navigationData.NextPageTitle;
                 PushAsync(navigationData.CurrentPage);
                 PushAsync1(navigationData.NextPage);
+                //PushAsync(navigationData.NextPage);
+                //PushAsync1(navigationData.CurrentPage);
             }
         }
 
@@ -586,6 +629,44 @@ namespace ZCMobileDemo.Lite.ViewModels
             return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }
 
+        /// <summary>
+        /// This method handles submit event when the submitted data is to the previous page.
+        /// PopAsync is not useful as it retreives the previous page and setting updated binding context can not be set.
+        /// We will make this method obsolete as message center seems the better approach.
+        /// </summary>
+        /// <param name="previousPage"></param>
+        /// <returns></returns>
+        public void PushAsyncRotatedPage()
+        {
+            // Page page1 = null;
+
+            if (Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT)
+            {
+                //  Page page2 = null;
+                //  page2 = pages.Pop();
+                //  RotatedTemporaryPage = pages.Pop();
+
+                //RotatedTemporaryPage = page1;
+                Header = Header1;
+                PushAsync(Detail1);
+            }
+
+            if (!Isportrait && pages != null && pages.Count > 0)
+            {
+                //var data = new ZCMobileNavigationData
+                //{
+                //    CurrentPage = pages.SingleOrDefault(x => x.StyleId == "page1"),
+                //    CurrentPageTitle = Header,
+                //    NextPage = pages.SingleOrDefault(x => x.StyleId == "page2"),// Detail,
+                //    NextPageTitle = Header1
+                //};
+
+                //PushAsync(data);
+                PushAsync1(pages.SingleOrDefault(x => x.StyleId == "page2"));
+                PushAsync(pages.SingleOrDefault(x => x.StyleId == "page1"));
+            }
+        }
+
         public Task<Page> PopAsync(bool animated)
         {
             Page page = null;
@@ -688,6 +769,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             if (pages.Count > 0)
             {
                 pages.Clear();
+                RotatedTemporaryPage = null;
             }
         }
 

@@ -156,7 +156,7 @@ namespace ZCMobileDemo.Lite.Views
                 viewModel.SetNavigation(navigationPage.Navigation);
                 viewModel.Header = (!string.IsNullOrEmpty(App.UserSession.SelectedDataCenter) ? "Login Page" : "Data Center Page");
                 viewModel.RightButton = string.Empty;
-                masterDetail.BindingContext = viewModel;
+                navigationPage.BindingContext = viewModel;
                 App.MasterDetailVM = viewModel;
                 if (userLoggedIn)
                 {
@@ -212,5 +212,15 @@ namespace ZCMobileDemo.Lite.Views
             }
         }
         #endregion
+
+        private void Parent_SizeChanged(object sender, EventArgs e)
+        {
+            if (App.IsUSerLoggedIn)
+            {
+                App.MasterDetailVM.IsRotating = true;
+                App.MasterDetailVM.PushAsyncRotatedPage();
+                App.MasterDetailVM.IsRotating = false;
+            }
+        }
     }
 }
