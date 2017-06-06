@@ -19,7 +19,6 @@ namespace ZCMobileDemo.Lite.Interfaces
         Task<Page> PushAsyncPreviousPage(Page previousPage = null);
         Task<Page> PopAsync1();
         Task<Page> PopAsync1(bool animated);
-        void AdjustScreenOnOrientationChange(bool orientationChanges = false);
         Task<Page> PopAsyncInitialPages(bool logoutRequest = false);
     }
 }

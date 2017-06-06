@@ -44,12 +44,12 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="menumedium.png" HeightRequest="20"  Grid.Column="0" IsVisible="{Binding HamburgerVisibility}">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        <TapGestureRecognizer Command="{Binding HamburgerCommand}" /> 
                     </Image.GestureRecognizers>
                 </Image>
                 <Image Source="back.png" HeightRequest="20"  Grid.Column="1" IsVisible="{Binding BackButtonVisibility}">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding Back}" />
+                        <TapGestureRecognizer Command="{Binding BackCommand}" />
                     </Image.GestureRecognizers>
                 </Image>
                 <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="12"

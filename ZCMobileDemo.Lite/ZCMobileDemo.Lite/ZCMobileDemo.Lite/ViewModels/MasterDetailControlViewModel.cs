@@ -25,7 +25,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private string header1;
         private string rightButton;
         private string rightButton1;
-        private Page detail, detail1, rotatedTemporaryPage;
+        private Page detail, detail1;
         private INavigation navigation;
         private Stack<Page> pages = new Stack<Page>();
         private Stack<Page> initialPages = new Stack<Page>();
@@ -38,6 +38,8 @@ namespace ZCMobileDemo.Lite.ViewModels
         private bool isExecuting = false;
         private bool hamburgerVisibility = false;
         private bool isRotating = false;
+        private RelayCommand hamburgerCommand;
+        private RelayCommand backCommand;
         // private bool popAsyncRequest = false;
         #endregion
 
@@ -47,43 +49,81 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// Property to set the application pages. e.g list and detail pages.
         /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property.
         /// </summary>
+        #region Commented property
+        //public Page Detail
+        //{
+        //    get { return detail; }
+        //    set
+        //    {
+        //        if (!App.IsUSerLoggedIn)
+        //        {
+        //            if (detail != value || initialPages.Count == 0)
+        //            {
+        //                if (value != null)// && value.StyleId != "logintypepage" && !popAsyncRequest)
+        //                {
+        //                    initialPages.Push(value);
+        //                }
+        //            }
+        //            detail = value;
+        //            RaisePropertyChanged();
+        //        }
+        //        else
+        //        {
+        //            if (detail != value || pages.Count == 0)
+        //            {
+        //                if (!IsRotating)
+        //                {
+        //                    if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
+        //                    {
+        //                        pages.Pop();
+        //                    }
+        //                    if (value != null && value.StyleId != "dashboard")
+        //                    {
+        //                        pages.Push(value);
+        //                    }
+        //                }
+        //                detail = value;
+        //                RaisePropertyChanged();
+        //            }
+        //        }
+
+        //        //This will maintain visibility of second detail page.
+        //        GetSecondContentVisibility(App.IsUSerLoggedIn);
+        //    }
+        //}
+        #endregion
         public Page Detail
         {
-            get { return detail; }
+            get
+            {
+                return detail;
+            }
             set
             {
                 if (!App.IsUSerLoggedIn)
                 {
-                    if (detail != value || initialPages.Count == 0)
+                    if ((value != null && detail != value) || initialPages.Count == 0)
                     {
-                        if (value != null)// && value.StyleId != "logintypepage" && !popAsyncRequest)
-                        {
-                            initialPages.Push(value);
-                        }
+                        initialPages.Push(value);
                     }
-                    detail = value;
-                    RaisePropertyChanged();
                 }
                 else
                 {
-                    if (detail != value || pages.Count == 0)
+                    if (!IsRotating && (detail != value || pages.Count == 0))
                     {
-                        if (!IsRotating)
+                        if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
                         {
-                            if (Detail != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
-                            {
-                                pages.Pop();
-                            }
-                            if (value != null && value.StyleId != "dashboard")
-                            {
-                                pages.Push(value);
-                            }
+                            pages.Pop();
                         }
-                        detail = value;
-                        RaisePropertyChanged();
+                        if (value != null && value.StyleId != "dashboard")
+                        {
+                            pages.Push(value);
+                        }
                     }
                 }
 
+                detail = value;
+                RaisePropertyChanged();
                 //This will maintain visibility of second detail page.
                 GetSecondContentVisibility(App.IsUSerLoggedIn);
             }
@@ -95,12 +135,14 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// </summary>
         public Page Detail1
         {
-            get { return detail1; }
+            get
+            {
+                return detail1;
+            }
             set
             {
-                if (detail1 != value || RotatedTemporaryPage != null)
+                if (detail1 != value)
                 {
-                    //  if (Detail1 != null && Detail1.StyleId != value.StyleId)
                     if (!IsRotating)
                     {
                         if (Detail1 != null && (pages.Any() && pages.Any(x => x.StyleId == value.StyleId)))
@@ -112,31 +154,16 @@ namespace ZCMobileDemo.Lite.ViewModels
                             pages.Push(value);
                         }
                     }
-
-                    detail1 = value;
-                    RaisePropertyChanged();
                 }
 
+                detail1 = value;
+                RaisePropertyChanged();
                 GetSecondContentVisibility(App.IsUSerLoggedIn);
             }
         }
+        #endregion
 
-        /// <summary>
-        /// Property to set the application pages. e.g list and detail pages.
-        /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property. 
-        /// </summary>
-        public Page RotatedTemporaryPage
-        {
-            get
-            {
-                return rotatedTemporaryPage;
-            }
-            set
-            {
-                rotatedTemporaryPage = value;
-            }
-        }
-
+        #region Orientation change properties
         /// <summary>
         /// Property to set the application pages. e.g list and detail pages.
         /// Logic to display content as per landscape and portrait orientaions is encapsulated in this property. 
@@ -391,13 +418,11 @@ namespace ZCMobileDemo.Lite.ViewModels
         #endregion
 
         #region Commands
-        private RelayCommand _Back;
-
-        public RelayCommand Back
+        public RelayCommand BackCommand
         {
             get
             {
-                return _Back ?? (_Back = new RelayCommand(() =>
+                return backCommand ?? (backCommand = new RelayCommand(() =>
                 {
                     if (App.IsUSerLoggedIn)
                     {
@@ -411,15 +436,17 @@ namespace ZCMobileDemo.Lite.ViewModels
                     }
                 }));
             }
-            set { _Back = value; }
+            set
+            {
+                backCommand = value;
+            }
         }
-        private RelayCommand _Hamburger;
 
-        public RelayCommand Hamburger
+        public RelayCommand HamburgerCommand
         {
             get
             {
-                return _Hamburger ?? (_Hamburger = new RelayCommand(() =>
+                return hamburgerCommand ?? (hamburgerCommand = new RelayCommand(() =>
                 {
                     App.MasterDetailVM.IsExecuting = true;
                     App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
@@ -427,7 +454,10 @@ namespace ZCMobileDemo.Lite.ViewModels
                     App.MasterDetailVM.IsExecuting = false;
                 }));
             }
-            set { _Hamburger = value; }
+            set
+            {
+                hamburgerCommand = value;
+            }
         }
 
         #endregion
@@ -440,7 +470,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// <param name="navigationData"></param>
         public void PushAsync(ZCMobileNavigationData navigationData)
         {
-            if ((Isportrait || pages.Count == 0) && RotatedTemporaryPage == null) // This is for potrait mode
+            if (Isportrait || pages.Count == 0)
             {
                 Header = navigationData.NextPageTitle;
                 PushAsync(navigationData.NextPage);
@@ -451,8 +481,6 @@ namespace ZCMobileDemo.Lite.ViewModels
                 Header1 = navigationData.NextPageTitle;
                 PushAsync(navigationData.CurrentPage);
                 PushAsync1(navigationData.NextPage);
-                //PushAsync(navigationData.NextPage);
-                //PushAsync1(navigationData.CurrentPage);
             }
         }
 
@@ -638,32 +666,32 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// <returns></returns>
         public void PushAsyncRotatedPage()
         {
-            // Page page1 = null;
-
             if (Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT)
             {
-                //  Page page2 = null;
-                //  page2 = pages.Pop();
-                //  RotatedTemporaryPage = pages.Pop();
-
-                //RotatedTemporaryPage = page1;
                 Header = Header1;
                 PushAsync(Detail1);
+                //This is required to fix the issue of when the page is rotated from landscape to potrait if not null and page value is same the controls or the page were not displayed.
+                Detail1 = null;
             }
 
             if (!Isportrait && pages != null && pages.Count > 0)
             {
-                //var data = new ZCMobileNavigationData
-                //{
-                //    CurrentPage = pages.SingleOrDefault(x => x.StyleId == "page1"),
-                //    CurrentPageTitle = Header,
-                //    NextPage = pages.SingleOrDefault(x => x.StyleId == "page2"),// Detail,
-                //    NextPageTitle = Header1
-                //};
-
-                //PushAsync(data);
-                PushAsync1(pages.SingleOrDefault(x => x.StyleId == "page2"));
-                PushAsync(pages.SingleOrDefault(x => x.StyleId == "page1"));
+                var tempPageList = pages.ToList();
+                if (tempPageList.Count > SECOND_CONTENT_PAGE_COUNT)
+                {
+                    var data = new ZCMobileNavigationData
+                    {
+                        CurrentPage = tempPageList[1],
+                        CurrentPageTitle = App.PageTitels[tempPageList[1].StyleId],
+                        NextPage = tempPageList[0],
+                        NextPageTitle = App.PageTitels[tempPageList[0].StyleId]
+                    };
+                    PushAsync(data);
+                }
+                else
+                {
+                    PushAsync(tempPageList[0]);
+                }
             }
         }
 
@@ -769,7 +797,6 @@ namespace ZCMobileDemo.Lite.ViewModels
             if (pages.Count > 0)
             {
                 pages.Clear();
-                RotatedTemporaryPage = null;
             }
         }
 
@@ -790,24 +817,13 @@ namespace ZCMobileDemo.Lite.ViewModels
         }
         #endregion
 
-        #region Orientation change handling methods
-        /// <summary>
-        /// To do
-        /// </summary>
-        /// <param name="orientationChanges"></param>
-        public void AdjustScreenOnOrientationChange(bool orientationChanges = false)
-        {
-            this.GetSecondContentVisibility(true, orientationChanges);
-        }
-        #endregion
-
         #region Private Methods
         /// <summary>
         /// Manages second content visibility.
         /// </summary>
         /// <param name="isUSerLoggedIn"></param>
         /// <param name="orientationChanges"></param>
-        private void GetSecondContentVisibility(bool isUSerLoggedIn, bool orientationChanges = false)
+        private void GetSecondContentVisibility(bool isUSerLoggedIn)
         {
             App.MasterDetailVM.SecondContentVisibility = (isUSerLoggedIn ? (!Isportrait && pages.Count > SECOND_CONTENT_PAGE_COUNT) : false);
             App.MasterDetailVM.BackButtonVisibility = (isUSerLoggedIn ? (Device.OS == TargetPlatform.iOS && pages.Count > BACK_BUTTON_PAGE_COUNT) : (Device.OS == TargetPlatform.iOS && initialPages.Count > 1));

@@ -152,11 +152,11 @@ namespace ZCMobileDemo.Lite.Views
                 #endregion
                 var masterDetail = new TView();
                // var navigationPage = new NavigationPage(masterDetail);
-                var navigationPage = masterDetail;
-                viewModel.SetNavigation(navigationPage.Navigation);
+                //var navigationPage = masterDetail;
+                viewModel.SetNavigation(masterDetail.Navigation);
                 viewModel.Header = (!string.IsNullOrEmpty(App.UserSession.SelectedDataCenter) ? "Login Page" : "Data Center Page");
                 viewModel.RightButton = string.Empty;
-                navigationPage.BindingContext = viewModel;
+                masterDetail.BindingContext = viewModel;
                 App.MasterDetailVM = viewModel;
                 if (userLoggedIn)
                 {
@@ -167,7 +167,7 @@ namespace ZCMobileDemo.Lite.Views
                     App.UserSession.SideContentVisibility = false;
                     App.MasterDetailVM.PushAsync(page);
                 }
-                return navigationPage;
+                return masterDetail;
             }
             catch (Exception ex)
             {
