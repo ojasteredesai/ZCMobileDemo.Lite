@@ -16,6 +16,13 @@ namespace ZCMobileDemo.Lite.ViewModels
         private RelayCommand nextcommand;
         #endregion
 
+        #region
+        public Page1ViewModel()
+        {
+            App.MasterDetailVM.RightButtonVisibility = true;
+        }
+        #endregion
+
         #region Public Properties
         public string Messsge1
         {

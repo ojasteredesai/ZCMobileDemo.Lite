@@ -56,7 +56,7 @@
                 <Label x:Name="dotdotdot" HeightRequest="20" Text="..." FontSize="12"
                        HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="End" Grid.Column="2" 
-                       Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}"  IsVisible="True" TextColor="White">
+                       Margin="0,0,22,0" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}" IsVisible="{Binding RightButtonVisibility}" TextColor="White">
                 </Label>
                 <Label x:Name="headerTitle" HeightRequest="30" Text="{Binding Header}" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2" Grid.ColumnSpan="{Binding DetailGridHeaderColSpan}" IsVisible="True">
                 </Label>
@@ -64,7 +64,7 @@
                 </Label>
                 <Label x:Name="dotdotdot1" HeightRequest="20" Text="..." FontSize="12" 
                        HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                       VerticalOptions="Center" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding SecondContentVisibility}" TextColor="White">
+                       VerticalOptions="Center" HorizontalOptions="End" Grid.Column="3" Margin="0,0,22,0" IsVisible="{Binding RightButton1Visibility}" TextColor="White">
                 </Label>
             </Grid>
             <!--</StackLayout>-->

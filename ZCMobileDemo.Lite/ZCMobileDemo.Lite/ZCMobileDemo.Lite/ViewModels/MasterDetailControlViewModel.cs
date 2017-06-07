@@ -30,6 +30,8 @@ namespace ZCMobileDemo.Lite.ViewModels
         private Stack<Page> pages = new Stack<Page>();
         private Stack<Page> initialPages = new Stack<Page>();
         private bool secondContentVisibility = false;
+        private bool rightButtonVisibility = false;
+        private bool rightButton1Visibility = false;
         private bool backButtonVisibility = false;
         private int detailGridColSpan = 2;
         private int detailGridHeaderColSpan = 4;
@@ -216,6 +218,39 @@ namespace ZCMobileDemo.Lite.ViewModels
         {
             get { return rightButton1; }
             set { rightButton1 = value; RaisePropertyChanged(); }
+        }
+
+        /// <summary>
+        /// RightButtonVisibility property
+        /// </summary>
+        public bool RightButtonVisibility
+        {
+            get
+            {
+                return rightButtonVisibility;
+            }
+            set
+            {
+                rightButtonVisibility = value;
+                RaisePropertyChanged();
+            }
+        }
+
+
+        /// <summary>
+        /// RightButton1Visibility property
+        /// </summary>
+        public bool RightButton1Visibility
+        {
+            get
+            {
+                return rightButton1Visibility;
+            }
+            set
+            {
+                rightButton1Visibility = value;
+                RaisePropertyChanged();
+            }
         }
         #endregion
 
@@ -470,17 +505,24 @@ namespace ZCMobileDemo.Lite.ViewModels
         /// <param name="navigationData"></param>
         public void PushAsync(ZCMobileNavigationData navigationData)
         {
-            if (Isportrait || pages.Count == 0)
+            try
             {
-                Header = navigationData.NextPageTitle;
-                PushAsync(navigationData.NextPage);
+                if (Isportrait || pages.Count == 0)
+                {
+                    Header = navigationData.NextPageTitle;
+                    PushAsync(navigationData.NextPage);
+                }
+                else//This is for landscape mode
+                {
+                    Header = navigationData.CurrentPageTitle;
+                    Header1 = navigationData.NextPageTitle;
+                    PushAsync(navigationData.CurrentPage);
+                    PushAsync1(navigationData.NextPage);
+                }
             }
-            else//This is for landscape mode
+            catch (Exception ex)
             {
-                Header = navigationData.CurrentPageTitle;
-                Header1 = navigationData.NextPageTitle;
-                PushAsync(navigationData.CurrentPage);
-                PushAsync1(navigationData.NextPage);
+
             }
         }
 
