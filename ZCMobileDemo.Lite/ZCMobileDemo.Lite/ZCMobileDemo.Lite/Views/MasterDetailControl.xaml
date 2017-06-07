@@ -44,7 +44,8 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="menumedium.png" HeightRequest="20"  Grid.Column="0" IsVisible="{Binding HamburgerVisibility}">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding HamburgerCommand}" /> 
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+
                     </Image.GestureRecognizers>
                 </Image>
                 <Image Source="back.png" HeightRequest="20"  Grid.Column="1" IsVisible="{Binding BackButtonVisibility}">
