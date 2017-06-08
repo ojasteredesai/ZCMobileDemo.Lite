@@ -2,24 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:ZCMobileDemo.Lite.Behaviors"
-             x:Class="ZCMobileDemo.Lite.Views.Module.Dossier">
+             xmlns:local="clr-namespace:ZCMobileDemo.Lite.Controls"
+             x:Class="ZCMobileDemo.Lite.Views.Module.Dossier" StyleId="dossier">
     <ContentPage.Content>
-        <Grid VerticalOptions="Start">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="35" />
-                <RowDefinition Height="25" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Picker ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" ItemDisplayBinding="{Binding Name}" Title="Select Language" Grid.Row="0" >
-                <Picker.Behaviors>
-                    <b:EventToCommandBehavior EventName="SelectedIndexChanged" Command="{Binding LanguageSelected}"  />
-                </Picker.Behaviors>
-            </Picker>
-            <Label FontSize="Large" Text="Culture Changes Demo" Grid.Row="1" />
-            <Frame Grid.Row="2">
-                <ContentView Content="{Binding DateContent}" />
-               
-            </Frame>
-        </Grid>
+        <ScrollView>
+            <Grid VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Picker ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" ItemDisplayBinding="{Binding Name}" Title="Select Language" Grid.Row="0" >
+                    <Picker.Behaviors>
+                        <b:EventToCommandBehavior EventName="SelectedIndexChanged" Command="{Binding LanguageSelected}"  />
+                    </Picker.Behaviors>
+                </Picker>
+                <Label FontSize="Large" Text="Culture Changes Demo" Grid.Row="1" />
+                <Frame Grid.Row="2">
+                    <ContentView Content="{Binding DateContent}" />
+                </Frame>
+                <Label Text="Custome Entry " Grid.Row="3" />
+                <local:CustomeEntry   Text="{Binding Name,Mode=TwoWay}" PlaceHolder="Enter Name" Grid.Row="4"/>
+                <Button Text="Add FCM" Command="{Binding AddFCM}" Grid.Row="5" />
+                <local:FCMLabellist FCMlst="{Binding FcmListData,Mode=TwoWay}" Grid.Row="6"/>
+                <Button Text="CheckUpdate" Command="{Binding CheckUpdate}" Grid.Row="7"/>
+                <local:UDFListControl UDFList="{Binding UDFListData,Mode=TwoWay}"  Grid.Row="8" />
+
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

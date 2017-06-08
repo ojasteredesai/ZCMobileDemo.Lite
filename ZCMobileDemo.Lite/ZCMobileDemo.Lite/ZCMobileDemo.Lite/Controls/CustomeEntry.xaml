@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ZCMobileDemo.Lite.Controls"
+             x:Class="ZCMobileDemo.Lite.Controls.CustomeEntry">
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="20" />
+    </Grid.ColumnDefinitions>
+    <Entry Grid.Column="0"  x:Name="entry" />
+    <local:RoundedButton Grid.Column="1" Text="X" BackgroundColor="Gray" TextColor="White"  VerticalOptions="Center" x:Name="cancelbtn">
+        <local:RoundedButton.Margin>
+            <OnPlatform x:TypeArguments="Thickness" Android="-30,0,30,0" iOS="-30,0,30,0" />
+        </local:RoundedButton.Margin>
+        <local:RoundedButton.HeightRequest>
+            <OnPlatform x:TypeArguments="x:Double" Android="20" iOS="20" />
+        </local:RoundedButton.HeightRequest>
+        <local:RoundedButton.WidthRequest>
+            <OnPlatform x:TypeArguments="x:Double" Android="20" iOS="10" />
+        </local:RoundedButton.WidthRequest>
+       
+        <local:RoundedButton.Triggers>
+            <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference entry},Path=Text.Length}" Value="0">
+                <Setter Property="IsVisible" Value="False" />
+            </DataTrigger>
+
+        </local:RoundedButton.Triggers>
+    </local:RoundedButton>
+</Grid>

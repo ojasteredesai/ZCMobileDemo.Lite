@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Foundation;
+using System;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-
-using Foundation;
-using UIKit;
+using System.Threading;
 using Xamarin.Forms;
 using ZCMobileDemo.Lite.Interfaces;
-using System.Threading;
 
 [assembly: Dependency(typeof(ZCMobileDemo.Lite.iOS.Culture.CultureImplementation))]
 namespace ZCMobileDemo.Lite.iOS.Culture

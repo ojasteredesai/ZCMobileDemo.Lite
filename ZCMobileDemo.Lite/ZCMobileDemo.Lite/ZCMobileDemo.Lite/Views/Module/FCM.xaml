@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZCMobileDemo.Lite.Views.Module.FCM" StyleId="fcm">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            
+        </Grid.RowDefinitions>
+        <Entry Placeholder="FCM Disply Name" Text="{Binding FCMFieldsData.DisplayName,Mode=TwoWay}"/>
+        <Entry Placeholder="FCM Default Value" Text="{Binding FCMFieldsData.DefaultValue,Mode=TwoWay}" Grid.Row="1"/>
+        <Label Text="IsVisble" Grid.Row="2" />
+        <Switch IsToggled="{Binding FCMFieldsData.IsVisible,Mode=TwoWay}" Grid.Row="2" Grid.Column="1" />
+        <Label Text="IsModified" Grid.Row="3" />
+        <Switch IsToggled="{Binding FCMFieldsData.IsModified,Mode=TwoWay}" Grid.Row="3" Grid.Column="1" />
+        <Button Text="Add" Command="{Binding SaveFCM}" Grid.Row="4"/>
+    </Grid>
+</ContentPage>

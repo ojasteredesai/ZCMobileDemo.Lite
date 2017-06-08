@@ -39,15 +39,29 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Behaviors\EventToCommand.cs" />
+    <Compile Include="Behaviors\RequiredValidatorBehavior.cs" />
     <Compile Include="Controls\Accordion.cs" />
     <Compile Include="Controls\AccordionButton.cs" />
     <Compile Include="Controls\AccordionSource.cs" />
+    <Compile Include="Controls\CheckBox.cs" />
+    <Compile Include="Controls\CustomeEntry.xaml.cs">
+      <DependentUpon>CustomeEntry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FCMLabel.cs" />
+    <Compile Include="Controls\RoundedButton.cs" />
+    <Compile Include="Controls\UDFListControl.cs" />
+    <Compile Include="Extension\BindableObjectExtensions.cs" />
+    <Compile Include="Extension\EventArgs.cs" />
+    <Compile Include="Extension\EventExtensions.cs" />
     <Compile Include="Extension\TranslateExtension.cs" />
     <Compile Include="Interfaces\ILocalization.cs" />
     <Compile Include="Interfaces\IServiceCaller.cs" />
     <Compile Include="Interfaces\IZCMobileNavigation.cs" />
+    <Compile Include="Model\DropDownItem.cs" />
+    <Compile Include="Model\FCMFields.cs" />
     <Compile Include="Model\Language.cs" />
     <Compile Include="Model\LogErrorRequest.cs" />
+    <Compile Include="Model\UserDefinedFields.cs" />
     <Compile Include="Resources\UIPageResources.de.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +113,9 @@
     <Compile Include="Views\Module\Dossier.xaml.cs">
       <DependentUpon>Dossier.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Module\FCM.xaml.cs">
+      <DependentUpon>FCM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Module\Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
     </Compile>
@@ -116,6 +133,9 @@
     </Compile>
     <Compile Include="Views\Module\Page6.xaml.cs">
       <DependentUpon>Page6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Module\UDFDDMenu.xaml.cs">
+      <DependentUpon>UDFDDMenu.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -237,6 +257,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Module\Dossier.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CustomeEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Module\FCM.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Module\UDFDDMenu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

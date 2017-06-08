@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
 namespace ZCMobileDemo.Lite.Interfaces
 {
@@ -11,5 +6,7 @@ namespace ZCMobileDemo.Lite.Interfaces
     {
         CultureInfo GetCurrentCulture();
         void SetCulture(string cl);
+
+       
     }
 }

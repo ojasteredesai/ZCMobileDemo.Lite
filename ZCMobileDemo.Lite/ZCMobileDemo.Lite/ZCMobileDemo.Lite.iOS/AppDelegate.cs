@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
+using System;
 using UIKit;
 
 namespace ZCMobileDemo.Lite.iOS
@@ -22,8 +19,17 @@ namespace ZCMobileDemo.Lite.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            try
+            {
+                global::Xamarin.Forms.Forms.Init();
+                LoadApplication(new App());
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+           
 
             return base.FinishedLaunching(app, options);
         }

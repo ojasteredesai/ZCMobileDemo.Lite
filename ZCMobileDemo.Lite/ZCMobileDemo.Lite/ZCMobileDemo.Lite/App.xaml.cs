@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
 using ZCMobileDemo.Lite.Model;
 using ZCMobileDemo.Lite.ViewModels;
@@ -9,6 +6,7 @@ using ZCMobileDemo.Lite.Views;
 
 namespace ZCMobileDemo.Lite
 {
+
     public partial class App : Application
     {
         #region Public Properties
@@ -78,6 +76,7 @@ namespace ZCMobileDemo.Lite
             PageTitels.Add("page5", "Page 5");
             PageTitels.Add("page6", "Page 6");
             PageTitels.Add("dossier", "Dossier");
+            PageTitels.Add("fcm", "FCM");
         }
         #endregion
     }
