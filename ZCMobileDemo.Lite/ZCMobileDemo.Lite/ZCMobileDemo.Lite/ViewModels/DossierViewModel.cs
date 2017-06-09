@@ -17,6 +17,8 @@ namespace ZCMobileDemo.Lite.ViewModels
             LoadLanguages();
             LoadUDFs();
 
+            FCMFieldsData = new FCMFields { DefaultValue = "test 1", DisplayName = "R Raja", IsModified = true, IsVisible = true };
+
         }
         #endregion
         #region Commands

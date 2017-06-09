@@ -48,6 +48,7 @@
       <DependentUpon>CustomeEntry.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\FCMLabel.cs" />
+    <Compile Include="Controls\FCMLabelList.cs" />
     <Compile Include="Controls\RoundedButton.cs" />
     <Compile Include="Controls\UDFListControl.cs" />
     <Compile Include="Extension\BindableObjectExtensions.cs" />

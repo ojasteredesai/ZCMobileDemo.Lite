@@ -1,83 +1,41 @@
-﻿using System.Collections;
-using System.Collections.Specialized;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using ZCMobileDemo.Lite.Model;
 
 namespace ZCMobileDemo.Lite.Controls
 {
-    /// <summary>
-    /// This is custome Control for Handling FCM
-    /// </summary>
-    public class FCMLabellist : ContentView
+    public class FCMLabel : Label
     {
         #region Bindable Properties 
-        public static readonly BindableProperty FCMlstProperty = BindableProperty.Create("FCMlst", typeof(IEnumerable), typeof(FCMLabellist), null, propertyChanged: OnFCMlstPropertyChanged);
-
-        #endregion
-
-        #region Constructor
-        public FCMLabellist()
-        {
-            Content = new StackLayout();
-        }
+        public static readonly BindableProperty FCMLblProperty = BindableProperty.Create("FCMLabel", typeof(FCMFields), typeof(FCMLabel), null, propertyChanged: OnFCMlstPropertyChanged);
         #endregion
 
         #region Properties
-        public IList FCMlst
+        public FCMFields FCMLbl
         {
-            get { return (IList)GetValue(FCMlstProperty); }
-            set { SetValue(FCMlstProperty, value); }
+            get { return (FCMFields)GetValue(FCMLblProperty); }
+            set { SetValue(FCMLblProperty, value); }
         }
-        private IList _FCMlst;
 
         #endregion
-
 
         #region Private Method
         private static void OnFCMlstPropertyChanged(BindableObject bindable, object value, object newValue)
         {
-            var lst = (FCMLabellist)bindable;
-            lst.Content = new StackLayout();
-            var st = lst.Content as StackLayout;
-            if (newValue == null)
-                return;
-            var notifyCollection = newValue as INotifyCollectionChanged;
-            if (notifyCollection != null)
+            var label = bindable as FCMLabel;
+            var fcmValue = newValue as FCMFields;
+            if (newValue != null)
             {
-                notifyCollection.CollectionChanged += (sender, args) =>
+                label.IsVisible = fcmValue.IsVisible;
+                if (fcmValue.IsVisible)
                 {
-                    lst.Content = new StackLayout();
-                    st = lst.Content as StackLayout;
-                    if (args.NewItems != null)
-                    {
-                        foreach (var item in newValue as IEnumerable)
-                        {
-                            var it = item as FCMFields;
-                            if (it.IsVisible)
-                            {
-                                st.Children.Add(new Label() { Text = it.DisplayName });
-                                st.Children.Add(new Label() { Text = it.DefaultValue });
-                            }
-                        }
-                    }
-                    
-                };
-            }
-
-            foreach (var item in newValue as IEnumerable)
-            {
-                var it = item as FCMFields;
-                if(it.IsVisible)
-                {
-                    st.Children.Add(new Label() { Text = it.DisplayName });
-                    st.Children.Add(new Label() { Text = it.DefaultValue });
+                    label.Text = fcmValue.DisplayName;
                 }
             }
-
-
-            
-
-
         }
         #endregion
     }

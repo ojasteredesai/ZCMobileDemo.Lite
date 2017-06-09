@@ -16,6 +16,7 @@
                     <RowDefinition Height="40" />
                     <RowDefinition Height="*" />
                     <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Picker ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" ItemDisplayBinding="{Binding Name}" Title="Select Language" Grid.Row="0" >
@@ -30,10 +31,10 @@
                 <Label Text="Custome Entry " Grid.Row="3" />
                 <local:CustomeEntry   Text="{Binding Name,Mode=TwoWay}" PlaceHolder="Enter Name" Grid.Row="4"/>
                 <Button Text="Add FCM" Command="{Binding AddFCM}" Grid.Row="5" />
-                <local:FCMLabellist FCMlst="{Binding FcmListData,Mode=TwoWay}" Grid.Row="6"/>
+                <local:FCMLabelList FCMList="{Binding FcmListData,Mode=TwoWay}" Grid.Row="6"/>
                 <Button Text="CheckUpdate" Command="{Binding CheckUpdate}" Grid.Row="7"/>
-                <local:UDFListControl UDFList="{Binding UDFListData,Mode=TwoWay}"  Grid.Row="8" />
-
+                <local:FCMLabel FCMLbl="{Binding FCMFieldsData, Mode=TwoWay}" Grid.Row="8" />
+                <local:UDFListControl UDFList="{Binding UDFListData,Mode=TwoWay}"  Grid.Row="9" />
             </Grid>
         </ScrollView>
     </ContentPage.Content>
