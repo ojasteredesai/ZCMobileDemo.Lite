@@ -4,7 +4,7 @@
              xmlns:masterDetail="clr-namespace:ZCMobileDemo.Lite.Views"
              xmlns:ctrl="clr-namespace:ZCMobileDemo.Lite.Controls"
              x:Class="ZCMobileDemo.Lite.Views.MasterDetail" BackgroundColor="#01446b">
-    <masterDetail:MasterDetailControl.SideContent>
-        <ctrl:Accordion x:Name="one" DataSource="{Binding AccordionItems,Mode=TwoWay}" Content="{Binding AccordionContent,Mode=TwoWay}" />
-    </masterDetail:MasterDetailControl.SideContent>
+  <masterDetail:MasterDetailControl.SideContent>
+    <ctrl:Accordion x:Name="one" DataSource="{Binding AccordionItems,Mode=TwoWay}" Content="{Binding AccordionContent,Mode=TwoWay}" />
+  </masterDetail:MasterDetailControl.SideContent>
 </masterDetail:MasterDetailControl>

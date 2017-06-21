@@ -148,6 +148,8 @@
   <ItemGroup>
     <Compile Include="Culture\CultureImplementation.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Renderers\BorderRenderer.cs" />
+    <Compile Include="Renderers\BorderRendererVisual.cs" />
     <Compile Include="Renderers\CheckBoxRenderer.cs" />
     <Compile Include="Renderers\RoundedButtonRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

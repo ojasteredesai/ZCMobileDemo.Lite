@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ctrl="clr-namespace:ZCMobileDemo.Lite.Controls"
              x:Class="ZCMobileDemo.Lite.Views.MasterDetailControl"
              x:Name="Parent" IsEnabled="{Binding IsPageEnabled}" SizeChanged="Parent_SizeChanged">
     <AbsoluteLayout>
@@ -79,16 +80,25 @@
         </StackLayout>-->
         </Grid>
         <!-- Overlay -->
-        <ContentView x:Name="overlay" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" IsVisible="{Binding IsExecuting}" BackgroundColor="Transparent">
-            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Black">
+        <ContentView  x:Name="overlay" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" IsVisible="{Binding IsExecuting}" BackgroundColor="Transparent">
+            <ctrl:Border Stroke="Black" StrokeThickness="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Black">
+                <ctrl:Border.CornerRadius>
+                    <OnPlatform iOS="5" Android="15" x:TypeArguments="x:Double">
+                    </OnPlatform>
+                </ctrl:Border.CornerRadius>
                 <ActivityIndicator  x:Name="activityIndicator" IsRunning="{Binding IsExecuting}" IsVisible="{Binding IsExecuting}" Color="White">
                     <ActivityIndicator.Margin>
-                        <OnPlatform iOS="10" Android="5" x:TypeArguments="Thickness"></OnPlatform>
+                        <OnPlatform iOS="10,20,10,20" Android="10,15,10,15" x:TypeArguments="Thickness">
+                        </OnPlatform>
                     </ActivityIndicator.Margin>
                 </ActivityIndicator>
-                <Label Text="Loading...." TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="5">
+                <Label Text="Loading..." TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+                    <Label.Margin>
+                        <OnPlatform iOS="1,20,10,20" Android="1,15,10,15" x:TypeArguments="Thickness">
+                        </OnPlatform>
+                    </Label.Margin>
                 </Label>
-            </StackLayout>
+            </ctrl:Border>
         </ContentView>
     </AbsoluteLayout>
 </ContentPage>

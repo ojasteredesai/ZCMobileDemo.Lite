@@ -102,6 +102,7 @@ namespace ZCMobileDemo.Lite.Views
             InitializeComponent();
             SetBinding(DetailProperty, new Binding("Detail", BindingMode.TwoWay));
             SetBinding(DetailProperty1, new Binding("Detail1", BindingMode.TwoWay));
+            
         }
         #endregion
 
@@ -163,6 +164,8 @@ namespace ZCMobileDemo.Lite.Views
                     App.UserSession.SideContentVisibility = false;
                     App.MasterDetailVM.PushAsync(page);
                 }
+
+                
                 return masterDetail;
             }
             catch (Exception ex)
@@ -207,8 +210,6 @@ namespace ZCMobileDemo.Lite.Views
                 App.MasterDetailVM.PopAsyncInitialPages();
             }
         }
-        #endregion
-
         private void Parent_SizeChanged(object sender, EventArgs e)
         {
             if (App.IsUSerLoggedIn)
@@ -218,5 +219,6 @@ namespace ZCMobileDemo.Lite.Views
                 App.MasterDetailVM.IsRotating = false;
             }
         }
+        #endregion
     }
 }

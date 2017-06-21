@@ -107,6 +107,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="app.config" />
+    <Compile Include="Renderers\BorderRenderer.cs" />
     <Compile Include="Renderers\CheckBoxRenderer.cs" />
     <Compile Include="Renderers\CheckBoxView.cs" />
     <Compile Include="Renderers\RoundedButtonRenderer.cs" />
