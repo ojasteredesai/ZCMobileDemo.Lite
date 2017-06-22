@@ -28,6 +28,7 @@ namespace ZCMobileDemo.Lite.ViewModels
         private INavigation navigation;
         private Stack<Page> pages = new Stack<Page>();
         private Stack<Page> initialPages = new Stack<Page>();
+        private Stack<string> pageTitle = new Stack<string>();
         private bool secondContentVisibility = false;
         private bool rightButtonVisibility = false;
         private bool rightButton1Visibility = false;
@@ -506,17 +507,20 @@ namespace ZCMobileDemo.Lite.ViewModels
         {
             try
             {
-                if (Isportrait || pages.Count == 0)
-                {
-                    Header = navigationData.NextPageTitle;
-                    PushAsync(navigationData.NextPage);
-                }
-                else//This is for landscape mode
+                if (!Isportrait && pages.Count > 0 && App.IsUSerLoggedIn)
                 {
                     Header = navigationData.CurrentPageTitle;
                     Header1 = navigationData.NextPageTitle;
+                    navigationData.CurrentPage.Title = navigationData.CurrentPageTitle;
+                    navigationData.NextPage.Title = navigationData.NextPageTitle;
                     PushAsync(navigationData.CurrentPage);
                     PushAsync1(navigationData.NextPage);
+                }
+                else
+                {
+                    Header = navigationData.NextPageTitle;
+                    navigationData.NextPage.Title = navigationData.NextPageTitle;
+                    PushAsync(navigationData.NextPage);
                 }
             }
             catch (Exception ex)
@@ -640,7 +644,7 @@ namespace ZCMobileDemo.Lite.ViewModels
                 {
                     page1 = pages.Pop();
                     page = pages.Pop();
-                    Header = App.PageTitels[page.StyleId];
+                    Header = page.Title;
                     PushAsync(page);
                 }
                 else
@@ -648,8 +652,8 @@ namespace ZCMobileDemo.Lite.ViewModels
                     pages.Pop();
                     page = pages.Pop();
                     page1 = pages.Pop();
-                    Header = App.PageTitels[page1.StyleId];
-                    Header1 = App.PageTitels[page.StyleId];
+                    Header = page1.Title;
+                    Header1 = page.Title;
                     PushAsync(page1);
                     PushAsync1(page);
                 }
@@ -657,7 +661,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             else
             {
                 page = pages.Pop();
-                Header = App.PageTitels[page.StyleId];
+                Header = page.Title;
                 PushAsync(Detail);
             }
             return page != null ? Task.FromResult(page) : navigation.PopAsync();
@@ -673,6 +677,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             if (pages.Count > 0)
             {
                 page = pages.Pop();
+                Header = page.Title;
                 detail = page;
                 RaisePropertyChanged("Detail");
             }
@@ -694,6 +699,7 @@ namespace ZCMobileDemo.Lite.ViewModels
             }
 
             page = initialPages.Pop();
+            Header = page.Title;
             Detail = page;
             return page != null ? Task.FromResult(page) : navigation.PopAsync();
         }

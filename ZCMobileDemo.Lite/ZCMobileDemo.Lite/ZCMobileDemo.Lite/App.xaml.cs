@@ -36,10 +36,12 @@ namespace ZCMobileDemo.Lite
             if (!string.IsNullOrEmpty(App.UserSession.SelectedDataCenter))
             {
                 page = new LoginPage();
+                page.Title = "Login PAge";
             }
             else
             {
                 page = new MainPage();
+                page.Title = "DataCenter PAge";
             }
 
             App.Current.MainPage = MasterDetailControl.Create<MasterDetail, MasterDetailViewModel>(App.IsUSerLoggedIn, page);

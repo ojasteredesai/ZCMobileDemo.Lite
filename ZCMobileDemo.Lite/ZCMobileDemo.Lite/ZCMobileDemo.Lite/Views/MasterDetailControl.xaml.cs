@@ -2,6 +2,7 @@
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ZCMobileDemo.Lite.Model;
 using ZCMobileDemo.Lite.ViewModels;
 using ZCMobileDemo.Lite.Views.Module;
 
@@ -102,7 +103,7 @@ namespace ZCMobileDemo.Lite.Views
             InitializeComponent();
             SetBinding(DetailProperty, new Binding("Detail", BindingMode.TwoWay));
             SetBinding(DetailProperty1, new Binding("Detail1", BindingMode.TwoWay));
-            
+
         }
         #endregion
 
@@ -148,24 +149,35 @@ namespace ZCMobileDemo.Lite.Views
                 //}
                 #endregion
                 var masterDetail = new TView();
-               // var navigationPage = new NavigationPage(masterDetail);
+                // var navigationPage = new NavigationPage(masterDetail);
                 //var navigationPage = masterDetail;
                 viewModel.SetNavigation(masterDetail.Navigation);
-                viewModel.Header = (!string.IsNullOrEmpty(App.UserSession.SelectedDataCenter) ? "Login Page" : "Data Center Page");
+                viewModel.Header = page.Title;
                 viewModel.RightButton = string.Empty;
                 masterDetail.BindingContext = viewModel;
                 App.MasterDetailVM = viewModel;
                 if (userLoggedIn)
                 {
-                    App.MasterDetailVM.PushAsync(new Dashboard());
+                    var navigationData = new ZCMobileNavigationData
+                    {
+                        NextPage = new Dashboard(),
+                        NextPageTitle = "Dashboard"
+                    };
+                    App.MasterDetailVM.PushAsync(navigationData);
                 }
                 else
                 {
                     App.UserSession.SideContentVisibility = false;
                     App.MasterDetailVM.PushAsync(page);
+                    var navigationData = new ZCMobileNavigationData
+                    {
+                        NextPage = page,
+                        NextPageTitle = page.Title
+                    };
+                    App.MasterDetailVM.PushAsync(navigationData);
                 }
 
-                
+
                 return masterDetail;
             }
             catch (Exception ex)

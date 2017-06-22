@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ZCMobileDemo.Lite.Views.Timesheet.Page2" StyleId="page2">
+             x:Class="ZCMobileDemo.Lite.Views.Timesheet.Page2" StyleId="page2" Title="tt2">
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
         <Label x:Name="PageTitle" Text="{Binding Header1}" IsVisible="False"></Label>
         <Label Text="Page 2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
