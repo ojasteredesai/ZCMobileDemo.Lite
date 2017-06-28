@@ -16,10 +16,11 @@ namespace ZCMobileDemo.Lite
         public static Dictionary<string, string> PageTitels;
         public const string SelectedDataCenter = "SelectedDataCenter";
         public static bool IsUSerLoggedIn = false;
-        #endregion
+        public const int Take = 5;
+    #endregion
 
-        #region Constructors
-        public App()
+    #region Constructors
+    public App()
         {
             Page page;
             InitializeComponent();
@@ -79,6 +80,8 @@ namespace ZCMobileDemo.Lite
             PageTitels.Add("page6", "Page 6");
             PageTitels.Add("dossier", "Dossier");
             PageTitels.Add("fcm", "FCM");
+            PageTitels.Add("viewTime", "View Timesheet");
+            PageTitels.Add("appTime", "Approve Timesheet");
         }
         #endregion
     }

@@ -119,391 +119,388 @@
   </resheader>
 
   <data name="Per_of_Total_Spend" xml:space="preserve">
-    <value>% of Total Spend</value>
+    <value>% du total des dépenses</value>
   </data>
   <data name="No_Selection" xml:space="preserve">
-    <value>(No Selection)</value>
+    <value>(Aucune sélection)</value>
   </data>
   <data name="twentyFour_hours_perday" xml:space="preserve">
-    <value>24 hours per day is the maximum allowance for all pay codes</value>
+    <value>24 heures par jour maximum sont autorisées pour tous les codes Paiement</value>
   </data>
   <data name="Accepted_Offers" xml:space="preserve">
-    <value>Accepted Offers</value>
+    <value>Offres acceptées</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Actions</value>
   </data>
   <data name="Review_Engagement" xml:space="preserve">
-    <value>Review Engagement</value>
+    <value>Vérifier l’engagement</value>
   </data>
   <data name="Service_Provider" xml:space="preserve">
-    <value>Service Provider</value>
+    <value>Prestataire de services</value>
   </data>
   <data name="Average_Review_Score" xml:space="preserve">
-    <value>Average Review Score</value>
-  </data>
-  <data name="Number_of_Reviewed" xml:space="preserve">
-    <value>Number of Reviews</value>
+    <value>Score de vérification moyen</value>
   </data>
   <data name="Number_of_Engagement_Reviewed" xml:space="preserve">
-    <value>Number of Engagement Reviewed</value>
+    <value>Nombre d’engagements vérifiés</value>
   </data>
   <data name="Score" xml:space="preserve">
     <value>Score</value>
   </data>
   <data name="Please_select_Time_Zone" xml:space="preserve">
-    <value>Please select Time Zone.</value>
+    <value>Sélectionnez un fuseau horaire.</value>
   </data>
   <data name="Provide_rating_for_each" xml:space="preserve">
-    <value>Please provide a star rating for each question.</value>
+    <value>Évaluez chaque question grâce à un nombre d’étoiles.</value>
   </data>
   <data name="review_confirm" xml:space="preserve">
-    <value>Please note - once saved you will not be able to edit the information&#39;. Are you sure you want to save the information?</value>
+    <value>Veuillez noter - une fois les informations enregistrées, vous ne pourrez plus les modifier. Voulez-vous vraiment enregistrer les informations ?</value>
   </data>
   <data name="review_saved_successfully" xml:space="preserve">
-    <value>Engagement completed review has been saved successfully.</value>
+    <value>Enregistrement de la vérification complète de l’engagement réussi.</value>
   </data>
   <data name="select_atleast_one_image" xml:space="preserve">
-    <value>Please select atleast one image</value>
+    <value>Sélectionnez au moins une image</value>
   </data>
   <data name="Small" xml:space="preserve">
-    <value>Small</value>
+    <value>Petit</value>
   </data>
   <data name="Performance_date_required" xml:space="preserve">
-    <value>Performance date is required</value>
+    <value>La date de la performance est obligatoire</value>
   </data>
   <data name="Performance_time_required" xml:space="preserve">
-    <value>Performance time is required</value>
+    <value>L’heure de la performance est obligatoire</value>
   </data>
   <data name="on" xml:space="preserve">
-    <value>on</value>
+    <value>activation</value>
   </data>
   <data name="Timezone_required" xml:space="preserve">
-    <value>Timezone is required</value>
+    <value>Le fuseau horaire est obligatoire</value>
   </data>
   <data name="Performance_Time" xml:space="preserve">
-    <value>Performance Time</value>
+    <value>Temps des performances</value>
   </data>
   <data name="Performance_Date" xml:space="preserve">
-    <value>Performance Date</value>
+    <value>Date de la performance</value>
   </data>
   <data name="Medium" xml:space="preserve">
-    <value>Medium</value>
+    <value>Moyen</value>
   </data>
   <data name="Large" xml:space="preserve">
-    <value>Large</value>
+    <value>Grand</value>
   </data>
   <data name="Actual" xml:space="preserve">
-    <value>Actual</value>
+    <value>Réel</value>
   </data>
   <data name="reduce_upload_size" xml:space="preserve">
-    <value>You can reduce upload size by scaling the image to one of the sizes below</value>
+    <value>Vous pouvez réduire la taille du téléchargement en redimensionnant l’image (tailles ci-dessous)</value>
   </data>
   <data name="Select_Reject_Reason" xml:space="preserve">
-    <value>Select Reject Reason</value>
+    <value>Sélectionner une raison de rejet</value>
   </data>
   <data name="Actions_for" xml:space="preserve">
-    <value>Actions for</value>
+    <value>Actions pour</value>
   </data>
   <data name="close_Engagement_Msg" xml:space="preserve">
-    <value>Clicking Submit will close this engagement permanently and Service Providers will not be able to submit additional invoices for completed work. Tap Submit to close this engagement, or Cancel if you prefer it remain open for invoicing.</value>
+    <value>Cliquer sur Soumettre fermera définitivement cet engagement et les prestataires de services ne pourront plus soumettre de factures supplémentaires pour le travail effectué. Cliquez sur Soumettre pour fermer cet engagement ou sur Annuler si vous souhaitez pouvoir encore facturer.</value>
   </data>
   <data name="Active_Submits" xml:space="preserve">
-    <value>Active Submits</value>
+    <value>Soumissions actives</value>
   </data>
   <data name="Actual_Completion_Date" xml:space="preserve">
-    <value>Actual Completion Date</value>
+    <value>Date d’achèvement réelle</value>
   </data>
   <data name="Add_Timesheet_Entry" xml:space="preserve">
-    <value>Add Timesheet Entry</value>
+    <value>Ajouter une entrée de feuille de temps</value>
   </data>
   <data name="Add_Track_Code" xml:space="preserve">
-    <value>Add Track Code</value>
+    <value>Ajouter un code Suivi</value>
   </data>
   <data name="Additional_Funds_Requested" xml:space="preserve">
-    <value>Additional Funds Requested</value>
+    <value>Fonds supplémentaires sollicités</value>
   </data>
   <data name="Additional_Information" xml:space="preserve">
-    <value>Additional Information</value>
+    <value>Informations supplémentaires</value>
   </data>
   <data name="AddlInfo_Req_timesheet" xml:space="preserve">
-    <value>Additional information is required for this timesheet</value>
+    <value>Des informations supplémentaires sont obligatoires pour cette feuille de temps</value>
   </data>
   <data name="AddlInfo_Save_timesheet" xml:space="preserve">
-    <value>Additional information saved on timesheet</value>
+    <value>Des informations supplémentaires ont été enregistrées pour cette feuille de temps</value>
   </data>
   <data name="Address" xml:space="preserve">
-    <value>Address</value>
+    <value>Adresse</value>
   </data>
   <data name="Address_1" xml:space="preserve">
-    <value>Address 1</value>
+    <value>Adresse 1</value>
   </data>
   <data name="Address_2" xml:space="preserve">
-    <value>Address 2</value>
+    <value>Adresse 2</value>
   </data>
   <data name="Adjustment" xml:space="preserve">
-    <value>Adjustment</value>
+    <value>Ajustement</value>
   </data>
   <data name="Adjustment_que" xml:space="preserve">
-    <value>adjustment?</value>
+    <value>ajustement ?</value>
   </data>
   <data name="Adjustment_Amount" xml:space="preserve">
-    <value>Adjustment Amount</value>
+    <value>Montant de l’ajustement</value>
   </data>
   <data name="Adjustment_Details" xml:space="preserve">
-    <value>Adjustment Details</value>
+    <value>Détails sur l’ajustement</value>
   </data>
   <data name="Adjustment_Title" xml:space="preserve">
-    <value>Adjustment Title</value>
+    <value>Titre de l’ajustement</value>
   </data>
   <data name="Adjustment_Track" xml:space="preserve">
-    <value>Adjustment Track</value>
+    <value>Suivi de l’ajustement</value>
   </data>
   <data name="Adjustment_Track_Code" xml:space="preserve">
-    <value>Adjustment Track Code</value>
+    <value>Code Suivi de l’ajustement</value>
   </data>
   <data name="Adjustments" xml:space="preserve">
-    <value>Adjustments</value>
+    <value>Ajustements</value>
   </data>
   <data name="After" xml:space="preserve">
-    <value>After</value>
+    <value>Après</value>
   </data>
   <data name="Agreement" xml:space="preserve">
-    <value>Agreement</value>
+    <value>Accord</value>
   </data>
   <data name="Agreement_ID" xml:space="preserve">
-    <value>Agreement ID</value>
+    <value>ID accord</value>
   </data>
   <data name="All_rates_values" xml:space="preserve">
-    <value>All rates values</value>
+    <value>Toutes les valeurs de taux</value>
   </data>
   <data name="Alt_Phone_Number" xml:space="preserve">
-    <value>Alternate Phone</value>
+    <value>Autre téléphone</value>
   </data>
   <data name="Alternate_Interview_Date" xml:space="preserve">
-    <value>Alternate Interview Date</value>
+    <value>Autre date de l’entretien</value>
   </data>
   <data name="Alternate_Interview_Time" xml:space="preserve">
-    <value>Alternate Interview Time</value>
+    <value>Autre heure de l’entretien</value>
   </data>
   <data name="Amendment_Type" xml:space="preserve">
-    <value>Amendment Type</value>
+    <value>Type de correction</value>
   </data>
   <data name="Amount" xml:space="preserve">
-    <value>Amount</value>
+    <value>Montant</value>
   </data>
   <data name="Amount_Awaiting_Approval" xml:space="preserve">
-    <value>Amount Awaiting Approval</value>
+    <value>Montant en attente d’approbation</value>
   </data>
   <data name="Amount_Invoiced" xml:space="preserve">
-    <value>Amount Invoiced</value>
+    <value>Montant facturé</value>
   </data>
   <data name="Amount_Released_for_Invoicing" xml:space="preserve">
-    <value>Amount Released for Invoicing</value>
+    <value>Montant débloqué pour la facturation</value>
   </data>
   <data name="Answer" xml:space="preserve">
-    <value>Answer</value>
+    <value>Réponse</value>
   </data>
   <data name="Approv_Requisitions" xml:space="preserve">
-    <value>Approve Requisitions</value>
+    <value>Approuver les demandes</value>
   </data>
   <data name="Approval_s" xml:space="preserve">
-    <value>approval(s)</value>
+    <value>approbations</value>
   </data>
   <data name="Approval_History" xml:space="preserve">
-    <value>Approval History</value>
+    <value>Historique des approbations</value>
   </data>
   <data name="Approval_Manager" xml:space="preserve">
-    <value>Approval Manager</value>
+    <value>Responsable de l’approbation</value>
   </data>
   <data name="Approval_Method" xml:space="preserve">
-    <value>Approval Method</value>
+    <value>Méthode d’approbation</value>
   </data>
   <data name="Approval_Step" xml:space="preserve">
-    <value>Approval Step</value>
+    <value>Étape de l’approbation</value>
   </data>
   <data name="Approval_Succeeded" xml:space="preserve">
-    <value>Approval succeeded</value>
+    <value>Approbation réussie</value>
   </data>
   <data name="Approval_successful" xml:space="preserve">
-    <value>Approval was successful</value>
+    <value>Approbation réussie</value>
   </data>
   <data name="Please_select_reason_for_engagement_closure" xml:space="preserve">
-    <value>Please select reason for engagement closure.</value>
+    <value>Sélectionnez une raison pour la fermeture de l’engagement.</value>
   </data>
   <data name="Approvals" xml:space="preserve">
-    <value>Approvals</value>
+    <value>Approbations</value>
   </data>
   <data name="Approvals" xml:space="preserve">
-    <value>Approvals</value>
+    <value>Approbations</value>
   </data>
   <data name="Approve_Adjustments" xml:space="preserve">
-    <value>Approve Adjustments</value>
+    <value>Approuver les ajustements</value>
   </data>
   <data name="Approve_Engagement" xml:space="preserve">
-    <value>Approve Engagement</value>
+    <value>Approuver l’engagement</value>
   </data>
   <data name="Approve_Expense" xml:space="preserve">
-    <value>Approve Expense</value>
+    <value>Approuver les frais</value>
   </data>
   <data name="Approve_Invoices" xml:space="preserve">
-    <value>Approve Invoices</value>
+    <value>Approuver les factures</value>
   </data>
   <data name="Approve_Method" xml:space="preserve">
-    <value>Approve Method</value>
+    <value>Approuver la méthode</value>
   </data>
   <data name="Approve_Projects" xml:space="preserve">
-    <value>Approve Projects</value>
+    <value>Approuver les projets</value>
   </data>
   <data name="Approve_Service_Invoices" xml:space="preserve">
-    <value>Approve Service Invoices</value>
+    <value>Approuver les factures de services</value>
   </data>
   <data name="Approve_SOW_Requisitions" xml:space="preserve">
-    <value>Approve SOW Requisitions</value>
+    <value>Approuver les demandes de SOW</value>
   </data>
   <data name="Approve_Staff_Aug_Requisition" xml:space="preserve">
-    <value>Approve Staff Aug Requisition</value>
+    <value>Approuver une demande d’aug effectifs</value>
   </data>
   <data name="Approve_Timesheet" xml:space="preserve">
-    <value>Approve Timesheet</value>
+    <value>Approuver la feuille de temps</value>
   </data>
   <data name="approved" xml:space="preserve">
-    <value>approved</value>
+    <value>approuvé</value>
   </data>
   <data name="Approved_Budget" xml:space="preserve">
-    <value>Approved Budget</value>
+    <value>Budget approuvé</value>
   </data>
   <data name="Approved_By" xml:space="preserve">
-    <value>Approved By</value>
+    <value>Approuvé par</value>
   </data>
   <data name="Approved_On" xml:space="preserve">
-    <value>Approved On</value>
+    <value>Approuvé le</value>
   </data>
   <data name="Approver" xml:space="preserve">
-    <value>Approver</value>
+    <value>Approbateur</value>
   </data>
   <data name="Approving" xml:space="preserve">
-    <value>Approving</value>
+    <value>Approbation</value>
   </data>
   <data name="Ascending" xml:space="preserve">
-    <value>Ascending</value>
+    <value>Par ordre croissant</value>
   </data>
   <data name="Assign_Track_Code" xml:space="preserve">
-    <value>Assign Track Code</value>
+    <value>Assigner un code Suivi</value>
   </data>
   <data name="Assigned" xml:space="preserve">
-    <value>assigned</value>
+    <value>assigné</value>
   </data>
   <data name="Attachment" xml:space="preserve">
-    <value>Attachment</value>
+    <value>Pièce jointe</value>
   </data>
   <data name="Attachment_Uploaded" xml:space="preserve">
-    <value>Attachment uploaded successfully</value>
+    <value>Téléchargement de la pièce jointe réussi</value>
   </data>
   <data name="Attachments" xml:space="preserve">
-    <value>Attachments</value>
+    <value>Pièces jointes</value>
   </data>
   <data name="Attendees" xml:space="preserve">
-    <value>Attendees</value>
+    <value>Participants</value>
   </data>
   <data name="Authorize_PushNotiifcation" xml:space="preserve">
-    <value>You are not authorized user for push-notification you received</value>
+    <value>Vous n’êtes pas l’utilisateur autorisé de la notification Push reçue</value>
   </data>
   <data name="Available_for_Invoicing" xml:space="preserve">
-    <value>Available for Invoicing</value>
+    <value>Disponible pour facturation</value>
   </data>
   <data name="Bill" xml:space="preserve">
-    <value>Bill</value>
+    <value>Facture</value>
   </data>
   <data name="Bill_Rate" xml:space="preserve">
-    <value>Bill Rate</value>
+    <value>Taux de facturation</value>
   </data>
   <data name="Btn_Active" xml:space="preserve">
-    <value>Active</value>
+    <value>Actif</value>
   </data>
   <data name="Btn_All" xml:space="preserve">
-    <value>All</value>
+    <value>Tout</value>
   </data>
   <data name="Btn_Apply" xml:space="preserve">
-    <value>Apply</value>
+    <value>Appliquer</value>
   </data>
   <data name="Btn_Approve" xml:space="preserve">
-    <value>Approve</value>
+    <value>Approuver</value>
   </data>
   <data name="Btn_Assign" xml:space="preserve">
-    <value>Assign</value>
+    <value>Assigner</value>
   </data>
   <data name="Btn_CANCEL" xml:space="preserve">
-    <value>CANCEL</value>
+    <value>ANNULER</value>
   </data>
   <data name="Btn_Decline" xml:space="preserve">
-    <value>Decline</value>
+    <value>Refuser</value>
   </data>
   <data name="Btn_Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Modifier</value>
   </data>
   <data name="Btn_OK" xml:space="preserve">
-    <value>OK</value>
+    <value>VALIDER</value>
   </data>
   <data name="Btn_Reset" xml:space="preserve">
-    <value>Reset</value>
+    <value>Réinitialiser</value>
   </data>
   <data name="Btn_Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Enregistrer</value>
   </data>
   <data name="Btn_Send" xml:space="preserve">
-    <value>Send</value>
+    <value>Envoyer</value>
   </data>
   <data name="Btn_Submit" xml:space="preserve">
-    <value>Submit</value>
+    <value>Soumettre</value>
   </data>
   <data name="Btn_Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mettre à jour</value>
   </data>
   <data name="Btn_Yes" xml:space="preserve">
-    <value>yes</value>
+    <value>oui</value>
   </data>
   <data name="Business_Expense" xml:space="preserve">
-    <value>Business Expense</value>
+    <value>Frais professionnels</value>
   </data>
   <data name="Business_Name" xml:space="preserve">
-    <value>Business Name</value>
+    <value>Raison sociale</value>
   </data>
   <data name="Business_Purpose" xml:space="preserve">
-    <value>Business Purpose</value>
+    <value>Objectif commercial</value>
   </data>
   <data name="Business_Unit" xml:space="preserve">
-    <value>Business Unit</value>
+    <value>Unité commerciale</value>
   </data>
   <data name="Cancel_que" xml:space="preserve">
-    <value>Cancel?</value>
+    <value>Annuler ?</value>
   </data>
   <data name="Candidate" xml:space="preserve">
-    <value>Candidate</value>
+    <value>Candidat</value>
   </data>
   <data name="Candidate_Document_Status" xml:space="preserve">
-    <value>Candidate Document Status</value>
+    <value>Statut des documents du candidat</value>
   </data>
   <data name="Candidate_Location" xml:space="preserve">
-    <value>Candidate Location</value>
+    <value>Emplacement du candidat</value>
   </data>
   <data name="Candidate_Name" xml:space="preserve">
-    <value>Candidate Name</value>
+    <value>Nom du candidat</value>
   </data>
   <data name="Candidate_Score" xml:space="preserve">
-    <value>Candidate Score</value>
+    <value>Score candidat</value>
   </data>
   <data name="Candidate_Submission_Status" xml:space="preserve">
-    <value>Candidate Submission Status</value>
+    <value>Statut de la soumission du candidat</value>
   </data>
   <data name="Candidate_Summary" xml:space="preserve">
-    <value>Candidate Summary</value>
+    <value>Résumé du candidat</value>
   </data>
   <data name="Category" xml:space="preserve">
-    <value>Category</value>
+    <value>Catégorie</value>
   </data>
   <data name="Category_Description" xml:space="preserve">
-    <value>Category Description</value>
+    <value>Description de la catégorie</value>
   </data>
   <data name="Certifications" xml:space="preserve">
     <value>Certifications</value>
@@ -512,1598 +509,1601 @@
     <value>Certifications/Documents</value>
   </data>
   <data name="Change_Password" xml:space="preserve">
-    <value>Change Password</value>
+    <value>Changer le mot de passe</value>
   </data>
   <data name="Change_Request_Date" xml:space="preserve">
-    <value>Change Request Date</value>
+    <value>Date de sollicitation du changement</value>
   </data>
   <data name="Changed_By" xml:space="preserve">
-    <value>Changed By</value>
+    <value>Changé par</value>
   </data>
   <data name="Changed_Date" xml:space="preserve">
-    <value>Changed Date</value>
+    <value>Date du changement</value>
   </data>
   <data name="Chat" xml:space="preserve">
-    <value>Chat</value>
+    <value>Converser</value>
   </data>
   <data name="Check" xml:space="preserve">
-    <value>Check</value>
+    <value>Chèque</value>
   </data>
   <data name="Check_Date" xml:space="preserve">
-    <value>Check Date</value>
+    <value>Date de contrôle</value>
   </data>
   <data name="Check_Number" xml:space="preserve">
-    <value>Check Number</value>
+    <value>Numéro de chèque</value>
   </data>
   <data name="Choose_From_Library" xml:space="preserve">
-    <value>Choose From Library</value>
+    <value>Choisir dans la bibliothèque</value>
   </data>
   <data name="Choose_Reason" xml:space="preserve">
-    <value>Choose Reason</value>
+    <value>Choisir une raison</value>
   </data>
   <data name="City" xml:space="preserve">
-    <value>City</value>
+    <value>Ville</value>
   </data>
   <data name="Comments" xml:space="preserve">
-    <value>Comments</value>
+    <value>Commentaires</value>
   </data>
   <data name="Compare" xml:space="preserve">
-    <value>Compare</value>
+    <value>Comparaison</value>
   </data>
   <data name="Competencies" xml:space="preserve">
-    <value>Competencies</value>
+    <value>Compétences</value>
   </data>
   <data name="Competency_Level" xml:space="preserve">
-    <value>Competency Level</value>
+    <value>Niveau de compétence</value>
   </data>
   <data name="Competency_Require" xml:space="preserve">
-    <value>Competency Required</value>
+    <value>Compétence obligatoire</value>
   </data>
   <data name="Confirm" xml:space="preserve">
-    <value>Confirm</value>
+    <value>Confirmer</value>
   </data>
   <data name="Confirm_Delete" xml:space="preserve">
-    <value>Do you really want to delete?</value>
+    <value>Voulez-vous vraiment supprimer ?</value>
   </data>
   <data name="Confirm_Msg" xml:space="preserve">
-    <value>Are you sure you want to</value>
+    <value>Voulez-vous vraiment</value>
   </data>
   <data name="Confirm_Msg_Decline" xml:space="preserve">
-    <value>decline this change request?</value>
+    <value>refuser cette sollicitation de changement ?</value>
   </data>
   <data name="Confirm_Password" xml:space="preserve">
-    <value>Confirm Password</value>
+    <value>Confirmer le mot de passe</value>
   </data>
   <data name="Confirm_PushNotification" xml:space="preserve">
-    <value>Would you like to receive push notifications about important work related tasks?</value>
+    <value>Voulez-vous recevoir des notifications Push pour certaines tâches importantes ?</value>
   </data>
   <data name="Confirm_Submit_Candidate" xml:space="preserve">
-    <value>This candidate is currently submitted to one or more requisition and/or on an active project.</value>
+    <value>Soumettre un candidat, ce candidat est actuellement soumis pour au moins une condition nécessaire et/ou participe à un projet actif. Continuer ?</value>
   </data>
   <data name="Confirmation_PushNotification" xml:space="preserve">
-    <value>Push Notification Confirmation</value>
+    <value>Confirmation de la notification Push</value>
   </data>
   <data name="Confrim_ProfilePicture" xml:space="preserve">
-    <value>Your profile picture has not been setup yet. Would you like to do that now?</value>
+    <value>Votre photo de profil n’a pas encore été configurée. Voulez-vous le faire maintenant ?</value>
   </data>
   <data name="Connection_Problem" xml:space="preserve">
-    <value>We are having trouble connecting Please check your connection and try again</value>
+    <value>Impossible de se connecter. Vérifiez votre connexion et réessayez</value>
   </data>
   <data name="Consolidated_Invoice_Date" xml:space="preserve">
-    <value>Consolidated Invoice Date</value>
+    <value>Date de la facture consolidée</value>
   </data>
   <data name="Consolidation_Level_1" xml:space="preserve">
-    <value>Consolidation Level 1</value>
+    <value>Consolidation Niveau 1</value>
   </data>
   <data name="Consolidation_Level_2" xml:space="preserve">
-    <value>Consolidation Level 2</value>
+    <value>Consolidation Niveau 2</value>
   </data>
   <data name="Consolidation_Level_3" xml:space="preserve">
-    <value>Consolidation Level 3</value>
+    <value>Consolidation Niveau 3</value>
   </data>
   <data name="Consolidation_Level_4" xml:space="preserve">
-    <value>Consolidation Level 4</value>
+    <value>Consolidation Niveau 4</value>
   </data>
   <data name="Contact_Information" xml:space="preserve">
-    <value>Contact Information</value>
+    <value>Informations sur le contact</value>
   </data>
   <data name="Contact_Name" xml:space="preserve">
-    <value>Contact Name</value>
+    <value>Nom du contact</value>
   </data>
   <data name="Contact_Us" xml:space="preserve">
-    <value>Contact Us</value>
+    <value>Contactez-nous</value>
   </data>
   <data name="Continue_with_approval" xml:space="preserve">
-    <value>Continue with approval</value>
+    <value>Reprendre l’approbation</value>
   </data>
   <data name="Copy_previous" xml:space="preserve">
-    <value>Copy previous</value>
+    <value>Copier le précédent</value>
   </data>
   <data name="Country" xml:space="preserve">
-    <value>Country</value>
+    <value>Pays</value>
   </data>
   <data name="County" xml:space="preserve">
-    <value>County</value>
+    <value>Département</value>
   </data>
   <data name="Create_Expense_Report" xml:space="preserve">
-    <value>Create Expense Report</value>
+    <value>Créer une note de frais</value>
   </data>
   <data name="Create_Timesheet" xml:space="preserve">
-    <value>Create Timesheet</value>
+    <value>Créer une feuille de temps</value>
   </data>
   <data name="Created_By" xml:space="preserve">
-    <value>Created By</value>
+    <value>Création par</value>
   </data>
   <data name="Created_On" xml:space="preserve">
-    <value>Created On</value>
+    <value>Création le</value>
   </data>
   <data name="Currency_Code" xml:space="preserve">
-    <value>Currency Code</value>
+    <value>Code Devise</value>
   </data>
   <data name="Current_Password" xml:space="preserve">
-    <value>Current Password</value>
+    <value>Mots de passe actuel</value>
   </data>
   <data name="Current_Track_Code_Selection" xml:space="preserve">
-    <value>Current Track Code Selection</value>
+    <value>Sélection de codes Suivi actuelle</value>
   </data>
   <data name="Custom_Fields" xml:space="preserve">
-    <value>Custom Fields</value>
+    <value>Champs personnalisés</value>
   </data>
   <data name="Select_Reason" xml:space="preserve">
-    <value>Select Reason</value>
+    <value>Sélectionner une raison</value>
   </data>
   <data name="Customer" xml:space="preserve">
-    <value>Customer</value>
+    <value>Client</value>
   </data>
   <data name="Customer_Amount" xml:space="preserve">
-    <value>Customer Amount</value>
+    <value>Montant du client</value>
   </data>
   <data name="Customer_Manager" xml:space="preserve">
-    <value>Customer Manager</value>
+    <value>Responsable clientèle</value>
   </data>
   <data name="Customer_Rate" xml:space="preserve">
-    <value>Customer Rate</value>
+    <value>Taux client</value>
   </data>
   <data name="Customer_Service" xml:space="preserve">
-    <value>Customer Service</value>
+    <value>Service clientèle</value>
   </data>
   <data name="Date" xml:space="preserve">
     <value>Date</value>
   </data>
   <data name="Date_Available" xml:space="preserve">
-    <value>Date Available</value>
+    <value>Date de disponibilité</value>
   </data>
   <data name="Date_Time" xml:space="preserve">
-    <value>Date/Time</value>
+    <value>Date/Heure</value>
   </data>
   <data name="Decline" xml:space="preserve">
-    <value>decline</value>
+    <value>refuser</value>
   </data>
   <data name="Decline_que" xml:space="preserve">
-    <value>Decline?</value>
+    <value>Refuser ?</value>
   </data>
   <data name="Declined" xml:space="preserve">
-    <value>declined</value>
+    <value>refusé</value>
   </data>
   <data name="Descending" xml:space="preserve">
-    <value>Descending</value>
+    <value>Par ordre décroissant</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
   <data name="Desired_Pay" xml:space="preserve">
-    <value>Desired Pay</value>
+    <value>Paiement souhaité</value>
   </data>
   <data name="Destination" xml:space="preserve">
     <value>Destination</value>
   </data>
   <data name="Device_Settings" xml:space="preserve">
-    <value>application (in the device&#39;s general settings) In order for mobile to function properly, please repeat this process in the device&#39;s general settings, ie first disable it once and again enable these settings</value>
+    <value>l’application (dans les paramètres généraux de l’appareil) Pour que le mobile fonctionne correctement, répétez cette opération dans les paramètres généraux de l’appareil, c’est-à-dire désactivez, puis réactivez ces paramètres</value>
   </data>
   <data name="Difference" xml:space="preserve">
-    <value>Difference</value>
+    <value>Différence</value>
   </data>
   <data name="Difference_From_Target_Rate" xml:space="preserve">
-    <value>Difference From Target Rate</value>
+    <value>Différence par rapport au taux cible</value>
   </data>
   <data name="Disabled_Notification" xml:space="preserve">
-    <value>You disabled notification settings outside of the</value>
+    <value>Vous avez désactivé les paramètres de notifications en dehors de</value>
   </data>
   <data name="Distribution_of_Approved_Budget" xml:space="preserve">
-    <value>Distribution of Approved Budget</value>
+    <value>Distribution du budget approuvé</value>
   </data>
   <data name="Division" xml:space="preserve">
     <value>Division</value>
   </data>
   <data name="Division_Customer" xml:space="preserve">
-    <value>Division/Customer</value>
+    <value>Division/Client</value>
   </data>
   <data name="Document_Type" xml:space="preserve">
-    <value>Document Type</value>
+    <value>Type de document</value>
   </data>
   <data name="Dont_Ask_Again" xml:space="preserve">
-    <value>Dont Ask Again</value>
+    <value>Ne plus me demander</value>
   </data>
   <data name="Dossier" xml:space="preserve">
     <value>Dossier</value>
   </data>
   <data name="Duration" xml:space="preserve">
-    <value>Duration</value>
+    <value>Durée</value>
   </data>
   <data name="E_mail" xml:space="preserve">
-    <value>Email</value>
+    <value>E-mail</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="Employment" xml:space="preserve">
-    <value>Employment</value>
+    <value>Emploi</value>
   </data>
   <data name="empty" xml:space="preserve">
-    <value>empty</value>
+    <value>vide</value>
   </data>
   <data name="Enable_Push_Notifications" xml:space="preserve">
-    <value>Enable Push Notification</value>
+    <value>Activer la notification Push</value>
   </data>
   <data name="End" xml:space="preserve">
-    <value>End</value>
+    <value>Fin</value>
   </data>
   <data name="End_Date" xml:space="preserve">
-    <value>End Date</value>
+    <value>Date de fin</value>
   </data>
   <data name="Engagement" xml:space="preserve">
     <value>Engagement</value>
   </data>
   <data name="Engagement_Change_Request" xml:space="preserve">
-    <value>Engagement Change Request</value>
+    <value>Sollicitation de changement d’engagement</value>
   </data>
   <data name="Engagement_Details" xml:space="preserve">
-    <value>Engagement Details</value>
+    <value>Détails sur l’engagement</value>
   </data>
   <data name="Engagement_Duration_Increase_days" xml:space="preserve">
-    <value>Engagement Duration Increase (days)</value>
+    <value>Augmentation de la durée de l’engagement (jours)</value>
   </data>
   <data name="Engagement_ID" xml:space="preserve">
-    <value>Engagement ID</value>
+    <value>ID engagement</value>
   </data>
   <data name="Engagement_Item" xml:space="preserve">
-    <value>Engagement Item</value>
+    <value>Élément d’engagement</value>
   </data>
   <data name="Engagement_line_Item" xml:space="preserve">
-    <value>Engagement line Item</value>
+    <value>Élément de ligne d’engagement</value>
   </data>
   <data name="Engagement_Name" xml:space="preserve">
-    <value>Engagement Name</value>
+    <value>Nom de l’engagement</value>
   </data>
   <data name="Engagement_Owner" xml:space="preserve">
-    <value>Engagement Owner</value>
+    <value>Détenteur de l’engagement</value>
   </data>
   <data name="Engagement_Owners" xml:space="preserve">
-    <value>Engagement Owners</value>
+    <value>Détenteurs d’engagements</value>
   </data>
   <data name="Engagement_Status" xml:space="preserve">
-    <value>Engagement Status</value>
+    <value>Statut de l’engagement</value>
   </data>
   <data name="Est_Date" xml:space="preserve">
-    <value>Est Date</value>
+    <value>Date est</value>
   </data>
   <data name="Est_Days" xml:space="preserve">
-    <value>Est Days</value>
+    <value>Jours est</value>
   </data>
   <data name="Estimated_Completion_Date" xml:space="preserve">
-    <value>Estimated Completion Date</value>
+    <value>Date d’achèvement estimée</value>
   </data>
   <data name="Estimated_Cost" xml:space="preserve">
-    <value>Estimated Cost</value>
+    <value>Coût estimé</value>
   </data>
   <data name="Estimated_Due_Date" xml:space="preserve">
-    <value>Estimated Due Date</value>
+    <value>Échéance estimée</value>
   </data>
   <data name="Estimated_Spend" xml:space="preserve">
-    <value>Estimated Spend</value>
+    <value>Dépenses estimées</value>
   </data>
   <data name="Expense" xml:space="preserve">
-    <value>Expense</value>
+    <value>Frais</value>
   </data>
   <data name="Expense" xml:space="preserve">
-    <value>Expense</value>
+    <value>Frais</value>
   </data>
   <data name="Expense_Amount" xml:space="preserve">
-    <value>Expense Amount</value>
+    <value>Montant des frais</value>
   </data>
   <data name="Expense_Date" xml:space="preserve">
-    <value>Expense Date</value>
+    <value>Date de frais</value>
   </data>
   <data name="Expense_ID" xml:space="preserve">
-    <value>Expense ID</value>
+    <value>ID frais</value>
   </data>
   <data name="Expense_Item" xml:space="preserve">
-    <value>Expense Item</value>
+    <value>Élément de frais</value>
   </data>
   <data name="Expense_Items" xml:space="preserve">
-    <value>Expense Items</value>
+    <value>Éléments de frais</value>
   </data>
   <data name="Expense_Report" xml:space="preserve">
-    <value>Expense Report</value>
+    <value>Note de frais</value>
   </data>
   <data name="Expense_Report_ID" xml:space="preserve">
-    <value>Expense Report ID</value>
+    <value>ID note de frais</value>
   </data>
   <data name="Expense_Type" xml:space="preserve">
-    <value>Expense Type</value>
+    <value>Type de frais</value>
   </data>
   <data name="Extend_The_Offer_que" xml:space="preserve">
-    <value>extend the offer?</value>
+    <value>prolonger l’offre ?</value>
   </data>
   <data name="Fax" xml:space="preserve">
     <value>Fax</value>
   </data>
   <data name="File_Not_Exist" xml:space="preserve">
-    <value>Selected file does not exist</value>
+    <value>Le fichier sélectionné n’existe pas</value>
   </data>
   <data name="Filter_Adjustments" xml:space="preserve">
-    <value>Filter Adjustments</value>
+    <value>Filtrer les ajustements</value>
   </data>
   <data name="Filter_Approve_Engagements" xml:space="preserve">
-    <value>Filter Approve Engagements</value>
+    <value>Filtrer les engagements approuvés</value>
   </data>
   <data name="Filter_Candidates" xml:space="preserve">
-    <value>Filter Candidates</value>
+    <value>Filtrer les candidats</value>
   </data>
   <data name="Filter_Expenses" xml:space="preserve">
-    <value>Filter Expenses</value>
+    <value>Filtrer les frais</value>
   </data>
   <data name="Filter_Invoices" xml:space="preserve">
-    <value>Filter Invoices</value>
+    <value>Filtrer les factures</value>
   </data>
   <data name="Filter_Open_Requisition" xml:space="preserve">
-    <value>Filter Open Requisition</value>
+    <value>Filtrer les demandes ouvertes</value>
   </data>
   <data name="Filter_Pay_History" xml:space="preserve">
-    <value>Filter Pay History</value>
+    <value>Filtrer l’historique des paiements</value>
   </data>
   <data name="Filter_Projects" xml:space="preserve">
-    <value>Filter Projects</value>
+    <value>Filtrer les projets</value>
   </data>
   <data name="Filter_Requisitions" xml:space="preserve">
-    <value>Filter Requisitions</value>
+    <value>Filtrer les demandes</value>
   </data>
   <data name="Filter_Service_Invoices" xml:space="preserve">
-    <value>Filter Service Invoices</value>
+    <value>Filtrer les factures de services</value>
   </data>
   <data name="Filter_SOW_Requisitions" xml:space="preserve">
-    <value>Filter SOW Requisitions</value>
+    <value>Filtrer les demandes de SOW</value>
   </data>
   <data name="Filter_Timesheet" xml:space="preserve">
-    <value>Filter Timesheet</value>
+    <value>Filtrer la feuille de temps</value>
   </data>
   <data name="Filter_Timesheets" xml:space="preserve">
-    <value>Filter Timesheets</value>
+    <value>Filtrer les feuilles de temps</value>
   </data>
   <data name="Filter_Track_Codes" xml:space="preserve">
-    <value>Filter Track Codes</value>
+    <value>Filtrer les codes Suivi</value>
   </data>
   <data name="Financial_Tracking" xml:space="preserve">
-    <value>Financial Tracking</value>
+    <value>Suivi financier</value>
   </data>
   <data name="Fixed" xml:space="preserve">
-    <value>Fixed</value>
+    <value>Fixe</value>
   </data>
   <data name="For" xml:space="preserve">
-    <value>for</value>
+    <value>pour</value>
   </data>
   <data name="For_This" xml:space="preserve">
-    <value>for this</value>
+    <value>pour ce/cette/ces</value>
   </data>
   <data name="Have_Errors" xml:space="preserve">
-    <value>have errors</value>
+    <value>ont des erreurs</value>
   </data>
   <data name="Hiring_Manager" xml:space="preserve">
-    <value>Hiring Manager</value>
+    <value>Recruteur potentiel</value>
   </data>
   <data name="History" xml:space="preserve">
-    <value>History</value>
+    <value>Historique</value>
   </data>
   <data name="Hours" xml:space="preserve">
-    <value>Hours</value>
+    <value>Heures</value>
   </data>
   <data name="ID" xml:space="preserve">
     <value>ID</value>
   </data>
   <data name="Impersonated_By_User" xml:space="preserve">
-    <value>Impersonated By User</value>
+    <value>Imité par l’utilisateur</value>
   </data>
   <data name="In_Date" xml:space="preserve">
-    <value>In Date</value>
+    <value>Dans la date</value>
   </data>
   <data name="In_Time" xml:space="preserve">
-    <value>In Time</value>
+    <value>Dans l’heure</value>
   </data>
   <data name="Increase_in_Engagement_Duration_days" xml:space="preserve">
-    <value>Increase in Engagement Duration (days)</value>
+    <value>Augmentation de la durée de l’engagement (jours)</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Information</value>
+    <value>Informations</value>
   </data>
   <data name="Interview" xml:space="preserve">
-    <value>Interview</value>
+    <value>Entretien</value>
   </data>
   <data name="Interview_Duration" xml:space="preserve">
-    <value>Interview Duration</value>
+    <value>Durée de l’entretien</value>
   </data>
   <data name="Interview_History" xml:space="preserve">
-    <value>Interview History</value>
+    <value>Historique des entretiens</value>
   </data>
   <data name="Interview_Location" xml:space="preserve">
-    <value>Interview Location</value>
+    <value>Emplacement de l’entretien</value>
   </data>
   <data name="Interview_Request" xml:space="preserve">
-    <value>Interview Request</value>
+    <value>Sollicitation d’un entretien</value>
   </data>
   <data name="Interview_Status" xml:space="preserve">
-    <value>Interview Status</value>
+    <value>Statut de l’entretien</value>
   </data>
   <data name="Interview_Type" xml:space="preserve">
-    <value>Interview Type</value>
+    <value>Type d’entretien</value>
   </data>
   <data name="interviewed" xml:space="preserve">
-    <value>interviewed</value>
+    <value>a passé un entretien</value>
   </data>
   <data name="Interviewer_Name" xml:space="preserve">
-    <value>Interviewer Name</value>
+    <value>Nom de la personne faisant passer l’entretien</value>
   </data>
   <data name="Invoice" xml:space="preserve">
-    <value>Invoice</value>
+    <value>Facture</value>
   </data>
   <data name="Invoice_has" xml:space="preserve">
-    <value>Invoice #</value>
+    <value>n° facture</value>
   </data>
   <data name="Invoice_Amount" xml:space="preserve">
-    <value>Invoice Amount</value>
+    <value>Montant de la facture</value>
   </data>
   <data name="Invoice_Date" xml:space="preserve">
-    <value>Invoice Date</value>
+    <value>Date de la facture</value>
   </data>
   <data name="Invoice_Line_Description" xml:space="preserve">
-    <value>Invoice Line Description</value>
+    <value>Description de la ligne de facture</value>
   </data>
   <data name="Invoice_Number" xml:space="preserve">
-    <value>Invoice Number</value>
+    <value>Numéro de la facture</value>
   </data>
   <data name="Invoice_Total" xml:space="preserve">
-    <value>Invoice Total</value>
+    <value>Total facture</value>
   </data>
   <data name="Invoices" xml:space="preserve">
-    <value>Invoices</value>
+    <value>Factures</value>
   </data>
   <data name="Job_Category_Name" xml:space="preserve">
-    <value>Job Category Name</value>
+    <value>Nom de la catégorie de poste</value>
   </data>
   <data name="Job_Class" xml:space="preserve">
-    <value>Job Class</value>
+    <value>Classe de poste</value>
   </data>
   <data name="Justification" xml:space="preserve">
     <value>Justification</value>
   </data>
   <data name="Line_Item_Detail" xml:space="preserve">
-    <value>Line Item Detail</value>
+    <value>Détail des éléments de lignes</value>
   </data>
   <data name="Line_Item_Title" xml:space="preserve">
-    <value>Line Item Title</value>
+    <value>Titre de l’élément de ligne</value>
   </data>
   <data name="Line_Veto" xml:space="preserve">
-    <value>Line Veto</value>
+    <value>Véto de la ligne</value>
   </data>
   <data name="List" xml:space="preserve">
-    <value>List</value>
+    <value>Liste</value>
   </data>
   <data name="Location" xml:space="preserve">
-    <value>Location</value>
+    <value>Emplacement</value>
   </data>
   <data name="Location_Phone" xml:space="preserve">
-    <value>Location / Phone</value>
+    <value>Emplacement / Téléphone</value>
   </data>
   <data name="Location_of_Project" xml:space="preserve">
-    <value>Location of Project</value>
+    <value>Emplacement du projet</value>
   </data>
   <data name="Logout" xml:space="preserve">
-    <value>Logout</value>
+    <value>Déconnexion</value>
   </data>
   <data name="Manage_Submissions" xml:space="preserve">
-    <value>Manage Submissions</value>
+    <value>Gérer les soumissions</value>
   </data>
   <data name="Manager" xml:space="preserve">
-    <value>Manager</value>
+    <value>Responsable</value>
   </data>
   <data name="Managers" xml:space="preserve">
-    <value>Managers</value>
+    <value>Responsables</value>
   </data>
   <data name="Matching_Candidates" xml:space="preserve">
-    <value>Matching Candidates</value>
+    <value>Candidats correspondants</value>
   </data>
   <data name="Material" xml:space="preserve">
-    <value>Material</value>
+    <value>Matériau</value>
   </data>
   <data name="Max_Amount_GhostText" xml:space="preserve">
-    <value>tap to enter the maximum amount</value>
+    <value>tapez pour entrer le montant maximal</value>
   </data>
   <data name="Max_Consolidated_Invoice_Date" xml:space="preserve">
-    <value>Max Consolidated Invoice Date</value>
+    <value>Date de la facture consolidée max</value>
   </data>
   <data name="Max_Date_GhostText" xml:space="preserve">
-    <value>tap to enter the maximum DD-MMM-YYYY</value>
+    <value>tapez pour entrer la date JJ-MMM-AAAA maximale</value>
   </data>
   <data name="Max_Invoice_Amount" xml:space="preserve">
-    <value>Max Invoice Amount</value>
+    <value>Montant de la facture max</value>
   </data>
   <data name="Max_Rate" xml:space="preserve">
-    <value>Max Rate</value>
+    <value>Taux max</value>
   </data>
   <data name="Method" xml:space="preserve">
-    <value>Method</value>
+    <value>Méthode</value>
   </data>
   <data name="Milestone" xml:space="preserve">
-    <value>Milestone</value>
+    <value>Jalon</value>
   </data>
   <data name="Min_Amount_GhostText" xml:space="preserve">
-    <value>tap to enter the minimum amount</value>
+    <value>tapez pour entrer le montant minimal</value>
   </data>
   <data name="Min_Consolidated_Invoice_Date" xml:space="preserve">
-    <value>Min Consolidated Invoice Date</value>
+    <value>Date de la facture consolidée mini</value>
   </data>
   <data name="Min_Date_GhostText" xml:space="preserve">
-    <value>tap to enter the minimum DD-MMM-YYYY</value>
+    <value>tapez pour entrer la date JJ-MMM-AAAA minimale</value>
   </data>
   <data name="Min_Invoice_Amount" xml:space="preserve">
-    <value>Min Invoice Amount</value>
+    <value>Montant de la facture mini</value>
   </data>
   <data name="Min_Year_Experience" xml:space="preserve">
-    <value>Min Year Experience</value>
+    <value>Années d’expérience mini</value>
   </data>
   <data name="Minimum_Years_Experience" xml:space="preserve">
-    <value>Minimum Years Experience</value>
+    <value>Années d’expérience minimales</value>
   </data>
   <data name="More_Information" xml:space="preserve">
-    <value>More Information</value>
+    <value>Plus d’informations</value>
   </data>
   <data name="MoreInfo_Request" xml:space="preserve">
-    <value>sent request for more information</value>
+    <value>a envoyé une sollicitation pour obtenir plus d’informations</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nom</value>
   </data>
   <data name="Need_more_info" xml:space="preserve">
-    <value>Need more info</value>
+    <value>Besoin de plus d’infos</value>
   </data>
   <data name="Need_More_Information" xml:space="preserve">
-    <value>Need More Information</value>
+    <value>Besoin de plus d’informations</value>
   </data>
   <data name="Net_Connection" xml:space="preserve">
-    <value>No internet connection Please check your connection and try again</value>
+    <value>Connexion Internet inexistante. Vérifiez votre connexion et réessayez</value>
   </data>
   <data name="New_Password" xml:space="preserve">
-    <value>New Password</value>
+    <value>Nouveau mot de passe</value>
   </data>
   <data name="New_Value" xml:space="preserve">
-    <value>New Value</value>
+    <value>Nouvelle valeur</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Non</value>
   </data>
   <data name="No_item_selected" xml:space="preserve">
-    <value>No item selected</value>
+    <value>Aucun élément n’a été sélectionné</value>
   </data>
   <data name="No_Result" xml:space="preserve">
-    <value>0 results found.</value>
+    <value>0 résultat trouvé.</value>
   </data>
   <data name="Not_Now" xml:space="preserve">
-    <value>Not Now</value>
+    <value>Pas maintenant</value>
   </data>
   <data name="Not_Released_for_Invoicing" xml:space="preserve">
-    <value>Not Released for Invoicing</value>
+    <value>N’a pas été débloqué pour la facturation</value>
   </data>
   <data name="Note_Question" xml:space="preserve">
-    <value>Note/Question</value>
+    <value>Remarque/Question</value>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>Remarques</value>
   </data>
   <data name="Notes_Saved_To_Timesheet" xml:space="preserve">
-    <value>Notes saved to timesheet</value>
+    <value>Remarques enregistrées pour la feuille de temps</value>
   </data>
   <data name="Offer_Accepted" xml:space="preserve">
-    <value>Offer Accepted</value>
+    <value>Offre acceptée</value>
   </data>
   <data name="On" xml:space="preserve">
-    <value>On</value>
+    <value>Activation</value>
   </data>
   <data name="Open_Requisition" xml:space="preserve">
-    <value>Open Requisition</value>
+    <value>Ouvrir la demande</value>
   </data>
   <data name="open_uploaded_photo" xml:space="preserve">
-    <value>open uploaded photo</value>
+    <value>ouvrir la photo téléchargée</value>
   </data>
   <data name="Origin" xml:space="preserve">
-    <value>Origin</value>
+    <value>Origine</value>
   </data>
   <data name="Original_Amount" xml:space="preserve">
-    <value>Original Amount</value>
+    <value>Montant initial</value>
   </data>
   <data name="Original_Document" xml:space="preserve">
-    <value>Original Document</value>
+    <value>Document original</value>
   </data>
   <data name="Original_End_Date" xml:space="preserve">
-    <value>Original End Date</value>
+    <value>Date de fin initiale</value>
   </data>
   <data name="Original_Spend" xml:space="preserve">
-    <value>Original Spend</value>
+    <value>Dépenses initiales</value>
   </data>
   <data name="Out_Date" xml:space="preserve">
-    <value>Out Date</value>
+    <value>En dehors de la date</value>
   </data>
   <data name="Out_Time" xml:space="preserve">
-    <value>Out Time</value>
+    <value>En dehors de l’heure</value>
   </data>
   <data name="Pay" xml:space="preserve">
-    <value>Pay</value>
+    <value>Paiement</value>
   </data>
   <data name="Pay_Amount" xml:space="preserve">
-    <value>Pay Amount</value>
+    <value>Montant du paiement</value>
   </data>
   <data name="Pay_Code" xml:space="preserve">
-    <value>Pay Code</value>
+    <value>Code Paiement</value>
   </data>
   <data name="Pay_Date" xml:space="preserve">
-    <value>Pay Date</value>
+    <value>Date de paiement</value>
   </data>
   <data name="Pay_History" xml:space="preserve">
-    <value>Pay History</value>
+    <value>Historique des paiements</value>
   </data>
   <data name="Pay_Rate" xml:space="preserve">
-    <value>Pay Rate</value>
+    <value>Taux de rémunération</value>
   </data>
   <data name="Pay_Statement" xml:space="preserve">
-    <value>Pay Statement</value>
+    <value>Bulletin de paye</value>
   </data>
   <data name="Pay_Total" xml:space="preserve">
-    <value>Pay Total</value>
+    <value>Total paiement</value>
   </data>
   <data name="Payment_Ref_Number" xml:space="preserve">
-    <value>Payment Ref Number</value>
+    <value>Numéro de réf paiement</value>
   </data>
   <data name="Payments" xml:space="preserve">
-    <value>Payments</value>
+    <value>Paiements</value>
   </data>
   <data name="Period_End" xml:space="preserve">
-    <value>Period End</value>
+    <value>Fin de la période</value>
   </data>
   <data name="Personal_Information" xml:space="preserve">
-    <value>Personal Information</value>
+    <value>Informations personnelles</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Phone</value>
+    <value>Téléphone</value>
   </data>
   <data name="Phone_Numer" xml:space="preserve">
-    <value>Phone Number</value>
+    <value>Numéro de téléphone</value>
   </data>
   <data name="Please_Confirm" xml:space="preserve">
-    <value>Please Confirm</value>
+    <value>Confirmez</value>
   </data>
   <data name="PO_Line_Item_Title" xml:space="preserve">
-    <value>PO Line Item Title</value>
+    <value>Titre de l’élément de ligne du PO</value>
   </data>
   <data name="PO_Number" xml:space="preserve">
-    <value>PO Number</value>
+    <value>Numéro de PO</value>
   </data>
   <data name="Postal_Code" xml:space="preserve">
-    <value>Postal Code</value>
+    <value>Code postal</value>
   </data>
   <data name="Preferred_Interview_Date" xml:space="preserve">
-    <value>Preferred Interview Date</value>
+    <value>Date de l’entretien préférée</value>
   </data>
   <data name="Preferred_Interview_Time" xml:space="preserve">
-    <value>Preferred Interview Time</value>
+    <value>Heure de l’entretien préférée</value>
   </data>
   <data name="Preferred_Job" xml:space="preserve">
-    <value>Preferred Job</value>
+    <value>Poste préféré</value>
   </data>
   <data name="Previous_Value" xml:space="preserve">
-    <value>Previous Value</value>
+    <value>Valeur précédente</value>
   </data>
   <data name="Pricing" xml:space="preserve">
-    <value>Pricing</value>
+    <value>Tarification</value>
   </data>
   <data name="Primary_Manager" xml:space="preserve">
-    <value>Primary Manager</value>
+    <value>Responsable principal</value>
   </data>
   <data name="Project_Name" xml:space="preserve">
-    <value>Project Name</value>
+    <value>Nom du projet</value>
   </data>
   <data name="Projects" xml:space="preserve">
-    <value>Projects</value>
+    <value>Projets</value>
   </data>
   <data name="Proposed_End_Date" xml:space="preserve">
-    <value>Proposed End Date</value>
+    <value>Date de fin proposée</value>
   </data>
   <data name="Proposed_Start_Date" xml:space="preserve">
-    <value>Proposed Start Date</value>
+    <value>Date de démarrage proposée</value>
   </data>
   <data name="Purchase_Order" xml:space="preserve">
-    <value>Purchase Order</value>
+    <value>Bon de commande</value>
   </data>
   <data name="Question_que" xml:space="preserve">
-    <value>Question?</value>
+    <value>Question ?</value>
   </data>
   <data name="Rate" xml:space="preserve">
-    <value>Rate</value>
+    <value>Taux</value>
   </data>
   <data name="Rates" xml:space="preserve">
-    <value>Rates</value>
+    <value>Taux</value>
   </data>
   <data name="Reason_for_Veto" xml:space="preserve">
-    <value>Reason for Veto</value>
+    <value>Raison du véto</value>
   </data>
   <data name="Receipts" xml:space="preserve">
-    <value>Receipts</value>
+    <value>Reçus</value>
   </data>
   <data name="Receipts_Photo" xml:space="preserve">
-    <value>Receipts Photo</value>
+    <value>Photos des reçus</value>
   </data>
   <data name="Recipient" xml:space="preserve">
-    <value>Recipient</value>
+    <value>Destinataire</value>
   </data>
   <data name="Register_Device_for_PIN_Login" xml:space="preserve">
-    <value>Register Device for PIN Login</value>
+    <value>Enregistrer l’appareil pour une connexion par PIN</value>
   </data>
   <data name="Regulatory_Meal_Period_Taken_que" xml:space="preserve">
-    <value>Regulatory Meal Period Taken?</value>
+    <value>Pause repas règlementaire prise ?</value>
   </data>
   <data name="Released_for_Invoicing" xml:space="preserve">
-    <value>Released for Invoicing</value>
+    <value>A été débloqué pour la facturation</value>
   </data>
   <data name="Remaining_Amount" xml:space="preserve">
-    <value>Remaining Amount</value>
+    <value>Montant restant</value>
   </data>
   <data name="Renotified" xml:space="preserve">
-    <value>renotified</value>
+    <value>prévenu une nouvelle fois</value>
   </data>
   <data name="Renotify" xml:space="preserve">
-    <value>Renotify</value>
+    <value>Prévenir une nouvelle fois</value>
   </data>
   <data name="Req_Candidate_Compare" xml:space="preserve">
-    <value>Only 5 candidates can be compared at a time please</value>
+    <value>Vous ne pouvez comparer que 5 candidats à la fois</value>
   </data>
   <data name="Req_CustomeField" xml:space="preserve">
-    <value>One or more custom fields are required</value>
+    <value>Au moins un champ personnalisé est obligatoire</value>
+  </data>
+  <data name="Request_More_Information" xml:space="preserve">
+    <value>Solliciter plus d’informations</value>
   </data>
   <data name="Requested" xml:space="preserve">
-    <value>Requested</value>
+    <value>Sollicité</value>
   </data>
   <data name="Requested_Interview" xml:space="preserve">
-    <value>Requested Interview</value>
+    <value>Entretien sollicité</value>
   </data>
   <data name="Requested_Qty" xml:space="preserve">
-    <value>Requested Qty</value>
+    <value>Qté sollicitée</value>
   </data>
   <data name="Require_Attachment_que" xml:space="preserve">
-    <value>Require Attachment?</value>
+    <value>Exiger une pièce jointe ?</value>
   </data>
   <data name="Require_Certification_Number_que" xml:space="preserve">
-    <value>Require Certification Number?</value>
+    <value>Exiger le numéro de certification ?</value>
   </data>
   <data name="Require_Expiration_Date_que" xml:space="preserve">
-    <value>Require Expiration Date?</value>
+    <value>Exiger la date d’expiration ?</value>
   </data>
   <data name="Require_Issue_Date_que" xml:space="preserve">
-    <value>Require Issue Date?</value>
+    <value>Exiger la date d’émission ?</value>
   </data>
   <data name="Required" xml:space="preserve">
-    <value>Required</value>
+    <value>Obligatoire</value>
   </data>
   <data name="Required_que" xml:space="preserve">
-    <value>Required?</value>
+    <value>Obligatoire ?</value>
   </data>
   <data name="Required_Description" xml:space="preserve">
-    <value>Description is Required</value>
+    <value>Une description est obligatoire</value>
   </data>
   <data name="Requirement" xml:space="preserve">
-    <value>Requirement</value>
+    <value>Condition nécessaire</value>
   </data>
   <data name="Requirements" xml:space="preserve">
-    <value>Requirements</value>
+    <value>Conditions nécessaires</value>
   </data>
   <data name="Requisition" xml:space="preserve">
-    <value>Requisition</value>
+    <value>Demande</value>
   </data>
   <data name="Requisition_ID" xml:space="preserve">
-    <value>Requisition ID</value>
+    <value>ID demande</value>
   </data>
   <data name="Requisition_Name" xml:space="preserve">
-    <value>Requisition Name</value>
+    <value>Nom de la demande</value>
   </data>
   <data name="Requisition_Notes" xml:space="preserve">
-    <value>Requisition Notes</value>
+    <value>Remarques sur les demandes</value>
   </data>
   <data name="Requisition_Status" xml:space="preserve">
-    <value>Requisition Status</value>
+    <value>Statut de la demande</value>
   </data>
   <data name="Requisitions" xml:space="preserve">
-    <value>Requisitions</value>
+    <value>Demandes</value>
   </data>
   <data name="Rescinded_Candidate." xml:space="preserve">
-    <value>rescinded candidate.</value>
+    <value>candidat abandonné.</value>
   </data>
   <data name="Reset" xml:space="preserve">
-    <value>Reset</value>
+    <value>Réinitialiser</value>
   </data>
   <data name="Resource" xml:space="preserve">
-    <value>Resource</value>
+    <value>Ressource</value>
   </data>
   <data name="Resource_Name" xml:space="preserve">
-    <value>Resource Name</value>
+    <value>Nom de la ressource</value>
   </data>
   <data name="Resource_Pay_Rate" xml:space="preserve">
-    <value>Resource Pay Rate</value>
+    <value>Taux de rémunération de la ressource</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Resume</value>
+    <value>CV</value>
   </data>
   <data name="Role" xml:space="preserve">
-    <value>Role</value>
+    <value>Rôle</value>
   </data>
   <data name="Saved" xml:space="preserve">
-    <value>saved</value>
+    <value>enregistré</value>
   </data>
   <data name="Security" xml:space="preserve">
-    <value>Security</value>
+    <value>Sécurité</value>
   </data>
   <data name="Security_Question" xml:space="preserve">
-    <value>Security Question</value>
+    <value>Question de sécurité</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>Sélectionner</value>
   </data>
   <data name="Select_Agreement" xml:space="preserve">
-    <value>Select Agreement</value>
+    <value>Sélectionner un accord</value>
   </data>
   <data name="Select_Approval_Manager" xml:space="preserve">
-    <value>Select Approval Manager</value>
+    <value>Sélectionner un Responsable de l’approbation</value>
   </data>
   <data name="Select_Candidate_Submission" xml:space="preserve">
-    <value>Select Candidate Submission</value>
+    <value>Sélectionner une soumission de candidat</value>
   </data>
   <data name="Select_Date" xml:space="preserve">
-    <value>Select Date</value>
+    <value>Sélectionner une date</value>
   </data>
   <data name="Select_Division" xml:space="preserve">
-    <value>Select Division</value>
+    <value>Sélectionner une division</value>
   </data>
   <data name="Select_End_Date" xml:space="preserve">
-    <value>Select End Date</value>
+    <value>Sélectionner une date de fin</value>
   </data>
   <data name="Select_Expense_Type" xml:space="preserve">
-    <value>Select Expense Type</value>
+    <value>Sélectionner un type de frais</value>
   </data>
   <data name="Select_Pay_Code" xml:space="preserve">
-    <value>Select Pay Code</value>
+    <value>Sélectionner un code Paiement</value>
   </data>
   <data name="Select_Project" xml:space="preserve">
-    <value>Select Project</value>
+    <value>Sélectionner un projet</value>
   </data>
   <data name="Select_Question" xml:space="preserve">
-    <value>Select Question</value>
+    <value>Sélectionner une question</value>
   </data>
   <data name="Select_Reason" xml:space="preserve">
-    <value>Select Reason</value>
+    <value>Sélectionner une raison</value>
   </data>
   <data name="Select_Recipient" xml:space="preserve">
-    <value>Select Recipient</value>
+    <value>Sélectionner un destinataire</value>
   </data>
   <data name="Select_Resource" xml:space="preserve">
-    <value>Select Resource</value>
+    <value>Sélectionner une ressource</value>
   </data>
   <data name="Select_Sort_By" xml:space="preserve">
-    <value>Select Sort By</value>
+    <value>Sélectionner un tri par</value>
   </data>
   <data name="Select_Status" xml:space="preserve">
-    <value>Select Status</value>
+    <value>Sélectionner un statut</value>
   </data>
   <data name="Select_Tax_Track_Code" xml:space="preserve">
-    <value>Select Tax Track Code</value>
+    <value>Sélectionner un code Suivi d’impôt</value>
   </data>
   <data name="Select_Track_Code" xml:space="preserve">
-    <value>Select Track Code</value>
+    <value>Sélectionner un code Suivi</value>
   </data>
   <data name="Selected" xml:space="preserve">
-    <value>selected</value>
+    <value>sélectionné</value>
   </data>
   <data name="Send" xml:space="preserve">
-    <value>Send</value>
+    <value>Envoyer</value>
   </data>
   <data name="Service_Centre" xml:space="preserve">
-    <value>Service Centre</value>
+    <value>Centre de services</value>
   </data>
   <data name="Service_Class" xml:space="preserve">
-    <value>Service Class</value>
+    <value>Classe du service</value>
   </data>
   <data name="Service_Classification" xml:space="preserve">
-    <value>Service Classification</value>
+    <value>Classification du service</value>
   </data>
   <data name="Service_Invoice" xml:space="preserve">
-    <value>Service Invoice</value>
+    <value>Facture de services</value>
   </data>
   <data name="Service_Invoice_Amount" xml:space="preserve">
-    <value>Service Invoice Amount</value>
+    <value>Montant de la facture de services</value>
   </data>
   <data name="Service_Provider" xml:space="preserve">
-    <value>Service Provider</value>
+    <value>Prestataire de services</value>
   </data>
   <data name="Service_Provider_Contact" xml:space="preserve">
-    <value>Service Provider Contact</value>
+    <value>Contact du prestataire de services</value>
   </data>
   <data name="Service_Provider_Invoice_Number" xml:space="preserve">
-    <value>Service Provider Invoice Number</value>
+    <value>Numéro de facture du prestataire de services</value>
   </data>
   <data name="Service_Provider_Name" xml:space="preserve">
-    <value>Service Provider Name</value>
+    <value>Nom du prestataire de services</value>
   </data>
   <data name="Set_Now" xml:space="preserve">
-    <value>Set Now</value>
+    <value>Définir maintenant</value>
   </data>
   <data name="Setting" xml:space="preserve">
-    <value>Setting</value>
+    <value>Paramètre</value>
   </data>
   <data name="Sick_Time_Accrual_Balance" xml:space="preserve">
-    <value>Sick Time Accrual Balance</value>
+    <value>Solde d’accumulation des congés de maladie</value>
   </data>
   <data name="Sick_Time_Balance" xml:space="preserve">
-    <value>Sick Time Balance</value>
+    <value>Solde des congés de maladie</value>
   </data>
   <data name="Sort_By" xml:space="preserve">
-    <value>Sort By</value>
+    <value>Trier par</value>
   </data>
   <data name="Spend_Summary" xml:space="preserve">
-    <value>Spend Summary</value>
+    <value>Résumé des dépenses</value>
   </data>
   <data name="Start_Date" xml:space="preserve">
-    <value>Start Date</value>
+    <value>Date de démarrage</value>
   </data>
   <data name="State" xml:space="preserve">
-    <value>State</value>
+    <value>Région</value>
   </data>
   <data name="State_Province" xml:space="preserve">
-    <value>State/Province</value>
+    <value>Région/Province</value>
   </data>
   <data name="Statement_of_Work" xml:space="preserve">
-    <value>Statement of Work</value>
+    <value>Énoncé des travaux (SOW)</value>
   </data>
   <data name="Status" xml:space="preserve">
-    <value>Status</value>
+    <value>Statut</value>
   </data>
   <data name="Step_Name" xml:space="preserve">
-    <value>Step Name</value>
+    <value>Nom de l’étape</value>
   </data>
   <data name="Submission_Status" xml:space="preserve">
-    <value>Submission Status</value>
+    <value>Statut de la soumission</value>
   </data>
   <data name="Submissions" xml:space="preserve">
-    <value>Submissions</value>
+    <value>Soumissions</value>
   </data>
   <data name="Submit" xml:space="preserve">
-    <value>Submit</value>
+    <value>Soumettre</value>
   </data>
   <data name="Submit_Candidate" xml:space="preserve">
-    <value>Submit Candidate</value>
+    <value>Soumettre un candidat</value>
   </data>
   <data name="Submit_Date" xml:space="preserve">
-    <value>Submit Date</value>
+    <value>Date de soumission</value>
   </data>
   <data name="Submit_to_Req" xml:space="preserve">
-    <value>Submit to Req</value>
+    <value>Soumettre pour dem</value>
   </data>
   <data name="Submit_to_Request" xml:space="preserve">
-    <value>Submit to Request</value>
+    <value>Soumettre pour sollicitation</value>
   </data>
   <data name="Submits" xml:space="preserve">
-    <value>Submits</value>
+    <value>Soumissions</value>
   </data>
   <data name="Submittals" xml:space="preserve">
-    <value>Submittals</value>
+    <value>Soumissions</value>
   </data>
   <data name="Sub_total" xml:space="preserve">
-    <value>Sub-total</value>
+    <value>Sous-total</value>
   </data>
   <data name="Succeeded" xml:space="preserve">
-    <value>succeeded</value>
+    <value>réussi</value>
   </data>
   <data name="Success_Candidate_Withdrawn" xml:space="preserve">
-    <value>The candidate has been successfully withdrawn.</value>
+    <value>Retrait du client réussi.</value>
   </data>
   <data name="Success_InvoiceNumber" xml:space="preserve">
-    <value>Invoice number successfully saved</value>
+    <value>Enregistrement du numéro de facture réussi</value>
   </data>
   <data name="Successfully" xml:space="preserve">
-    <value>Successfully</value>
+    <value>Réussi</value>
   </data>
   <data name="Supplier_Bill_Rate" xml:space="preserve">
-    <value>Supplier Bill Rate</value>
+    <value>Taux de facturation fournisseur</value>
   </data>
   <data name="Supplier_Invoice" xml:space="preserve">
-    <value>Supplier Invoice</value>
+    <value>Facture fournisseur</value>
   </data>
   <data name="Supplier_Name" xml:space="preserve">
-    <value>Supplier Name</value>
+    <value>Nom du fournisseur</value>
   </data>
   <data name="Take_Photo" xml:space="preserve">
-    <value>Take Photo</value>
+    <value>Prendre une photo</value>
   </data>
   <data name="Tap_to_Select..." xml:space="preserve">
-    <value>Tap to Select...</value>
+    <value>Taper pour sélectionner...</value>
   </data>
   <data name="Target_Rate" xml:space="preserve">
-    <value>Target Rate</value>
+    <value>Taux cible</value>
   </data>
   <data name="Task" xml:space="preserve">
-    <value>Task</value>
+    <value>Tâche</value>
   </data>
   <data name="Tax" xml:space="preserve">
-    <value>Tax</value>
+    <value>Impôt</value>
   </data>
   <data name="Tax_Track_Code" xml:space="preserve">
-    <value>Tax Track Code</value>
+    <value>Code Suivi d’impôt</value>
   </data>
   <data name="Tax_Track_Code_Name" xml:space="preserve">
-    <value>Tax Track Code Name</value>
+    <value>Nom du code Suivi d’impôt</value>
   </data>
   <data name="Technical_Problem" xml:space="preserve">
-    <value>We&#39;re sorry, but something went wrong.We&#39;ve been notified about this issue and we&#39;ll take a look at it shortly</value>
+    <value>Désolé, un problème est survenu. Nous en avons été informés et nous nous en occuperons dans les plus brefs délais</value>
   </data>
   <data name="The_Following" xml:space="preserve">
-    <value>The following</value>
+    <value>qui suit</value>
   </data>
   <data name="Time" xml:space="preserve">
-    <value>Time</value>
+    <value>Temps</value>
   </data>
   <data name="Time_Zone" xml:space="preserve">
-    <value>Time Zone</value>
+    <value>Fuseau horaire</value>
   </data>
   <data name="Timesheet" xml:space="preserve">
-    <value>Timesheet</value>
+    <value>Feuille de temps</value>
   </data>
   <data name="Timesheet_que" xml:space="preserve">
-    <value>timesheet?</value>
+    <value>feuille de temps ?</value>
   </data>
   <data name="Timesheet_Ending_Date" xml:space="preserve">
-    <value>Timesheet Ending Date</value>
+    <value>Date de fin de la feuille de temps</value>
   </data>
   <data name="Timesheet_Entries" xml:space="preserve">
-    <value>Timesheet Entries</value>
+    <value>Entrées de feuilles de temps</value>
   </data>
   <data name="Timesheet_ID" xml:space="preserve">
-    <value>Timesheet ID</value>
+    <value>ID feuille de temps</value>
   </data>
   <data name="Timesheets" xml:space="preserve">
-    <value>timesheets</value>
+    <value>feuilles de temps</value>
   </data>
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
   <data name="Total_Invoiced" xml:space="preserve">
-    <value>Total Invoiced</value>
+    <value>Total facturé</value>
   </data>
   <data name="Track" xml:space="preserve">
-    <value>Track</value>
+    <value>Suivre</value>
   </data>
   <data name="Track_Code" xml:space="preserve">
-    <value>Track Code</value>
+    <value>Code Suivi</value>
   </data>
   <data name="Track_Code_Name" xml:space="preserve">
-    <value>Track Code Name</value>
+    <value>Nom du code Suivi</value>
   </data>
   <data name="Track_Codes" xml:space="preserve">
-    <value>Track Codes</value>
+    <value>Codes Suivi</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Type</value>
   </data>
   <data name="Unable_Photo" xml:space="preserve">
-    <value>unable to capture photo</value>
+    <value>impossible de prendre la photo</value>
   </data>
   <data name="Unallocated_Amount" xml:space="preserve">
-    <value>Unallocated Amount</value>
+    <value>Montant non attribué</value>
   </data>
   <data name="Unit" xml:space="preserve">
-    <value>Unit</value>
+    <value>Unité</value>
   </data>
   <data name="Updated" xml:space="preserve">
-    <value>Updated</value>
+    <value>Mis à jour</value>
   </data>
   <data name="Updated_By" xml:space="preserve">
-    <value>Updated By</value>
+    <value>Mis à jour par</value>
   </data>
   <data name="Updated_Date" xml:space="preserve">
-    <value>Updated Date</value>
+    <value>Date mise à jour</value>
   </data>
   <data name="Upgrade_App" xml:space="preserve">
-    <value>An upgrade is required to continue using this app</value>
+    <value>Une mise à niveau est obligatoire pour pouvoir continuer à utiliser cette appli</value>
   </data>
   <data name="Validation_Candidate_Submit" xml:space="preserve">
-    <value>This candidate is currently submitted to one or more requirements and/or on an active project Continue?</value>
+    <value>Ce candidat est actuellement soumis pour au moins une condition nécessaire et/ou participe à un projet actif. Continuer ?</value>
   </data>
   <data name="Validation_AccrualBalance" xml:space="preserve">
-    <value>will cause this resource’s Sick Time Accrual Balance to fall below zero, to a value of</value>
+    <value>le solde d‘accumulation des congés de maladie de cette ressource descendra en dessous de zéro, à une valeur de</value>
   </data>
   <data name="Validation_Add_Timesheet" xml:space="preserve">
-    <value>Entry added to timesheet</value>
+    <value>Une entrée a été ajoutée à la feuille de temps</value>
   </data>
   <data name="Validation_Bill_Rate_Editable_Field" xml:space="preserve">
-    <value>Enter into bill rate editable field</value>
+    <value>Entrer dans le champ modifiable du taux de facturation</value>
   </data>
   <data name="Validation_Both_Non_Editable_Field" xml:space="preserve">
-    <value>Enter into both non editable field</value>
+    <value>Entrer dans les deux champs non modifiables</value>
   </data>
   <data name="Validation_Candidates_For_Comparision" xml:space="preserve">
-    <value>You need to select more than one candidates for comparison</value>
+    <value>Vous devez sélectionner au moins deux candidats à comparer</value>
   </data>
   <data name="Validation_Customer_Rate_Editable_Field" xml:space="preserve">
-    <value>Enter into customer rate editable field</value>
+    <value>Entrer dans le champ modifiable du taux client</value>
   </data>
   <data name="Validation_Int_Float" xml:space="preserve">
-    <value>Should have either integer or float value only</value>
+    <value>Doit contenir uniquement un entier ou une valeur flottante</value>
   </data>
   <data name="Validation_Necessary_Comments" xml:space="preserve">
-    <value>Please enter necessary comments</value>
+    <value>Entrez les commentaires nécessaires</value>
   </data>
   <data name="Validation_Number" xml:space="preserve">
-    <value>Pay Total must be a number</value>
+    <value>Le total du paiement doit être un nombre</value>
   </data>
   <data name="Validation_Proper_Values" xml:space="preserve">
-    <value>Please enter proper values</value>
+    <value>Entrez des valeurs correctes</value>
   </data>
   <data name="Validation_Removed_Timesheet" xml:space="preserve">
-    <value>Entry removed from timesheet</value>
+    <value>Une entrée a été enlevée de la feuille de temps</value>
   </data>
   <data name="Validation_Tax_Track_Code" xml:space="preserve">
-    <value>Please select a tax track code</value>
+    <value>Sélectionnez un code Suivi d’impôt</value>
   </data>
   <data name="Validation_Track_Code" xml:space="preserve">
-    <value>Please select a track code</value>
+    <value>Sélectionnez un code Suivi</value>
   </data>
   <data name="Validation_Unit_Decimal" xml:space="preserve">
-    <value>Units only allows two digits after decimal</value>
+    <value>Les unités ne peuvent contenir que deux chiffres après la virgule</value>
   </data>
   <data name="Validation_Units_Number" xml:space="preserve">
-    <value>Units must be a number</value>
+    <value>Les unités doivent être des nombres</value>
   </data>
   <data name="Validation_Zero" xml:space="preserve">
-    <value>Should be greater than 0</value>
+    <value>Doit être supérieur à 0</value>
   </data>
   <data name="Vendor_Agreement" xml:space="preserve">
-    <value>Vendor Agreement</value>
+    <value>Accord prestataire</value>
   </data>
   <data name="Veto" xml:space="preserve">
-    <value>Veto</value>
+    <value>Véto</value>
   </data>
   <data name="View_All_Candidates" xml:space="preserve">
-    <value>View All Candidates</value>
+    <value>Afficher tous les candidats</value>
   </data>
   <data name="View_Custom_Fields" xml:space="preserve">
-    <value>View Custom Fields</value>
+    <value>Afficher les champs personnalisés</value>
   </data>
   <data name="View_Expense_Report" xml:space="preserve">
-    <value>View Expense Report</value>
+    <value>Afficher la note de frais</value>
   </data>
   <data name="View_Expenses" xml:space="preserve">
-    <value>View Expenses</value>
+    <value>Afficher les frais</value>
   </data>
   <data name="View_History" xml:space="preserve">
-    <value>View History</value>
+    <value>Afficher l’historique</value>
   </data>
   <data name="View_Invoices" xml:space="preserve">
-    <value>View Invoices</value>
+    <value>Afficher les factures</value>
   </data>
   <data name="View_Open_Requisition_Request" xml:space="preserve">
-    <value>View Open Requisition Request</value>
+    <value>Afficher la sollicitation de demande ouverte</value>
   </data>
   <data name="View_Open_Requisitions" xml:space="preserve">
-    <value>View Open Requisitions</value>
+    <value>Afficher les demandes ouvertes</value>
   </data>
   <data name="View_Pay_History" xml:space="preserve">
-    <value>View Pay History</value>
+    <value>Afficher l’historique des paies</value>
   </data>
   <data name="View_Projects" xml:space="preserve">
-    <value>View Projects</value>
+    <value>Afficher les projets</value>
   </data>
   <data name="View_Resume" xml:space="preserve">
-    <value>View Resume</value>
+    <value>Afficher le CV</value>
   </data>
   <data name="View_Score" xml:space="preserve">
-    <value>View Score</value>
+    <value>Afficher le score</value>
   </data>
   <data name="View_Timesheet" xml:space="preserve">
-    <value>View Timesheet</value>
+    <value>Afficher la feuille de temps</value>
   </data>
   <data name="View_Track_Code" xml:space="preserve">
-    <value>View Track Code</value>
+    <value>Afficher un code Suivi</value>
   </data>
   <data name="Visible_to_Service_Provider" xml:space="preserve">
-    <value>Visible to Service Provider</value>
+    <value>Visible pour le prestataire de services</value>
   </data>
   <data name="Visible_to_Suppliers" xml:space="preserve">
-    <value>Visible to Suppliers</value>
+    <value>Visible pour les fournisseurs</value>
   </data>
   <data name="Wages" xml:space="preserve">
-    <value>Wages</value>
+    <value>Salaires</value>
   </data>
   <data name="Warning_AccrualBalance" xml:space="preserve">
-    <value>Warning: Your accrual balance has fallen below zero Do you wish to continue?</value>
+    <value>Avertissement : Votre solde d’accumulation est inférieur à zéro. Voulez-vous continuer ?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Bienvenue</value>
   </data>
   <data name="Were_Successful" xml:space="preserve">
-    <value>were successful</value>
+    <value>réussis</value>
   </data>
   <data name="Will_Pay_Amount" xml:space="preserve">
-    <value>Will Pay Amount</value>
+    <value>Montant à payer</value>
   </data>
   <data name="Withdraw" xml:space="preserve">
-    <value>Withdraw</value>
+    <value>Retirer</value>
   </data>
   <data name="Withdraw_Candidate" xml:space="preserve">
-    <value>Withdraw Candidate</value>
+    <value>Retirer le candidat</value>
   </data>
   <data name="Withdraw_Reason_Division" xml:space="preserve">
-    <value>Withdraw Reasons are not configured at Division level, Please contact administrator.</value>
+    <value>Les raisons du retrait ne sont pas configurées au niveau de la division. Contactez l’Administrateur.</value>
   </data>
   <data name="Withheld_for_Invoicing" xml:space="preserve">
-    <value>Withheld for Invoicing</value>
+    <value>Retenue pour la facturation</value>
   </data>
   <data name="Work_Location" xml:space="preserve">
-    <value>Work Location</value>
+    <value>Emplacement du travail</value>
   </data>
   <data name="Work_Schedule" xml:space="preserve">
-    <value>Work Schedule</value>
+    <value>Planning de travail</value>
   </data>
   <data name="Work_Schedule_Location" xml:space="preserve">
-    <value>Work Schedule/Location</value>
+    <value>Planning/Emplacement de travail</value>
   </data>
   <data name="ZC_Invoice_ID" xml:space="preserve">
-    <value>ZC Invoice ID</value>
+    <value>ID facture ZC</value>
   </data>
   <data name="Zero_Timesheet" xml:space="preserve">
-    <value>a zero hour timesheet?</value>
+    <value>une feuille de temps avec zéro heure ?</value>
   </data>
   <data name="Active" xml:space="preserve">
-    <value>Active</value>
+    <value>Actif</value>
   </data>
   <data name="Add" xml:space="preserve">
-    <value>Add</value>
+    <value>Ajouter</value>
   </data>
   <data name="Add_Proxy_Approver" xml:space="preserve">
-    <value>Add Proxy Approver</value>
+    <value>Ajouter un approbateur proxy</value>
   </data>
   <data name="added_lowercase" xml:space="preserve">
-    <value>added.</value>
+    <value>ajouté.</value>
   </data>
   <data name="additional_information_saved_on_expense_report" xml:space="preserve">
-    <value>Additional information saved on expense report.</value>
+    <value>Des informations supplémentaires ont été enregistrées pour cette note de frais.</value>
   </data>
   <data name="AddlInfo_Info_Expense" xml:space="preserve">
-    <value>Additional information is required for this expense report.</value>
+    <value>Des informations supplémentaires sont obligatoires pour cette note de frais.</value>
   </data>
   <data name="Address_1_required" xml:space="preserve">
-    <value>Address 1 is required</value>
+    <value>L’adresse 1 est obligatoire</value>
   </data>
   <data name="Adjustment_ID" xml:space="preserve">
-    <value>Adjustment ID</value>
+    <value>ID ajustement</value>
   </data>
   <data name="agreement_is_not_allowed_to_add_expense" xml:space="preserve">
-    <value>Agreement is not allowed to &#39;Add Expense&#39;. Please contact to Administrator.</value>
+    <value>Avec cet accord, « Ajouter des frais » n’est pas autorisé. Contactez l’Administrateur.</value>
   </data>
   <data name="Agreement_not_allowed_Add_Timesheet" xml:space="preserve">
-    <value>Agreement is not allowed to &#39;Add Timesheet&#39;. Please contact to Administrator.</value>
+    <value>Avec cet accord, « Ajouter une feuille de temps » n’est pas autorisé. Contactez l’Administrateur.</value>
   </data>
   <data name="All_Candidates" xml:space="preserve">
-    <value>All Candidates</value>
+    <value>Tous les candidats</value>
   </data>
   <data name="app_orc_pushnotification" xml:space="preserve">
-    <value>error from Interview  app-orch push notification:-</value>
+    <value>erreur lors de la notification Push d’app-orch de l’entretien :-</value>
   </data>
   <data name="application_pdf" xml:space="preserve">
     <value>application/pdf</value>
   </data>
   <data name="approval_have_errors" xml:space="preserve">
-    <value>The following approval(s) have errors:</value>
+    <value>Les approbations suivantes comportent des erreurs :</value>
   </data>
   <data name="Approval_was_successful" xml:space="preserve">
-    <value>Approval was successful.</value>
+    <value>Approbation réussie.</value>
   </data>
   <data name="approval_were_successful" xml:space="preserve">
-    <value>The following approval(s) were successful :</value>
+    <value>Les approbations suivantes ne comportent aucune erreur :</value>
   </data>
   <data name="Approve" xml:space="preserve">
-    <value>Approve</value>
+    <value>Approuver</value>
   </data>
   <data name="Approve_Engagements" xml:space="preserve">
-    <value>Approve Engagements</value>
+    <value>Approuver les engagements</value>
   </data>
   <data name="Approve_Expenses" xml:space="preserve">
-    <value>Approve Expenses</value>
+    <value>Approuver les frais</value>
   </data>
   <data name="Approve_Staff_Aug_Requisitions" xml:space="preserve">
-    <value>Approve Staff Aug Requisitions</value>
+    <value>Approuver des demandes d’aug effectifs</value>
   </data>
   <data name="Approve_Timesheets" xml:space="preserve">
-    <value>Approve Timesheets</value>
+    <value>Approuver les feuilles de temps</value>
   </data>
   <data name="are_you_sure_you_want_to_delete_this_expense_item" xml:space="preserve">
-    <value>Are you sure you want to delete this expense item?</value>
+    <value>Voulez-vous vraiment supprimer cet élément de frais ?</value>
   </data>
   <data name="atleas_one_Agreement_is_required_to_add_expense" xml:space="preserve">
-    <value>Atleast one Agreement is required to &#39;Add Expense&#39;. Please contact to Administrator.</value>
+    <value>Au moins un accord est obligatoire pour « Ajouter des frais ». Contactez l’Administrateur.</value>
   </data>
   <data name="Atleast_2_candidates_required" xml:space="preserve">
-    <value>At-least 2 candidates are required for comparison</value>
+    <value>Au moins deux candidats sont obligatoires pour la comparaison</value>
   </data>
   <data name="availableSickTimeConfirmation1" xml:space="preserve">
-    <value>will cause this resource’s Sick Time Accrual Balance to fall below zero, to a value of</value>
+    <value>le solde d‘accumulation des congés de maladie de cette ressource descendra en dessous de zéro, à une valeur de</value>
   </data>
   <data name="availableSickTimeConfirmation2" xml:space="preserve">
-    <value>Continue with approval for this timesheet?</value>
+    <value>Reprendre l’approbation pour cette feuille de temps ?</value>
   </data>
   <data name="Btn_delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Supprimer</value>
   </data>
   <data name="Btn_No" xml:space="preserve">
-    <value>no</value>
+    <value>non</value>
   </data>
   <data name="Btn_Resubmit_Timesheet" xml:space="preserve">
-    <value>Edit and Resubmit Timesheet</value>
+    <value>Modifier et soumettre de nouveau la feuille de temps</value>
   </data>
   <data name="Business_Unit_required" xml:space="preserve">
-    <value>Business Unit is required.</value>
+    <value>Une unité commerciale est obligatoire.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuler</value>
   </data>
   <data name="reason_For_Closure" xml:space="preserve">
-    <value>Reason For Closure</value>
+    <value>Raison de la clôture</value>
   </data>
   <data name="Cancel_Interview" xml:space="preserve">
-    <value>Cancel Interview</value>
+    <value>Annuler l’entretien</value>
   </data>
   <data name="Candiate_Name" xml:space="preserve">
-    <value>Candiate Name</value>
+    <value>Nom du candidat</value>
   </data>
   <data name="Candidate_Experience" xml:space="preserve">
-    <value>Candidate Experience (years)</value>
+    <value>Expérience du candidat (années)</value>
   </data>
   <data name="Candidate_Skill" xml:space="preserve">
-    <value>Candidate Skill Level</value>
+    <value>Niveau de qualification du candidat</value>
   </data>
   <data name="Candidate_submitted_successfully" xml:space="preserve">
-    <value>Candidate submitted successfully</value>
+    <value>Soumission du candidat réussie</value>
   </data>
   <data name="Certification_Document" xml:space="preserve">
     <value>Certification / Document</value>
   </data>
   <data name="Certification_Number" xml:space="preserve">
-    <value>Certification Number</value>
+    <value>Numéro de certification</value>
   </data>
   <data name="Change_Location" xml:space="preserve">
-    <value>Change Location</value>
+    <value>Changer l’emplacement</value>
   </data>
   <data name="Change_Request" xml:space="preserve">
-    <value>Change Requests</value>
+    <value>Sollicitations de changements</value>
   </data>
   <data name="Close_Engagement" xml:space="preserve">
-    <value>Close Engagement</value>
+    <value>Fermer l’engagement</value>
   </data>
   <data name="CM_Completed_Registration" xml:space="preserve">
-    <value>Yes, I have completed the device registration process on ZC Web and am ready to use PIN login.</value>
+    <value>Oui, j’ai terminé la procédure d’enregistrement de l’appareil sur ZC Web et je suis prêt(e) à utiliser la connexion par PIN.</value>
   </data>
   <data name="cm_declined__timesheets" xml:space="preserve">
-    <value>Successfully declined selected timesheets.</value>
+    <value>Refus des feuilles de temps sélectionnées réussi.</value>
   </data>
   <data name="cm_documents_and_then_try_again" xml:space="preserve">
-    <value>documents and then try again.</value>
+    <value>les documents et réessayez.</value>
   </data>
   <data name="CM_Password_Not_Match" xml:space="preserve">
-    <value>Your new password and confirm password do not match.</value>
+    <value>Votre nouveau mot de passe et le mot de passe confirmé ne correspondent pas.</value>
   </data>
   <data name="cm_please_enable_external_storage_and_then_try_again" xml:space="preserve">
-    <value>Please enable external storage and then try again</value>
+    <value>Activez le stockage externe et réessayez</value>
   </data>
   <data name="cm_please_install_an_app_that_can_handle" xml:space="preserve">
-    <value>Please enable external storage and then try again.</value>
+    <value>Activez le stockage externe et réessayez.</value>
   </data>
   <data name="CM_Provide_Password" xml:space="preserve">
-    <value>Please provide your current password, new password, and confirm password.</value>
+    <value>Veuillez fournir votre mot de passe actuel, votre nouveau mot de passe et le mot de passe confirmé.</value>
   </data>
   <data name="CM_Provide_Security_QA" xml:space="preserve">
-    <value>Please provide a security question and answer.</value>
+    <value>Veuillez fournir une question et une réponse de sécurité.</value>
   </data>
   <data name="CM_Register_Your_Device" xml:space="preserve">
-    <value>Registering your mobile device for PIN login is a simple 3-step process.
+    <value>L’enregistrement de votre appareil mobile pour la connexion par PIN est une procédures très simple en seulement 3 étapes.
 
-Step 1: Register your device. Log into ZC Web. Click your name to open the dossier. On the dossier, enter the registration code shown above.
+Étape 1 : Enregistrez votre appareil. Connectez-vous sur ZC Web. Cliquez sur votre nom pour ouvrir le dossier. Dans le dossier, entrez le code d’enregistrement affiché ci-dessus.
 
- Step 2: Create a PIN for the registered device on the same dossier page.
+ Étape 2 : Créez un PIN pour l’appareil enregistré sur la même page du dossier.
 
-Step 3: Return here. Verify device registration. Click Done. Login using your PIN.
+Étape 3 : Revenez ici. Vérifiez l’enregistrement de votre appareil. Cliquez sur Terminé. Connexion en utilisant votre PIN.
 
- NOTE: At anytime, PIN Login can be disabled from the mobile dossier.
+ REMARQUE : Vous pouvez désactiver la connexion par PIN à tout moment dans le dossier mobile.
 
 </value>
   </data>
   <data name="cm_Successfully_approved_selected_projects" xml:space="preserve">
-    <value>Successfully approved selected projects.</value>
+    <value>Approbation des projets sélectionnés réussie.</value>
   </data>
   <data name="cm_successfully_approved_timesheet" xml:space="preserve">
-    <value>Successfully approved timesheet</value>
+    <value>Approbation de la feuille de temps réussie</value>
   </data>
   <data name="cm_Successfully_declined_selected_projects." xml:space="preserve">
-    <value>Successfully declined selected projects</value>
+    <value>Refus des projets sélectionnés réussi</value>
   </data>
   <data name="cm_Successfully_renotified_selected_projects" xml:space="preserve">
-    <value>Successfully renotified selected projects</value>
+    <value>Nouvelle notification des projets sélectionnés réussie</value>
   </data>
   <data name="cm_Track_Code_added_successfully" xml:space="preserve">
-    <value>Track Code added successfully.</value>
+    <value>Ajout du code Suivi réussi.</value>
   </data>
   <data name="Compare_Candidates" xml:space="preserve">
-    <value>Compare Candidates</value>
+    <value>Comparer les candidats</value>
   </data>
   <data name="Competency" xml:space="preserve">
-    <value>Competency</value>
+    <value>Compétence</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
+    <value>Continuer</value>
   </data>
   <data name="Country_required" xml:space="preserve">
-    <value>Country is required</value>
+    <value>Un pays est obligatoire</value>
   </data>
   <data name="country_validation1" xml:space="preserve">
-    <value>Please select a country.</value>
+    <value>Sélectionnez un pays.</value>
   </data>
   <data name="Data_Saved_Successfully" xml:space="preserve">
-    <value>Data Saved Successfully</value>
+    <value>Enregistrement des données réussi</value>
   </data>
   <data name="decline_have_error:" xml:space="preserve">
-    <value>The following decline have error:</value>
+    <value>Le refus suivant comporte une erreur :</value>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>Done</value>
+    <value>Terminé</value>
   </data>
   <data name="Dont_Ask_Again" xml:space="preserve">
-    <value>Don&#39;t Ask Again</value>
+    <value>Ne plus me demander</value>
   </data>
   <data name="Edit_and_Resubmit_Expense_Report" xml:space="preserve">
-    <value>Edit and Resubmit Expense Report</value>
+    <value>Modifier et soumettre de nouveau la note de frais</value>
   </data>
   <data name="Edit_Timesheet_Entry" xml:space="preserve">
-    <value>Edit Timesheet Entry</value>
+    <value>Modifier l’entrée de la feuille de temps</value>
   </data>
   <data name="empty" xml:space="preserve">
-    <value>(empty)</value>
+    <value>(vide)</value>
   </data>
   <data name="Enable_Touch_ID" xml:space="preserve">
-    <value>Enable Touch ID</value>
+    <value>Activer l’ID retouche</value>
   </data>
   <data name="End_Date_required" xml:space="preserve">
-    <value>The End Date field is required.</value>
+    <value>Le champ Date de fin est obligatoire.</value>
   </data>
   <data name="Engagement_line_item" xml:space="preserve">
-    <value>Engagement line item</value>
+    <value>Élément de ligne d’engagement</value>
   </data>
   <data name="Engagements" xml:space="preserve">
     <value>Engagements</value>
   </data>
   <data name="Enter_PIN" xml:space="preserve">
-    <value>EnterPIN</value>
+    <value>Entrer PIN</value>
   </data>
   <data name="Error_Egnement_detail_page_Load" xml:space="preserve">
-    <value>Error from Egnement-detail page Load:-</value>
+    <value>Erreur lors du chargement de la page détaillée de l’engagement :-</value>
   </data>
   <data name="expense_item_successfully" xml:space="preserve">
-    <value>Expense item successfully</value>
+    <value>Élément de frais réussi</value>
   </data>
   <data name="expense_item_successfully_deleted" xml:space="preserve">
-    <value>Expense item successfully deleted.</value>
+    <value>Suppression de l’élément de frais réussie.</value>
   </data>
   <data name="Expense_report_saved" xml:space="preserve">
-    <value>Expense report saved.</value>
+    <value>La note de frais a été enregistrée.</value>
   </data>
   <data name="Expense_report_submitted" xml:space="preserve">
-    <value>Expense report submitted.</value>
+    <value>La note de frais a été soumise.</value>
   </data>
   <data name="expense_type_is_required" xml:space="preserve">
-    <value>Expense Type is required.</value>
+    <value>Un type de frais est obligatoire.</value>
   </data>
   <data name="Expenses" xml:space="preserve">
-    <value>Expenses</value>
+    <value>Frais</value>
   </data>
   <data name="Expiration_Date" xml:space="preserve">
-    <value>Expiration Date</value>
+    <value>Date d’expiration</value>
   </data>
   <data name="failed" xml:space="preserve">
-    <value>failed</value>
+    <value>échec</value>
   </data>
   <data name="File_Name" xml:space="preserve">
-    <value>File Name</value>
+    <value>Nom du fichier</value>
   </data>
   <data name="Filter_Engagements" xml:space="preserve">
-    <value>Filter Engagements</value>
+    <value>Filtrer les engagements</value>
   </data>
   <data name="Filter_Submittals" xml:space="preserve">
-    <value>Filter Submittals</value>
+    <value>Filtrer les soumissions</value>
   </data>
   <data name="Forgot_Password" xml:space="preserve">
-    <value>Forgot Password</value>
+    <value>Mot de passe oublié</value>
   </data>
   <data name="Forgot_que" xml:space="preserve">
-    <value>Forgot?</value>
+    <value>Oublié ?</value>
   </data>
   <data name="Generating" xml:space="preserve">
-    <value>Generating...</value>
+    <value>Génération...</value>
   </data>
   <data name="Hire" xml:space="preserve">
-    <value>Hire</value>
+    <value>Embaucher</value>
   </data>
   <data name="Hour" xml:space="preserve">
-    <value>Hour</value>
+    <value>Heure</value>
   </data>
   <data name="hour" xml:space="preserve">
-    <value>Hour</value>
+    <value>Heure</value>
   </data>
   <data name="I_Accept_the_Following_Terms" xml:space="preserve">
-    <value>I Accept the Following Terms</value>
+    <value>J’accepte les termes suivants</value>
   </data>
   <data name="Information_updated" xml:space="preserve">
-    <value>Information updated successfully.</value>
+    <value>Mise à jour des informations réussie.</value>
   </data>
   <data name="is_required" xml:space="preserve">
-    <value>is required.</value>
+    <value>est obligatoire.</value>
   </data>
   <data name="Issue_Date" xml:space="preserve">
-    <value>Issue Date</value>
+    <value>Date d’émission</value>
   </data>
   <data name="Issuing_Authority" xml:space="preserve">
-    <value>Issuing Authority</value>
+    <value>Autorité émettrice</value>
   </data>
   <data name="job_classification" xml:space="preserve">
-    <value>Please select job classification.</value>
+    <value>Sélectionnez une classification de poste.</value>
   </data>
   <data name="Justification_required" xml:space="preserve">
-    <value>Justification is required</value>
+    <value>La justification est obligatoire</value>
   </data>
   <data name="Log_Out" xml:space="preserve">
-    <value>Log Out</value>
+    <value>Déconnexion</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login</value>
+    <value>Connexion</value>
   </data>
   <data name="Manage_Engagements" xml:space="preserve">
-    <value>Manage Engagements</value>
+    <value>Gérer les engagements</value>
   </data>
   <data name="MaxValue_greaterORequal_MinValue" xml:space="preserve">
-    <value>Maximum value should be greater than or equal to the minimum value.</value>
+    <value>La valeur maximale doit être supérieure ou égale à la valeur minimale.</value>
   </data>
   <data name="Milestone_Engagement_Items" xml:space="preserve">
-    <value>Milestone - Engagement Items</value>
+    <value>Jalon - Éléments d’engagements</value>
   </data>
   <data name="Milestones" xml:space="preserve">
-    <value>Milestones</value>
+    <value>Jalons</value>
   </data>
   <data name="modification_reason" xml:space="preserve">
-    <value>Modification Reason</value>
+    <value>Raison de la modification</value>
   </data>
   <data name="Modify_Engagement" xml:space="preserve">
-    <value>Modify Engagement</value>
+    <value>Modifier l’engagement</value>
   </data>
   <data name="MSP_Company" xml:space="preserve">
-    <value>MSP Company</value>
+    <value>Société MSP</value>
   </data>
   <data name="N_A" xml:space="preserve">
     <value>N_A</value>
@@ -2112,912 +2112,912 @@ Step 3: Return here. Verify device registration. Click Done. Login using your PI
     <value>NA</value>
   </data>
   <data name="performance_Date_not_future" xml:space="preserve">
-    <value>The Performance Date may not be in the future.</value>
+    <value>La date de la performance ne doit pas se situer dans le futur.</value>
   </data>
   <data name="new_updates" xml:space="preserve">
-    <value>new updates</value>
+    <value>nouvelles mises à jour</value>
   </data>
   <data name="notes_saved_to_expense_report" xml:space="preserve">
-    <value>Notes saved to expense report</value>
+    <value>Remarques enregistrées pour la note de frais</value>
   </data>
   <data name="Offer" xml:space="preserve">
-    <value>Offer</value>
+    <value>Offre</value>
   </data>
   <data name="one_agreement_required" xml:space="preserve">
-    <value>At least one Agreement is required to &#39;Add Timesheet&#39;. Please contact to Administrator.</value>
+    <value>Au moins un accord est obligatoire pour « Ajouter une feuille de temps ». Contactez l’Administrateur.</value>
   </data>
   <data name="One_customfields_required" xml:space="preserve">
-    <value>One or more custom fields are required.</value>
+    <value>Au moins un champ personnalisé est obligatoire.</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password</value>
+    <value>Mot de passe</value>
   </data>
   <data name="Password_Updated" xml:space="preserve">
-    <value>Password Updated</value>
+    <value>Le mot de passe a été mis à jour</value>
   </data>
   <data name="Pay_Code_and_Bill_Rate" xml:space="preserve">
-    <value>Pay Code and Bill Rate</value>
+    <value>Code Paiement et taux de facturation</value>
   </data>
   <data name="Payment" xml:space="preserve">
-    <value>Payment</value>
+    <value>Paiement</value>
   </data>
   <data name="pdf_extension" xml:space="preserve">
     <value>.pdf</value>
   </data>
   <data name="pending_enrollment_msg" xml:space="preserve">
-    <value>You have pending open enrollment(s), please login to zcweb to complete the enrollment process. If you have any questions, please contact ZeroChaos Customer Support.</value>
+    <value>Vous avez des inscriptions ouvertes en attente, connectez-vous sur ZCWeb pour terminer la procédure d’inscription. Si vous avez la moindre question, contactez le service clientèle ZeroChaos.</value>
   </data>
   <data name="Pin_login_reset_que" xml:space="preserve">
-    <value>Are you sure you want to disable and reset PIN login?</value>
+    <value>Voulez-vous vraiment désactiver et réinitialiser la connexion par PIN ?</value>
   </data>
   <data name="please_confirm_delete" xml:space="preserve">
-    <value>Please Confirm Delete</value>
+    <value>Confirmez la suppression</value>
   </data>
   <data name="Please_enter_comments" xml:space="preserve">
-    <value>Please enter comments</value>
+    <value>Entrez des commentaires</value>
   </data>
   <data name="Please_provide_answer" xml:space="preserve">
-    <value>Please provide an answer</value>
+    <value>Veuillez fournir une réponse</value>
   </data>
   <data name="Please_provide_username." xml:space="preserve">
-    <value>Please provide your username.</value>
+    <value>Veuillez fournir votre nom d&#39;utilisateur.</value>
   </data>
   <data name="Please_select_country" xml:space="preserve">
-    <value>Please select a country.</value>
+    <value>Sélectionnez un pays.</value>
   </data>
   <data name="Please_select_status_change_reason" xml:space="preserve">
-    <value>Please select status change reason.</value>
+    <value>Sélectionnez une raison de changement de statut.</value>
   </data>
   <data name="Primary_Manager" xml:space="preserve">
-    <value>Primary Manager</value>
+    <value>Responsable principal</value>
   </data>
   <data name="Profile_Picture" xml:space="preserve">
-    <value>Profile Picture</value>
+    <value>Photo de profil</value>
   </data>
   <data name="Profile_Picture" xml:space="preserve">
-    <value>Profile Picture</value>
+    <value>Photo de profil</value>
   </data>
   <data name="Project" xml:space="preserve">
-    <value>Project</value>
+    <value>Projet</value>
   </data>
   <data name="Proxy_Approver" xml:space="preserve">
-    <value>Proxy Approver</value>
+    <value>Approbateur proxy</value>
   </data>
   <data name="Proxy_Approver_added" xml:space="preserve">
-    <value>Proxy Approver added successfully.</value>
+    <value>Ajout de l’approbateur proxy réussi.</value>
   </data>
   <data name="Proxy_Approvers" xml:space="preserve">
-    <value>Proxy Approvers</value>
+    <value>Approbateurs proxys</value>
   </data>
   <data name="Proxy_Approvers_removed" xml:space="preserve">
-    <value>Proxy Approver removed successfully.</value>
+    <value>Retrait de l’approbateur proxy réussi.</value>
   </data>
   <data name="rates_values_greaterthan_zero" xml:space="preserve">
-    <value>All rates values should be greater than 0.</value>
+    <value>Toutes les valeurs de taux doivent être supérieures à 0.</value>
   </data>
   <data name="receipt_photo" xml:space="preserve">
-    <value>Receipt Photo</value>
+    <value>Photo du reçu</value>
   </data>
   <data name="receipt_uploaded_successfully" xml:space="preserve">
-    <value>Receipt uploaded successfully.</value>
+    <value>Téléchargement du reçu réussi.</value>
   </data>
   <data name="Receive_Emails" xml:space="preserve">
-    <value>Receive Emails</value>
+    <value>Recevoir des e-mails</value>
   </data>
   <data name="Registration_Code" xml:space="preserve">
-    <value>Registration Code</value>
+    <value>Code d’enregistrement</value>
   </data>
   <data name="Released_for_Invoicing" xml:space="preserve">
-    <value>Released for Invoicing -</value>
+    <value>A été débloqué pour la facturation -</value>
   </data>
   <data name="Remove_from_Comparison" xml:space="preserve">
-    <value>Remove from Comparison</value>
+    <value>Enlever de la comparaison</value>
   </data>
   <data name="Req_Minimum_Experience" xml:space="preserve">
-    <value>Req Minimum Experience (years)</value>
+    <value>Expérience minimale dem (années)</value>
   </data>
   <data name="Req_Minimum_Skill" xml:space="preserve">
-    <value>Req Minimum Skill Level</value>
+    <value>Niveau de qualification minimal dem</value>
   </data>
   <data name="request" xml:space="preserve">
-    <value>request</value>
+    <value>sollicitation</value>
   </data>
   <data name="Request_Interview" xml:space="preserve">
-    <value>Request Interview</value>
+    <value>Solliciter un entretien</value>
   </data>
   <data name="Request_Interview_BTN" xml:space="preserve">
-    <value>Request Interview</value>
+    <value>Solliciter un entretien</value>
   </data>
   <data name="Requisitions_Notes" xml:space="preserve">
-    <value>Requisitions Notes</value>
+    <value>Remarques sur les demandes</value>
   </data>
   <data name="Reset_Password" xml:space="preserve">
-    <value>Reset Password</value>
+    <value>Réinitialiser le mot de passe</value>
   </data>
   <data name="Reset_PIN" xml:space="preserve">
-    <value>Reset PIN</value>
+    <value>Réinitialiser le PIN</value>
   </data>
   <data name="Reset_PIN_Login" xml:space="preserve">
-    <value>Reset PIN Login</value>
+    <value>Réinitialiser la connexion par PIN</value>
   </data>
   <data name="Resume_Text" xml:space="preserve">
-    <value>Resume Text</value>
+    <value>Texte du CV</value>
   </data>
   <data name="s" xml:space="preserve">
     <value>s</value>
   </data>
   <data name="s_approval" xml:space="preserve">
-    <value>approval</value>
+    <value>approbation</value>
   </data>
   <data name="s_information" xml:space="preserve">
-    <value>information</value>
+    <value>informations</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Enregistrer</value>
   </data>
   <data name="Save_Username" xml:space="preserve">
-    <value>Save Username</value>
+    <value>Enregistrer le nom d&#39;utilisateur</value>
   </data>
   <data name="security_update1" xml:space="preserve">
-    <value>Security question and answer updated successfully.</value>
+    <value>Mise à jour de la question et de la réponse de sécurité réussie.</value>
   </data>
   <data name="Select_BusinessUnit" xml:space="preserve">
-    <value>Select BusinessUnit</value>
+    <value>Sélectionner une unité commerciale</value>
   </data>
   <data name="Select_Country" xml:space="preserve">
-    <value>Select Country</value>
+    <value>Sélectionner un pays</value>
   </data>
   <data name="Select_Interviewer_Name" xml:space="preserve">
-    <value>Select Interviewer Name</value>
+    <value>Sélectionner le nom de la personne qui fera passer l’entretien</value>
   </data>
   <data name="Select_Interviewer_Timezone" xml:space="preserve">
-    <value>Select Interviewer Timezone</value>
+    <value>Sélectionner le fuseau horaire de la personne qui fera passer l’entretien</value>
   </data>
   <data name="Select_Interviewer_Type" xml:space="preserve">
-    <value>Select Interviewer Type</value>
+    <value>Sélectionner le type de la personne qui fera passer l’entretien</value>
   </data>
   <data name="Select_Primary_Manager" xml:space="preserve">
-    <value>Select Primary Manager</value>
+    <value>Sélectionner le Responsable principal</value>
   </data>
   <data name="Select_Primary_Manager" xml:space="preserve">
-    <value>Select Primary Manager</value>
+    <value>Sélectionner le Responsable principal</value>
   </data>
   <data name="Select_Proxy_Approver" xml:space="preserve">
-    <value>Select Proxy Approver</value>
+    <value>Sélectionner un approbateur proxy</value>
   </data>
   <data name="Select_Service_Classification" xml:space="preserve">
-    <value>Select Service Classification</value>
+    <value>Sélectionner une classification du service</value>
   </data>
   <data name="Select_Service_Provider" xml:space="preserve">
-    <value>Select Service Provider</value>
+    <value>Sélectionner un prestataire de services</value>
   </data>
   <data name="Select_Service_Provider" xml:space="preserve">
-    <value>Select Service Provider</value>
+    <value>Sélectionner un prestataire de services</value>
   </data>
   <data name="Select_State" xml:space="preserve">
-    <value>Select State</value>
+    <value>Sélectionner une région</value>
   </data>
   <data name="Selected_requisitions" xml:space="preserve">
-    <value>Selected requisitions</value>
+    <value>Demandes sélectionnées</value>
   </data>
   <data name="Service_Center" xml:space="preserve">
-    <value>Service Center</value>
+    <value>Centre de services</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paramètres</value>
   </data>
   <data name="Settings_updated1" xml:space="preserve">
-    <value>Settings updated successfully</value>
+    <value>Mise à jour des paramètres réussie</value>
   </data>
   <data name="share" xml:space="preserve">
-    <value>Share</value>
+    <value>Partager</value>
   </data>
   <data name="Skip" xml:space="preserve">
-    <value>Skip</value>
+    <value>Ignorer</value>
   </data>
   <data name="Skip" xml:space="preserve">
-    <value>Skip</value>
+    <value>Ignorer</value>
   </data>
   <data name="small_adjustments" xml:space="preserve">
-    <value>Adjustments</value>
+    <value>Ajustements</value>
   </data>
   <data name="small_timesheet" xml:space="preserve">
-    <value>timesheet</value>
+    <value>feuille de temps</value>
   </data>
   <data name="special_character_validation" xml:space="preserve">
-    <value>Warning: Special characters cannot be entered. Enter a positive Will Pay Amount without any special characters.</value>
+    <value>Avertissement : Les caractères spéciaux ne peuvent pas être entrés. Entrer un montant à payer positif sans caractère spécial.</value>
   </data>
   <data name="Start_Date_required" xml:space="preserve">
-    <value>The Start Date field is required.</value>
+    <value>Le champ Date de démarrage est obligatoire.</value>
   </data>
   <data name="State_required" xml:space="preserve">
-    <value>State is required</value>
+    <value>Une région est obligatoire</value>
   </data>
   <data name="Submit_Answer" xml:space="preserve">
-    <value>Submit Answer</value>
+    <value>Soumettre la réponse</value>
   </data>
   <data name="Successfully_approved_candidate" xml:space="preserve">
-    <value>Successfully approved candidate.</value>
+    <value>Approbation du candidat réussie.</value>
   </data>
   <data name="Successfully_approved_requisition" xml:space="preserve">
-    <value>Successfully approved requisition.</value>
+    <value>Approbation de la demande réussie.</value>
   </data>
   <data name="Successfully_approved_selected_expenses" xml:space="preserve">
-    <value>Successfully approved selected expenses.</value>
+    <value>Approbation des frais sélectionnés réussie.</value>
   </data>
   <data name="Successfully_approved_selected_timesheets" xml:space="preserve">
-    <value>Successfully approved selected timesheets.</value>
+    <value>Approbation des feuilles de temps sélectionnées réussie.</value>
   </data>
   <data name="Successfully_approved_timesheet" xml:space="preserve">
-    <value>Successfully approved timesheet.</value>
+    <value>Approbation de la feuille de temps réussie.</value>
   </data>
   <data name="Successfully_declined" xml:space="preserve">
-    <value>Successfully declined</value>
+    <value>Refus réussi</value>
   </data>
   <data name="Successfully_declined_candidate" xml:space="preserve">
-    <value>Successfully declined candidate.</value>
+    <value>Refus du candidat réussi.</value>
   </data>
   <data name="Successfully_declined_selected_expenses" xml:space="preserve">
-    <value>Successfully declined selected expenses.</value>
+    <value>Refus des frais sélectionnés réussi.</value>
   </data>
   <data name="Successfully_declined_timesheet" xml:space="preserve">
-    <value>Successfully declined timesheet.</value>
+    <value>Refus de la feuille de temps réussi.</value>
   </data>
   <data name="Successfully_rescinded_candidate" xml:space="preserve">
-    <value>Successfully rescinded candidate.</value>
+    <value>Abandon du candidat réussi.</value>
   </data>
   <data name="Suplier_Bill_Rate" xml:space="preserve">
-    <value>Suplier Bill Rate</value>
+    <value>Taux de facturation fournisseur</value>
   </data>
   <data name="sure_you_want_extendoffer_que" xml:space="preserve">
-    <value>Are you sure you want to extend the offer?</value>
+    <value>Voulez-vous vraiment prolonger l’offre ?</value>
   </data>
   <data name="sure_you_want_to_cancel_que" xml:space="preserve">
-    <value>Are you sure you want to cancel?</value>
+    <value>Voulez-vous vraiment annuler ?</value>
   </data>
   <data name="sure_you_want_to_Decline_que" xml:space="preserve">
-    <value>Are you sure you want to Decline?</value>
+    <value>Voulez-vous vraiment refuser ?</value>
   </data>
   <data name="tap_enter_maximum_amount" xml:space="preserve">
-    <value>tap to enter maximum amount</value>
+    <value>tapez pour entrer un montant maximal</value>
   </data>
   <data name="tap_enter_maximum_DD_MMM_YYYY" xml:space="preserve">
-    <value>tap to enter maximum DD-MMM-YYYY</value>
+    <value>tapez pour entrer une date JJ-MMM-AAAA maximale</value>
   </data>
   <data name="tap_enter_minimum_amount" xml:space="preserve">
-    <value>tap to enter minimum amount</value>
+    <value>tapez pour entrer un montant minimal</value>
   </data>
   <data name="tap_enter_minimum_DD_MMM_YYYY" xml:space="preserve">
-    <value>tap to enter minimum DD-MMM-YYYY</value>
+    <value>tapez pour entrer une date JJ-MMM-AAAA minimale</value>
   </data>
   <data name="Timesheet_submitted" xml:space="preserve">
-    <value>Timesheet submitted</value>
+    <value>Feuille de temps soumise</value>
   </data>
   <data name="Total_Resource_Amount" xml:space="preserve">
-    <value>Total Resource Amount</value>
+    <value>Montant total de la ressource</value>
   </data>
   <data name="track_code_added_successfully" xml:space="preserve">
-    <value>Track Code added successfully.</value>
+    <value>Ajout du code Suivi réussi.</value>
   </data>
   <data name="track_code_assigned" xml:space="preserve">
-    <value>Track code assigned.</value>
+    <value>Le code Suivi a été assigné.</value>
   </data>
   <data name="track_code_is_required" xml:space="preserve">
-    <value>Track Code is required.</value>
+    <value>Le code Suivi est obligatoire.</value>
   </data>
   <data name="Turn_on_Out_of_Office" xml:space="preserve">
-    <value>Turn on Out of Office</value>
+    <value>Activer Absent(e) du bureau</value>
   </data>
   <data name="Units" xml:space="preserve">
-    <value>Units</value>
+    <value>Unités</value>
   </data>
   <data name="updated_lowercase" xml:space="preserve">
-    <value>updated.</value>
+    <value>mis à jour.</value>
   </data>
   <data name="Uploaded_By" xml:space="preserve">
-    <value>Uploaded By</value>
+    <value>Téléchargé par</value>
   </data>
   <data name="Uploaded_on" xml:space="preserve">
-    <value>Uploaded on</value>
+    <value>Téléchargé le</value>
   </data>
   <data name="Use_PIN_Login" xml:space="preserve">
-    <value>Use_PIN_Login</value>
+    <value>Utiliser_Connexion_par_PIN</value>
   </data>
   <data name="Username" xml:space="preserve">
-    <value>Username</value>
+    <value>Nom d’utilisateur</value>
   </data>
   <data name="validation_adjustment1" xml:space="preserve">
-    <value>Approving adjustment for</value>
+    <value>Approbation de l’ajustement pour</value>
   </data>
   <data name="validation_status_reason" xml:space="preserve">
-    <value>Please select status change reason.</value>
+    <value>Sélectionnez une raison de changement de statut.</value>
   </data>
   <data name="veto_validation1" xml:space="preserve">
-    <value>Clicking Submit will remove this invoice line permanently and the Service Provider will have to create a new Invoice for this line. Click Submit to proceed or Cancel to go back to the previous screen&quot;;</value>
+    <value>Cliquer sur Soumettre entraînera le retrait définitif de cette ligne de facture et le prestataire de services devra créer une nouvelle facture pour cette ligne. Cliquez sur Soumettre pour continuer ou sur Annuler pour revenir à l’écran précédent ;</value>
   </data>
   <data name="View_Expense_Reports" xml:space="preserve">
-    <value>View Expense Reports</value>
+    <value>Afficher les notes de frais</value>
   </data>
   <data name="View_Timesheets" xml:space="preserve">
-    <value>View Timesheets</value>
+    <value>Afficher les feuilles de temps</value>
   </data>
   <data name="want_to_decline_change_request" xml:space="preserve">
-    <value>Are you sure you want to decline this change request?</value>
+    <value>Voulez-vous vraiment refuser cette sollicitation de changement ?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Bienvenue</value>
   </data>
   <data name="Yes_No" xml:space="preserve">
-    <value>Yes / No</value>
+    <value>Oui / Non</value>
   </data>
   <data name="You_have" xml:space="preserve">
-    <value>You have</value>
+    <value>Vous avez</value>
   </data>
   <data name="your_enrollment_msg" xml:space="preserve">
-    <value>Your enrollment is incomplete. Before using ZC Mobile you will need to complete enrollment. Please contact ZeroChaos Customer Support for assistance.</value>
+    <value>Votre inscription est incomplète. Avant d’utiliser ZC Mobile, vous devez terminer votre inscription. Contactez le service clientèle ZeroChaos pour toute demande d’assistance.</value>
   </data>
   <data name="Your_session_has_expired" xml:space="preserve">
-    <value>Your session has expired.</value>
+    <value>Votre session a expiré.</value>
   </data>
   <data name="Photo_uploaded_successfully" xml:space="preserve">
-    <value>Photo uploaded successfully.</value>
+    <value>Téléchargement de la photo réussi.</value>
   </data>
   <data name="Display_Language" xml:space="preserve">
-    <value>Display Language</value>
+    <value>Langue d’affichage</value>
   </data>
   <data name="Select_Language" xml:space="preserve">
-    <value>Select Language</value>
+    <value>Sélectionner une langue</value>
   </data>
   <data name="Opt_out_of_E_mails" xml:space="preserve">
-    <value>Opt out of E-mails</value>
+    <value>Ne plus recevoir d’e-mails</value>
   </data>
   <data name="yes_uppercase" xml:space="preserve">
-    <value>YES</value>
+    <value>OUI</value>
   </data>
   <data name="no_uppercase" xml:space="preserve">
-    <value>NO</value>
+    <value>NON</value>
   </data>
   <data name="Edit_Interview" xml:space="preserve">
-    <value>Edit Interview</value>
+    <value>Modifier l’entretien</value>
   </data>
   <data name="Candidate_Name" xml:space="preserve">
-    <value>Candidate Name</value>
+    <value>Nom du candidat</value>
   </data>
   <data name="Interview_Duration_minutes" xml:space="preserve">
-    <value>Interview Duration (minutes)</value>
+    <value>Durée de l’entretien (minutes)</value>
   </data>
   <data name="Interview_Location_Phone" xml:space="preserve">
-    <value>Interview Location / Phone</value>
+    <value>Emplacement / Téléphone de l’entretien</value>
   </data>
   <data name="Interview_Time_Zone" xml:space="preserve">
-    <value>Interview Time Zone</value>
+    <value>Fuseau horaire de l’entretien</value>
   </data>
   <data name="Preferred_Date" xml:space="preserve">
-    <value>Preferred Date</value>
+    <value>Date préférée</value>
   </data>
   <data name="Preferred_Time" xml:space="preserve">
-    <value>Preferred Time</value>
+    <value>Temps préféré</value>
   </data>
   <data name="Alternate_Date" xml:space="preserve">
-    <value>Alternate Date</value>
+    <value>Autre date</value>
   </data>
   <data name="Alternate_Time" xml:space="preserve">
-    <value>Alternate Time</value>
+    <value>Autre temps</value>
   </data>
   <data name="NEW" xml:space="preserve">
-    <value>NEW</value>
+    <value>NOUVEAU</value>
   </data>
   <data name="REINTERVIEW" xml:space="preserve">
-    <value>REINTERVIEW</value>
+    <value>FAIRE PASSER UN NOUVEL ENTRETIEN</value>
   </data>
   <data name="EXTEND_OFFER" xml:space="preserve">
-    <value>EXTEND OFFER</value>
+    <value>PROLONGER L’OFFRE</value>
   </data>
   <data name="COMPLETE_INTERVIEW" xml:space="preserve">
-    <value>COMPLETE INTERVIEW</value>
+    <value>TERMINER L’ENTRETIEN</value>
   </data>
   <data name="minutes" xml:space="preserve">
     <value>minutes</value>
   </data>
   <data name="ACCEPT_INTERVIEW" xml:space="preserve">
-    <value>ACCEPT INTERVIEW</value>
+    <value>ACCEPTER L’ENTRETIEN</value>
   </data>
   <data name="REQUEST_NEW_INTERVIEW_DATE" xml:space="preserve">
-    <value>REQUEST NEW INTERVIEW DATE</value>
+    <value>SOLLICITER UNE NOUVELLE DATE D’ENTRETIEN</value>
   </data>
   <data name="CANCEL_INTERVIEW" xml:space="preserve">
-    <value>CANCEL INTERVIEW</value>
+    <value>ANNULER L’ENTRETIEN</value>
   </data>
   <data name="Please_enter_necessary_comment" xml:space="preserve">
-    <value>Please enter necessary comment.</value>
+    <value>Entrez le commentaire nécessaire.</value>
   </data>
   <data name="Time_Period" xml:space="preserve">
-    <value>Time Period</value>
+    <value>Plage de temps</value>
   </data>
   <data name="Requested_Sub_Rate" xml:space="preserve">
-    <value>Requested Sub. Rate</value>
+    <value>Sou. sollicitée Taux</value>
   </data>
   <data name="Requested_Target_Rate" xml:space="preserve">
-    <value>Requested Target Rate</value>
+    <value>Taux cible sollicité</value>
   </data>
   <data name="Filter_Submittal_Details" xml:space="preserve">
-    <value>Filter Submittal Details</value>
+    <value>Filtrer les détails sur la soumission</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Type</value>
   </data>
   <data name="Date_Time" xml:space="preserve">
-    <value>Date / Time</value>
+    <value>Date / Heure</value>
   </data>
   <data name="Minutes" xml:space="preserve">
     <value>Minutes</value>
   </data>
   <data name="In_Person" xml:space="preserve">
-    <value>In Person</value>
+    <value>En personne</value>
   </data>
   <data name="Language_Change_Confirmation_Message" xml:space="preserve">
-    <value>For the language changes to take effect you need to logout and log back in. Please press OK to logout now.</value>
+    <value>Pour que les changements de langues s’appliquent, vous devez vous déconnecter, puis vous reconnecter. Appuyez sur Valider pour vous déconnecter.</value>
   </data>
   <data name="no_data" xml:space="preserve">
-    <value>(No Data)</value>
+    <value>(Aucune donnée)</value>
   </data>
   <data name="no_samll_latter" xml:space="preserve">
-    <value>no</value>
+    <value>non</value>
   </data>
   <data name="yes_samll_latter" xml:space="preserve">
-    <value>yes</value>
+    <value>oui</value>
   </data>
   <data name="True" xml:space="preserve">
-    <value>True</value>
+    <value>Vrai</value>
   </data>
   <data name="False" xml:space="preserve">
-    <value>False</value>
+    <value>Faux</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Oui</value>
   </data>
   <data name="false" xml:space="preserve">
-    <value>false</value>
+    <value>faux</value>
   </data>
   <data name="View_Track_Code" xml:space="preserve">
-    <value>View Track Code</value>
+    <value>Afficher un code Suivi</value>
   </data>
   <data name="Failed_to_register_for_push_notifications" xml:space="preserve">
-    <value>Failed to register for push notifications!</value>
+    <value>Échec de l’enregistrement pour les notifications Push.</value>
   </data>
   <data name="Invoice_hash" xml:space="preserve">
-    <value>Invoice #</value>
+    <value>n° facture</value>
   </data>
   <data name="Password_updated_successfully" xml:space="preserve">
-    <value>Password updated successfully.</value>
+    <value>Mise à jour du mot de passe réussie.</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>(Error)</value>
+    <value>(Erreur)</value>
   </data>
   <data name="Maybe_later" xml:space="preserve">
-    <value>Maybe later</value>
+    <value>Peut-être plus tard</value>
   </data>
   <data name="Rate_now" xml:space="preserve">
-    <value>Rate Now! -</value>
+    <value>Noter maintenant. -</value>
   </data>
   <data name="enjoy_zc_mobile" xml:space="preserve">
-    <value>If you enjoy using ZC Mobile, please rate this app</value>
+    <value>Si vous êtes satisfait(e) de votre utilisation de ZC Mobile, notez cette appli</value>
   </data>
   <data name="your_feedback_rate" xml:space="preserve">
-    <value>Your feedback is important to us. Rating our app is quick and easy. It only takes a few taps to complete!</value>
+    <value>Votre avis compte beaucoup pour nous. La procédure d’évaluation est simple et rapide. Cela ne vous prendra que quelques instants.</value>
   </data>
   <data name="Proxy" xml:space="preserve">
     <value>Proxy</value>
   </data>
   <data name="Item" xml:space="preserve">
-    <value>Item</value>
+    <value>Élément</value>
   </data>
   <data name="Transaction" xml:space="preserve">
     <value>Transaction</value>
   </data>
   <data name="Approval" xml:space="preserve">
-    <value>Approval</value>
+    <value>Approbation</value>
   </data>
   <data name="Assignment_Status_que" xml:space="preserve">
-    <value>Assignment Status?</value>
+    <value>Statut de l’affectation ?</value>
   </data>
   <data name="Assignment_Status" xml:space="preserve">
-    <value>Assignment Status</value>
+    <value>Statut de l’affectation</value>
   </data>
   <data name="Assigned1" xml:space="preserve">
-    <value>Assigned</value>
+    <value>Assigné</value>
   </data>
   <data name="Unassigned" xml:space="preserve">
-    <value>Unassigned</value>
+    <value>Affectation annulée</value>
   </data>
   <data name="btn_Unassign" xml:space="preserve">
-    <value>Unassign</value>
+    <value>Annuler l’affectation</value>
   </data>
   <data name="trackCodemsg_Unassign" xml:space="preserve">
-    <value>Do you really want to unassign selected track code?</value>
+    <value>Voulez-vous vraiment annuler l’affectation du code Suivi sélectionné ?</value>
   </data>
   <data name="Cancel_Engagement" xml:space="preserve">
-    <value>Cancel Engagement</value>
+    <value>Annuler l’engagement</value>
   </data>
   <data name="Tap_to_load_more_data" xml:space="preserve">
-    <value>Tap here to load more data</value>
+    <value>Tapez ici pour charger plus de données</value>
   </data>
   <data name="Supplier" xml:space="preserve">
-    <value>Supplier</value>
+    <value>Fournisseur</value>
   </data>
   <data name="startDate_required" xml:space="preserve">
-    <value>Start date is required.</value>
+    <value>Une date de démarrage est obligatoire.</value>
   </data>
   <data name="endDate_required" xml:space="preserve">
-    <value>End date is required.</value>
+    <value>Une date de fin est obligatoire.</value>
   </data>
   <data name="invoice_validateNumber" xml:space="preserve">
-    <value>The invoice number cannot be blank. Please enter a valid invoice number.</value>
+    <value>Le numéro de facture ne peut pas être vide. Entrez un numéro de facture valide.</value>
   </data>
   <data name="Distributed_To" xml:space="preserve">
-    <value>Distributed To</value>
+    <value>Distribué à</value>
   </data>
   <data name="failed_receipt" xml:space="preserve">
-    <value>Receipt failed to upload</value>
+    <value>Échec du téléchargement du reçu</value>
   </data>
   <data name="failed_receipts" xml:space="preserve">
-    <value>Receipts failed to upload</value>
+    <value>Échec du téléchargement des reçus</value>
   </data>
   <data name="Add_Notes" xml:space="preserve">
-    <value>Add Note</value>
+    <value>Ajouter une remarque</value>
   </data>
   <data name="Performance_Date" xml:space="preserve">
-    <value>Performance Date</value>
+    <value>Date de la performance</value>
   </data>
   <data name="Performance_Time" xml:space="preserve">
-    <value>Performance Time</value>
+    <value>Temps des performances</value>
   </data>
   <data name="Timezone" xml:space="preserve">
-    <value>Timezone</value>
+    <value>Fuseau horaire</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Note</value>
+    <value>Remarque</value>
   </data>
   <data name="Requisition_Managers" xml:space="preserve">
-    <value>Requisition Managers</value>
+    <value>Responsables des demandes</value>
   </data>
   <data name="Candidate_Submitted_Suppliers" xml:space="preserve">
-    <value>Candidate Submitted Suppliers</value>
+    <value>Fournisseurs candidat soumis</value>
   </data>
   <data name="All_Distributed_Suppliers" xml:space="preserve">
-    <value>All Distributed Suppliers</value>
+    <value>Tous les fournisseurs distribués</value>
   </data>
   <data name="Requisition_Note_Req_ID" xml:space="preserve">
-    <value>Requisition Note - Req ID</value>
+    <value>Remarque sur la demande - ID dem</value>
   </data>
   <data name="Submitted_Candidate_Note" xml:space="preserve">
-    <value>Submitted Candidate Note</value>
+    <value>Remarque sur le candidat soumis</value>
   </data>
   <data name="Uploaded_Date" xml:space="preserve">
-    <value>Uploaded Date</value>
+    <value>Date de téléchargement</value>
   </data>
   <data name="Longlick_image" xml:space="preserve">
-    <value>Longlick image for preview.</value>
+    <value>Faites un clic prolongé sur l’image pour obtenir un aperçu.</value>
   </data>
   <data name="empty_notes" xml:space="preserve">
-    <value>An Empty note field may not be submitted.</value>
+    <value>Un champ Remarque vide ne peut pas être soumis.</value>
   </data>
   <data name="Enable_Android_6_Permissions" xml:space="preserve">
-    <value>Android 6 Permissions</value>
+    <value>Permissions Android 6</value>
   </data>
   <data name="Enable_Draw_Over_Other_Apps" xml:space="preserve">
-    <value>Apps that can appear on top</value>
+    <value>Applications qui peuvent apparaître par-dessus</value>
   </data>
   <data name="CM_Steps_To_Set_DrawOver_Permissions_zcmobile" xml:space="preserve">
-    <value>Android 6 requires enabling of the &#39;Apps that can appear on top&#39; setting for this, and many common applications. To enable it, follow these steps:
+    <value>Android 6 nécessite l’activation du paramètre « Applications qui peuvent apparaître par-dessus » pour cette application et pour d’autres applications courantes. Pour activer ce paramètre, suivez les étapes :
 
-Step 1: Tap Display Settings. We will redirect you to the settings page. Scroll to ZC Mobile. Enable it.
+Étape 1 : Tapez sur les paramètres d’affichage. Vous serez redirigé(e) vers la page des paramètres. Faites défiler jusqu’à ZC Mobile. Activez.
 
-Step 2: Tap your device’s back button to return here.
+Étape 2 : Appuyez sur le bouton Précédent de votre appareil pour revenir ici.
 
-Step 3: Confirm below that you enabled the &#39;Apps that can appear on top&#39; setting and then tap Continue.</value>
+Étape 3 : Confirmez ci-dessous que vous avez activé le paramètre « Applications qui peuvent apparaître par-dessus » et tapez sur Continuer.</value>
   </data>
   <data name="CM_Steps_To_Set_DrawOver_Permissions_zcmobiletest" xml:space="preserve">
-    <value>Android 6 requires enabling of the &#39;Apps that can appear on top&#39; setting for this, and many common applications. To enable it, follow these steps:
+    <value>Android 6 nécessite l’activation du paramètre « Applications qui peuvent apparaître par-dessus » pour cette application et pour d’autres applications courantes. Pour activer ce paramètre, suivez les étapes :
 
-Step 1: Tap Display Settings. We will redirect you to the settings page. Scroll to ZC Mobile Test. Enable it.
+Étape 1 : Tapez sur les paramètres d’affichage. Vous serez redirigé(e) vers la page des paramètres. Faites défiler jusqu’à ZC Mobile Test. Activez.
 
-Step 2: Tap your device’s back button to return here.
+Étape 2 : Appuyez sur le bouton Précédent de votre appareil pour revenir ici.
 
-Step 3: Confirm below that you enabled the &#39;Apps that can appear on top&#39; setting and then tap Continue.</value>
+Étape 3 : Confirmez ci-dessous que vous avez activé le paramètre « Applications qui peuvent apparaître par-dessus » et tapez sur Continuer.</value>
   </data>
   <data name="CM_Set_DrawOver_Permission_Confirmation_zcmobile" xml:space="preserve">
-    <value>Yes, I have enabled the &#39;Apps that can appear on top&#39; setting for ZC Mobile.</value>
+    <value>Oui, j’ai activé le paramètre « Applications qui peuvent apparaître par-dessus » pour ZC Mobile.</value>
   </data>
   <data name="CM_Set_DrawOver_Permission_Confirmation_zcmobiletest" xml:space="preserve">
-    <value>Yes, I have enabled the &#39;Apps that can appear on top&#39; setting for ZC Mobile Test.</value>
+    <value>Oui, j’ai activé le paramètre « Applications qui peuvent apparaître par-dessus » pour ZC Mobile Test.</value>
   </data>
   <data name="Display_Settings" xml:space="preserve">
-    <value>Display Settings</value>
+    <value>Paramètres d’affichage</value>
   </data>
   <data name="reviewEng" xml:space="preserve">
-    <value>Engagement(s) have been sent to you for review. Would you like to review them now?</value>
-  </data>
-  <data name="Localization_Keys_For_20.0_Starts_Here" xml:space="preserve">
-    <value>Localization_Keys_For_20.0</value>
+    <value>Des engagements vous ont été envoyés pour vérification. Voulez-vous les vérifier maintenant ?</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Title</value>
+    <value>Titre</value>
   </data>
   <data name="Add_Milestone" xml:space="preserve">
-    <value>Add Milestone</value>
+    <value>Ajouter un jalon</value>
   </data>
   <data name="Edit_Milestone" xml:space="preserve">
-    <value>Edit Milestone</value>
+    <value>Modifier un jalon</value>
   </data>
   <data name="Btn_Remove" xml:space="preserve">
-    <value>Remove</value>
+    <value>Enlever</value>
   </data>
   <data name="Btn_Copy" xml:space="preserve">
-    <value>Copy</value>
+    <value>Copier</value>
   </data>
   <data name="Field_Name" xml:space="preserve">
-    <value>Field Name</value>
+    <value>Nom du champ</value>
   </data>
   <data name="User_Name" xml:space="preserve">
-    <value>User Name</value>
+    <value>Nom de l’utilisateur</value>
   </data>
   <data name="Old_Value" xml:space="preserve">
-    <value>Old Value</value>
+    <value>Ancienne valeur</value>
   </data>
   <data name="Last_Updated_By" xml:space="preserve">
-    <value>Last Updated By</value>
+    <value>Dernière mise à jour par</value>
   </data>
   <data name="Last_Updated" xml:space="preserve">
-    <value>Last Updated</value>
+    <value>Dernière mise à jour</value>
   </data>
   <data name="Title_Required" xml:space="preserve">
-    <value>Title is required</value>
+    <value>Un titre est obligatoire</value>
   </data>
   <data name="Description_Required" xml:space="preserve">
-    <value>Description is required</value>
+    <value>Une description est obligatoire</value>
   </data>
   <data name="Track_Code_Name_Required" xml:space="preserve">
-    <value>Track Code Name is required</value>
+    <value>Le nom du code Suivi est obligatoire</value>
   </data>
   <data name="Tax_Track_Code_Name_Required" xml:space="preserve">
-    <value>Tax Track Code Name is required</value>
+    <value>Le nom du code Suivi d’impôt est obligatoire</value>
   </data>
   <data name="Amount_Required" xml:space="preserve">
-    <value>Amount is required</value>
+    <value>Un montant est obligatoire</value>
   </data>
   <data name="Start_Date_Required" xml:space="preserve">
-    <value>Start Date is required</value>
+    <value>Une date de démarrage est obligatoire</value>
   </data>
   <data name="Estimated_Completion_Date_Required" xml:space="preserve">
-    <value>Estimated Completion Date is required</value>
+    <value>Une date d’achèvement estimée est obligatoire</value>
   </data>
   <data name="default_Approver" xml:space="preserve">
-    <value>Default Approver</value>
+    <value>Approbateur par défaut</value>
   </data>
   <data name="Service_Invoices" xml:space="preserve">
-    <value>Service Invoices</value>
+    <value>Factures de services</value>
   </data>
   <data name="Approved_Amount" xml:space="preserve">
-    <value>Approved Amount</value>
+    <value>Montant approuvé</value>
   </data>
   <data name="Line_Item_Vetos" xml:space="preserve">
-    <value>Line Item Vetos</value>
+    <value>Vétos d’éléments de lignes</value>
   </data>
   <data name="Engagement_Item_ID" xml:space="preserve">
-    <value>Engagement Item ID</value>
+    <value>ID élément d’engagement</value>
   </data>
   <data name="Submitted" xml:space="preserve">
-    <value>Submitted</value>
+    <value>Soumis</value>
   </data>
   <data name="View_Requisition_Notes" xml:space="preserve">
-    <value>View Requisition Notes</value>
+    <value>Afficher les remarques sur la demande</value>
   </data>
   <data name="View_Submission_Notes" xml:space="preserve">
-    <value>View Submissions Notes</value>
+    <value>Afficher les remarques sur les soumissions</value>
   </data>
   <data name="View_Adjustments_History" xml:space="preserve">
-    <value>View Adjustments History</value>
+    <value>Afficher l’historique des ajustements</value>
   </data>
   <data name="Adjustment_Reason" xml:space="preserve">
-    <value>Adjustment Reason</value>
+    <value>Raison d’ajustement</value>
   </data>
   <data name="Adjustment_Status" xml:space="preserve">
-    <value>Adjustment Status</value>
+    <value>Statut de l’ajustement</value>
   </data>
   <data name="Additional_Comments" xml:space="preserve">
-    <value>Additional Comments</value>
+    <value>Commentaires supplémentaires</value>
   </data>
   <data name="Decline_Service_Invoice" xml:space="preserve">
-    <value>Decline Service Invoice</value>
+    <value>Refuser la facture de services</value>
   </data>
   <data name="sowreject_reason" xml:space="preserve">
-    <value>To decline this service invoice, enter a comment and tap Submit. To request changes to the service invoice, tap Cancel and use the &#39;Request More Information&#39; link on the service invoice page.</value>
+    <value>Pour refuser cette facture de services, entrez un commentaire et tapez sur Soumettre. Pour solliciter des changements pour la facture de services, tapez sur Annuler et utilisez le lien « Besoin de plus d’informations » sur la page de la facture de services.</value>
   </data>
   <data name="Send_Note" xml:space="preserve">
-    <value>Send Note</value>
+    <value>Envoyer une remarque</value>
   </data>
   <data name="Service_Category" xml:space="preserve">
-    <value>Service Category</value>
+    <value>Catégorie de service</value>
   </data>
   <data name="Location_Type" xml:space="preserve">
-    <value>Location Type</value>
+    <value>Type d’emplacement</value>
   </data>
   <data name="Unit_of_Measure" xml:space="preserve">
-    <value>Unit of Measure</value>
+    <value>Unité de mesure</value>
   </data>
   <data name="workers" xml:space="preserve">
-    <value>Workers</value>
+    <value>Travailleurs</value>
   </data>
   <data name="Manage_Track_Codes" xml:space="preserve">
-    <value>Manage Track Codes</value>
+    <value>Gérer les codes Suivi</value>
   </data>
   <data name="Track_Code_ID" xml:space="preserve">
-    <value>Track Code ID</value>
+    <value>ID code Suivi</value>
   </data>
   <data name="Effective_Start_Date" xml:space="preserve">
-    <value>Effective Start Date</value>
+    <value>Date de démarrage effective</value>
   </data>
   <data name="Effective_End_Date" xml:space="preserve">
-    <value>Effective End Date</value>
+    <value>Date de fin effective</value>
   </data>
   <data name="Service_Provider_Contacts" xml:space="preserve">
-    <value>Service Provider Contacts</value>
+    <value>Contacts des prestataires de services</value>
   </data>
   <data name="Payment_Location" xml:space="preserve">
-    <value>Payment Location</value>
+    <value>Adresse de paiement</value>
   </data>
   <data name="Payment_Currency" xml:space="preserve">
-    <value>Payment Currency</value>
+    <value>Devise du paiement</value>
   </data>
   <data name="Filter_Manage_TrackCodes" xml:space="preserve">
-    <value>Filter Manage Track Codes</value>
+    <value>Filtrer et gérer les codes Suivi</value>
   </data>
   <data name="Amount_Pending_Approval" xml:space="preserve">
-    <value>Amount Pending Approval</value>
+    <value>Montant en attente d’approbation</value>
   </data>
   <data name="Amount_Approved_Engagement" xml:space="preserve">
-    <value>Amount Approved for Engagement</value>
+    <value>Montant approuvé pour l’engagement</value>
   </data>
   <data name="Amount_Rejected" xml:space="preserve">
-    <value>Amount Rejected</value>
+    <value>Montant rejeté</value>
   </data>
   <data name="Approved_Expenses" xml:space="preserve">
-    <value>Approved Expenses</value>
+    <value>Frais approuvés</value>
   </data>
   <data name="Invoiced_ID" xml:space="preserve">
-    <value>Invoiced ID</value>
+    <value>ID facturé</value>
   </data>
   <data name="Update_Contact" xml:space="preserve">
-    <value>Update Contact</value>
+    <value>Mettre à jour le contact</value>
   </data>
   <data name="Primary_Contact" xml:space="preserve">
-    <value>Primary Contact</value>
+    <value>Contact principal</value>
   </data>
   <data name="Select_Contacts" xml:space="preserve">
-    <value>Select Contacts</value>
+    <value>Sélectionner des contacts</value>
   </data>
   <data name="updateContact_CustomMessage" xml:space="preserve">
-    <value>*If the Contact you are looking for is not in the Drop down, please contact your Zerochaos Support Contact for help at</value>
+    <value>Si le contact que vous recherchez n’est pas dans la liste déroulante, contactez votre service clientèle Zerochaos à</value>
   </data>
   <data name="Select_Assigned" xml:space="preserve">
-    <value>Select Assigned</value>
+    <value>Sélectionner les éléments assignés</value>
   </data>
   <data name="Select_Active" xml:space="preserve">
-    <value>Select Active</value>
+    <value>Sélectionner les éléments actifs</value>
   </data>
   <data name="Estimated_Completion_Date_Should_Be_Greater_StartDate_Validation" xml:space="preserve">
-    <value>Estimated Completion Date should be greater or equal to start date.</value>
+    <value>La date d’achèvement estimée doit être postérieure ou égale à la date de démarrage.</value>
   </data>
   <data name="Actual_Completion_Date_Should_Be_Greater_StartDate_Validation" xml:space="preserve">
-    <value>Actual Completion Date should be greater or equal to start date. </value>
+    <value>La date d’achèvement réelle doit être postérieure ou égale à la date de démarrage.</value>
   </data>
   <data name="Change_Date" xml:space="preserve">
-    <value>Change Date</value>
+    <value>Date du changement</value>
   </data>
   <data name="Last_Name" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Nom de famille</value>
   </data>
   <data name="First_Name" xml:space="preserve">
-    <value>First Name</value>
+    <value>Prénom</value>
   </data>
   <data name="Select_Category" xml:space="preserve">
-    <value>Select Category</value>
+    <value>Sélectionner une catégorie</value>
   </data>
   <data name="Select_Location" xml:space="preserve">
-    <value>Select Location</value>
+    <value>Sélectionner un emplacement</value>
   </data>
   <data name="Select_Unit_Of_Measure" xml:space="preserve">
-    <value>Select Unit Of Measure</value>
+    <value>Sélectionner une unité de mesure</value>
   </data>
   <data name="Invoice_ID" xml:space="preserve">
-    <value>Invoice ID</value>
+    <value>ID facture</value>
   </data>
   <data name="Managed_Projects" xml:space="preserve">
-    <value>Managed Project</value>
+    <value>Projet géré</value>
   </data>
   <data name="Managed_Project_Name" xml:space="preserve">
-    <value>Managed Project Name</value>
+    <value>Nom du projet géré</value>
   </data>
   <data name="Managed_Project_ID" xml:space="preserve">
-    <value>Managed Project ID</value>
+    <value>ID projet géré</value>
   </data>
   <data name="Managed_Project_Budget" xml:space="preserve">
-    <value>Managed Project Budget</value>
+    <value>Budget du projet géré</value>
   </data>
   <data name="maximum_image_upload" xml:space="preserve">
-    <value>There is a 5 image upload limit per upload.</value>
+    <value>La limite est de 5 images par téléchargement.</value>
   </data>
   <data name="Greater_Than" xml:space="preserve">
-    <value>Greater Than</value>
+    <value>Supérieur à</value>
   </data>
   <data name="Less_Than" xml:space="preserve">
-    <value>Less Than</value>
+    <value>Inférieur à</value>
   </data>
   <data name="Actual_Completion_Date_Required" xml:space="preserve">
-    <value>Actual Completion Date is Required</value>
+    <value>La date d’achèvement réelle est obligatoire</value>
   </data>
   <data name="Performance_msg" xml:space="preserve">
-    <value>Upload time will vary depending on the total size of the selected images, and your device&#39;s network connection quality.</value>
+    <value>Le temps nécessaire au téléchargement dépend de la taille totale des images sélectionnées et de la qualité de la connexion réseau de votre appareil.</value>
+  </data>
+  <data name="Share_With" xml:space="preserve">
+    <value>Partager avec</value>
+  </data>
+  <data name="E_mail_To" xml:space="preserve">
+    <value>Envoyer par e-mail à</value>
+  </data>
+  <data name="Request_More_Information" xml:space="preserve">
+    <value>Solliciter plus d’infos</value>
+  </data>
+  <data name="Notes_Validation" xml:space="preserve">
+    <value>Les remarques sont obligatoires</value>
+  </data>
+  <data name="add_notes_first_save_timesheet" xml:space="preserve">
+    <value>Pour ajouter des remarques à une feuille horaire, vous devez d&#39;abord l&#39;enregistrer. Pour enregistrer la feuille horaire, cliquez sur Sauvegarder.</value>
+  </data>
+  <data name="SentTo" xml:space="preserve">
+    <value>Envoyé à</value>
+  </data>
+  <data name="RequisitionType_Validation" xml:space="preserve">
+    <value>Veuillez sélectionner un type de demande</value>
+  </data>
+  <data name="Review_Ratings" xml:space="preserve">
+    <value>Évaluations des vérifications</value>
+  </data>
+  <data name="Number_of_Reviewed" xml:space="preserve">
+    <value>Nombre de vérifications</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Qualité</value>
+  </data>
+  <data name="Deliverable" xml:space="preserve">
+    <value>Prestation</value>
+  </data>
+  <data name="Rehire" xml:space="preserve">
+    <value>Réembauche</value>
+  </data>
+  <data name="Visible_to_Customers" xml:space="preserve">
+    <value>Visible aux clients</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Vérifications</value>
+  </data>
+  <data name="final_invoice" xml:space="preserve">
+    <value>Ceci est la facture définitive.</value>
+  </data>
+  <data name="final_invoice_label" xml:space="preserve">
+    <value>Facture définitive</value>
   </data>
   <data name="Localization_Keys_For_21_Starts_Here" xml:space="preserve">
     <value>Localization_Keys_For_21</value>
   </data>
-  <data name="Share_With" xml:space="preserve">
-    <value>Share With</value>
-  </data>
-  <data name="E_mail_To" xml:space="preserve">
-    <value>E-mail To</value>
-  </data>
-  <data name="Request_More_Information" xml:space="preserve">
-    <value>Request More Info</value>
-  </data>
-  <data name="Notes_Validation" xml:space="preserve">
-    <value>Notes is Required</value>
-  </data>
-  <data name="add_notes_first_save_timesheet" xml:space="preserve">
-    <value>In order to add notes to a timesheet, you must first save the timesheet. To save the timesheet, click Save.</value>
-  </data>
-  <data name="RequisitionType_Validation" xml:space="preserve">
-    <value>Please select Requisition Type</value>
-  </data>
-  <data name="Review_Ratings" xml:space="preserve">
-    <value>Review Ratings</value>
-  </data>
-  <data name="SentTo" xml:space="preserve">
-    <value>Sent To</value>
-  </data>
-  <data name="Quality" xml:space="preserve">
-    <value>Quality</value>
-  </data>
-  <data name="Deliverable" xml:space="preserve">
-    <value>Deliverable</value>
-  </data>
-  <data name="Rehire" xml:space="preserve">
-    <value>Rehire</value>
-  </data>
-  <data name="Visible_to_Customers" xml:space="preserve">
-    <value>Visible to Customers</value>
-  </data>
-  <data name="Reviews" xml:space="preserve">
-    <value>Reviews</value>
-  </data>
-  <data name="final_invoice" xml:space="preserve">
-    <value>This is the final invoice.</value>
-  </data>
-  <data name="final_invoice_label" xml:space="preserve">
-    <value>Final Invoice</value>
-  </data>
   <data name="Period_End_Date" xml:space="preserve">
-    <value>Period End Date</value>
+    <value>F_Period End Date</value>
   </data>
   <data name="NotesTypes" xml:space="preserve">
-    <value>Note Types</value>
+    <value>F_Note Types</value>
   </data>
   <data name="Availability" xml:space="preserve">
-    <value>Availability</value>
+    <value>F_Availability</value>
   </data>
   <data name="N_A" xml:space="preserve">
-    <value>N/A</value>
+    <value>F_N/A</value>
   </data>
 </root>

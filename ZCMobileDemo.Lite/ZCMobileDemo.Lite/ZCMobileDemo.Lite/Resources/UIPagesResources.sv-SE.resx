@@ -119,898 +119,817 @@
   </resheader>
 
   <data name="Per_of_Total_Spend" xml:space="preserve">
-    <value>% of Total Spend</value>
+    <value>% av totala utlägg</value>
   </data>
   <data name="No_Selection" xml:space="preserve">
-    <value>(No Selection)</value>
+    <value>(Inget val)</value>
   </data>
   <data name="twentyFour_hours_perday" xml:space="preserve">
-    <value>24 hours per day is the maximum allowance for all pay codes</value>
+    <value>24 timmar per dygn är det högsta tillåtna antalet för alla betalningskoder</value>
   </data>
   <data name="Accepted_Offers" xml:space="preserve">
-    <value>Accepted Offers</value>
+    <value>Godkända erbjudanden</value>
   </data>
   <data name="Actions" xml:space="preserve">
-    <value>Actions</value>
-  </data>
-  <data name="Review_Engagement" xml:space="preserve">
-    <value>Review Engagement</value>
-  </data>
-  <data name="Service_Provider" xml:space="preserve">
-    <value>Service Provider</value>
-  </data>
-  <data name="Average_Review_Score" xml:space="preserve">
-    <value>Average Review Score</value>
-  </data>
-  <data name="Number_of_Reviewed" xml:space="preserve">
-    <value>Number of Reviews</value>
-  </data>
-  <data name="Number_of_Engagement_Reviewed" xml:space="preserve">
-    <value>Number of Engagement Reviewed</value>
-  </data>
-  <data name="Score" xml:space="preserve">
-    <value>Score</value>
-  </data>
-  <data name="Please_select_Time_Zone" xml:space="preserve">
-    <value>Please select Time Zone.</value>
-  </data>
-  <data name="Provide_rating_for_each" xml:space="preserve">
-    <value>Please provide a star rating for each question.</value>
-  </data>
-  <data name="review_confirm" xml:space="preserve">
-    <value>Please note - once saved you will not be able to edit the information&#39;. Are you sure you want to save the information?</value>
-  </data>
-  <data name="review_saved_successfully" xml:space="preserve">
-    <value>Engagement completed review has been saved successfully.</value>
-  </data>
-  <data name="select_atleast_one_image" xml:space="preserve">
-    <value>Please select atleast one image</value>
-  </data>
-  <data name="Small" xml:space="preserve">
-    <value>Small</value>
-  </data>
-  <data name="Performance_date_required" xml:space="preserve">
-    <value>Performance date is required</value>
-  </data>
-  <data name="Performance_time_required" xml:space="preserve">
-    <value>Performance time is required</value>
-  </data>
-  <data name="on" xml:space="preserve">
-    <value>on</value>
-  </data>
-  <data name="Timezone_required" xml:space="preserve">
-    <value>Timezone is required</value>
-  </data>
-  <data name="Performance_Time" xml:space="preserve">
-    <value>Performance Time</value>
-  </data>
-  <data name="Performance_Date" xml:space="preserve">
-    <value>Performance Date</value>
-  </data>
-  <data name="Medium" xml:space="preserve">
-    <value>Medium</value>
-  </data>
-  <data name="Large" xml:space="preserve">
-    <value>Large</value>
-  </data>
-  <data name="Actual" xml:space="preserve">
-    <value>Actual</value>
-  </data>
-  <data name="reduce_upload_size" xml:space="preserve">
-    <value>You can reduce upload size by scaling the image to one of the sizes below</value>
-  </data>
-  <data name="Select_Reject_Reason" xml:space="preserve">
-    <value>Select Reject Reason</value>
+    <value>Händelser</value>
   </data>
   <data name="Actions_for" xml:space="preserve">
-    <value>Actions for</value>
-  </data>
-  <data name="close_Engagement_Msg" xml:space="preserve">
-    <value>Clicking Submit will close this engagement permanently and Service Providers will not be able to submit additional invoices for completed work. Tap Submit to close this engagement, or Cancel if you prefer it remain open for invoicing.</value>
+    <value>Åtgärder för</value>
   </data>
   <data name="Active_Submits" xml:space="preserve">
-    <value>Active Submits</value>
+    <value>Aktiva inlämningar</value>
   </data>
   <data name="Actual_Completion_Date" xml:space="preserve">
-    <value>Actual Completion Date</value>
+    <value>Faktiskt datum för slutförande</value>
   </data>
   <data name="Add_Timesheet_Entry" xml:space="preserve">
-    <value>Add Timesheet Entry</value>
+    <value>Lägg till tidsedelpost</value>
   </data>
   <data name="Add_Track_Code" xml:space="preserve">
-    <value>Add Track Code</value>
+    <value>Lägg till spårningskod</value>
   </data>
   <data name="Additional_Funds_Requested" xml:space="preserve">
-    <value>Additional Funds Requested</value>
+    <value>Ytterligare kapital begärt</value>
   </data>
   <data name="Additional_Information" xml:space="preserve">
-    <value>Additional Information</value>
+    <value>Ytterligare information</value>
   </data>
   <data name="AddlInfo_Req_timesheet" xml:space="preserve">
-    <value>Additional information is required for this timesheet</value>
+    <value>Ytterligare information krävs för denna tidsedel</value>
   </data>
   <data name="AddlInfo_Save_timesheet" xml:space="preserve">
-    <value>Additional information saved on timesheet</value>
+    <value>Ytterligare information sparad i tidsedel</value>
   </data>
   <data name="Address" xml:space="preserve">
-    <value>Address</value>
+    <value>Adress</value>
   </data>
   <data name="Address_1" xml:space="preserve">
-    <value>Address 1</value>
+    <value>Adress 1</value>
   </data>
   <data name="Address_2" xml:space="preserve">
-    <value>Address 2</value>
+    <value>Adress 2</value>
   </data>
   <data name="Adjustment" xml:space="preserve">
-    <value>Adjustment</value>
+    <value>Justering</value>
   </data>
   <data name="Adjustment_que" xml:space="preserve">
-    <value>adjustment?</value>
+    <value>justering?</value>
   </data>
   <data name="Adjustment_Amount" xml:space="preserve">
-    <value>Adjustment Amount</value>
+    <value>Justeringsbelopp</value>
   </data>
   <data name="Adjustment_Details" xml:space="preserve">
-    <value>Adjustment Details</value>
+    <value>Justering detaljer</value>
   </data>
   <data name="Adjustment_Title" xml:space="preserve">
-    <value>Adjustment Title</value>
+    <value>Justeringstitel</value>
   </data>
   <data name="Adjustment_Track" xml:space="preserve">
-    <value>Adjustment Track</value>
+    <value>Justeringsspårning</value>
   </data>
   <data name="Adjustment_Track_Code" xml:space="preserve">
-    <value>Adjustment Track Code</value>
+    <value>Spårningskod för justering</value>
   </data>
   <data name="Adjustments" xml:space="preserve">
-    <value>Adjustments</value>
+    <value>Ändringar</value>
   </data>
   <data name="After" xml:space="preserve">
-    <value>After</value>
+    <value>Efter</value>
   </data>
   <data name="Agreement" xml:space="preserve">
-    <value>Agreement</value>
+    <value>Avtal</value>
   </data>
   <data name="Agreement_ID" xml:space="preserve">
-    <value>Agreement ID</value>
+    <value>Avtals-id</value>
   </data>
   <data name="All_rates_values" xml:space="preserve">
-    <value>All rates values</value>
+    <value>Alla beloppvärden</value>
   </data>
   <data name="Alt_Phone_Number" xml:space="preserve">
-    <value>Alternate Phone</value>
+    <value>Alternativ telefon</value>
   </data>
   <data name="Alternate_Interview_Date" xml:space="preserve">
-    <value>Alternate Interview Date</value>
+    <value>Alternativt intervjudatum</value>
   </data>
   <data name="Alternate_Interview_Time" xml:space="preserve">
-    <value>Alternate Interview Time</value>
+    <value>Alternativ intervjutid</value>
   </data>
   <data name="Amendment_Type" xml:space="preserve">
-    <value>Amendment Type</value>
+    <value>Ändringstyp</value>
   </data>
   <data name="Amount" xml:space="preserve">
-    <value>Amount</value>
+    <value>Summa</value>
   </data>
   <data name="Amount_Awaiting_Approval" xml:space="preserve">
-    <value>Amount Awaiting Approval</value>
+    <value>Belopp som inväntar godkännande</value>
   </data>
   <data name="Amount_Invoiced" xml:space="preserve">
-    <value>Amount Invoiced</value>
+    <value>Fakturerat belopp</value>
   </data>
   <data name="Amount_Released_for_Invoicing" xml:space="preserve">
-    <value>Amount Released for Invoicing</value>
+    <value>Belopp som har släppts till fakturering</value>
   </data>
   <data name="Answer" xml:space="preserve">
-    <value>Answer</value>
+    <value>Svar</value>
   </data>
   <data name="Approv_Requisitions" xml:space="preserve">
-    <value>Approve Requisitions</value>
+    <value>Godkänn rekvisitioner</value>
   </data>
   <data name="Approval_s" xml:space="preserve">
-    <value>approval(s)</value>
+    <value>godkännande(n)</value>
   </data>
   <data name="Approval_History" xml:space="preserve">
-    <value>Approval History</value>
+    <value>Godkännande historik</value>
   </data>
   <data name="Approval_Manager" xml:space="preserve">
-    <value>Approval Manager</value>
+    <value>Godkännande manager</value>
   </data>
   <data name="Approval_Method" xml:space="preserve">
-    <value>Approval Method</value>
+    <value>Godkännande metod</value>
   </data>
   <data name="Approval_Step" xml:space="preserve">
-    <value>Approval Step</value>
+    <value>Godkännandesteg</value>
   </data>
   <data name="Approval_Succeeded" xml:space="preserve">
-    <value>Approval succeeded</value>
+    <value>Godkännande genomfördes</value>
   </data>
   <data name="Approval_successful" xml:space="preserve">
-    <value>Approval was successful</value>
-  </data>
-  <data name="Please_select_reason_for_engagement_closure" xml:space="preserve">
-    <value>Please select reason for engagement closure.</value>
+    <value>Godkännandet genomfördes</value>
   </data>
   <data name="Approvals" xml:space="preserve">
-    <value>Approvals</value>
-  </data>
-  <data name="Approvals" xml:space="preserve">
-    <value>Approvals</value>
+    <value>Godkännanden</value>
   </data>
   <data name="Approve_Adjustments" xml:space="preserve">
-    <value>Approve Adjustments</value>
+    <value>Godkänn justeringar</value>
   </data>
   <data name="Approve_Engagement" xml:space="preserve">
-    <value>Approve Engagement</value>
+    <value>Godkänn åtagande</value>
   </data>
   <data name="Approve_Expense" xml:space="preserve">
-    <value>Approve Expense</value>
+    <value>Godkänn utgift</value>
   </data>
   <data name="Approve_Invoices" xml:space="preserve">
-    <value>Approve Invoices</value>
+    <value>Godkänn fakturor</value>
   </data>
   <data name="Approve_Method" xml:space="preserve">
-    <value>Approve Method</value>
+    <value>Godkänn metod</value>
   </data>
   <data name="Approve_Projects" xml:space="preserve">
-    <value>Approve Projects</value>
+    <value>Godkänn projekt</value>
   </data>
   <data name="Approve_Service_Invoices" xml:space="preserve">
-    <value>Approve Service Invoices</value>
+    <value>Godkänn tjänstefakturor</value>
   </data>
   <data name="Approve_SOW_Requisitions" xml:space="preserve">
-    <value>Approve SOW Requisitions</value>
+    <value>Godkänn SOW-rekvisitioner</value>
   </data>
   <data name="Approve_Staff_Aug_Requisition" xml:space="preserve">
-    <value>Approve Staff Aug Requisition</value>
+    <value>Godkänn personalutökningsrekvisition</value>
   </data>
   <data name="Approve_Timesheet" xml:space="preserve">
-    <value>Approve Timesheet</value>
+    <value>Godkänn tidsedel</value>
   </data>
-  <data name="approved" xml:space="preserve">
-    <value>approved</value>
+  <data name="Approved" xml:space="preserve">
+    <value>godkänd</value>
   </data>
   <data name="Approved_Budget" xml:space="preserve">
-    <value>Approved Budget</value>
+    <value>Godkänd budget</value>
   </data>
   <data name="Approved_By" xml:space="preserve">
-    <value>Approved By</value>
+    <value>Godkänd av</value>
   </data>
   <data name="Approved_On" xml:space="preserve">
-    <value>Approved On</value>
+    <value>Godkändes den</value>
   </data>
   <data name="Approver" xml:space="preserve">
-    <value>Approver</value>
+    <value>Godkännare</value>
   </data>
   <data name="Approving" xml:space="preserve">
-    <value>Approving</value>
+    <value>Godkänner</value>
   </data>
   <data name="Ascending" xml:space="preserve">
-    <value>Ascending</value>
+    <value>Stigande</value>
   </data>
   <data name="Assign_Track_Code" xml:space="preserve">
-    <value>Assign Track Code</value>
+    <value>Tilldela spårningskod</value>
   </data>
   <data name="Assigned" xml:space="preserve">
-    <value>assigned</value>
+    <value>tilldelad</value>
   </data>
   <data name="Attachment" xml:space="preserve">
-    <value>Attachment</value>
+    <value>Bilaga</value>
   </data>
   <data name="Attachment_Uploaded" xml:space="preserve">
-    <value>Attachment uploaded successfully</value>
+    <value>Bilaga har överförts</value>
   </data>
   <data name="Attachments" xml:space="preserve">
-    <value>Attachments</value>
+    <value>Bilagor</value>
   </data>
   <data name="Attendees" xml:space="preserve">
-    <value>Attendees</value>
+    <value>Närvarande</value>
   </data>
   <data name="Authorize_PushNotiifcation" xml:space="preserve">
-    <value>You are not authorized user for push-notification you received</value>
+    <value>Du är inte den auktoriserade användaren av push-aviseringen som du har tagit emot</value>
   </data>
   <data name="Available_for_Invoicing" xml:space="preserve">
-    <value>Available for Invoicing</value>
+    <value>Tillgängliga för fakturering</value>
   </data>
   <data name="Bill" xml:space="preserve">
-    <value>Bill</value>
+    <value>Faktura</value>
   </data>
   <data name="Bill_Rate" xml:space="preserve">
-    <value>Bill Rate</value>
+    <value>Fakturabelopp</value>
   </data>
   <data name="Btn_Active" xml:space="preserve">
-    <value>Active</value>
+    <value>Aktiv</value>
   </data>
   <data name="Btn_All" xml:space="preserve">
-    <value>All</value>
+    <value>Alla</value>
   </data>
   <data name="Btn_Apply" xml:space="preserve">
-    <value>Apply</value>
+    <value>Tillämpa</value>
   </data>
   <data name="Btn_Approve" xml:space="preserve">
-    <value>Approve</value>
+    <value>Godkänn</value>
   </data>
   <data name="Btn_Assign" xml:space="preserve">
-    <value>Assign</value>
+    <value>Tilldela</value>
   </data>
   <data name="Btn_CANCEL" xml:space="preserve">
-    <value>CANCEL</value>
+    <value>AVBRYT</value>
   </data>
   <data name="Btn_Decline" xml:space="preserve">
-    <value>Decline</value>
+    <value>Avslå</value>
   </data>
   <data name="Btn_Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Redigera</value>
   </data>
   <data name="Btn_OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="Btn_Reset" xml:space="preserve">
-    <value>Reset</value>
+    <value>Återställ</value>
   </data>
   <data name="Btn_Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Spara</value>
   </data>
   <data name="Btn_Send" xml:space="preserve">
-    <value>Send</value>
+    <value>Sänd</value>
   </data>
   <data name="Btn_Submit" xml:space="preserve">
-    <value>Submit</value>
+    <value>Sänd</value>
   </data>
   <data name="Btn_Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Uppdatera</value>
   </data>
   <data name="Btn_Yes" xml:space="preserve">
-    <value>yes</value>
+    <value>ja</value>
   </data>
   <data name="Business_Expense" xml:space="preserve">
-    <value>Business Expense</value>
+    <value>Affärsutgift</value>
   </data>
   <data name="Business_Name" xml:space="preserve">
-    <value>Business Name</value>
+    <value>Affärsnamn</value>
   </data>
   <data name="Business_Purpose" xml:space="preserve">
-    <value>Business Purpose</value>
+    <value>Affärssyfte</value>
   </data>
   <data name="Business_Unit" xml:space="preserve">
-    <value>Business Unit</value>
+    <value>Affärsenhet</value>
   </data>
   <data name="Cancel_que" xml:space="preserve">
-    <value>Cancel?</value>
+    <value>Avbryt?</value>
   </data>
   <data name="Candidate" xml:space="preserve">
-    <value>Candidate</value>
+    <value>Kandidat</value>
   </data>
   <data name="Candidate_Document_Status" xml:space="preserve">
-    <value>Candidate Document Status</value>
+    <value>Status för kandidatdokument</value>
   </data>
   <data name="Candidate_Location" xml:space="preserve">
-    <value>Candidate Location</value>
+    <value>Kandidatens adress</value>
   </data>
   <data name="Candidate_Name" xml:space="preserve">
-    <value>Candidate Name</value>
+    <value>Kandidatnamn</value>
   </data>
   <data name="Candidate_Score" xml:space="preserve">
-    <value>Candidate Score</value>
+    <value>Kandidatpoäng</value>
   </data>
   <data name="Candidate_Submission_Status" xml:space="preserve">
-    <value>Candidate Submission Status</value>
+    <value>Status för kandidatinlämning</value>
   </data>
   <data name="Candidate_Summary" xml:space="preserve">
-    <value>Candidate Summary</value>
+    <value>Kandidatsammanfattning</value>
   </data>
   <data name="Category" xml:space="preserve">
-    <value>Category</value>
+    <value>Kategori</value>
   </data>
   <data name="Category_Description" xml:space="preserve">
-    <value>Category Description</value>
+    <value>Beskrivning av kategori</value>
   </data>
   <data name="Certifications" xml:space="preserve">
-    <value>Certifications</value>
+    <value>Certifieringar</value>
   </data>
   <data name="Certifications_Documents" xml:space="preserve">
-    <value>Certifications/Documents</value>
+    <value>Certifieringar/dokument</value>
   </data>
   <data name="Change_Password" xml:space="preserve">
-    <value>Change Password</value>
+    <value>Ändra lösenord</value>
   </data>
   <data name="Change_Request_Date" xml:space="preserve">
-    <value>Change Request Date</value>
+    <value>Datum för ändringsbegäran</value>
   </data>
   <data name="Changed_By" xml:space="preserve">
-    <value>Changed By</value>
+    <value>Ändrad av</value>
   </data>
   <data name="Changed_Date" xml:space="preserve">
-    <value>Changed Date</value>
+    <value>Ändrades den</value>
   </data>
   <data name="Chat" xml:space="preserve">
-    <value>Chat</value>
+    <value>Chatt</value>
   </data>
   <data name="Check" xml:space="preserve">
-    <value>Check</value>
+    <value>Kontroll</value>
   </data>
   <data name="Check_Date" xml:space="preserve">
-    <value>Check Date</value>
+    <value>Kontrolldatum</value>
   </data>
   <data name="Check_Number" xml:space="preserve">
-    <value>Check Number</value>
+    <value>Kontrollnummer</value>
   </data>
   <data name="Choose_From_Library" xml:space="preserve">
-    <value>Choose From Library</value>
+    <value>Välj från biblioteket</value>
   </data>
   <data name="Choose_Reason" xml:space="preserve">
-    <value>Choose Reason</value>
+    <value>Välj orsak</value>
   </data>
   <data name="City" xml:space="preserve">
-    <value>City</value>
+    <value>Stadgeenlig</value>
   </data>
   <data name="Comments" xml:space="preserve">
-    <value>Comments</value>
+    <value>Kommentarer</value>
   </data>
   <data name="Compare" xml:space="preserve">
-    <value>Compare</value>
+    <value>Jämför</value>
   </data>
   <data name="Competencies" xml:space="preserve">
-    <value>Competencies</value>
+    <value>Kompetenser</value>
   </data>
   <data name="Competency_Level" xml:space="preserve">
-    <value>Competency Level</value>
+    <value>Behörighetsnivå</value>
   </data>
   <data name="Competency_Require" xml:space="preserve">
-    <value>Competency Required</value>
+    <value>Kompetens krävs</value>
   </data>
   <data name="Confirm" xml:space="preserve">
-    <value>Confirm</value>
+    <value>Bekräfta</value>
   </data>
   <data name="Confirm_Delete" xml:space="preserve">
-    <value>Do you really want to delete?</value>
+    <value>Vill du verkligen ta bort?</value>
   </data>
   <data name="Confirm_Msg" xml:space="preserve">
-    <value>Are you sure you want to</value>
+    <value>Är du säker på att du vill</value>
   </data>
   <data name="Confirm_Msg_Decline" xml:space="preserve">
-    <value>decline this change request?</value>
+    <value>avslå denna ändringsbegäran?</value>
   </data>
   <data name="Confirm_Password" xml:space="preserve">
-    <value>Confirm Password</value>
+    <value>Bekräfta lösenord</value>
   </data>
   <data name="Confirm_PushNotification" xml:space="preserve">
-    <value>Would you like to receive push notifications about important work related tasks?</value>
+    <value>Vill du få push-aviseringar om viktiga arbetsrelaterade uppgifter?</value>
   </data>
   <data name="Confirm_Submit_Candidate" xml:space="preserve">
-    <value>This candidate is currently submitted to one or more requisition and/or on an active project.</value>
+    <value>Skicka in kandidat. Kandidaten har skickats in för ett eller flera krav och/eller till ett aktivt projekt. Fortsätt?</value>
   </data>
   <data name="Confirmation_PushNotification" xml:space="preserve">
-    <value>Push Notification Confirmation</value>
+    <value>Bekräftelse av push-avisering</value>
   </data>
   <data name="Confrim_ProfilePicture" xml:space="preserve">
-    <value>Your profile picture has not been setup yet. Would you like to do that now?</value>
+    <value>Din profilbild har ännu inte konfigurerats. Vill du göra det nu?</value>
   </data>
   <data name="Connection_Problem" xml:space="preserve">
-    <value>We are having trouble connecting Please check your connection and try again</value>
+    <value>Vi har problem med att ansluta. Kontrollera din anslutning och försök igen.</value>
   </data>
   <data name="Consolidated_Invoice_Date" xml:space="preserve">
-    <value>Consolidated Invoice Date</value>
+    <value>Datum för konsoliderad faktura</value>
   </data>
   <data name="Consolidation_Level_1" xml:space="preserve">
-    <value>Consolidation Level 1</value>
+    <value>Konsolideringsnivå 1</value>
   </data>
   <data name="Consolidation_Level_2" xml:space="preserve">
-    <value>Consolidation Level 2</value>
+    <value>Konsolideringsnivå 2</value>
   </data>
   <data name="Consolidation_Level_3" xml:space="preserve">
-    <value>Consolidation Level 3</value>
+    <value>Konsolideringsnivå 3</value>
   </data>
   <data name="Consolidation_Level_4" xml:space="preserve">
-    <value>Consolidation Level 4</value>
+    <value>Konsolideringsnivå 4</value>
   </data>
   <data name="Contact_Information" xml:space="preserve">
-    <value>Contact Information</value>
+    <value>Kontaktinformation</value>
   </data>
   <data name="Contact_Name" xml:space="preserve">
-    <value>Contact Name</value>
+    <value>Kontaktnamn</value>
   </data>
   <data name="Contact_Us" xml:space="preserve">
-    <value>Contact Us</value>
+    <value>Kontakta oss</value>
   </data>
   <data name="Continue_with_approval" xml:space="preserve">
-    <value>Continue with approval</value>
+    <value>Fortsätt med godkännande</value>
   </data>
   <data name="Copy_previous" xml:space="preserve">
-    <value>Copy previous</value>
+    <value>Kopiera föregående</value>
   </data>
   <data name="Country" xml:space="preserve">
-    <value>Country</value>
+    <value>Land</value>
   </data>
   <data name="County" xml:space="preserve">
-    <value>County</value>
+    <value>Land</value>
   </data>
   <data name="Create_Expense_Report" xml:space="preserve">
-    <value>Create Expense Report</value>
+    <value>Skapa utgiftsrapport</value>
   </data>
   <data name="Create_Timesheet" xml:space="preserve">
-    <value>Create Timesheet</value>
+    <value>Skapa tidsedel</value>
   </data>
   <data name="Created_By" xml:space="preserve">
-    <value>Created By</value>
+    <value>Skapad av</value>
   </data>
   <data name="Created_On" xml:space="preserve">
-    <value>Created On</value>
+    <value>Skapad den</value>
   </data>
   <data name="Currency_Code" xml:space="preserve">
-    <value>Currency Code</value>
+    <value>Valutakod</value>
   </data>
   <data name="Current_Password" xml:space="preserve">
-    <value>Current Password</value>
+    <value>Nuvarande lösenord</value>
   </data>
   <data name="Current_Track_Code_Selection" xml:space="preserve">
-    <value>Current Track Code Selection</value>
+    <value>Aktuellt val av spårningskod</value>
   </data>
   <data name="Custom_Fields" xml:space="preserve">
-    <value>Custom Fields</value>
-  </data>
-  <data name="Select_Reason" xml:space="preserve">
-    <value>Select Reason</value>
+    <value>Anpassningsbara fält</value>
   </data>
   <data name="Customer" xml:space="preserve">
-    <value>Customer</value>
+    <value>Kund</value>
   </data>
   <data name="Customer_Amount" xml:space="preserve">
-    <value>Customer Amount</value>
+    <value>Kundbelopp</value>
   </data>
   <data name="Customer_Manager" xml:space="preserve">
-    <value>Customer Manager</value>
+    <value>Kundmanager</value>
   </data>
   <data name="Customer_Rate" xml:space="preserve">
-    <value>Customer Rate</value>
+    <value>Kundpris</value>
   </data>
   <data name="Customer_Service" xml:space="preserve">
-    <value>Customer Service</value>
+    <value>Kundtjänst</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Date</value>
+    <value>Datum</value>
   </data>
   <data name="Date_Available" xml:space="preserve">
-    <value>Date Available</value>
+    <value>Tillgänglig datum</value>
   </data>
   <data name="Date_Time" xml:space="preserve">
-    <value>Date/Time</value>
+    <value>Datum/Tid</value>
   </data>
   <data name="Decline" xml:space="preserve">
-    <value>decline</value>
+    <value>avslå</value>
   </data>
   <data name="Decline_que" xml:space="preserve">
-    <value>Decline?</value>
+    <value>Avslå?</value>
   </data>
   <data name="Declined" xml:space="preserve">
-    <value>declined</value>
+    <value>avslagen</value>
   </data>
   <data name="Descending" xml:space="preserve">
-    <value>Descending</value>
+    <value>Fallande</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>Beskrivning</value>
   </data>
   <data name="Desired_Pay" xml:space="preserve">
-    <value>Desired Pay</value>
+    <value>Önskad lön</value>
   </data>
   <data name="Destination" xml:space="preserve">
     <value>Destination</value>
   </data>
   <data name="Device_Settings" xml:space="preserve">
-    <value>application (in the device&#39;s general settings) In order for mobile to function properly, please repeat this process in the device&#39;s general settings, ie first disable it once and again enable these settings</value>
+    <value>Applikation (i enhetens allmänna inställningar). För att den mobila tjänsten ska fungera måste du upprepa denna process i enhetens allmänna inställningar, d.v.s. först inaktivera tjänsten en gång och sedan aktivera inställningarna igen.</value>
   </data>
   <data name="Difference" xml:space="preserve">
-    <value>Difference</value>
+    <value>Differens</value>
   </data>
   <data name="Difference_From_Target_Rate" xml:space="preserve">
-    <value>Difference From Target Rate</value>
+    <value>Differens jämfört med målbelopp</value>
   </data>
   <data name="Disabled_Notification" xml:space="preserve">
-    <value>You disabled notification settings outside of the</value>
+    <value>Du har inaktiverat aviseringsinställningarna utanför</value>
   </data>
   <data name="Distribution_of_Approved_Budget" xml:space="preserve">
-    <value>Distribution of Approved Budget</value>
+    <value>Distribution av godkänd budget</value>
   </data>
   <data name="Division" xml:space="preserve">
     <value>Division</value>
   </data>
   <data name="Division_Customer" xml:space="preserve">
-    <value>Division/Customer</value>
+    <value>Division/kund</value>
   </data>
   <data name="Document_Type" xml:space="preserve">
-    <value>Document Type</value>
+    <value>Dokumenttyp</value>
   </data>
   <data name="Dont_Ask_Again" xml:space="preserve">
-    <value>Dont Ask Again</value>
+    <value>Fråga inte igen</value>
   </data>
   <data name="Dossier" xml:space="preserve">
     <value>Dossier</value>
   </data>
   <data name="Duration" xml:space="preserve">
-    <value>Duration</value>
+    <value>Varaktighet</value>
   </data>
   <data name="E_mail" xml:space="preserve">
-    <value>Email</value>
+    <value>E-post</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>E-mail</value>
+    <value>E-post</value>
   </data>
   <data name="Employment" xml:space="preserve">
-    <value>Employment</value>
+    <value>Anställning</value>
   </data>
   <data name="empty" xml:space="preserve">
-    <value>empty</value>
+    <value>tom</value>
   </data>
   <data name="Enable_Push_Notifications" xml:space="preserve">
-    <value>Enable Push Notification</value>
+    <value>Aktivera push-aviseringar</value>
   </data>
   <data name="End" xml:space="preserve">
-    <value>End</value>
+    <value>Avsluta</value>
   </data>
   <data name="End_Date" xml:space="preserve">
-    <value>End Date</value>
+    <value>Slutdatum</value>
   </data>
   <data name="Engagement" xml:space="preserve">
-    <value>Engagement</value>
+    <value>Åtagande</value>
   </data>
   <data name="Engagement_Change_Request" xml:space="preserve">
-    <value>Engagement Change Request</value>
+    <value>Begäran om åtagandeändring</value>
   </data>
   <data name="Engagement_Details" xml:space="preserve">
-    <value>Engagement Details</value>
+    <value>Uppgifter om åtagande</value>
   </data>
   <data name="Engagement_Duration_Increase_days" xml:space="preserve">
-    <value>Engagement Duration Increase (days)</value>
+    <value>Förlängning av åtagandets varaktighet (dagar)</value>
   </data>
   <data name="Engagement_ID" xml:space="preserve">
-    <value>Engagement ID</value>
+    <value>Åtagande-ID</value>
   </data>
   <data name="Engagement_Item" xml:space="preserve">
-    <value>Engagement Item</value>
+    <value>Åtagandepost</value>
   </data>
   <data name="Engagement_line_Item" xml:space="preserve">
-    <value>Engagement line Item</value>
+    <value>Åtaganderadpost</value>
   </data>
   <data name="Engagement_Name" xml:space="preserve">
-    <value>Engagement Name</value>
+    <value>Åtagandets namn</value>
   </data>
   <data name="Engagement_Owner" xml:space="preserve">
-    <value>Engagement Owner</value>
+    <value>Åtagandets ägare</value>
   </data>
   <data name="Engagement_Owners" xml:space="preserve">
-    <value>Engagement Owners</value>
+    <value>Uppdragsägare</value>
   </data>
   <data name="Engagement_Status" xml:space="preserve">
-    <value>Engagement Status</value>
+    <value>Status för åtagande</value>
   </data>
   <data name="Est_Date" xml:space="preserve">
-    <value>Est Date</value>
+    <value>Beräknat datum</value>
   </data>
   <data name="Est_Days" xml:space="preserve">
-    <value>Est Days</value>
+    <value>Beräknade dagar</value>
   </data>
   <data name="Estimated_Completion_Date" xml:space="preserve">
-    <value>Estimated Completion Date</value>
+    <value>Beräknat datum för slutförande</value>
   </data>
   <data name="Estimated_Cost" xml:space="preserve">
-    <value>Estimated Cost</value>
+    <value>Beräknad kostnad</value>
   </data>
   <data name="Estimated_Due_Date" xml:space="preserve">
-    <value>Estimated Due Date</value>
+    <value>Beräknat senast-datum</value>
   </data>
   <data name="Estimated_Spend" xml:space="preserve">
-    <value>Estimated Spend</value>
+    <value>Beräknade utlägg</value>
   </data>
   <data name="Expense" xml:space="preserve">
-    <value>Expense</value>
+    <value>UTGIFT</value>
   </data>
   <data name="Expense" xml:space="preserve">
-    <value>Expense</value>
+    <value>UTGIFT</value>
   </data>
   <data name="Expense_Amount" xml:space="preserve">
-    <value>Expense Amount</value>
+    <value>Utgiftsumma</value>
   </data>
   <data name="Expense_Date" xml:space="preserve">
-    <value>Expense Date</value>
+    <value>Utgiftsdatum</value>
   </data>
   <data name="Expense_ID" xml:space="preserve">
-    <value>Expense ID</value>
+    <value>Utgifts-ID</value>
   </data>
   <data name="Expense_Item" xml:space="preserve">
-    <value>Expense Item</value>
+    <value>Utgiftspost</value>
   </data>
   <data name="Expense_Items" xml:space="preserve">
-    <value>Expense Items</value>
+    <value>Utgiftsposter</value>
   </data>
   <data name="Expense_Report" xml:space="preserve">
-    <value>Expense Report</value>
+    <value>Utgiftsrapport</value>
   </data>
   <data name="Expense_Report_ID" xml:space="preserve">
-    <value>Expense Report ID</value>
+    <value>Utgiftsrapport-ID</value>
   </data>
   <data name="Expense_Type" xml:space="preserve">
-    <value>Expense Type</value>
+    <value>Utgiftstyp</value>
   </data>
   <data name="Extend_The_Offer_que" xml:space="preserve">
-    <value>extend the offer?</value>
+    <value>förläng erbjudandet?</value>
   </data>
   <data name="Fax" xml:space="preserve">
     <value>Fax</value>
   </data>
   <data name="File_Not_Exist" xml:space="preserve">
-    <value>Selected file does not exist</value>
+    <value>Den valda filen finns inte</value>
   </data>
   <data name="Filter_Adjustments" xml:space="preserve">
-    <value>Filter Adjustments</value>
+    <value>Filter: justeringar</value>
   </data>
   <data name="Filter_Approve_Engagements" xml:space="preserve">
-    <value>Filter Approve Engagements</value>
+    <value>Filter: godkänn åtaganden</value>
   </data>
   <data name="Filter_Candidates" xml:space="preserve">
-    <value>Filter Candidates</value>
+    <value>Filter: kandidater</value>
   </data>
   <data name="Filter_Expenses" xml:space="preserve">
-    <value>Filter Expenses</value>
+    <value>Filter: utgifter</value>
   </data>
   <data name="Filter_Invoices" xml:space="preserve">
-    <value>Filter Invoices</value>
+    <value>Filter: fakturor</value>
   </data>
   <data name="Filter_Open_Requisition" xml:space="preserve">
-    <value>Filter Open Requisition</value>
+    <value>Filter: öppna rekvisitioner</value>
   </data>
   <data name="Filter_Pay_History" xml:space="preserve">
-    <value>Filter Pay History</value>
+    <value>Filter: betalningshistorik</value>
   </data>
   <data name="Filter_Projects" xml:space="preserve">
-    <value>Filter Projects</value>
+    <value>Filter: projekt</value>
   </data>
   <data name="Filter_Requisitions" xml:space="preserve">
-    <value>Filter Requisitions</value>
+    <value>Filter: rekvisitioner</value>
   </data>
   <data name="Filter_Service_Invoices" xml:space="preserve">
-    <value>Filter Service Invoices</value>
+    <value>Filter: tjänstefakturor</value>
   </data>
   <data name="Filter_SOW_Requisitions" xml:space="preserve">
-    <value>Filter SOW Requisitions</value>
+    <value>Filter: SOW-rekvisitioner</value>
   </data>
   <data name="Filter_Timesheet" xml:space="preserve">
-    <value>Filter Timesheet</value>
+    <value>Filter: tidsedel</value>
   </data>
   <data name="Filter_Timesheets" xml:space="preserve">
-    <value>Filter Timesheets</value>
+    <value>Filter: tidsedlar</value>
   </data>
   <data name="Filter_Track_Codes" xml:space="preserve">
-    <value>Filter Track Codes</value>
+    <value>Filter: spårningskoder</value>
   </data>
   <data name="Financial_Tracking" xml:space="preserve">
-    <value>Financial Tracking</value>
+    <value>Finansiell spårning</value>
   </data>
   <data name="Fixed" xml:space="preserve">
-    <value>Fixed</value>
+    <value>Fastställd</value>
   </data>
   <data name="For" xml:space="preserve">
-    <value>for</value>
+    <value>för</value>
   </data>
   <data name="For_This" xml:space="preserve">
-    <value>for this</value>
+    <value>för detta</value>
   </data>
   <data name="Have_Errors" xml:space="preserve">
-    <value>have errors</value>
+    <value>innehåller fel</value>
   </data>
   <data name="Hiring_Manager" xml:space="preserve">
-    <value>Hiring Manager</value>
+    <value>Manager för anställningar</value>
   </data>
   <data name="History" xml:space="preserve">
-    <value>History</value>
+    <value>Historik</value>
   </data>
   <data name="Hours" xml:space="preserve">
-    <value>Hours</value>
+    <value>Timmar</value>
   </data>
   <data name="ID" xml:space="preserve">
     <value>ID</value>
   </data>
   <data name="Impersonated_By_User" xml:space="preserve">
-    <value>Impersonated By User</value>
+    <value>Imiterad av användare</value>
   </data>
   <data name="In_Date" xml:space="preserve">
-    <value>In Date</value>
+    <value>Inkommande datum</value>
   </data>
   <data name="In_Time" xml:space="preserve">
-    <value>In Time</value>
+    <value>Inkommande tidpunkt</value>
   </data>
   <data name="Increase_in_Engagement_Duration_days" xml:space="preserve">
-    <value>Increase in Engagement Duration (days)</value>
+    <value>Förlängning av åtagandets varaktighet (dagar)</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>
   <data name="Interview" xml:space="preserve">
-    <value>Interview</value>
+    <value>Intervju</value>
   </data>
   <data name="Interview_Duration" xml:space="preserve">
-    <value>Interview Duration</value>
+    <value>Intervjuvaraktighet</value>
   </data>
   <data name="Interview_History" xml:space="preserve">
-    <value>Interview History</value>
+    <value>Intervjuhistorik</value>
   </data>
   <data name="Interview_Location" xml:space="preserve">
-    <value>Interview Location</value>
+    <value>Intervjuplats</value>
   </data>
   <data name="Interview_Request" xml:space="preserve">
-    <value>Interview Request</value>
+    <value>Intervjubegäran</value>
   </data>
   <data name="Interview_Status" xml:space="preserve">
-    <value>Interview Status</value>
+    <value>Intervjustatus</value>
   </data>
   <data name="Interview_Type" xml:space="preserve">
-    <value>Interview Type</value>
+    <value>Typ av intervju</value>
   </data>
   <data name="interviewed" xml:space="preserve">
-    <value>interviewed</value>
+    <value>intervjuad</value>
   </data>
   <data name="Interviewer_Name" xml:space="preserve">
-    <value>Interviewer Name</value>
+    <value>Intervjuare namn</value>
   </data>
   <data name="Invoice" xml:space="preserve">
-    <value>Invoice</value>
+    <value>Faktura</value>
   </data>
   <data name="Invoice_has" xml:space="preserve">
-    <value>Invoice #</value>
+    <value>Fakturanummer</value>
   </data>
   <data name="Invoice_Amount" xml:space="preserve">
-    <value>Invoice Amount</value>
+    <value>Fakturabelopp</value>
   </data>
   <data name="Invoice_Date" xml:space="preserve">
-    <value>Invoice Date</value>
+    <value>Fakturadatum</value>
   </data>
   <data name="Invoice_Line_Description" xml:space="preserve">
-    <value>Invoice Line Description</value>
+    <value>Beskrivning av fakturarad</value>
   </data>
   <data name="Invoice_Number" xml:space="preserve">
-    <value>Invoice Number</value>
+    <value>Fakturanummer</value>
   </data>
   <data name="Invoice_Total" xml:space="preserve">
-    <value>Invoice Total</value>
+    <value>Fakturans totalbelopp</value>
   </data>
   <data name="Invoices" xml:space="preserve">
-    <value>Invoices</value>
+    <value>Fakturor</value>
   </data>
   <data name="Job_Category_Name" xml:space="preserve">
-    <value>Job Category Name</value>
+    <value>Jobbkategorinamn</value>
   </data>
   <data name="Job_Class" xml:space="preserve">
-    <value>Job Class</value>
+    <value>Jobbklass</value>
   </data>
   <data name="Justification" xml:space="preserve">
-    <value>Justification</value>
+    <value>Motivering</value>
   </data>
   <data name="Line_Item_Detail" xml:space="preserve">
-    <value>Line Item Detail</value>
+    <value>Uppgift om radpost</value>
   </data>
   <data name="Line_Item_Title" xml:space="preserve">
-    <value>Line Item Title</value>
+    <value>Radpostrubrik</value>
   </data>
   <data name="Line_Veto" xml:space="preserve">
-    <value>Line Veto</value>
+    <value>Radveto</value>
   </data>
   <data name="List" xml:space="preserve">
-    <value>List</value>
+    <value>Lista</value>
   </data>
   <data name="Location" xml:space="preserve">
-    <value>Location</value>
+    <value>Plats</value>
   </data>
   <data name="Location_Phone" xml:space="preserve">
-    <value>Location / Phone</value>
+    <value>Plats/telefon</value>
   </data>
   <data name="Location_of_Project" xml:space="preserve">
-    <value>Location of Project</value>
+    <value>Projektets plats</value>
   </data>
   <data name="Logout" xml:space="preserve">
-    <value>Logout</value>
+    <value>Utloggning</value>
   </data>
   <data name="Manage_Submissions" xml:space="preserve">
-    <value>Manage Submissions</value>
+    <value>Hantera handläggningar</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Manager</value>
@@ -1019,1874 +938,1826 @@
     <value>Managers</value>
   </data>
   <data name="Matching_Candidates" xml:space="preserve">
-    <value>Matching Candidates</value>
+    <value>Matchande kandidater</value>
   </data>
   <data name="Material" xml:space="preserve">
     <value>Material</value>
   </data>
   <data name="Max_Amount_GhostText" xml:space="preserve">
-    <value>tap to enter the maximum amount</value>
+    <value>tryck för att ange maximalt belopp</value>
   </data>
   <data name="Max_Consolidated_Invoice_Date" xml:space="preserve">
-    <value>Max Consolidated Invoice Date</value>
+    <value>Senaste datum för konsoliderad faktura</value>
   </data>
   <data name="Max_Date_GhostText" xml:space="preserve">
-    <value>tap to enter the maximum DD-MMM-YYYY</value>
+    <value>tryck för att ange senaste datum DD-MMM-ÅÅÅÅ</value>
   </data>
   <data name="Max_Invoice_Amount" xml:space="preserve">
-    <value>Max Invoice Amount</value>
+    <value>Maximalt fakturabelopp</value>
   </data>
   <data name="Max_Rate" xml:space="preserve">
-    <value>Max Rate</value>
+    <value>Maxbelopp</value>
   </data>
   <data name="Method" xml:space="preserve">
-    <value>Method</value>
+    <value>Metod</value>
   </data>
   <data name="Milestone" xml:space="preserve">
-    <value>Milestone</value>
+    <value>Avstämningspunkt</value>
   </data>
   <data name="Min_Amount_GhostText" xml:space="preserve">
-    <value>tap to enter the minimum amount</value>
+    <value>tryck för att ange minsta belopp</value>
   </data>
   <data name="Min_Consolidated_Invoice_Date" xml:space="preserve">
-    <value>Min Consolidated Invoice Date</value>
+    <value>Tidigaste datum för konsoliderad faktura</value>
   </data>
   <data name="Min_Date_GhostText" xml:space="preserve">
-    <value>tap to enter the minimum DD-MMM-YYYY</value>
+    <value>tryck för att ange tidigaste datum DD-MMM-ÅÅÅÅ</value>
   </data>
   <data name="Min_Invoice_Amount" xml:space="preserve">
-    <value>Min Invoice Amount</value>
+    <value>Minsta fakturabelopp</value>
   </data>
   <data name="Min_Year_Experience" xml:space="preserve">
-    <value>Min Year Experience</value>
+    <value>Minsta antal år av erfarenhet</value>
   </data>
   <data name="Minimum_Years_Experience" xml:space="preserve">
-    <value>Minimum Years Experience</value>
+    <value>År av yrkeserfarenhet som krävs</value>
   </data>
   <data name="More_Information" xml:space="preserve">
-    <value>More Information</value>
+    <value>Mer information</value>
   </data>
   <data name="MoreInfo_Request" xml:space="preserve">
-    <value>sent request for more information</value>
+    <value>har skickat begäran om mer information</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Namn</value>
   </data>
   <data name="Need_more_info" xml:space="preserve">
-    <value>Need more info</value>
+    <value>Mer info behövs</value>
   </data>
   <data name="Need_More_Information" xml:space="preserve">
-    <value>Need More Information</value>
+    <value>Mer information behövs</value>
   </data>
   <data name="Net_Connection" xml:space="preserve">
-    <value>No internet connection Please check your connection and try again</value>
+    <value>Ingen internetanslutning. Kontrollera din anslutning och försök igen.</value>
   </data>
   <data name="New_Password" xml:space="preserve">
-    <value>New Password</value>
+    <value>Nytt lösenord</value>
   </data>
   <data name="New_Value" xml:space="preserve">
-    <value>New Value</value>
+    <value>Nytt värde</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Inga</value>
   </data>
   <data name="No_item_selected" xml:space="preserve">
-    <value>No item selected</value>
+    <value>Ingen post har valts</value>
   </data>
   <data name="No_Result" xml:space="preserve">
-    <value>0 results found.</value>
+    <value>0 resultat hittades.</value>
   </data>
   <data name="Not_Now" xml:space="preserve">
-    <value>Not Now</value>
+    <value>Inte nu</value>
   </data>
   <data name="Not_Released_for_Invoicing" xml:space="preserve">
-    <value>Not Released for Invoicing</value>
+    <value>Har ej släppts för fakturering</value>
   </data>
   <data name="Note_Question" xml:space="preserve">
-    <value>Note/Question</value>
+    <value>Anteckning/fråga</value>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>Anteckningar</value>
   </data>
   <data name="Notes_Saved_To_Timesheet" xml:space="preserve">
-    <value>Notes saved to timesheet</value>
+    <value>Anteckningar har sparats i tidsedel</value>
   </data>
   <data name="Offer_Accepted" xml:space="preserve">
-    <value>Offer Accepted</value>
+    <value>Erbjudandet har godtagits</value>
   </data>
   <data name="On" xml:space="preserve">
-    <value>On</value>
+    <value>På</value>
   </data>
   <data name="Open_Requisition" xml:space="preserve">
-    <value>Open Requisition</value>
+    <value>Öppen rekvisition</value>
   </data>
   <data name="open_uploaded_photo" xml:space="preserve">
-    <value>open uploaded photo</value>
+    <value>öppna överfört foto</value>
   </data>
   <data name="Origin" xml:space="preserve">
-    <value>Origin</value>
+    <value>Ursprung</value>
   </data>
   <data name="Original_Amount" xml:space="preserve">
-    <value>Original Amount</value>
+    <value>Ursprungligt belopp</value>
   </data>
   <data name="Original_Document" xml:space="preserve">
-    <value>Original Document</value>
+    <value>Ursprungligt dokument</value>
   </data>
   <data name="Original_End_Date" xml:space="preserve">
-    <value>Original End Date</value>
+    <value>Ursprungligt slutdatum</value>
   </data>
   <data name="Original_Spend" xml:space="preserve">
-    <value>Original Spend</value>
+    <value>Ursprungligt utlägg</value>
   </data>
   <data name="Out_Date" xml:space="preserve">
-    <value>Out Date</value>
+    <value>Utgående datum</value>
   </data>
   <data name="Out_Time" xml:space="preserve">
-    <value>Out Time</value>
+    <value>Utgående tid</value>
   </data>
   <data name="Pay" xml:space="preserve">
-    <value>Pay</value>
+    <value>Betala</value>
   </data>
   <data name="Pay_Amount" xml:space="preserve">
-    <value>Pay Amount</value>
+    <value>Betalningssumma</value>
   </data>
   <data name="Pay_Code" xml:space="preserve">
-    <value>Pay Code</value>
+    <value>Betalningskod</value>
   </data>
   <data name="Pay_Date" xml:space="preserve">
-    <value>Pay Date</value>
+    <value>Betalningsdatum</value>
   </data>
   <data name="Pay_History" xml:space="preserve">
-    <value>Pay History</value>
+    <value>Betalningshistorik</value>
   </data>
   <data name="Pay_Rate" xml:space="preserve">
-    <value>Pay Rate</value>
+    <value>Betalningsbelopp</value>
   </data>
   <data name="Pay_Statement" xml:space="preserve">
-    <value>Pay Statement</value>
+    <value>Betalningsbesked</value>
   </data>
   <data name="Pay_Total" xml:space="preserve">
-    <value>Pay Total</value>
+    <value>Betalning totalt</value>
   </data>
   <data name="Payment_Ref_Number" xml:space="preserve">
-    <value>Payment Ref Number</value>
+    <value>Betalningref nummer</value>
   </data>
   <data name="Payments" xml:space="preserve">
-    <value>Payments</value>
+    <value>Betalningar</value>
   </data>
   <data name="Period_End" xml:space="preserve">
-    <value>Period End</value>
+    <value>Period slut</value>
   </data>
   <data name="Personal_Information" xml:space="preserve">
-    <value>Personal Information</value>
+    <value>Personlig information</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Phone</value>
+    <value>Telefon</value>
   </data>
   <data name="Phone_Numer" xml:space="preserve">
-    <value>Phone Number</value>
+    <value>Telefonnummer</value>
   </data>
   <data name="Please_Confirm" xml:space="preserve">
-    <value>Please Confirm</value>
+    <value>Bekräfta</value>
   </data>
   <data name="PO_Line_Item_Title" xml:space="preserve">
-    <value>PO Line Item Title</value>
+    <value>Rubrik på inköpsorderradpost</value>
   </data>
   <data name="PO_Number" xml:space="preserve">
-    <value>PO Number</value>
+    <value>PO-nummer</value>
   </data>
   <data name="Postal_Code" xml:space="preserve">
-    <value>Postal Code</value>
+    <value>Postkod</value>
   </data>
   <data name="Preferred_Interview_Date" xml:space="preserve">
-    <value>Preferred Interview Date</value>
+    <value>Önskat intervjudatum</value>
   </data>
   <data name="Preferred_Interview_Time" xml:space="preserve">
-    <value>Preferred Interview Time</value>
+    <value>Önskad intervjutid</value>
   </data>
   <data name="Preferred_Job" xml:space="preserve">
-    <value>Preferred Job</value>
+    <value>Föredraget jobb</value>
   </data>
   <data name="Previous_Value" xml:space="preserve">
-    <value>Previous Value</value>
+    <value>Föregående värde</value>
   </data>
   <data name="Pricing" xml:space="preserve">
-    <value>Pricing</value>
+    <value>Prissättning</value>
   </data>
   <data name="Primary_Manager" xml:space="preserve">
-    <value>Primary Manager</value>
+    <value>Huvudmanager</value>
   </data>
   <data name="Project_Name" xml:space="preserve">
-    <value>Project Name</value>
+    <value>Projektnamn</value>
   </data>
   <data name="Projects" xml:space="preserve">
-    <value>Projects</value>
+    <value>Projekt</value>
   </data>
   <data name="Proposed_End_Date" xml:space="preserve">
-    <value>Proposed End Date</value>
+    <value>Föreslaget slutdatum</value>
   </data>
   <data name="Proposed_Start_Date" xml:space="preserve">
-    <value>Proposed Start Date</value>
+    <value>Föreslaget startdatum</value>
   </data>
   <data name="Purchase_Order" xml:space="preserve">
-    <value>Purchase Order</value>
+    <value>Inköpsorder</value>
   </data>
   <data name="Question_que" xml:space="preserve">
-    <value>Question?</value>
+    <value>Fråga?</value>
   </data>
   <data name="Rate" xml:space="preserve">
-    <value>Rate</value>
+    <value>Belopp</value>
   </data>
   <data name="Rates" xml:space="preserve">
-    <value>Rates</value>
+    <value>Belopp</value>
   </data>
   <data name="Reason_for_Veto" xml:space="preserve">
-    <value>Reason for Veto</value>
+    <value>Orsak till veto</value>
   </data>
   <data name="Receipts" xml:space="preserve">
-    <value>Receipts</value>
+    <value>Kvitton</value>
   </data>
   <data name="Receipts_Photo" xml:space="preserve">
-    <value>Receipts Photo</value>
+    <value>Foto av kvitton</value>
   </data>
   <data name="Recipient" xml:space="preserve">
-    <value>Recipient</value>
+    <value>Mottagare</value>
   </data>
   <data name="Register_Device_for_PIN_Login" xml:space="preserve">
-    <value>Register Device for PIN Login</value>
+    <value>Registrera enheten för PIN-kodsinloggning</value>
   </data>
-  <data name="Regulatory_Meal_Period_Taken_que" xml:space="preserve">
-    <value>Regulatory Meal Period Taken?</value>
+  <data name="Regulatory_Meal_Period_Taken" xml:space="preserve">
+    <value>Reglerad måltidsrast tagen</value>
   </data>
   <data name="Released_for_Invoicing" xml:space="preserve">
-    <value>Released for Invoicing</value>
+    <value>Släppt för fakturering</value>
   </data>
   <data name="Remaining_Amount" xml:space="preserve">
-    <value>Remaining Amount</value>
+    <value>Återstående belopp</value>
   </data>
   <data name="Renotified" xml:space="preserve">
-    <value>renotified</value>
+    <value>aviserad igen</value>
   </data>
   <data name="Renotify" xml:space="preserve">
-    <value>Renotify</value>
+    <value>Anmäl igen</value>
   </data>
   <data name="Req_Candidate_Compare" xml:space="preserve">
-    <value>Only 5 candidates can be compared at a time please</value>
+    <value>Högst 5 kandidater kan jämföras samtidigt</value>
   </data>
   <data name="Req_CustomeField" xml:space="preserve">
-    <value>One or more custom fields are required</value>
+    <value>Ett eller flera anpassade fält krävs</value>
+  </data>
+  <data name="Request_More_Information" xml:space="preserve">
+    <value>Begär mer information</value>
   </data>
   <data name="Requested" xml:space="preserve">
-    <value>Requested</value>
+    <value>Begärd</value>
   </data>
   <data name="Requested_Interview" xml:space="preserve">
-    <value>Requested Interview</value>
+    <value>Begärd intervju</value>
   </data>
   <data name="Requested_Qty" xml:space="preserve">
-    <value>Requested Qty</value>
+    <value>Begärd kvantitet</value>
   </data>
   <data name="Require_Attachment_que" xml:space="preserve">
-    <value>Require Attachment?</value>
+    <value>Kräv bilaga?</value>
   </data>
   <data name="Require_Certification_Number_que" xml:space="preserve">
-    <value>Require Certification Number?</value>
+    <value>Kräv certifieringsnummer?</value>
   </data>
   <data name="Require_Expiration_Date_que" xml:space="preserve">
-    <value>Require Expiration Date?</value>
+    <value>Kräv utgångsdatum?</value>
   </data>
   <data name="Require_Issue_Date_que" xml:space="preserve">
-    <value>Require Issue Date?</value>
+    <value>Kräv utfärdandedatum?</value>
   </data>
   <data name="Required" xml:space="preserve">
-    <value>Required</value>
+    <value>Obligatorisk</value>
   </data>
   <data name="Required_que" xml:space="preserve">
-    <value>Required?</value>
+    <value>Obligatorisk?</value>
   </data>
   <data name="Required_Description" xml:space="preserve">
-    <value>Description is Required</value>
+    <value>Beskrivning krävs</value>
   </data>
   <data name="Requirement" xml:space="preserve">
-    <value>Requirement</value>
+    <value>Krav</value>
   </data>
   <data name="Requirements" xml:space="preserve">
-    <value>Requirements</value>
+    <value>Krav:</value>
   </data>
   <data name="Requisition" xml:space="preserve">
-    <value>Requisition</value>
+    <value>Rekvisition</value>
   </data>
   <data name="Requisition_ID" xml:space="preserve">
-    <value>Requisition ID</value>
+    <value>Rekvisitions-id</value>
   </data>
   <data name="Requisition_Name" xml:space="preserve">
-    <value>Requisition Name</value>
+    <value>Rekvisitionsnamn</value>
   </data>
   <data name="Requisition_Notes" xml:space="preserve">
-    <value>Requisition Notes</value>
+    <value>Rekvisitionsanteckningar</value>
   </data>
   <data name="Requisition_Status" xml:space="preserve">
-    <value>Requisition Status</value>
+    <value>Rekvisitionsstatus</value>
   </data>
   <data name="Requisitions" xml:space="preserve">
-    <value>Requisitions</value>
+    <value>Rekvisitioner</value>
   </data>
-  <data name="Rescinded_Candidate." xml:space="preserve">
-    <value>rescinded candidate.</value>
+  <data name="Rescinded_Candidate" xml:space="preserve">
+    <value>återkallade kandidat.</value>
   </data>
   <data name="Reset" xml:space="preserve">
-    <value>Reset</value>
+    <value>Återställ</value>
   </data>
   <data name="Resource" xml:space="preserve">
-    <value>Resource</value>
+    <value>Resurs</value>
   </data>
   <data name="Resource_Name" xml:space="preserve">
-    <value>Resource Name</value>
+    <value>Resursnamn</value>
   </data>
   <data name="Resource_Pay_Rate" xml:space="preserve">
-    <value>Resource Pay Rate</value>
+    <value>Resursersättning</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Resume</value>
+    <value>Återgå</value>
   </data>
   <data name="Role" xml:space="preserve">
-    <value>Role</value>
+    <value>Roll</value>
   </data>
   <data name="Saved" xml:space="preserve">
-    <value>saved</value>
+    <value>sparades</value>
   </data>
   <data name="Security" xml:space="preserve">
-    <value>Security</value>
+    <value>Säkerhet</value>
   </data>
   <data name="Security_Question" xml:space="preserve">
-    <value>Security Question</value>
+    <value>Säkerhetsfråga</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>Select</value>
+    <value>VÄLJ</value>
   </data>
   <data name="Select_Agreement" xml:space="preserve">
-    <value>Select Agreement</value>
+    <value>Välj avtal</value>
   </data>
   <data name="Select_Approval_Manager" xml:space="preserve">
-    <value>Select Approval Manager</value>
+    <value>Välj godkännande manager</value>
   </data>
   <data name="Select_Candidate_Submission" xml:space="preserve">
-    <value>Select Candidate Submission</value>
+    <value>Välj kandidatinlämning</value>
   </data>
   <data name="Select_Date" xml:space="preserve">
-    <value>Select Date</value>
+    <value>Välj datum</value>
   </data>
   <data name="Select_Division" xml:space="preserve">
-    <value>Select Division</value>
+    <value>Välj division</value>
   </data>
   <data name="Select_End_Date" xml:space="preserve">
-    <value>Select End Date</value>
+    <value>Välj slutdatum</value>
   </data>
   <data name="Select_Expense_Type" xml:space="preserve">
-    <value>Select Expense Type</value>
+    <value>Välj utgiftstyp</value>
   </data>
   <data name="Select_Pay_Code" xml:space="preserve">
-    <value>Select Pay Code</value>
+    <value>Välj betalningskod</value>
   </data>
   <data name="Select_Project" xml:space="preserve">
-    <value>Select Project</value>
+    <value>Välj projekt</value>
   </data>
   <data name="Select_Question" xml:space="preserve">
-    <value>Select Question</value>
+    <value>Välj fråga</value>
   </data>
   <data name="Select_Reason" xml:space="preserve">
-    <value>Select Reason</value>
+    <value>Välj orsak</value>
   </data>
   <data name="Select_Recipient" xml:space="preserve">
-    <value>Select Recipient</value>
+    <value>Välj mottagare</value>
   </data>
   <data name="Select_Resource" xml:space="preserve">
-    <value>Select Resource</value>
+    <value>Välj resurs</value>
   </data>
   <data name="Select_Sort_By" xml:space="preserve">
-    <value>Select Sort By</value>
+    <value>Välj sortering efter</value>
   </data>
   <data name="Select_Status" xml:space="preserve">
-    <value>Select Status</value>
+    <value>Välj status</value>
   </data>
   <data name="Select_Tax_Track_Code" xml:space="preserve">
-    <value>Select Tax Track Code</value>
+    <value>Välj skattespårningskod</value>
   </data>
   <data name="Select_Track_Code" xml:space="preserve">
-    <value>Select Track Code</value>
+    <value>Välj spårningskod</value>
   </data>
   <data name="Selected" xml:space="preserve">
-    <value>selected</value>
+    <value>vald</value>
   </data>
   <data name="Send" xml:space="preserve">
-    <value>Send</value>
+    <value>Sänd</value>
   </data>
   <data name="Service_Centre" xml:space="preserve">
-    <value>Service Centre</value>
+    <value>Servicecenter</value>
   </data>
   <data name="Service_Class" xml:space="preserve">
-    <value>Service Class</value>
+    <value>Tjänsteklass</value>
   </data>
   <data name="Service_Classification" xml:space="preserve">
-    <value>Service Classification</value>
+    <value>Tjänsteklassificering</value>
   </data>
   <data name="Service_Invoice" xml:space="preserve">
-    <value>Service Invoice</value>
+    <value>Tjänstefaktura</value>
   </data>
   <data name="Service_Invoice_Amount" xml:space="preserve">
-    <value>Service Invoice Amount</value>
+    <value>Tjänstefakturabelopp</value>
   </data>
   <data name="Service_Provider" xml:space="preserve">
-    <value>Service Provider</value>
+    <value>Tjänsteleverantör</value>
   </data>
   <data name="Service_Provider_Contact" xml:space="preserve">
-    <value>Service Provider Contact</value>
+    <value>Tjänsteleverantörskontakt</value>
   </data>
   <data name="Service_Provider_Invoice_Number" xml:space="preserve">
-    <value>Service Provider Invoice Number</value>
+    <value>Tjänsteleverantörs fakturanummer</value>
   </data>
   <data name="Service_Provider_Name" xml:space="preserve">
-    <value>Service Provider Name</value>
+    <value>Tjänsteleverantörsnamn</value>
   </data>
   <data name="Set_Now" xml:space="preserve">
-    <value>Set Now</value>
+    <value>Konfigurera nu</value>
   </data>
   <data name="Setting" xml:space="preserve">
-    <value>Setting</value>
+    <value>Inställning</value>
   </data>
   <data name="Sick_Time_Accrual_Balance" xml:space="preserve">
-    <value>Sick Time Accrual Balance</value>
+    <value>Periodiserad sjukdomstidsumma</value>
   </data>
   <data name="Sick_Time_Balance" xml:space="preserve">
-    <value>Sick Time Balance</value>
+    <value>Total sjukfrånvaro</value>
   </data>
   <data name="Sort_By" xml:space="preserve">
-    <value>Sort By</value>
+    <value>Sortera efter</value>
   </data>
   <data name="Spend_Summary" xml:space="preserve">
-    <value>Spend Summary</value>
+    <value>Sammanfattning av utlägg</value>
   </data>
   <data name="Start_Date" xml:space="preserve">
-    <value>Start Date</value>
+    <value>Startdatum</value>
   </data>
   <data name="State" xml:space="preserve">
-    <value>State</value>
+    <value>Stat</value>
   </data>
   <data name="State_Province" xml:space="preserve">
-    <value>State/Province</value>
+    <value>Stat/provins</value>
   </data>
   <data name="Statement_of_Work" xml:space="preserve">
-    <value>Statement of Work</value>
+    <value>Arbetsbeskrivning</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
   <data name="Step_Name" xml:space="preserve">
-    <value>Step Name</value>
+    <value>Namn på steg</value>
   </data>
   <data name="Submission_Status" xml:space="preserve">
-    <value>Submission Status</value>
+    <value>Status för inlämning</value>
   </data>
   <data name="Submissions" xml:space="preserve">
-    <value>Submissions</value>
+    <value>Handläggningar</value>
   </data>
   <data name="Submit" xml:space="preserve">
-    <value>Submit</value>
+    <value>Sänd</value>
   </data>
   <data name="Submit_Candidate" xml:space="preserve">
-    <value>Submit Candidate</value>
+    <value>Sänd kandidat</value>
   </data>
   <data name="Submit_Date" xml:space="preserve">
-    <value>Submit Date</value>
+    <value>Skickat datum</value>
   </data>
   <data name="Submit_to_Req" xml:space="preserve">
-    <value>Submit to Req</value>
+    <value>Skicka in som begäran</value>
   </data>
   <data name="Submit_to_Request" xml:space="preserve">
-    <value>Submit to Request</value>
+    <value>Skicka in som begäran</value>
   </data>
   <data name="Submits" xml:space="preserve">
-    <value>Submits</value>
+    <value>Översändningar</value>
   </data>
   <data name="Submittals" xml:space="preserve">
-    <value>Submittals</value>
+    <value>Överföringar</value>
   </data>
   <data name="Sub_total" xml:space="preserve">
-    <value>Sub-total</value>
+    <value>Delsumma</value>
   </data>
   <data name="Succeeded" xml:space="preserve">
-    <value>succeeded</value>
+    <value>lyckades</value>
   </data>
   <data name="Success_Candidate_Withdrawn" xml:space="preserve">
-    <value>The candidate has been successfully withdrawn.</value>
+    <value>Kandidaten har tagits bort.</value>
   </data>
   <data name="Success_InvoiceNumber" xml:space="preserve">
-    <value>Invoice number successfully saved</value>
+    <value>Fakturanumret har sparats</value>
   </data>
   <data name="Successfully" xml:space="preserve">
-    <value>Successfully</value>
+    <value>Lyckats</value>
   </data>
   <data name="Supplier_Bill_Rate" xml:space="preserve">
-    <value>Supplier Bill Rate</value>
+    <value>Leverantörsfakturapris</value>
   </data>
   <data name="Supplier_Invoice" xml:space="preserve">
-    <value>Supplier Invoice</value>
+    <value>Leverantörsfaktura</value>
   </data>
   <data name="Supplier_Name" xml:space="preserve">
-    <value>Supplier Name</value>
+    <value>Leverantörsnamn</value>
   </data>
   <data name="Take_Photo" xml:space="preserve">
-    <value>Take Photo</value>
+    <value>Ta foto</value>
   </data>
-  <data name="Tap_to_Select..." xml:space="preserve">
-    <value>Tap to Select...</value>
+  <data name="Tap_to_Select" xml:space="preserve">
+    <value>Tryck för att välja ...</value>
   </data>
   <data name="Target_Rate" xml:space="preserve">
-    <value>Target Rate</value>
+    <value>Målbelopp</value>
   </data>
   <data name="Task" xml:space="preserve">
-    <value>Task</value>
+    <value>Uppgift</value>
   </data>
   <data name="Tax" xml:space="preserve">
-    <value>Tax</value>
+    <value>Skatt</value>
   </data>
   <data name="Tax_Track_Code" xml:space="preserve">
-    <value>Tax Track Code</value>
+    <value>Skattespårningskod</value>
   </data>
   <data name="Tax_Track_Code_Name" xml:space="preserve">
-    <value>Tax Track Code Name</value>
+    <value>Namn på skattespårningskod</value>
   </data>
   <data name="Technical_Problem" xml:space="preserve">
-    <value>We&#39;re sorry, but something went wrong.We&#39;ve been notified about this issue and we&#39;ll take a look at it shortly</value>
+    <value>Vi ber om ursäkt, något har gått fel. Vi har meddelats om detta problem och kommer att ganska det inom kort.</value>
   </data>
   <data name="The_Following" xml:space="preserve">
-    <value>The following</value>
+    <value>Följande</value>
   </data>
   <data name="Time" xml:space="preserve">
-    <value>Time</value>
+    <value>Tid</value>
   </data>
   <data name="Time_Zone" xml:space="preserve">
-    <value>Time Zone</value>
+    <value>Tidszon</value>
   </data>
   <data name="Timesheet" xml:space="preserve">
-    <value>Timesheet</value>
+    <value>Tidsedelns</value>
+  </data>
+  <data name="timesheet" xml:space="preserve">
+    <value>tidsedel</value>
   </data>
   <data name="Timesheet_que" xml:space="preserve">
-    <value>timesheet?</value>
+    <value>tidsedel?</value>
   </data>
   <data name="Timesheet_Ending_Date" xml:space="preserve">
-    <value>Timesheet Ending Date</value>
+    <value>Tidsedelns slutdatum</value>
   </data>
   <data name="Timesheet_Entries" xml:space="preserve">
-    <value>Timesheet Entries</value>
+    <value>Poster i tidsedel</value>
   </data>
   <data name="Timesheet_ID" xml:space="preserve">
-    <value>Timesheet ID</value>
+    <value>Tidsedel-ID:</value>
   </data>
-  <data name="Timesheets" xml:space="preserve">
-    <value>timesheets</value>
+  <data name="timesheets" xml:space="preserve">
+    <value>tidsedlar</value>
   </data>
   <data name="Total" xml:space="preserve">
-    <value>Total</value>
+    <value>Totalt</value>
   </data>
   <data name="Total_Invoiced" xml:space="preserve">
-    <value>Total Invoiced</value>
+    <value>Totalt fakturerat</value>
   </data>
   <data name="Track" xml:space="preserve">
-    <value>Track</value>
+    <value>Spåra</value>
   </data>
   <data name="Track_Code" xml:space="preserve">
-    <value>Track Code</value>
+    <value>Spårningskod</value>
   </data>
   <data name="Track_Code_Name" xml:space="preserve">
-    <value>Track Code Name</value>
+    <value>Spårningskod namn</value>
   </data>
   <data name="Track_Codes" xml:space="preserve">
-    <value>Track Codes</value>
+    <value>Spårningskoder</value>
   </data>
   <data name="Type" xml:space="preserve">
-    <value>Type</value>
+    <value>Typ</value>
   </data>
   <data name="Unable_Photo" xml:space="preserve">
-    <value>unable to capture photo</value>
+    <value>kunde inte ta foto</value>
   </data>
   <data name="Unallocated_Amount" xml:space="preserve">
-    <value>Unallocated Amount</value>
+    <value>Ej allokerat belopp</value>
   </data>
   <data name="Unit" xml:space="preserve">
-    <value>Unit</value>
+    <value>Enhet</value>
   </data>
   <data name="Updated" xml:space="preserve">
-    <value>Updated</value>
+    <value>Uppdaterad</value>
   </data>
   <data name="Updated_By" xml:space="preserve">
-    <value>Updated By</value>
+    <value>Uppdaterades av</value>
   </data>
   <data name="Updated_Date" xml:space="preserve">
-    <value>Updated Date</value>
+    <value>Uppdaterades den</value>
   </data>
   <data name="Upgrade_App" xml:space="preserve">
-    <value>An upgrade is required to continue using this app</value>
+    <value>Du måste uppgradera appen om du vill fortsätta att använda den.</value>
   </data>
   <data name="Validation_Candidate_Submit" xml:space="preserve">
-    <value>This candidate is currently submitted to one or more requirements and/or on an active project Continue?</value>
+    <value>Kandidaten har skickats in för ett eller flera krav och/eller till ett aktivt projekt. Fortsätt?</value>
   </data>
   <data name="Validation_AccrualBalance" xml:space="preserve">
-    <value>will cause this resource’s Sick Time Accrual Balance to fall below zero, to a value of</value>
+    <value>innebär att resursens periodiserade totala sjukfrånvaro faller under noll, till ett värde av</value>
   </data>
   <data name="Validation_Add_Timesheet" xml:space="preserve">
-    <value>Entry added to timesheet</value>
+    <value>Post har lagts till i tidsedel</value>
   </data>
   <data name="Validation_Bill_Rate_Editable_Field" xml:space="preserve">
-    <value>Enter into bill rate editable field</value>
+    <value>Ange i det redigerbara fältet för fakturapris</value>
   </data>
   <data name="Validation_Both_Non_Editable_Field" xml:space="preserve">
-    <value>Enter into both non editable field</value>
+    <value>Ange i båda icke-redigerbara fält</value>
   </data>
   <data name="Validation_Candidates_For_Comparision" xml:space="preserve">
-    <value>You need to select more than one candidates for comparison</value>
+    <value>Du måste välja fler än en kandidat för att göra en jämförelse</value>
   </data>
   <data name="Validation_Customer_Rate_Editable_Field" xml:space="preserve">
-    <value>Enter into customer rate editable field</value>
+    <value>Ange i det redigerbara fältet för kundpris</value>
   </data>
   <data name="Validation_Int_Float" xml:space="preserve">
-    <value>Should have either integer or float value only</value>
+    <value>Får endast innehålla antingen ett heltal eller ett flyttal</value>
   </data>
   <data name="Validation_Necessary_Comments" xml:space="preserve">
-    <value>Please enter necessary comments</value>
+    <value>Ange erforderliga kommentarer</value>
   </data>
   <data name="Validation_Number" xml:space="preserve">
-    <value>Pay Total must be a number</value>
+    <value>Total betalningssumma måste anges i siffror</value>
   </data>
   <data name="Validation_Proper_Values" xml:space="preserve">
-    <value>Please enter proper values</value>
+    <value>Vänligen ange korrekt värden.</value>
   </data>
   <data name="Validation_Removed_Timesheet" xml:space="preserve">
-    <value>Entry removed from timesheet</value>
+    <value>Post har tagits bort från tidsedel</value>
   </data>
   <data name="Validation_Tax_Track_Code" xml:space="preserve">
-    <value>Please select a tax track code</value>
+    <value>Välj en skattespårningskod</value>
   </data>
   <data name="Validation_Track_Code" xml:space="preserve">
-    <value>Please select a track code</value>
+    <value>Välj en spårningskod</value>
   </data>
   <data name="Validation_Unit_Decimal" xml:space="preserve">
-    <value>Units only allows two digits after decimal</value>
+    <value>Enheter får endast innehålla två siffror efter decimalavgränsaren</value>
   </data>
   <data name="Validation_Units_Number" xml:space="preserve">
-    <value>Units must be a number</value>
+    <value>Enheter måste anges som ett nummer</value>
   </data>
   <data name="Validation_Zero" xml:space="preserve">
-    <value>Should be greater than 0</value>
+    <value>Ska vara större än 0</value>
   </data>
   <data name="Vendor_Agreement" xml:space="preserve">
-    <value>Vendor Agreement</value>
+    <value>Leverantörsavtal</value>
   </data>
   <data name="Veto" xml:space="preserve">
     <value>Veto</value>
   </data>
   <data name="View_All_Candidates" xml:space="preserve">
-    <value>View All Candidates</value>
+    <value>Visa alla kandidater</value>
   </data>
   <data name="View_Custom_Fields" xml:space="preserve">
-    <value>View Custom Fields</value>
+    <value>Visa anpassade fält</value>
   </data>
   <data name="View_Expense_Report" xml:space="preserve">
-    <value>View Expense Report</value>
+    <value>Visa utgiftsrapport</value>
   </data>
   <data name="View_Expenses" xml:space="preserve">
-    <value>View Expenses</value>
+    <value>Visa utgifter</value>
   </data>
   <data name="View_History" xml:space="preserve">
-    <value>View History</value>
+    <value>Visa historik</value>
   </data>
   <data name="View_Invoices" xml:space="preserve">
-    <value>View Invoices</value>
+    <value>Visa fakturor</value>
   </data>
   <data name="View_Open_Requisition_Request" xml:space="preserve">
-    <value>View Open Requisition Request</value>
+    <value>Visa öppen rekvisitionsbegäran</value>
   </data>
   <data name="View_Open_Requisitions" xml:space="preserve">
-    <value>View Open Requisitions</value>
+    <value>Visa öppna rekvisitioner</value>
   </data>
   <data name="View_Pay_History" xml:space="preserve">
-    <value>View Pay History</value>
+    <value>Visa betalningshistorik</value>
   </data>
   <data name="View_Projects" xml:space="preserve">
-    <value>View Projects</value>
+    <value>Visa projekt</value>
   </data>
   <data name="View_Resume" xml:space="preserve">
-    <value>View Resume</value>
+    <value>Visa sammanfattning</value>
   </data>
   <data name="View_Score" xml:space="preserve">
-    <value>View Score</value>
+    <value>Visa poäng</value>
   </data>
   <data name="View_Timesheet" xml:space="preserve">
-    <value>View Timesheet</value>
+    <value>Visa tidsedel</value>
   </data>
   <data name="View_Track_Code" xml:space="preserve">
-    <value>View Track Code</value>
+    <value>Visa spårningskod</value>
   </data>
   <data name="Visible_to_Service_Provider" xml:space="preserve">
-    <value>Visible to Service Provider</value>
+    <value>Synlig för tjänsteleverantör</value>
   </data>
   <data name="Visible_to_Suppliers" xml:space="preserve">
-    <value>Visible to Suppliers</value>
+    <value>Synlig för leverantörer</value>
   </data>
   <data name="Wages" xml:space="preserve">
-    <value>Wages</value>
+    <value>Löner</value>
   </data>
   <data name="Warning_AccrualBalance" xml:space="preserve">
-    <value>Warning: Your accrual balance has fallen below zero Do you wish to continue?</value>
+    <value>Varning: Din periodiseringssumma har fallit under noll. Vill du fortsätta?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Välkommen</value>
   </data>
   <data name="Were_Successful" xml:space="preserve">
-    <value>were successful</value>
+    <value>lyckades</value>
   </data>
   <data name="Will_Pay_Amount" xml:space="preserve">
-    <value>Will Pay Amount</value>
+    <value>Belopp att betala</value>
   </data>
   <data name="Withdraw" xml:space="preserve">
-    <value>Withdraw</value>
+    <value>Ta ut</value>
   </data>
   <data name="Withdraw_Candidate" xml:space="preserve">
-    <value>Withdraw Candidate</value>
+    <value>Återkalla kandidat</value>
   </data>
   <data name="Withdraw_Reason_Division" xml:space="preserve">
-    <value>Withdraw Reasons are not configured at Division level, Please contact administrator.</value>
+    <value>Orsaker till återkallande är inte konfigurerade på divisionsnivå. Kontakta administratören.</value>
   </data>
   <data name="Withheld_for_Invoicing" xml:space="preserve">
-    <value>Withheld for Invoicing</value>
+    <value>Undanhållen för fakturering</value>
   </data>
   <data name="Work_Location" xml:space="preserve">
-    <value>Work Location</value>
+    <value>Arbetsplats</value>
   </data>
   <data name="Work_Schedule" xml:space="preserve">
-    <value>Work Schedule</value>
+    <value>Arbetsschema</value>
   </data>
   <data name="Work_Schedule_Location" xml:space="preserve">
-    <value>Work Schedule/Location</value>
+    <value>Arbetsschema/-plats</value>
   </data>
   <data name="ZC_Invoice_ID" xml:space="preserve">
-    <value>ZC Invoice ID</value>
+    <value>Id för ZC-faktura</value>
   </data>
   <data name="Zero_Timesheet" xml:space="preserve">
-    <value>a zero hour timesheet?</value>
+    <value>en tidsedel med noll timmar?</value>
   </data>
   <data name="Active" xml:space="preserve">
-    <value>Active</value>
+    <value>Aktiv</value>
   </data>
   <data name="Add" xml:space="preserve">
-    <value>Add</value>
+    <value>Lägg till</value>
   </data>
   <data name="Add_Proxy_Approver" xml:space="preserve">
-    <value>Add Proxy Approver</value>
+    <value>Lägg till ställföreträdande godkännare</value>
   </data>
   <data name="added_lowercase" xml:space="preserve">
-    <value>added.</value>
+    <value>tillagd.</value>
   </data>
   <data name="additional_information_saved_on_expense_report" xml:space="preserve">
-    <value>Additional information saved on expense report.</value>
+    <value>Ytterligare information sparad i utgiftsrapport.</value>
   </data>
   <data name="AddlInfo_Info_Expense" xml:space="preserve">
-    <value>Additional information is required for this expense report.</value>
+    <value>Ytterligare information krävs för denna utgiftsrapport.</value>
   </data>
   <data name="Address_1_required" xml:space="preserve">
-    <value>Address 1 is required</value>
+    <value>Adress 1 är obligatorisk</value>
   </data>
   <data name="Adjustment_ID" xml:space="preserve">
-    <value>Adjustment ID</value>
+    <value>Justerings-ID</value>
   </data>
   <data name="agreement_is_not_allowed_to_add_expense" xml:space="preserve">
-    <value>Agreement is not allowed to &#39;Add Expense&#39;. Please contact to Administrator.</value>
+    <value>”Lägg till utgift” är inte tillåtet för avtalet. Kontakta administratören.</value>
   </data>
   <data name="Agreement_not_allowed_Add_Timesheet" xml:space="preserve">
-    <value>Agreement is not allowed to &#39;Add Timesheet&#39;. Please contact to Administrator.</value>
+    <value>”Lägg till tidsedel” är inte tillåtet för avtalet. Kontakta administratören.</value>
   </data>
   <data name="All_Candidates" xml:space="preserve">
-    <value>All Candidates</value>
+    <value>Alla kandidater</value>
   </data>
   <data name="app_orc_pushnotification" xml:space="preserve">
-    <value>error from Interview  app-orch push notification:-</value>
+    <value>fel från intervju – appgenererad push-avisering:-</value>
   </data>
   <data name="application_pdf" xml:space="preserve">
-    <value>application/pdf</value>
+    <value>ansökan/pdf</value>
   </data>
   <data name="approval_have_errors" xml:space="preserve">
-    <value>The following approval(s) have errors:</value>
+    <value>Följande godkännande(n) har fel:</value>
   </data>
   <data name="Approval_was_successful" xml:space="preserve">
-    <value>Approval was successful.</value>
+    <value>Godkännandet lyckades.</value>
   </data>
   <data name="approval_were_successful" xml:space="preserve">
-    <value>The following approval(s) were successful :</value>
+    <value>Följande godkännande(n) lyckades:</value>
   </data>
   <data name="Approve" xml:space="preserve">
-    <value>Approve</value>
+    <value>Godkänn</value>
   </data>
   <data name="Approve_Engagements" xml:space="preserve">
-    <value>Approve Engagements</value>
+    <value>Godkänn åtaganden</value>
   </data>
   <data name="Approve_Expenses" xml:space="preserve">
-    <value>Approve Expenses</value>
+    <value>Godkänn utgifter</value>
   </data>
   <data name="Approve_Staff_Aug_Requisitions" xml:space="preserve">
-    <value>Approve Staff Aug Requisitions</value>
+    <value>Godkänn personalutökningsrekvisitioner</value>
   </data>
   <data name="Approve_Timesheets" xml:space="preserve">
-    <value>Approve Timesheets</value>
+    <value>Godkänn tidsedlar</value>
   </data>
   <data name="are_you_sure_you_want_to_delete_this_expense_item" xml:space="preserve">
-    <value>Are you sure you want to delete this expense item?</value>
+    <value>Är du säker på att du vill ta bort den här utgiftsposten?</value>
   </data>
   <data name="atleas_one_Agreement_is_required_to_add_expense" xml:space="preserve">
-    <value>Atleast one Agreement is required to &#39;Add Expense&#39;. Please contact to Administrator.</value>
+    <value>Minst ett avtal krävs för att använda ”Lägg till utgift”. Kontakta administratören.</value>
   </data>
   <data name="Atleast_2_candidates_required" xml:space="preserve">
-    <value>At-least 2 candidates are required for comparison</value>
+    <value>Minst 2 kandidater krävs för att göra en jämförelse</value>
   </data>
   <data name="availableSickTimeConfirmation1" xml:space="preserve">
-    <value>will cause this resource’s Sick Time Accrual Balance to fall below zero, to a value of</value>
+    <value>innebär att resursens periodiserade totala sjukfrånvaro faller under noll, till ett värde av</value>
   </data>
   <data name="availableSickTimeConfirmation2" xml:space="preserve">
-    <value>Continue with approval for this timesheet?</value>
+    <value>Fortsätt med godkännande av den här tidsedeln?</value>
   </data>
   <data name="Btn_delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Radera</value>
   </data>
   <data name="Btn_No" xml:space="preserve">
-    <value>no</value>
+    <value>nej</value>
   </data>
   <data name="Btn_Resubmit_Timesheet" xml:space="preserve">
-    <value>Edit and Resubmit Timesheet</value>
+    <value>Redigera tidsedel och skicka in igen</value>
   </data>
   <data name="Business_Unit_required" xml:space="preserve">
-    <value>Business Unit is required.</value>
+    <value>Affärsenhet krävs.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="reason_For_Closure" xml:space="preserve">
-    <value>Reason For Closure</value>
+    <value>Avbryt</value>
   </data>
   <data name="Cancel_Interview" xml:space="preserve">
-    <value>Cancel Interview</value>
+    <value>Avboka intervju</value>
   </data>
   <data name="Candiate_Name" xml:space="preserve">
-    <value>Candiate Name</value>
+    <value>Kandidatnamn</value>
   </data>
   <data name="Candidate_Experience" xml:space="preserve">
-    <value>Candidate Experience (years)</value>
+    <value>Kandidatens erfarenhet (år)</value>
   </data>
   <data name="Candidate_Skill" xml:space="preserve">
-    <value>Candidate Skill Level</value>
+    <value>Kandidatens kunskapsnivå</value>
   </data>
   <data name="Candidate_submitted_successfully" xml:space="preserve">
-    <value>Candidate submitted successfully</value>
+    <value>Kandidaten har skickats in</value>
   </data>
   <data name="Certification_Document" xml:space="preserve">
-    <value>Certification / Document</value>
+    <value>Certifiering/dokument</value>
   </data>
   <data name="Certification_Number" xml:space="preserve">
-    <value>Certification Number</value>
+    <value>Certifieringsnummer</value>
   </data>
   <data name="Change_Location" xml:space="preserve">
-    <value>Change Location</value>
+    <value>Ändra plats</value>
   </data>
   <data name="Change_Request" xml:space="preserve">
-    <value>Change Requests</value>
+    <value>Ändringsbegäran</value>
   </data>
   <data name="Close_Engagement" xml:space="preserve">
-    <value>Close Engagement</value>
+    <value>Stäng åtagande</value>
   </data>
   <data name="CM_Completed_Registration" xml:space="preserve">
-    <value>Yes, I have completed the device registration process on ZC Web and am ready to use PIN login.</value>
+    <value>Ja, jag har genomfört registreringsprocessen för enheten på ZC Web och jag är redo att använda PIN-kodsinloggning.</value>
   </data>
   <data name="cm_declined__timesheets" xml:space="preserve">
-    <value>Successfully declined selected timesheets.</value>
+    <value>Valda tidsedlar har avslagits.</value>
   </data>
   <data name="cm_documents_and_then_try_again" xml:space="preserve">
-    <value>documents and then try again.</value>
+    <value>dokument och försök sedan igen.</value>
   </data>
   <data name="CM_Password_Not_Match" xml:space="preserve">
-    <value>Your new password and confirm password do not match.</value>
+    <value>Ditt nya lösenord och bekräftelselösenordet stämmer inte överens.</value>
   </data>
   <data name="cm_please_enable_external_storage_and_then_try_again" xml:space="preserve">
-    <value>Please enable external storage and then try again</value>
+    <value>Aktivera extern lagring och försök sedan igen</value>
   </data>
   <data name="cm_please_install_an_app_that_can_handle" xml:space="preserve">
-    <value>Please enable external storage and then try again.</value>
+    <value>Aktivera extern lagring och försök sedan igen.</value>
   </data>
   <data name="CM_Provide_Password" xml:space="preserve">
-    <value>Please provide your current password, new password, and confirm password.</value>
+    <value>Ange ditt nuvarande lösenord, ett nytt lösenord och bekräftelselösenordet.</value>
   </data>
   <data name="CM_Provide_Security_QA" xml:space="preserve">
-    <value>Please provide a security question and answer.</value>
+    <value>Ange en säkerhetsfråga och ett svar.</value>
   </data>
   <data name="CM_Register_Your_Device" xml:space="preserve">
-    <value>Registering your mobile device for PIN login is a simple 3-step process.
+    <value>Att registrera din mobila enhet för PIN-kodsinloggning är en enkel process i 3 steg.
 
-Step 1: Register your device. Log into ZC Web. Click your name to open the dossier. On the dossier, enter the registration code shown above.
+Steg 1: Registrera din enhet. Logga in på ZC Web. Klicka på ditt namn för att öppna dossiern. I dossiern anger du registreringskoden som visas ovan.
 
- Step 2: Create a PIN for the registered device on the same dossier page.
+ Steg 2: Skapa en PIN-kod för den registrerade enheten på samma dossiersida.
 
-Step 3: Return here. Verify device registration. Click Done. Login using your PIN.
+Steg 3: Gå tillbaka hit. Bekräfta enhetsregistreringen. Klicka på Klar. Logga in med din PIN-kod.
 
- NOTE: At anytime, PIN Login can be disabled from the mobile dossier.
+ OBS! Du kan när som helst inaktivera PIN-kodsinloggning via den mobila dossiern.
 
 </value>
   </data>
   <data name="cm_Successfully_approved_selected_projects" xml:space="preserve">
-    <value>Successfully approved selected projects.</value>
+    <value>Valda projekt har godkänts.</value>
   </data>
   <data name="cm_successfully_approved_timesheet" xml:space="preserve">
-    <value>Successfully approved timesheet</value>
+    <value>Tidsedeln har godkänts</value>
   </data>
-  <data name="cm_Successfully_declined_selected_projects." xml:space="preserve">
-    <value>Successfully declined selected projects</value>
+  <data name="cm_Successfully_declined_selected_projects" xml:space="preserve">
+    <value>Valda projekt har avslagits</value>
   </data>
   <data name="cm_Successfully_renotified_selected_projects" xml:space="preserve">
-    <value>Successfully renotified selected projects</value>
+    <value>Valda projekt har anmälts på nytt</value>
   </data>
   <data name="cm_Track_Code_added_successfully" xml:space="preserve">
-    <value>Track Code added successfully.</value>
+    <value>Spårningskoden har lagts till.</value>
   </data>
   <data name="Compare_Candidates" xml:space="preserve">
-    <value>Compare Candidates</value>
+    <value>Jämför kandidater</value>
   </data>
   <data name="Competency" xml:space="preserve">
-    <value>Competency</value>
+    <value>Kompetens</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
+    <value>Fortsätt</value>
   </data>
   <data name="Country_required" xml:space="preserve">
-    <value>Country is required</value>
+    <value>Land är obligatoriskt</value>
   </data>
   <data name="country_validation1" xml:space="preserve">
-    <value>Please select a country.</value>
+    <value>Välj ett land.</value>
   </data>
   <data name="Data_Saved_Successfully" xml:space="preserve">
-    <value>Data Saved Successfully</value>
+    <value>Data har sparats</value>
   </data>
   <data name="decline_have_error:" xml:space="preserve">
-    <value>The following decline have error:</value>
+    <value>Följande avslag innehåller fel:</value>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>Done</value>
+    <value>Klart</value>
   </data>
   <data name="Dont_Ask_Again" xml:space="preserve">
-    <value>Don&#39;t Ask Again</value>
+    <value>Fråga inte igen</value>
   </data>
   <data name="Edit_and_Resubmit_Expense_Report" xml:space="preserve">
-    <value>Edit and Resubmit Expense Report</value>
+    <value>Redigera utgiftsrapport och skicka in igen</value>
   </data>
   <data name="Edit_Timesheet_Entry" xml:space="preserve">
-    <value>Edit Timesheet Entry</value>
+    <value>Redigera tidsedelpost</value>
   </data>
   <data name="empty" xml:space="preserve">
-    <value>(empty)</value>
+    <value>(tom)</value>
   </data>
   <data name="Enable_Touch_ID" xml:space="preserve">
-    <value>Enable Touch ID</value>
+    <value>Aktivera touch-id</value>
   </data>
   <data name="End_Date_required" xml:space="preserve">
-    <value>The End Date field is required.</value>
+    <value>Fältet med slutdatum är obligatoriskt.</value>
   </data>
   <data name="Engagement_line_item" xml:space="preserve">
-    <value>Engagement line item</value>
+    <value>Åtaganderadpost</value>
   </data>
   <data name="Engagements" xml:space="preserve">
-    <value>Engagements</value>
+    <value>Åtaganden</value>
   </data>
   <data name="Enter_PIN" xml:space="preserve">
-    <value>EnterPIN</value>
+    <value>Ange PIN-kod</value>
   </data>
   <data name="Error_Egnement_detail_page_Load" xml:space="preserve">
-    <value>Error from Egnement-detail page Load:-</value>
+    <value>Fel från åtagandeuppgift – inläsning av sida:-</value>
   </data>
   <data name="expense_item_successfully" xml:space="preserve">
-    <value>Expense item successfully</value>
+    <value>Utgiftsposten har</value>
   </data>
   <data name="expense_item_successfully_deleted" xml:space="preserve">
-    <value>Expense item successfully deleted.</value>
+    <value>Utgiftsposten har tagits bort.</value>
   </data>
   <data name="Expense_report_saved" xml:space="preserve">
-    <value>Expense report saved.</value>
+    <value>Utgiftsrapporten sparades.</value>
   </data>
   <data name="Expense_report_submitted" xml:space="preserve">
-    <value>Expense report submitted.</value>
+    <value>Utgiftsrapporten skickades in.</value>
   </data>
   <data name="expense_type_is_required" xml:space="preserve">
-    <value>Expense Type is required.</value>
+    <value>Utgiftstyp krävs.</value>
   </data>
   <data name="Expenses" xml:space="preserve">
-    <value>Expenses</value>
+    <value>Utgifter</value>
   </data>
   <data name="Expiration_Date" xml:space="preserve">
-    <value>Expiration Date</value>
+    <value>Förbrukningsdatum</value>
   </data>
   <data name="failed" xml:space="preserve">
-    <value>failed</value>
+    <value>misslyckades</value>
   </data>
   <data name="File_Name" xml:space="preserve">
-    <value>File Name</value>
+    <value>Filnamn</value>
   </data>
   <data name="Filter_Engagements" xml:space="preserve">
-    <value>Filter Engagements</value>
+    <value>Filter: åtaganden</value>
   </data>
   <data name="Filter_Submittals" xml:space="preserve">
-    <value>Filter Submittals</value>
+    <value>Filter: inlämningar</value>
   </data>
   <data name="Forgot_Password" xml:space="preserve">
-    <value>Forgot Password</value>
+    <value>Glömt lösenordet</value>
   </data>
   <data name="Forgot_que" xml:space="preserve">
-    <value>Forgot?</value>
+    <value>Glömt?</value>
   </data>
   <data name="Generating" xml:space="preserve">
-    <value>Generating...</value>
+    <value>Genererar ...</value>
   </data>
   <data name="Hire" xml:space="preserve">
-    <value>Hire</value>
+    <value>Anställning</value>
   </data>
   <data name="Hour" xml:space="preserve">
-    <value>Hour</value>
+    <value>Timme</value>
   </data>
   <data name="hour" xml:space="preserve">
-    <value>Hour</value>
+    <value>Timme</value>
   </data>
   <data name="I_Accept_the_Following_Terms" xml:space="preserve">
-    <value>I Accept the Following Terms</value>
+    <value>Jag godkänner följande villkor</value>
   </data>
   <data name="Information_updated" xml:space="preserve">
-    <value>Information updated successfully.</value>
+    <value>Informationen har uppdaterats.</value>
   </data>
   <data name="is_required" xml:space="preserve">
-    <value>is required.</value>
+    <value>krävs.</value>
   </data>
   <data name="Issue_Date" xml:space="preserve">
-    <value>Issue Date</value>
+    <value>Utfärdandedatum</value>
   </data>
   <data name="Issuing_Authority" xml:space="preserve">
-    <value>Issuing Authority</value>
+    <value>Utfärdande organ</value>
   </data>
   <data name="job_classification" xml:space="preserve">
-    <value>Please select job classification.</value>
+    <value>Välj jobbklassificering.</value>
   </data>
   <data name="Justification_required" xml:space="preserve">
-    <value>Justification is required</value>
+    <value>Motivering krävs</value>
   </data>
   <data name="Log_Out" xml:space="preserve">
-    <value>Log Out</value>
+    <value>Logga ut</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login</value>
+    <value>Inloggning</value>
   </data>
   <data name="Manage_Engagements" xml:space="preserve">
-    <value>Manage Engagements</value>
+    <value>Hantera åtaganden</value>
   </data>
   <data name="MaxValue_greaterORequal_MinValue" xml:space="preserve">
-    <value>Maximum value should be greater than or equal to the minimum value.</value>
+    <value>Maxvärdet måste vara större än eller lika med minimivärdet.</value>
   </data>
   <data name="Milestone_Engagement_Items" xml:space="preserve">
-    <value>Milestone - Engagement Items</value>
+    <value>Avstämningspunkt – åtagandeposter</value>
   </data>
   <data name="Milestones" xml:space="preserve">
-    <value>Milestones</value>
+    <value>Avstämningspunkter</value>
   </data>
   <data name="modification_reason" xml:space="preserve">
-    <value>Modification Reason</value>
+    <value>Modifieringsskäl</value>
   </data>
   <data name="Modify_Engagement" xml:space="preserve">
-    <value>Modify Engagement</value>
+    <value>Modifiera åtagande</value>
   </data>
   <data name="MSP_Company" xml:space="preserve">
-    <value>MSP Company</value>
+    <value>MSP Företag</value>
   </data>
   <data name="N_A" xml:space="preserve">
-    <value>N_A</value>
+    <value>Ej tillämpligt</value>
   </data>
   <data name="NA" xml:space="preserve">
-    <value>NA</value>
-  </data>
-  <data name="performance_Date_not_future" xml:space="preserve">
-    <value>The Performance Date may not be in the future.</value>
+    <value>Ej tillämpligt</value>
   </data>
   <data name="new_updates" xml:space="preserve">
-    <value>new updates</value>
+    <value>nya uppdateringar</value>
   </data>
   <data name="notes_saved_to_expense_report" xml:space="preserve">
-    <value>Notes saved to expense report</value>
+    <value>Anteckningar har sparats i utgiftsrapporten</value>
   </data>
   <data name="Offer" xml:space="preserve">
-    <value>Offer</value>
+    <value>Erbjudande</value>
   </data>
   <data name="one_agreement_required" xml:space="preserve">
-    <value>At least one Agreement is required to &#39;Add Timesheet&#39;. Please contact to Administrator.</value>
+    <value>Minst ett avtal krävs för att använda ”Lägg till tidsedel”. Kontakta administratören.</value>
   </data>
   <data name="One_customfields_required" xml:space="preserve">
-    <value>One or more custom fields are required.</value>
+    <value>Ett eller flera anpassade fält krävs.</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password</value>
+    <value>Lösenord</value>
   </data>
   <data name="Password_Updated" xml:space="preserve">
-    <value>Password Updated</value>
+    <value>Lösenordet uppdaterades</value>
   </data>
   <data name="Pay_Code_and_Bill_Rate" xml:space="preserve">
-    <value>Pay Code and Bill Rate</value>
+    <value>Betalningskod och fakturapris</value>
   </data>
   <data name="Payment" xml:space="preserve">
-    <value>Payment</value>
+    <value>Betalning</value>
   </data>
   <data name="pdf_extension" xml:space="preserve">
     <value>.pdf</value>
   </data>
   <data name="pending_enrollment_msg" xml:space="preserve">
-    <value>You have pending open enrollment(s), please login to zcweb to complete the enrollment process. If you have any questions, please contact ZeroChaos Customer Support.</value>
+    <value>Du har väntande öppna registreringar. Logga in på ZC Web för att slutföra registreringsprocessen. Kontakta ZeroChaos kundsupport om du har några frågor.</value>
   </data>
   <data name="Pin_login_reset_que" xml:space="preserve">
-    <value>Are you sure you want to disable and reset PIN login?</value>
+    <value>Är du säker på att du vill inaktivera och återställa PIN-kodsinloggning?</value>
   </data>
   <data name="please_confirm_delete" xml:space="preserve">
-    <value>Please Confirm Delete</value>
+    <value>Bekräfta borttagning</value>
   </data>
   <data name="Please_enter_comments" xml:space="preserve">
-    <value>Please enter comments</value>
+    <value>Skriv in kommentarer</value>
   </data>
   <data name="Please_provide_answer" xml:space="preserve">
-    <value>Please provide an answer</value>
+    <value>Ange ett svar</value>
   </data>
-  <data name="Please_provide_username." xml:space="preserve">
-    <value>Please provide your username.</value>
+  <data name="Please_provide_username" xml:space="preserve">
+    <value>Ange ditt användarnamn.</value>
   </data>
   <data name="Please_select_country" xml:space="preserve">
-    <value>Please select a country.</value>
+    <value>Välj ett land.</value>
   </data>
   <data name="Please_select_status_change_reason" xml:space="preserve">
-    <value>Please select status change reason.</value>
+    <value>Välj ett skäl för ändring av status.</value>
   </data>
   <data name="Primary_Manager" xml:space="preserve">
-    <value>Primary Manager</value>
+    <value>Huvudmanager</value>
   </data>
   <data name="Profile_Picture" xml:space="preserve">
-    <value>Profile Picture</value>
+    <value>Profilbild</value>
   </data>
   <data name="Profile_Picture" xml:space="preserve">
-    <value>Profile Picture</value>
+    <value>Profilbild</value>
   </data>
   <data name="Project" xml:space="preserve">
-    <value>Project</value>
+    <value>Projekt</value>
   </data>
   <data name="Proxy_Approver" xml:space="preserve">
-    <value>Proxy Approver</value>
+    <value>Ställföreträdande godkännare</value>
   </data>
   <data name="Proxy_Approver_added" xml:space="preserve">
-    <value>Proxy Approver added successfully.</value>
+    <value>Ställföreträdande godkännare har lagts till.</value>
   </data>
   <data name="Proxy_Approvers" xml:space="preserve">
-    <value>Proxy Approvers</value>
+    <value>Ställföreträdande godkännare</value>
   </data>
   <data name="Proxy_Approvers_removed" xml:space="preserve">
-    <value>Proxy Approver removed successfully.</value>
+    <value>Ställföreträdande godkännare har tagits bort.</value>
   </data>
-  <data name="rates_values_greaterthan_zero" xml:space="preserve">
-    <value>All rates values should be greater than 0.</value>
+  <data name="rates_values_greaterthan_0" xml:space="preserve">
+    <value>Samtliga prisvärden måste vara större än 0.</value>
   </data>
   <data name="receipt_photo" xml:space="preserve">
-    <value>Receipt Photo</value>
+    <value>Foto av kvitto</value>
   </data>
   <data name="receipt_uploaded_successfully" xml:space="preserve">
-    <value>Receipt uploaded successfully.</value>
+    <value>Kvittot har överförts.</value>
   </data>
   <data name="Receive_Emails" xml:space="preserve">
-    <value>Receive Emails</value>
+    <value>Mottag e-post</value>
   </data>
   <data name="Registration_Code" xml:space="preserve">
-    <value>Registration Code</value>
+    <value>Registreringskod</value>
   </data>
   <data name="Released_for_Invoicing" xml:space="preserve">
-    <value>Released for Invoicing -</value>
+    <value>Släppt för fakturering –</value>
   </data>
   <data name="Remove_from_Comparison" xml:space="preserve">
-    <value>Remove from Comparison</value>
+    <value>Ta bort från jämförelse</value>
   </data>
   <data name="Req_Minimum_Experience" xml:space="preserve">
-    <value>Req Minimum Experience (years)</value>
+    <value>Lägsta erforderliga erfarenhet (år)</value>
   </data>
   <data name="Req_Minimum_Skill" xml:space="preserve">
-    <value>Req Minimum Skill Level</value>
+    <value>Lägsta erforderliga kunskapsnivå</value>
   </data>
   <data name="request" xml:space="preserve">
-    <value>request</value>
+    <value>begäran</value>
   </data>
   <data name="Request_Interview" xml:space="preserve">
-    <value>Request Interview</value>
+    <value>Begär intervju</value>
   </data>
   <data name="Request_Interview_BTN" xml:space="preserve">
-    <value>Request Interview</value>
+    <value>Begär intervju</value>
   </data>
   <data name="Requisitions_Notes" xml:space="preserve">
-    <value>Requisitions Notes</value>
+    <value>Rekvisitionsanteckningar</value>
   </data>
   <data name="Reset_Password" xml:space="preserve">
-    <value>Reset Password</value>
+    <value>Återställ lösenord</value>
   </data>
   <data name="Reset_PIN" xml:space="preserve">
-    <value>Reset PIN</value>
+    <value>Återställ PIN-kod</value>
   </data>
   <data name="Reset_PIN_Login" xml:space="preserve">
-    <value>Reset PIN Login</value>
+    <value>Återställ PIN-kodsinloggning</value>
   </data>
   <data name="Resume_Text" xml:space="preserve">
-    <value>Resume Text</value>
+    <value>Återuppta text</value>
   </data>
   <data name="s" xml:space="preserve">
     <value>s</value>
   </data>
   <data name="s_approval" xml:space="preserve">
-    <value>approval</value>
+    <value>godkännande</value>
   </data>
   <data name="s_information" xml:space="preserve">
     <value>information</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Spara</value>
   </data>
   <data name="Save_Username" xml:space="preserve">
-    <value>Save Username</value>
+    <value>Spara användarnamn</value>
   </data>
   <data name="security_update1" xml:space="preserve">
-    <value>Security question and answer updated successfully.</value>
+    <value>Säkerhetsfråga och -svar har uppdaterats.</value>
   </data>
   <data name="Select_BusinessUnit" xml:space="preserve">
-    <value>Select BusinessUnit</value>
+    <value>Välj affärsenhet</value>
   </data>
   <data name="Select_Country" xml:space="preserve">
-    <value>Select Country</value>
+    <value>Välj land</value>
   </data>
   <data name="Select_Interviewer_Name" xml:space="preserve">
-    <value>Select Interviewer Name</value>
+    <value>Välj intervjuarens namn</value>
   </data>
   <data name="Select_Interviewer_Timezone" xml:space="preserve">
-    <value>Select Interviewer Timezone</value>
+    <value>Välj intervjuarens tidszon</value>
   </data>
   <data name="Select_Interviewer_Type" xml:space="preserve">
-    <value>Select Interviewer Type</value>
+    <value>Välj typ av intervju</value>
   </data>
   <data name="Select_Primary_Manager" xml:space="preserve">
-    <value>Select Primary Manager</value>
+    <value>Välj huvudmanager</value>
   </data>
   <data name="Select_Primary_Manager" xml:space="preserve">
-    <value>Select Primary Manager</value>
+    <value>Välj huvudmanager</value>
   </data>
   <data name="Select_Proxy_Approver" xml:space="preserve">
-    <value>Select Proxy Approver</value>
+    <value>Välj ställföreträdande godkännare</value>
   </data>
   <data name="Select_Service_Classification" xml:space="preserve">
-    <value>Select Service Classification</value>
+    <value>Välj tjänsteklassificering</value>
   </data>
   <data name="Select_Service_Provider" xml:space="preserve">
-    <value>Select Service Provider</value>
+    <value>Välj tjänsteleverantör</value>
   </data>
   <data name="Select_Service_Provider" xml:space="preserve">
-    <value>Select Service Provider</value>
+    <value>Välj tjänsteleverantör</value>
   </data>
   <data name="Select_State" xml:space="preserve">
-    <value>Select State</value>
+    <value>Välj status</value>
   </data>
   <data name="Selected_requisitions" xml:space="preserve">
-    <value>Selected requisitions</value>
+    <value>Valda rekvisitioner</value>
   </data>
   <data name="Service_Center" xml:space="preserve">
-    <value>Service Center</value>
+    <value>Servicecenter</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Inställningar</value>
   </data>
   <data name="Settings_updated1" xml:space="preserve">
-    <value>Settings updated successfully</value>
+    <value>Inställningarna har uppdaterats</value>
   </data>
   <data name="share" xml:space="preserve">
-    <value>Share</value>
+    <value>Dela</value>
   </data>
   <data name="Skip" xml:space="preserve">
-    <value>Skip</value>
+    <value>Hoppa över</value>
   </data>
   <data name="Skip" xml:space="preserve">
-    <value>Skip</value>
+    <value>Hoppa över</value>
   </data>
   <data name="small_adjustments" xml:space="preserve">
-    <value>Adjustments</value>
-  </data>
-  <data name="small_timesheet" xml:space="preserve">
-    <value>timesheet</value>
+    <value>Ändringar</value>
   </data>
   <data name="special_character_validation" xml:space="preserve">
-    <value>Warning: Special characters cannot be entered. Enter a positive Will Pay Amount without any special characters.</value>
+    <value>Varning: Specialtecken får inte anges. Ange ett positivt belopp att betala utan några specialtecken.</value>
   </data>
   <data name="Start_Date_required" xml:space="preserve">
-    <value>The Start Date field is required.</value>
+    <value>Fältet med startdatum är obligatoriskt.</value>
   </data>
   <data name="State_required" xml:space="preserve">
-    <value>State is required</value>
+    <value>Stat krävs</value>
   </data>
   <data name="Submit_Answer" xml:space="preserve">
-    <value>Submit Answer</value>
+    <value>Skicka in svar</value>
   </data>
   <data name="Successfully_approved_candidate" xml:space="preserve">
-    <value>Successfully approved candidate.</value>
+    <value>Kandidaten har godkänts.</value>
   </data>
   <data name="Successfully_approved_requisition" xml:space="preserve">
-    <value>Successfully approved requisition.</value>
+    <value>Rekvisitionen har godkänts.</value>
   </data>
   <data name="Successfully_approved_selected_expenses" xml:space="preserve">
-    <value>Successfully approved selected expenses.</value>
+    <value>Valda utgifter har godkänts.</value>
   </data>
   <data name="Successfully_approved_selected_timesheets" xml:space="preserve">
-    <value>Successfully approved selected timesheets.</value>
+    <value>Valda tidsedlar har godkänts.</value>
   </data>
   <data name="Successfully_approved_timesheet" xml:space="preserve">
-    <value>Successfully approved timesheet.</value>
+    <value>Tidsedeln har godkänts.</value>
   </data>
   <data name="Successfully_declined" xml:space="preserve">
-    <value>Successfully declined</value>
+    <value>Har avslagits</value>
   </data>
   <data name="Successfully_declined_candidate" xml:space="preserve">
-    <value>Successfully declined candidate.</value>
+    <value>Kandidaten har avslagits.</value>
   </data>
   <data name="Successfully_declined_selected_expenses" xml:space="preserve">
-    <value>Successfully declined selected expenses.</value>
+    <value>Valda utgifter har avslagits.</value>
   </data>
   <data name="Successfully_declined_timesheet" xml:space="preserve">
-    <value>Successfully declined timesheet.</value>
+    <value>Tidsedeln har avslagits.</value>
   </data>
   <data name="Successfully_rescinded_candidate" xml:space="preserve">
-    <value>Successfully rescinded candidate.</value>
+    <value>Kandidaten har återkallats.</value>
   </data>
   <data name="Suplier_Bill_Rate" xml:space="preserve">
-    <value>Suplier Bill Rate</value>
+    <value>Leverantörsfakturapris</value>
   </data>
   <data name="sure_you_want_extendoffer_que" xml:space="preserve">
-    <value>Are you sure you want to extend the offer?</value>
+    <value>Vill du verkligen förlänga erbjudandet?</value>
   </data>
   <data name="sure_you_want_to_cancel_que" xml:space="preserve">
-    <value>Are you sure you want to cancel?</value>
+    <value>Är du säker på att du vill avbryta?</value>
   </data>
   <data name="sure_you_want_to_Decline_que" xml:space="preserve">
-    <value>Are you sure you want to Decline?</value>
+    <value>Vill du verkligen avslå?</value>
   </data>
   <data name="tap_enter_maximum_amount" xml:space="preserve">
-    <value>tap to enter maximum amount</value>
+    <value>tryck för att ange maxbelopp</value>
   </data>
   <data name="tap_enter_maximum_DD_MMM_YYYY" xml:space="preserve">
-    <value>tap to enter maximum DD-MMM-YYYY</value>
+    <value>tryck för att ange senaste datum DD-MMM-ÅÅÅÅ</value>
   </data>
   <data name="tap_enter_minimum_amount" xml:space="preserve">
-    <value>tap to enter minimum amount</value>
+    <value>tryck för att ange minimibelopp</value>
   </data>
   <data name="tap_enter_minimum_DD_MMM_YYYY" xml:space="preserve">
-    <value>tap to enter minimum DD-MMM-YYYY</value>
+    <value>tryck för att ange tidigaste datum DD-MMM-ÅÅÅÅ</value>
   </data>
   <data name="Timesheet_submitted" xml:space="preserve">
-    <value>Timesheet submitted</value>
+    <value>Tidsedel har skickats in</value>
   </data>
   <data name="Total_Resource_Amount" xml:space="preserve">
-    <value>Total Resource Amount</value>
+    <value>Totalt resursbelopp</value>
   </data>
   <data name="track_code_added_successfully" xml:space="preserve">
-    <value>Track Code added successfully.</value>
+    <value>Spårningskoden har lagts till.</value>
   </data>
   <data name="track_code_assigned" xml:space="preserve">
-    <value>Track code assigned.</value>
+    <value>Spårningskoden har tilldelats.</value>
   </data>
   <data name="track_code_is_required" xml:space="preserve">
-    <value>Track Code is required.</value>
+    <value>Spårningskod krävs.</value>
   </data>
   <data name="Turn_on_Out_of_Office" xml:space="preserve">
-    <value>Turn on Out of Office</value>
+    <value>Aktivera frånvaromeddelande</value>
   </data>
   <data name="Units" xml:space="preserve">
-    <value>Units</value>
+    <value>Enheter</value>
   </data>
   <data name="updated_lowercase" xml:space="preserve">
-    <value>updated.</value>
+    <value>uppdaterad.</value>
   </data>
   <data name="Uploaded_By" xml:space="preserve">
-    <value>Uploaded By</value>
+    <value>Överförd av</value>
   </data>
   <data name="Uploaded_on" xml:space="preserve">
-    <value>Uploaded on</value>
+    <value>Överfördes den</value>
   </data>
   <data name="Use_PIN_Login" xml:space="preserve">
-    <value>Use_PIN_Login</value>
+    <value>Använd PIN-kodsinloggning</value>
   </data>
   <data name="Username" xml:space="preserve">
-    <value>Username</value>
+    <value>Användarnamn</value>
   </data>
   <data name="validation_adjustment1" xml:space="preserve">
-    <value>Approving adjustment for</value>
+    <value>Godkänner justering för</value>
   </data>
   <data name="validation_status_reason" xml:space="preserve">
-    <value>Please select status change reason.</value>
+    <value>Välj ett skäl för ändring av status.</value>
   </data>
   <data name="veto_validation1" xml:space="preserve">
-    <value>Clicking Submit will remove this invoice line permanently and the Service Provider will have to create a new Invoice for this line. Click Submit to proceed or Cancel to go back to the previous screen&quot;;</value>
+    <value>Om du klickar på Skicka kommer den här fakturaraden att tas bort permanent, och tjänsteleverantören kommer att vara tvungen att skapa en ny faktura för den här raden. Klicka på Skicka för att fortsätta eller på Avbryt för att återvända till föregående skärm.</value>
   </data>
   <data name="View_Expense_Reports" xml:space="preserve">
-    <value>View Expense Reports</value>
+    <value>Visa utgiftsrapporter</value>
   </data>
   <data name="View_Timesheets" xml:space="preserve">
-    <value>View Timesheets</value>
+    <value>Visa tidsedlar</value>
   </data>
   <data name="want_to_decline_change_request" xml:space="preserve">
-    <value>Are you sure you want to decline this change request?</value>
+    <value>Är du säker på att du vill avslå den här ändringsbegäran?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Välkommen</value>
   </data>
   <data name="Yes_No" xml:space="preserve">
-    <value>Yes / No</value>
+    <value>Ja/nej</value>
   </data>
   <data name="You_have" xml:space="preserve">
-    <value>You have</value>
+    <value>Du har</value>
   </data>
   <data name="your_enrollment_msg" xml:space="preserve">
-    <value>Your enrollment is incomplete. Before using ZC Mobile you will need to complete enrollment. Please contact ZeroChaos Customer Support for assistance.</value>
+    <value>Din registrering är slutförd. Innan du kan använda ZC Mobile måste du slutföra registreringen. Kontakta ZeroChaos kundsupport om du behöver hjälp.</value>
   </data>
   <data name="Your_session_has_expired" xml:space="preserve">
-    <value>Your session has expired.</value>
+    <value>Din session har upphört.</value>
   </data>
-  <data name="Photo_uploaded_successfully" xml:space="preserve">
-    <value>Photo uploaded successfully.</value>
+  <data name=" Please_select_Time_Zone" xml:space="preserve">
+    <value>Vänligen välj tidszon.</value>
   </data>
-  <data name="Display_Language" xml:space="preserve">
-    <value>Display Language</value>
+  <data name="Loading" xml:space="preserve">
+    <value>Läser in</value>
   </data>
-  <data name="Select_Language" xml:space="preserve">
-    <value>Select Language</value>
-  </data>
-  <data name="Opt_out_of_E_mails" xml:space="preserve">
-    <value>Opt out of E-mails</value>
-  </data>
-  <data name="yes_uppercase" xml:space="preserve">
-    <value>YES</value>
-  </data>
-  <data name="no_uppercase" xml:space="preserve">
-    <value>NO</value>
-  </data>
-  <data name="Edit_Interview" xml:space="preserve">
-    <value>Edit Interview</value>
-  </data>
-  <data name="Candidate_Name" xml:space="preserve">
-    <value>Candidate Name</value>
-  </data>
-  <data name="Interview_Duration_minutes" xml:space="preserve">
-    <value>Interview Duration (minutes)</value>
-  </data>
-  <data name="Interview_Location_Phone" xml:space="preserve">
-    <value>Interview Location / Phone</value>
-  </data>
-  <data name="Interview_Time_Zone" xml:space="preserve">
-    <value>Interview Time Zone</value>
-  </data>
-  <data name="Preferred_Date" xml:space="preserve">
-    <value>Preferred Date</value>
-  </data>
-  <data name="Preferred_Time" xml:space="preserve">
-    <value>Preferred Time</value>
-  </data>
-  <data name="Alternate_Date" xml:space="preserve">
-    <value>Alternate Date</value>
-  </data>
-  <data name="Alternate_Time" xml:space="preserve">
-    <value>Alternate Time</value>
-  </data>
-  <data name="NEW" xml:space="preserve">
-    <value>NEW</value>
-  </data>
-  <data name="REINTERVIEW" xml:space="preserve">
-    <value>REINTERVIEW</value>
-  </data>
-  <data name="EXTEND_OFFER" xml:space="preserve">
-    <value>EXTEND OFFER</value>
-  </data>
-  <data name="COMPLETE_INTERVIEW" xml:space="preserve">
-    <value>COMPLETE INTERVIEW</value>
-  </data>
-  <data name="minutes" xml:space="preserve">
-    <value>minutes</value>
-  </data>
-  <data name="ACCEPT_INTERVIEW" xml:space="preserve">
-    <value>ACCEPT INTERVIEW</value>
-  </data>
-  <data name="REQUEST_NEW_INTERVIEW_DATE" xml:space="preserve">
-    <value>REQUEST NEW INTERVIEW DATE</value>
-  </data>
-  <data name="CANCEL_INTERVIEW" xml:space="preserve">
-    <value>CANCEL INTERVIEW</value>
-  </data>
-  <data name="Please_enter_necessary_comment" xml:space="preserve">
-    <value>Please enter necessary comment.</value>
-  </data>
-  <data name="Time_Period" xml:space="preserve">
-    <value>Time Period</value>
-  </data>
-  <data name="Requested_Sub_Rate" xml:space="preserve">
-    <value>Requested Sub. Rate</value>
-  </data>
-  <data name="Requested_Target_Rate" xml:space="preserve">
-    <value>Requested Target Rate</value>
-  </data>
-  <data name="Filter_Submittal_Details" xml:space="preserve">
-    <value>Filter Submittal Details</value>
-  </data>
-  <data name="Type" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="Date_Time" xml:space="preserve">
-    <value>Date / Time</value>
-  </data>
-  <data name="Minutes" xml:space="preserve">
-    <value>Minutes</value>
-  </data>
-  <data name="In_Person" xml:space="preserve">
-    <value>In Person</value>
-  </data>
-  <data name="Language_Change_Confirmation_Message" xml:space="preserve">
-    <value>For the language changes to take effect you need to logout and log back in. Please press OK to logout now.</value>
-  </data>
-  <data name="no_data" xml:space="preserve">
-    <value>(No Data)</value>
-  </data>
-  <data name="no_samll_latter" xml:space="preserve">
-    <value>no</value>
-  </data>
-  <data name="yes_samll_latter" xml:space="preserve">
-    <value>yes</value>
-  </data>
-  <data name="True" xml:space="preserve">
-    <value>True</value>
-  </data>
-  <data name="False" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="false" xml:space="preserve">
-    <value>false</value>
-  </data>
-  <data name="View_Track_Code" xml:space="preserve">
-    <value>View Track Code</value>
-  </data>
-  <data name="Failed_to_register_for_push_notifications" xml:space="preserve">
-    <value>Failed to register for push notifications!</value>
+  <data name="Off" xml:space="preserve">
+    <value>Av</value>
   </data>
   <data name="Invoice_hash" xml:space="preserve">
-    <value>Invoice #</value>
-  </data>
-  <data name="Password_updated_successfully" xml:space="preserve">
-    <value>Password updated successfully.</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>(Error)</value>
-  </data>
-  <data name="Maybe_later" xml:space="preserve">
-    <value>Maybe later</value>
-  </data>
-  <data name="Rate_now" xml:space="preserve">
-    <value>Rate Now! -</value>
+    <value>Fakturanummer</value>
   </data>
   <data name="enjoy_zc_mobile" xml:space="preserve">
-    <value>If you enjoy using ZC Mobile, please rate this app</value>
+    <value>Betygsätt gärna ZC Mobile om du gillar att använda appen</value>
   </data>
   <data name="your_feedback_rate" xml:space="preserve">
-    <value>Your feedback is important to us. Rating our app is quick and easy. It only takes a few taps to complete!</value>
+    <value>Din feedback är viktig för oss. Det är enkelt och går snabbt att betygsätta appen. Det krävs bara några få knapptryck och sedan är du klar!</value>
   </data>
-  <data name="Proxy" xml:space="preserve">
-    <value>Proxy</value>
+  <data name="Maybe_later" xml:space="preserve">
+    <value>Kanske senare</value>
   </data>
-  <data name="Item" xml:space="preserve">
-    <value>Item</value>
+  <data name="Rate_now" xml:space="preserve">
+    <value>Betygsätt nu!</value>
   </data>
-  <data name="Transaction" xml:space="preserve">
-    <value>Transaction</value>
+  <data name="Photo_uploaded_successfully" xml:space="preserve">
+    <value>Fotot har överförts.</value>
   </data>
-  <data name="Approval" xml:space="preserve">
-    <value>Approval</value>
+  <data name="Display_Language" xml:space="preserve">
+    <value>Visningsspråk</value>
+  </data>
+  <data name="Select_Language" xml:space="preserve">
+    <value>Välj språk</value>
+  </data>
+  <data name="Opt_out_of_E_mails" xml:space="preserve">
+    <value>Avstå från att ta emot e-postmeddelanden</value>
+  </data>
+  <data name="yes_uppercase" xml:space="preserve">
+    <value>JA</value>
+  </data>
+  <data name="no_uppercase" xml:space="preserve">
+    <value>NEJ</value>
+  </data>
+  <data name="Edit_Interview" xml:space="preserve">
+    <value>Redigera intervju</value>
+  </data>
+  <data name="Interview_Duration_minutes" xml:space="preserve">
+    <value>Intervjuns varaktighet i minuter</value>
+  </data>
+  <data name="Interview_Location_Phone" xml:space="preserve">
+    <value>Telefonnummer till intervjuplats</value>
+  </data>
+  <data name="Interview_Time_Zone" xml:space="preserve">
+    <value>Intervju, tidzon:</value>
+  </data>
+  <data name="Preferred_Date" xml:space="preserve">
+    <value>Önskat datum</value>
+  </data>
+  <data name="Preferred_Time" xml:space="preserve">
+    <value>Önskad tidpunkt</value>
+  </data>
+  <data name="Alternate_Date" xml:space="preserve">
+    <value>Alternativt datum</value>
+  </data>
+  <data name="Alternate_Time" xml:space="preserve">
+    <value>Alternativ tidpunkt</value>
+  </data>
+  <data name="NEW" xml:space="preserve">
+    <value>NY</value>
+  </data>
+  <data name="REINTERVIEW" xml:space="preserve">
+    <value>INTERVJUA IGEN</value>
+  </data>
+  <data name="EXTEND_OFFER" xml:space="preserve">
+    <value>FÖRLÄNG ERBJUDANDE</value>
+  </data>
+  <data name="COMPLETE_INTERVIEW" xml:space="preserve">
+    <value>SLUTFÖR INTERVJU</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>minuter</value>
+  </data>
+  <data name="ACCEPT_INTERVIEW" xml:space="preserve">
+    <value>TACKA JA TILL INTERVJU</value>
+  </data>
+  <data name="REQUEST_NEW_INTERVIEW_DATE" xml:space="preserve">
+    <value>BEGÄR NYTT INTERVJUDATUM</value>
+  </data>
+  <data name="CANCEL_INTERVIEW" xml:space="preserve">
+    <value>AVBOKA INTERVJU</value>
+  </data>
+  <data name="Select_Reject_Reason" xml:space="preserve">
+    <value>Välj orsak till nekande</value>
+  </data>
+  <data name="Close_Engagement" xml:space="preserve">
+    <value>Stäng åtagande</value>
+  </data>
+  <data name="reason_For_Closure" xml:space="preserve">
+    <value>Orsak till stängning</value>
+  </data>
+  <data name="close_Engagement_Msg" xml:space="preserve">
+    <value>Om du klickar på Skicka kommer det här åtagandet att stängas permanent, och tjänsteleverantörer kommer inte att kunna skicka in ytterligare fakturor för slutfört arbete. Tryck på Skicka för att stänga åtagandet eller på Avbryt om du vill att det ska förbli öppet för fakturering.</value>
   </data>
   <data name="Assignment_Status_que" xml:space="preserve">
-    <value>Assignment Status?</value>
+    <value>Tilldelningsstatus?</value>
   </data>
   <data name="Assignment_Status" xml:space="preserve">
-    <value>Assignment Status</value>
+    <value>Tilldelningsstatus</value>
   </data>
   <data name="Assigned1" xml:space="preserve">
-    <value>Assigned</value>
+    <value>Tilldelad</value>
   </data>
   <data name="Unassigned" xml:space="preserve">
-    <value>Unassigned</value>
+    <value>Tilldelning borttagen</value>
   </data>
   <data name="btn_Unassign" xml:space="preserve">
-    <value>Unassign</value>
+    <value>Ta bort tilldelning</value>
   </data>
   <data name="trackCodemsg_Unassign" xml:space="preserve">
-    <value>Do you really want to unassign selected track code?</value>
+    <value>Vill du verkligen ta bort tilldelningen av den valda spårningskoden?</value>
   </data>
-  <data name="Cancel_Engagement" xml:space="preserve">
-    <value>Cancel Engagement</value>
+  <data name="Proxy" xml:space="preserve">
+    <value>Ombud</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="Transaction" xml:space="preserve">
+    <value>Transaktion</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>Godkännande</value>
+  </data>
+  <data name="Please_select_reason_for_engagement_closure" xml:space="preserve">
+    <value>Välj orsak till att åtagandet stängdes.</value>
   </data>
   <data name="Tap_to_load_more_data" xml:space="preserve">
-    <value>Tap here to load more data</value>
+    <value>Tryck här för att läsa in fler data</value>
   </data>
   <data name="Supplier" xml:space="preserve">
-    <value>Supplier</value>
+    <value>Leverantör</value>
   </data>
   <data name="startDate_required" xml:space="preserve">
-    <value>Start date is required.</value>
+    <value>Startdatum krävs.</value>
   </data>
   <data name="endDate_required" xml:space="preserve">
-    <value>End date is required.</value>
+    <value>Slutdatum krävs.</value>
   </data>
   <data name="invoice_validateNumber" xml:space="preserve">
-    <value>The invoice number cannot be blank. Please enter a valid invoice number.</value>
+    <value>Fakturanumret får inte vara tomt. Ange ett giltigt fakturanummer.</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Liten</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medelstor</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Stor</value>
+  </data>
+  <data name="Actual" xml:space="preserve">
+    <value>Faktisk</value>
+  </data>
+  <data name="reduce_upload_size" xml:space="preserve">
+    <value>Du kan reducera överföringsstorleken genom att förminska bilden till en av storlekarna nedan</value>
   </data>
   <data name="Distributed_To" xml:space="preserve">
-    <value>Distributed To</value>
+    <value>Distribuerad till</value>
+  </data>
+  <data name="select_atleast_one_image" xml:space="preserve">
+    <value>Välj minst en bild</value>
   </data>
   <data name="failed_receipt" xml:space="preserve">
-    <value>Receipt failed to upload</value>
+    <value>Kvittot kunde inte överföras</value>
   </data>
   <data name="failed_receipts" xml:space="preserve">
-    <value>Receipts failed to upload</value>
-  </data>
-  <data name="Add_Notes" xml:space="preserve">
-    <value>Add Note</value>
-  </data>
-  <data name="Performance_Date" xml:space="preserve">
-    <value>Performance Date</value>
-  </data>
-  <data name="Performance_Time" xml:space="preserve">
-    <value>Performance Time</value>
-  </data>
-  <data name="Timezone" xml:space="preserve">
-    <value>Timezone</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Note</value>
-  </data>
-  <data name="Requisition_Managers" xml:space="preserve">
-    <value>Requisition Managers</value>
-  </data>
-  <data name="Candidate_Submitted_Suppliers" xml:space="preserve">
-    <value>Candidate Submitted Suppliers</value>
-  </data>
-  <data name="All_Distributed_Suppliers" xml:space="preserve">
-    <value>All Distributed Suppliers</value>
-  </data>
-  <data name="Requisition_Note_Req_ID" xml:space="preserve">
-    <value>Requisition Note - Req ID</value>
-  </data>
-  <data name="Submitted_Candidate_Note" xml:space="preserve">
-    <value>Submitted Candidate Note</value>
-  </data>
-  <data name="Uploaded_Date" xml:space="preserve">
-    <value>Uploaded Date</value>
+    <value>Kvittona kunde inte överföras</value>
   </data>
   <data name="Longlick_image" xml:space="preserve">
-    <value>Longlick image for preview.</value>
+    <value>Klicka och håll ned på bilden för att förhandsgranska. </value>
+  </data>
+  <data name="Performance_date_required" xml:space="preserve">
+    <value>Datum för genomförande krävs</value>
+  </data>
+  <data name="Performance_time_required" xml:space="preserve">
+    <value>Tidpunkt för genomförande krävs</value>
+  </data>
+  <data name="Timezone_required" xml:space="preserve">
+    <value>Tidszon krävs</value>
+  </data>
+  <data name="on" xml:space="preserve">
+    <value>på</value>
+  </data>
+  <data name="Uploaded_Date" xml:space="preserve">
+    <value>Överfördes den</value>
+  </data>
+  <data name="Requisition_Note_Req_ID" xml:space="preserve">
+    <value>Rekvisitionsanteckning – rekvisitions-id</value>
+  </data>
+  <data name="Performance_Time" xml:space="preserve">
+    <value>Tidpunkt för genomförande</value>
+  </data>
+  <data name="Performance_Date" xml:space="preserve">
+    <value>Datum för genomförande</value>
   </data>
   <data name="empty_notes" xml:space="preserve">
-    <value>An Empty note field may not be submitted.</value>
+    <value>Ett tomt anteckningsfält kan inte skickas in.</value>
   </data>
-  <data name="Enable_Android_6_Permissions" xml:space="preserve">
-    <value>Android 6 Permissions</value>
+  <data name="Review_Engagement" xml:space="preserve">
+    <value>Granska åtagande</value>
   </data>
-  <data name="Enable_Draw_Over_Other_Apps" xml:space="preserve">
-    <value>Apps that can appear on top</value>
+  <data name="Service_Provider" xml:space="preserve">
+    <value>Tjänsteleverantör</value>
   </data>
-  <data name="CM_Steps_To_Set_DrawOver_Permissions_zcmobile" xml:space="preserve">
-    <value>Android 6 requires enabling of the &#39;Apps that can appear on top&#39; setting for this, and many common applications. To enable it, follow these steps:
-
-Step 1: Tap Display Settings. We will redirect you to the settings page. Scroll to ZC Mobile. Enable it.
-
-Step 2: Tap your device’s back button to return here.
-
-Step 3: Confirm below that you enabled the &#39;Apps that can appear on top&#39; setting and then tap Continue.</value>
+  <data name="Score" xml:space="preserve">
+    <value>Poäng</value>
   </data>
-  <data name="CM_Steps_To_Set_DrawOver_Permissions_zcmobiletest" xml:space="preserve">
-    <value>Android 6 requires enabling of the &#39;Apps that can appear on top&#39; setting for this, and many common applications. To enable it, follow these steps:
-
-Step 1: Tap Display Settings. We will redirect you to the settings page. Scroll to ZC Mobile Test. Enable it.
-
-Step 2: Tap your device’s back button to return here.
-
-Step 3: Confirm below that you enabled the &#39;Apps that can appear on top&#39; setting and then tap Continue.</value>
+  <data name="Provide_rating_for_each" xml:space="preserve">
+    <value>Ange ett betyg i antal stjärnor på varje fråga.</value>
   </data>
-  <data name="CM_Set_DrawOver_Permission_Confirmation_zcmobile" xml:space="preserve">
-    <value>Yes, I have enabled the &#39;Apps that can appear on top&#39; setting for ZC Mobile.</value>
+  <data name="overlay_permission_confirmation_message_6_0" xml:space="preserve">
+    <value>För att fortsätta att använda appen måste du aktivera ”Överlagring på andra appar” under Inställningar. Klicka på ”OK” för att öppna Inställningar. Om detta är aktiverat klickar du på ”Aktiverat”</value>
   </data>
-  <data name="CM_Set_DrawOver_Permission_Confirmation_zcmobiletest" xml:space="preserve">
-    <value>Yes, I have enabled the &#39;Apps that can appear on top&#39; setting for ZC Mobile Test.</value>
-  </data>
-  <data name="Display_Settings" xml:space="preserve">
-    <value>Display Settings</value>
+  <data name="Enabled" xml:space="preserve">
+    <value>Aktiverat</value>
   </data>
   <data name="reviewEng" xml:space="preserve">
-    <value>Engagement(s) have been sent to you for review. Would you like to review them now?</value>
+    <value>Åtagande(n) har skickats till dig för granskning. Vill du granska dem nu?</value>
   </data>
-  <data name="Localization_Keys_For_20.0_Starts_Here" xml:space="preserve">
-    <value>Localization_Keys_For_20.0</value>
+  <data name="Number_of_Engagement_Reviewed" xml:space="preserve">
+    <value>Antal granskade åtaganden</value>
+  </data>
+  <data name="Average_Review_Score" xml:space="preserve">
+    <value>Genomsnittligt betyg</value>
+  </data>
+  <data name="review_saved_successfully" xml:space="preserve">
+    <value>Granskning av slutfört åtagande har sparats.</value>
+  </data>
+  <data name="review_confirm" xml:space="preserve">
+    <value>Obs – när den väl är sparad kan du inte redigera informationen. Är du säker på att du vill spara informationen?</value>
+  </data>
+  <data name="Add_Notes" xml:space="preserve">
+    <value>Lägg till anteckning</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>Tidszon</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Anteckning</value>
+  </data>
+  <data name="Requisition_Managers" xml:space="preserve">
+    <value>Rekvisitionsmanager</value>
+  </data>
+  <data name="Candidate_Submitted_Suppliers" xml:space="preserve">
+    <value>Kandidatinskickade leverantörer</value>
+  </data>
+  <data name="All_Distributed_Suppliers" xml:space="preserve">
+    <value>Alla distribuerade leverantörer</value>
+  </data>
+  <data name="Requisition_Note_Req_ID" xml:space="preserve">
+    <value>Rekvisitionsanteckning – rekvisitions-id</value>
+  </data>
+  <data name="Submitted_Candidate_Note" xml:space="preserve">
+    <value>Inskickad kandidatanteckning</value>
+  </data>
+  <data name="rates_values_greaterthan_zero" xml:space="preserve">
+    <value>Samtliga prisvärden måste vara större än 0.</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Title</value>
+    <value>Titel</value>
   </data>
   <data name="Add_Milestone" xml:space="preserve">
-    <value>Add Milestone</value>
+    <value>Lägg till avstämningspunkt</value>
   </data>
   <data name="Edit_Milestone" xml:space="preserve">
-    <value>Edit Milestone</value>
+    <value>Redigera avstämningspunkt</value>
   </data>
   <data name="Btn_Remove" xml:space="preserve">
-    <value>Remove</value>
+    <value>Ta bort</value>
   </data>
   <data name="Btn_Copy" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kopiera</value>
   </data>
   <data name="Field_Name" xml:space="preserve">
-    <value>Field Name</value>
-  </data>
-  <data name="User_Name" xml:space="preserve">
-    <value>User Name</value>
+    <value>Fältnamn</value>
   </data>
   <data name="Old_Value" xml:space="preserve">
-    <value>Old Value</value>
+    <value>GAMMALT VÄRDE</value>
+  </data>
+  <data name="User_Name" xml:space="preserve">
+    <value>Användarnamn</value>
   </data>
   <data name="Last_Updated_By" xml:space="preserve">
-    <value>Last Updated By</value>
+    <value>Senast uppdaterad av</value>
   </data>
   <data name="Last_Updated" xml:space="preserve">
-    <value>Last Updated</value>
+    <value>Senast uppdaterad</value>
   </data>
   <data name="Title_Required" xml:space="preserve">
-    <value>Title is required</value>
+    <value>Rubrik krävs</value>
   </data>
   <data name="Description_Required" xml:space="preserve">
-    <value>Description is required</value>
+    <value>Beskrivning krävs</value>
   </data>
   <data name="Track_Code_Name_Required" xml:space="preserve">
-    <value>Track Code Name is required</value>
+    <value>Namn på spårningskod är obligatoriskt</value>
   </data>
   <data name="Tax_Track_Code_Name_Required" xml:space="preserve">
-    <value>Tax Track Code Name is required</value>
+    <value>Namn på skattespårningskod är obligatoriskt</value>
   </data>
   <data name="Amount_Required" xml:space="preserve">
-    <value>Amount is required</value>
+    <value>Belopp är obligatoriskt</value>
   </data>
   <data name="Start_Date_Required" xml:space="preserve">
-    <value>Start Date is required</value>
+    <value>Startdatum krävs</value>
   </data>
   <data name="Estimated_Completion_Date_Required" xml:space="preserve">
-    <value>Estimated Completion Date is required</value>
+    <value>Beräknat datum för slutförande krävs</value>
   </data>
   <data name="default_Approver" xml:space="preserve">
-    <value>Default Approver</value>
+    <value>Förvald godkännare</value>
   </data>
   <data name="Service_Invoices" xml:space="preserve">
-    <value>Service Invoices</value>
+    <value>Tjänstefakturor</value>
   </data>
   <data name="Approved_Amount" xml:space="preserve">
-    <value>Approved Amount</value>
+    <value>Godkända belopp</value>
   </data>
   <data name="Line_Item_Vetos" xml:space="preserve">
-    <value>Line Item Vetos</value>
+    <value>Veton av radposter</value>
   </data>
   <data name="Engagement_Item_ID" xml:space="preserve">
-    <value>Engagement Item ID</value>
+    <value>Åtagandepost-ID</value>
   </data>
   <data name="Submitted" xml:space="preserve">
-    <value>Submitted</value>
+    <value>Skickad</value>
   </data>
   <data name="View_Requisition_Notes" xml:space="preserve">
-    <value>View Requisition Notes</value>
+    <value>Visa rekvisitionsanteckningar</value>
   </data>
   <data name="View_Submission_Notes" xml:space="preserve">
-    <value>View Submissions Notes</value>
+    <value>Visa inskickade anteckningar</value>
   </data>
   <data name="View_Adjustments_History" xml:space="preserve">
-    <value>View Adjustments History</value>
+    <value>Visa justeringshistorik</value>
   </data>
   <data name="Adjustment_Reason" xml:space="preserve">
-    <value>Adjustment Reason</value>
+    <value>Justeringsskäl</value>
   </data>
   <data name="Adjustment_Status" xml:space="preserve">
-    <value>Adjustment Status</value>
-  </data>
-  <data name="Additional_Comments" xml:space="preserve">
-    <value>Additional Comments</value>
-  </data>
-  <data name="Decline_Service_Invoice" xml:space="preserve">
-    <value>Decline Service Invoice</value>
-  </data>
-  <data name="sowreject_reason" xml:space="preserve">
-    <value>To decline this service invoice, enter a comment and tap Submit. To request changes to the service invoice, tap Cancel and use the &#39;Request More Information&#39; link on the service invoice page.</value>
+    <value>Justeringsstatus</value>
   </data>
   <data name="Send_Note" xml:space="preserve">
-    <value>Send Note</value>
+    <value>Skicka meddelande</value>
   </data>
   <data name="Service_Category" xml:space="preserve">
-    <value>Service Category</value>
+    <value>Tjänstekategori</value>
   </data>
   <data name="Location_Type" xml:space="preserve">
-    <value>Location Type</value>
+    <value>Platstyp</value>
   </data>
   <data name="Unit_of_Measure" xml:space="preserve">
-    <value>Unit of Measure</value>
+    <value>Måttenhet</value>
   </data>
   <data name="workers" xml:space="preserve">
-    <value>Workers</value>
+    <value>Arbetare</value>
   </data>
   <data name="Manage_Track_Codes" xml:space="preserve">
-    <value>Manage Track Codes</value>
+    <value>Hantera spårningskoder</value>
   </data>
   <data name="Track_Code_ID" xml:space="preserve">
-    <value>Track Code ID</value>
+    <value>Spårningskod-ID</value>
   </data>
   <data name="Effective_Start_Date" xml:space="preserve">
-    <value>Effective Start Date</value>
+    <value>Startdatum för verkställande</value>
   </data>
   <data name="Effective_End_Date" xml:space="preserve">
-    <value>Effective End Date</value>
-  </data>
-  <data name="Service_Provider_Contacts" xml:space="preserve">
-    <value>Service Provider Contacts</value>
+    <value>Slutdatum för verkställande</value>
   </data>
   <data name="Payment_Location" xml:space="preserve">
-    <value>Payment Location</value>
+    <value>Betalningsplats</value>
   </data>
   <data name="Payment_Currency" xml:space="preserve">
-    <value>Payment Currency</value>
-  </data>
-  <data name="Filter_Manage_TrackCodes" xml:space="preserve">
-    <value>Filter Manage Track Codes</value>
-  </data>
-  <data name="Amount_Pending_Approval" xml:space="preserve">
-    <value>Amount Pending Approval</value>
-  </data>
-  <data name="Amount_Approved_Engagement" xml:space="preserve">
-    <value>Amount Approved for Engagement</value>
-  </data>
-  <data name="Amount_Rejected" xml:space="preserve">
-    <value>Amount Rejected</value>
-  </data>
-  <data name="Approved_Expenses" xml:space="preserve">
-    <value>Approved Expenses</value>
-  </data>
-  <data name="Invoiced_ID" xml:space="preserve">
-    <value>Invoiced ID</value>
+    <value>Betalningsvaluta</value>
   </data>
   <data name="Update_Contact" xml:space="preserve">
     <value>Update Contact</value>
@@ -2894,130 +2765,169 @@ Step 3: Confirm below that you enabled the &#39;Apps that can appear on top&#39;
   <data name="Primary_Contact" xml:space="preserve">
     <value>Primary Contact</value>
   </data>
+  <data name="Update_Contact" xml:space="preserve">
+    <value>Uppdatera kontakt</value>
+  </data>
+  <data name="Primary_Contact" xml:space="preserve">
+    <value>Primär kontakt</value>
+  </data>
   <data name="Select_Contacts" xml:space="preserve">
-    <value>Select Contacts</value>
+    <value>Välj kontakter</value>
   </data>
   <data name="updateContact_CustomMessage" xml:space="preserve">
-    <value>*If the Contact you are looking for is not in the Drop down, please contact your Zerochaos Support Contact for help at</value>
-  </data>
-  <data name="Select_Assigned" xml:space="preserve">
-    <value>Select Assigned</value>
-  </data>
-  <data name="Select_Active" xml:space="preserve">
-    <value>Select Active</value>
+    <value>Om kontakten du söker inte finns i listrutan, &lt;br /&gt;kontakta din supportkontakt hos Zerochaos för hjälp via:</value>
   </data>
   <data name="Estimated_Completion_Date_Should_Be_Greater_StartDate_Validation" xml:space="preserve">
-    <value>Estimated Completion Date should be greater or equal to start date.</value>
+    <value>Beräknat datum för slutförande ska vara större än eller lika med startdatum.</value>
   </data>
   <data name="Actual_Completion_Date_Should_Be_Greater_StartDate_Validation" xml:space="preserve">
-    <value>Actual Completion Date should be greater or equal to start date. </value>
+    <value>Faktiskt datum för slutförande bör vara större än eller lika med startdatum.</value>
+  </data>
+  <data name="Amount_Pending_Approval" xml:space="preserve">
+    <value>Belopp som inväntar godkännande</value>
+  </data>
+  <data name="Amount_Approved_Engagement" xml:space="preserve">
+    <value>Godkänt belopp för åtagande</value>
+  </data>
+  <data name="Amount_Rejected" xml:space="preserve">
+    <value>Avvisat belopp</value>
+  </data>
+  <data name="Approved_Expenses" xml:space="preserve">
+    <value>Godkända utgifter</value>
   </data>
   <data name="Change_Date" xml:space="preserve">
-    <value>Change Date</value>
+    <value>Ändrat datum</value>
+  </data>
+  <data name="Invoiced_ID" xml:space="preserve">
+    <value>Faktura-id</value>
   </data>
   <data name="Last_Name" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Efternamn</value>
   </data>
   <data name="First_Name" xml:space="preserve">
-    <value>First Name</value>
+    <value>Förnamn</value>
   </data>
   <data name="Select_Category" xml:space="preserve">
-    <value>Select Category</value>
+    <value>Välj kategori</value>
   </data>
   <data name="Select_Location" xml:space="preserve">
-    <value>Select Location</value>
+    <value>Välj plats</value>
   </data>
   <data name="Select_Unit_Of_Measure" xml:space="preserve">
-    <value>Select Unit Of Measure</value>
+    <value>Välj måttenhet</value>
   </data>
   <data name="Invoice_ID" xml:space="preserve">
-    <value>Invoice ID</value>
+    <value>Faktura-id</value>
   </data>
   <data name="Managed_Projects" xml:space="preserve">
-    <value>Managed Project</value>
+    <value>Hanterat projekt</value>
   </data>
   <data name="Managed_Project_Name" xml:space="preserve">
-    <value>Managed Project Name</value>
+    <value>Hanterat projektnamn</value>
   </data>
   <data name="Managed_Project_ID" xml:space="preserve">
-    <value>Managed Project ID</value>
+    <value>Hanterat projekt-ID</value>
   </data>
   <data name="Managed_Project_Budget" xml:space="preserve">
-    <value>Managed Project Budget</value>
+    <value>Hanterad projektbudget</value>
   </data>
   <data name="maximum_image_upload" xml:space="preserve">
-    <value>There is a 5 image upload limit per upload.</value>
+    <value>Det finns en gräns på 5 bilder per uppladdning.</value>
   </data>
   <data name="Greater_Than" xml:space="preserve">
-    <value>Greater Than</value>
+    <value>Större än</value>
   </data>
   <data name="Less_Than" xml:space="preserve">
-    <value>Less Than</value>
+    <value>Mindre än</value>
   </data>
   <data name="Actual_Completion_Date_Required" xml:space="preserve">
-    <value>Actual Completion Date is Required</value>
+    <value>Faktiskt slutförandedatum är obligatoriskt</value>
   </data>
   <data name="Performance_msg" xml:space="preserve">
-    <value>Upload time will vary depending on the total size of the selected images, and your device&#39;s network connection quality.</value>
+    <value>Uppladdningstiden kommer att variera beroende på de valda bildernas totala storlek och på nätverksanslutningen för din enhet.</value>
+  </data>
+  <data name="Additional_Comments" xml:space="preserve">
+    <value>Ytterligare kommentarer</value>
+  </data>
+  <data name="Decline_Service_Invoice" xml:space="preserve">
+    <value>Avvisa tjänstefaktura</value>
+  </data>
+  <data name="sowreject_reason" xml:space="preserve">
+    <value>Skriv en kommentar och tryck på Skicka för att avvisa denna tjänstefaktura. Tryck på Avbryt och använd länken ”Begär mer information” på sidan för tjänstefakturor för att begära ändringar av denna tjänstefaktura.</value>
+  </data>
+  <data name="Service_Provider_Contacts" xml:space="preserve">
+    <value>Tjänsteleverantörskontakter</value>
+  </data>
+  <data name="Filter_Manage_TrackCodes" xml:space="preserve">
+    <value>Filterhantera spårkoder</value>
+  </data>
+  <data name="Select_Assigned" xml:space="preserve">
+    <value>Välj tilldelad</value>
+  </data>
+  <data name="Select_Active" xml:space="preserve">
+    <value>Välj aktiv</value>
+  </data>
+  <data name="Share_With" xml:space="preserve">
+    <value>Dela med</value>
+  </data>
+  <data name="E_mail_To" xml:space="preserve">
+    <value>E-posta till</value>
+  </data>
+  <data name="Request_More_Information" xml:space="preserve">
+    <value>Begär mer information</value>
+  </data>
+  <data name="Notes_Validation" xml:space="preserve">
+    <value>Anteckningar krävs</value>
+  </data>
+  <data name="add_notes_first_save_timesheet" xml:space="preserve">
+    <value>För att lägga till anteckningar i en tidrapport måste du först spara tidrapporten. Klicka på spara för att spara tidrapporten.</value>
+  </data>
+  <data name="SentTo" xml:space="preserve">
+    <value>Skickad till</value>
+  </data>
+  <data name="RequisitionType_Validation" xml:space="preserve">
+    <value>Vänligen välj rekvisitionstyp</value>
+  </data>
+  <data name="Review_Ratings" xml:space="preserve">
+    <value>Granska betyg</value>
+  </data>
+  <data name="Number_of_Reviewed" xml:space="preserve">
+    <value>Antal granskningar</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Kvalitet</value>
+  </data>
+  <data name="Deliverable" xml:space="preserve">
+    <value>Att leverera</value>
+  </data>
+  <data name="Rehire" xml:space="preserve">
+    <value>Återanställa</value>
+  </data>
+  <data name="Visible_to_Customers" xml:space="preserve">
+    <value>Synlig för kunder</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Granskingar</value>
+  </data>
+  <data name="final_invoice" xml:space="preserve">
+    <value>Detta är den slutgiltiga fakturan.</value>
+  </data>
+  <data name="final_invoice_label" xml:space="preserve">
+    <value>Slutgiltig faktura</value>
   </data>
   <data name="Localization_Keys_For_21_Starts_Here" xml:space="preserve">
     <value>Localization_Keys_For_21</value>
   </data>
-  <data name="Share_With" xml:space="preserve">
-    <value>Share With</value>
-  </data>
-  <data name="E_mail_To" xml:space="preserve">
-    <value>E-mail To</value>
-  </data>
-  <data name="Request_More_Information" xml:space="preserve">
-    <value>Request More Info</value>
-  </data>
-  <data name="Notes_Validation" xml:space="preserve">
-    <value>Notes is Required</value>
-  </data>
-  <data name="add_notes_first_save_timesheet" xml:space="preserve">
-    <value>In order to add notes to a timesheet, you must first save the timesheet. To save the timesheet, click Save.</value>
-  </data>
-  <data name="RequisitionType_Validation" xml:space="preserve">
-    <value>Please select Requisition Type</value>
-  </data>
-  <data name="Review_Ratings" xml:space="preserve">
-    <value>Review Ratings</value>
-  </data>
-  <data name="SentTo" xml:space="preserve">
-    <value>Sent To</value>
-  </data>
-  <data name="Quality" xml:space="preserve">
-    <value>Quality</value>
-  </data>
-  <data name="Deliverable" xml:space="preserve">
-    <value>Deliverable</value>
-  </data>
-  <data name="Rehire" xml:space="preserve">
-    <value>Rehire</value>
-  </data>
-  <data name="Visible_to_Customers" xml:space="preserve">
-    <value>Visible to Customers</value>
-  </data>
-  <data name="Reviews" xml:space="preserve">
-    <value>Reviews</value>
-  </data>
-  <data name="final_invoice" xml:space="preserve">
-    <value>This is the final invoice.</value>
-  </data>
-  <data name="final_invoice_label" xml:space="preserve">
-    <value>Final Invoice</value>
-  </data>
   <data name="Period_End_Date" xml:space="preserve">
-    <value>Period End Date</value>
+    <value>sv_Period End Date</value>
   </data>
   <data name="NotesTypes" xml:space="preserve">
-    <value>Note Types</value>
+    <value>sv_Note Types</value>
   </data>
   <data name="Availability" xml:space="preserve">
-    <value>Availability</value>
+    <value>sv_Availability</value>
   </data>
   <data name="N_A" xml:space="preserve">
-    <value>N/A</value>
+    <value>sv_N/A</value>
   </data>
 </root>

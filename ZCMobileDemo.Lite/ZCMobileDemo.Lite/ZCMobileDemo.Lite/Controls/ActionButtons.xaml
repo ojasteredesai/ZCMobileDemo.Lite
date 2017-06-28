@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZCMobileDemo.Lite.Controls.ActionButtons"
+             xmlns:controls="clr-namespace:ZCMobileDemo.Lite.Controls"
+             Orientation="Horizontal">
+
+    <controls:RoundedButton x:Name="btnPrimary"  Style="{StaticResource buttonStyle}"
+                             BackgroundColor="Orange" ></controls:RoundedButton>
+    <controls:RoundedButton x:Name="btnSecondary" Style="{StaticResource buttonStyle}"
+                             BackgroundColor="Blue" ></controls:RoundedButton>
+    <controls:RoundedButton x:Name="btnTertiary" Style="{StaticResource buttonStyle}"
+                             BackgroundColor="Gray" ></controls:RoundedButton>
+
+    <Label x:Name="lblAll"  Text="All"  FontAttributes="Bold"  VerticalOptions="Center" ></Label>
+    <controls:RoundedButton x:Name="btnCheckAll"  
+                            Style="{StaticResource checkAllbuttonStyle}" 
+                            Image="checkBGOff.png"/>
+</StackLayout>

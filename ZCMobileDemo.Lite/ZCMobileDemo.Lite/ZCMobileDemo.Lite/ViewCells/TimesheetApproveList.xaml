@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZCMobileDemo.Lite.TimesheetApproveList"
+             Height="200"
+             xmlns:local="clr-namespace:ZCMobileDemo.Lite.Controls"
+             >
+    <ContentView Margin="10" >
+        <Grid x:Name="gridItem">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <BoxView Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="Aqua" Color="#3c9ece">
+            </BoxView>
+            <Label Grid.Row="0" Grid.Column="0" Text="{Binding ResourceName}" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TranslationX="10"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding PeriodEnding}" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Business Unit" TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+            <Label Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding BusinessUnit}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+            <Label Grid.Row="3" Grid.ColumnSpan="2" Text="Project Name"  TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+            <Label Grid.Row="4" Grid.ColumnSpan="2" Text="{Binding ProjectName}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+            <Label Grid.Row="5" Grid.ColumnSpan="2" Text="Pay Amount" TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+            <Label Grid.Row="6" Grid.Column="0"  Text="{Binding PayAmount}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+            <local:RoundedButton x:Name="chkbtn" Grid.Row="6" Grid.Column="1" BackgroundColor="Transparent" FontSize="26" FontAttributes="Bold" 
+                                 WidthRequest="30" HeightRequest="30" BorderRadius="10" 
+                                 HorizontalOptions="End" VerticalOptions="Center" 
+                                 Image="{Binding ImageSource, Mode=TwoWay}" 
+                                 Clicked="Timesheetclicked" CommandParameter="{Binding TimesheetID}"
+                                 />
+            
+        </Grid>
+    </ContentView>
+</ViewCell>

@@ -932,14 +932,15 @@ namespace ZCMobileDemo.Lite.ViewModels
                                 //Header = "Page 1";
                                 //RightButton = "...";
                                 //var page = new Page1();
+                                Type page = actual.TargetType;
                                 var navigationData = new ZCMobileNavigationData
                                 {
                                     CurrentPage = null,
                                     CurrentPageTitle = string.Empty,
-                                    NextPage = new Page1(),
-                                    NextPageTitle = App.PageTitels["page1"]
+                                    NextPage = Activator.CreateInstance(page) as Page,
+                                    NextPageTitle = App.PageTitels["viewTime"]
                                 };
-
+                           
                                 PushAsync(navigationData);
 
                                 if (App.MasterDetailVM.Isportrait)
@@ -1044,43 +1045,45 @@ namespace ZCMobileDemo.Lite.ViewModels
             SimpleObject obj = new SimpleObject();
             CultureUtility cus = new CultureUtility();
             obj.HeaderText = "Submissions"; //cus.GetResxNameByValue("Submissions");
-            obj.ChildItemList.Add(new ChildItems { TextValue = "ManageSubmissions"/*cus.GetResxNameByValue("ManageSubmissions")*/, DataValue = "MS1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "ManageSubmissions"/*cus.GetResxNameByValue("ManageSubmissions")*/, DataValue = "ViewTimesheets" });
             dummyData.Add(obj);
 
             obj = new SimpleObject();
             obj.HeaderText = "Timesheet"; //cus.GetResxNameByValue("Timesheet");
-            obj.ChildItemList.Add(new ChildItems { TextValue = "View Timesheet", DataValue = "T1" });
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Create Timesheet", DataValue = "T2", BubbleCount = 5 });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Timesheet", DataValue = "T1", TargetType = typeof(ViewTimesheets) });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Approve Timesheet", DataValue = "T2", TargetType = typeof(ApproveTimesheets), BubbleCount = 6 });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Create Timesheet", DataValue = "T3", BubbleCount = 5, TargetType = typeof(ViewTimesheets) });
+
             dummyData.Add(obj);
 
             obj = new SimpleObject();
             obj.HeaderText = "Expense";
-            obj.ChildItemList.Add(new ChildItems { TextValue = "View Expense Report", DataValue = "E1" });
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Create Expense Report", DataValue = "E2" });
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Approve Expense Report", DataValue = "E3", BubbleCount = 2 });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Expense Report", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Create Expense Report", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Approve Expense Report", DataValue = "ViewTimesheets", BubbleCount = 2, TargetType = typeof(ViewTimesheets) });
             dummyData.Add(obj);
 
             obj = new SimpleObject();
             obj.HeaderText = "Engagement";
-            obj.ChildItemList.Add(new ChildItems { TextValue = "View Engagement", DataValue = "Eg1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Engagement", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
 
             dummyData.Add(obj);
 
             obj = new SimpleObject();
             obj.HeaderText = "Payment";
-            obj.ChildItemList.Add(new ChildItems { TextValue = "View Payment History", DataValue = "P1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "View Payment History", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
             dummyData.Add(obj);
 
             obj = new SimpleObject();
             obj.HeaderText = "Dossier";
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Information", DataValue = "D1" });
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Security", DataValue = "D2" });
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Contact Us", DataValue = "D3" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Information", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Security", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Contact Us", DataValue = "ViewTimesheets", TargetType = typeof(ViewTimesheets) });
             dummyData.Add(obj);
 
             obj = new SimpleObject();
             obj.HeaderText = "Dashboard";
-            obj.ChildItemList.Add(new ChildItems { TextValue = "Dashboard", DataValue = "D1" });
+            obj.ChildItemList.Add(new ChildItems { TextValue = "Dashboard", DataValue = "Dashboard", TargetType = typeof(Dashboard) });
             dummyData.Add(obj);
 
             obj = new SimpleObject();

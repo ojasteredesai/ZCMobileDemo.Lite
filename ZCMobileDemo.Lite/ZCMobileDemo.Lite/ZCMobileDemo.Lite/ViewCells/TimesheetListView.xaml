@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="ZCMobileDemo.Lite.TimesheetListView"
+	Height="200">
+    <ContentView Margin="10">
+        <Grid x:Name="grid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+            <BoxView Grid.Row="0" BackgroundColor="Aqua" Color="#3c9ece">
+            </BoxView>
+            <Label Grid.Row="0" Text="{Binding periodEnding}" TextColor="#FFFFFF" VerticalTextAlignment="Center" TranslationX="10"/>
+            <Label Grid.Row="1" Text="Project Name"  TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+            <Label Grid.Row="2" Text="{Binding projectName}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+            <Label Grid.Row="3" Text="Status" TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+            <Label Grid.Row="4" Text="{Binding projStatus}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+            <Label Grid.Row="5" Text="Pay Amount" TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+            <Label Grid.Row="6" Text="{Binding payAmount}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+        </Grid>
+    </ContentView>
+</ViewCell>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZCMobileDemo.Lite.Views.Timesheet.ApproveTimesheets"
+             xmlns:controls="clr-namespace:ZCMobileDemo.Lite.Controls"
+             BackgroundColor="White"
+             x:Name="MainPage"
+             >
+
+    <Grid x:Name="gridItem" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <controls:InfiniteListView  Grid.Row="0" HasUnevenRows="true" x:Name="lst" 
+                   ItemsSource="{Binding AllApproveTimesheets,Mode=TwoWay}" 
+                   SelectedItem="{Binding SelectedApproveTimesheet}"  
+                   LoadMoreCommand="{Binding LoadApproveTimesheetCommand}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid x:Name="gridItem">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO" />
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <BoxView Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="Aqua" Color="#3c9ece">
+                            </BoxView>
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding ResourceName}" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TranslationX="10"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding PeriodEnding}" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Business Unit" TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+                            <Label Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding BusinessUnit}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+                            <Label Grid.Row="3" Grid.ColumnSpan="2" Text="Project Name"  TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+                            <Label Grid.Row="4" Grid.ColumnSpan="2" Text="{Binding ProjectName}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+                            <Label Grid.Row="5" Grid.ColumnSpan="2" Text="Pay Amount" TextColor="#666666" FontSize="Large" Font="Bold" TranslationX="10"/>
+                            <Label Grid.Row="6" Grid.Column="0"  Text="{Binding PayAmount}" TextColor="#666666" FontSize="Small" TranslationX="10"/>
+                            <controls:RoundedButton x:Name="chkbtn" Grid.Row="6" Grid.Column="1"  
+                                                     HorizontalOptions="End"  
+                                                     Image="{Binding ImageSource, Mode=TwoWay}" 
+                                                     Margin="0,0,5,5"
+                                                     Command="{Binding BindingContext.SelectedApproveTimesheetCommand, Source={x:Reference MainPage}}"
+                                                     CommandParameter="{Binding .}"
+                                                     Style="{StaticResource checkAllbuttonStyle}" 
+                                                    
+                                 />
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </controls:InfiniteListView>
+        <controls:ActionButtons Grid.Row="1" Grid.Column="0"  x:Name="btnAction"
+                                CheckAllCommand="{Binding CheckAllCommand}"
+                                PrimaryCommand="{Binding ApproveTimesheetCommand}"
+                                PrimaryText="Approve"
+                                SecondaryCommand="{Binding DeclineTimesheetCommand}"
+                                SecondaryText="Decline"
+                                IsVisibleTertiary ="False"
+                                IsVisibleCheckAll="True"
+                                
+            ></controls:ActionButtons>
+      
+        <!--ImageName="{Binding ImageSource, Converter={StaticResource CheckUncheckImageConverter}"-->
+
+
+    </Grid>
+</ContentPage>

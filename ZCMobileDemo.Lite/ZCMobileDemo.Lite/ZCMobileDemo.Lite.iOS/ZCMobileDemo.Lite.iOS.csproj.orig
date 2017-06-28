@@ -107,11 +107,10 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="NoSelectionViewCellRenderer.cs" />
+    <Compile Include="RoundedButtonRenderer.cs" />
     <None Include="app.config" />
-    <Compile Include="Renderers\BorderRenderer.cs" />
     <Compile Include="Renderers\CheckBoxRenderer.cs" />
     <Compile Include="Renderers\CheckBoxView.cs" />
-    <Compile Include="Renderers\CustomeButtonRenderer.cs" />
     <Compile Include="Renderers\RoundedButtonRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
@@ -273,11 +272,14 @@
     <BundleResource Include="Resources\expense.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\checkMatrixBG.png" />
+<<<<<<< Updated upstream
     <BundleResource Include="Resources\unchecked_checkbox.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\checked_checkbox.png" />
+=======
+    <BundleResource Include="Resources\checkMatrixBG.png" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.5.239-pre3\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.5.239-pre3\build\netstandard1.0\Xamarin.Forms.targets')" />

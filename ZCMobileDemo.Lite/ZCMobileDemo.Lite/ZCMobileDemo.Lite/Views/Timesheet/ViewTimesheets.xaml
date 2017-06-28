@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZCMobileDemo.Lite.Views.Timesheet.ViewTimesheets"
+             xmlns:local="clr-namespace:ZCMobileDemo.Lite">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ListDataTemplateSelector x:Key="listTemplateSel" ViewModule="Timesheet" ApproveListType="False"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView  HasUnevenRows="true" x:Name="lst" ItemTemplate="{StaticResource listTemplateSel}" 
+               ItemsSource="{Binding AllViewTimesheets}" >
+    </ListView>
+
+</ContentPage>
