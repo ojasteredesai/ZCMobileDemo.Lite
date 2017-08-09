@@ -1,8 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     xmlns:local="clr-namespace:ZCMobileDemo.Lite.Controls"
              x:Class="ZCMobileDemo.Lite.Views.LoginPage" StyleId="loginpage">
     <StackLayout x:Name="mainStack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+          <local:ZCTimePicker  Text=""></local:ZCTimePicker>
         <Label Text="Login Page" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Red" FontSize="Large"></Label>
         <Button Text="Go to Dashboard Page" Command="{Binding DashboardCommand}" FontSize="Large"></Button>
         <Button Text="Select Data Center" Command="{Binding DatacenterCommand}"  FontSize="Large"></Button>

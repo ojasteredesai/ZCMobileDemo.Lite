@@ -186,6 +186,7 @@
     <Compile Include="Views\Timesheet\ViewTimesheets.xaml.cs">
       <DependentUpon>ViewTimesheets.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ZCTimePicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\UIPageResources.de.resx">

@@ -156,6 +156,7 @@
     <Compile Include="Renderers\RoundedButtonRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\ZCTimePickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -182,7 +183,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZCMobileDemo.Lite\ZCMobileDemo.Lite.csproj">
-      <Project>{5ea0f20e-098f-49cf-9f3f-cea696928e79}</Project>
+      <Project>{7E0298D5-9597-4D3E-B2F0-D88C03D1D7AA}</Project>
       <Name>ZCMobileDemo.Lite</Name>
     </ProjectReference>
   </ItemGroup>
