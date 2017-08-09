@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using ZCMobileDemo.Lite.Controls;
 using ZCMobileDemo.Lite.Droid.Renderers;
-[assembly: ExportRendererAttribute(typeof(ZCTimePicker), typeof(ZCTimePickerRenderer))]
+[assembly: ExportRendererAttribute(typeof(CustTimePicker), typeof(ZCTimePickerRenderer))]
 
 namespace ZCMobileDemo.Lite.Droid.Renderers
 {

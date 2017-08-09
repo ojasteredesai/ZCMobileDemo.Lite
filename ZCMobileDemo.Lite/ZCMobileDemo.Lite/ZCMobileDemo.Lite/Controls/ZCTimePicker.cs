@@ -21,16 +21,16 @@ namespace ZCMobileDemo.Lite.Controls
 		}
 		private void _customeEntry_Focused(object sender, FocusEventArgs e)
 		{
-			var parent = this.Parent as Grid;
-			dt.ClassId = "dtTimePicker";
-			if (Parent as Grid != null)
-			{
-				(Parent as Grid).Children.Add(dt);
-			}
-			else if (Parent as StackLayout != null)
-			{
-				(Parent as StackLayout).Children.Add(dt);
-			}
+			var parent = this.Parent as StackLayout;
+			//dt.ClassId = "dtTimePicker";
+			//if (Parent as Grid != null)
+			//{
+			//	(Parent as Grid).Children.Add(dt);
+			//}
+			//else if (Parent as StackLayout != null)
+			//{
+			//	(Parent as StackLayout).Children.Add(dt);
+			//}
 			dt.Unfocused += dt_unfocused;
 			parent.Children.Add(dt);
 			Device.BeginInvokeOnMainThread(() =>
