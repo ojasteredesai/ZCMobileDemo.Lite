@@ -885,152 +885,158 @@ namespace ZCMobileDemo.Lite.ViewModels
         private List<AccordionSource> GetSampleData()
         {
             var vResult = new List<AccordionSource>();
-            var accordianObject = PreparedObject();
-            foreach (var item in accordianObject)
+            try
             {
-
-                Grid gd = new Grid();
-                // gd.BackgroundColor = Color.FromHex("#01446b");
-                if (item.ChildItemList.Count > 0)
+                var accordianObject = PreparedObject();
+                foreach (var item in accordianObject)
                 {
-                    foreach (var child in item.ChildItemList)
+
+                    Grid gd = new Grid();
+                    // gd.BackgroundColor = Color.FromHex("#01446b");
+                    if (item.ChildItemList.Count > 0)
                     {
-                        gd.RowDefinitions.Add(new RowDefinition { Height = 25 });
-                        gd.RowSpacing = 1;
-                        gd.ColumnSpacing = 1;
-                        gd.Margin = new Thickness(2, 0, 0, 0);
-                    }
-                    if (item.ChildItemList.Any(q => q.BubbleCount > 0))
-                    {
-                        gd.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                        Device.OnPlatform(iOS: () =>
+                        foreach (var child in item.ChildItemList)
                         {
-                            gd.ColumnDefinitions.Add(new ColumnDefinition { Width = 25 });
-                        }, Android: () =>
-                        {
-                            gd.ColumnDefinitions.Add(new ColumnDefinition { Width = 30 });
-                        });
-
-
-                    }
-                    int rowCount = 0;
-                    foreach (var actual in item.ChildItemList)
-                    {
-                        Label lbl = new Label();
-                        lbl.Text = actual.TextValue;
-                        //lbl.HeightRequest = 30;
-                        lbl.StyleId = actual.DataValue;
-                        lbl.Margin = new Thickness(2, 0, 0, 0);
-                        lbl.TextColor = Color.FromHex("#c1eaf6");
-                        TapGestureRecognizer tg = new TapGestureRecognizer();
-                        tg.Tapped += (ea, sa) =>
-                        {
-                            var label = ea as Label;
-                            if (label.Text != "Logout" && label.Text != "Information")
-                            {
-                                RemoveAllPages();
-                                //Header = "Page 1";
-                                //RightButton = "...";
-                                //var page = new Page1();
-                                Type page = actual.TargetType;
-                                var navigationData = new ZCMobileNavigationData
-                                {
-                                    CurrentPage = null,
-                                    CurrentPageTitle = string.Empty,
-                                    NextPage = Activator.CreateInstance(page) as Page,
-                                    NextPageTitle = App.PageTitels["viewTime"]
-                                };
-                           
-                                PushAsync(navigationData);
-
-                                if (App.MasterDetailVM.Isportrait)
-                                {
-                                    App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
-                                    RaisePropertyChanged("SideContentVisible");
-                                }
-                            }
-                            else if (label.Text == "Information")
-                            {
-                                //de
-                                var navigationData = new ZCMobileNavigationData
-                                {
-                                    CurrentPage = null,
-                                    CurrentPageTitle = string.Empty,
-                                    NextPage = new Dossier(),
-                                    NextPageTitle = App.PageTitels["dossier"]
-                                };
-
-                                PushAsync(navigationData);
-                                if (App.MasterDetailVM.Isportrait)
-                                {
-                                    App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
-                                    RaisePropertyChanged("SideContentVisible");
-                                }
-
-                            }
-
-                            else
-                            {
-                                RemoveAllPages();
-                                App.MasterDetailVM.Header = "Login Page";
-                                App.MasterDetailVM.HamburgerVisibility = false;
-                                App.IsUSerLoggedIn = false;
-                                App.UserSession.SideContentVisibility = false;
-                                App.MasterDetailVM.PopAsyncInitialPages(true);
-                                RemoveAllInitialPages();
-                            }
-                        };
-
-                        lbl.GestureRecognizers.Add(tg);
-                        Grid.SetRow(lbl, rowCount);
-                        if (actual.BubbleCount > 0)
-                        {
-                            BoxView bx = new BoxView();
-                            bx.HeightRequest = 5;
-                            bx.WidthRequest = 5;
-
-                            bx.BackgroundColor = Color.White;
-                            Grid.SetColumn(bx, 1);
-                            Grid.SetRow(bx, rowCount);
-
-                            gd.Children.Add(bx);
-
-                            Label bubblecount = new Label();
-                            //bubblecount.HeightRequest = 10;
-                            //bubblecount.WidthRequest = 10;
-                            bubblecount.Text = actual.BubbleCount.ToString();
-                            bubblecount.VerticalTextAlignment = TextAlignment.Center;
-                            bubblecount.HorizontalOptions = LayoutOptions.Center;
-                            bubblecount.VerticalOptions = LayoutOptions.Center;
-
-                            Grid.SetColumn(bubblecount, 1);
-                            Grid.SetRow(bubblecount, rowCount);
-                            gd.Children.Add(bubblecount);
+                            gd.RowDefinitions.Add(new RowDefinition { Height = 25 });
+                            gd.RowSpacing = 1;
+                            gd.ColumnSpacing = 1;
+                            gd.Margin = new Thickness(2, 0, 0, 0);
                         }
-                        gd.Children.Add(lbl);
-                        rowCount++;
-                    }
+                        if (item.ChildItemList.Any(q => q.BubbleCount > 0))
+                        {
+                            gd.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                            Device.OnPlatform(iOS: () =>
+                            {
+                                gd.ColumnDefinitions.Add(new ColumnDefinition { Width = 25 });
+                            }, Android: () =>
+                            {
+                                gd.ColumnDefinitions.Add(new ColumnDefinition { Width = 30 });
+                            });
 
-                    vResult.Add(new AccordionSource
+
+                        }
+                        int rowCount = 0;
+                        foreach (var actual in item.ChildItemList)
+                        {
+                            Label lbl = new Label();
+                            lbl.Text = actual.TextValue;
+                            //lbl.HeightRequest = 30;
+                            lbl.StyleId = actual.DataValue;
+                            lbl.Margin = new Thickness(2, 0, 0, 0);
+                            lbl.TextColor = Color.FromHex("#c1eaf6");
+                            TapGestureRecognizer tg = new TapGestureRecognizer();
+                            tg.Tapped += (ea, sa) =>
+                            {
+                                var label = ea as Label;
+                                if (label.Text != "Logout" && label.Text != "Information")
+                                {
+                                    RemoveAllPages();
+                                    Header = "Page 1";
+                                    RightButton = "...";
+                                    var page = new Page1();
+                                    //Type page = actual.TargetType;
+                                    var navigationData = new ZCMobileNavigationData
+                                    {
+                                        CurrentPage = null,
+                                        CurrentPageTitle = string.Empty,
+                                        NextPage = page,
+                                        NextPageTitle = "Page 2"
+                                    };
+
+                                    PushAsync(navigationData);
+
+                                    if (App.MasterDetailVM.Isportrait)
+                                    {
+                                        App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
+                                        RaisePropertyChanged("SideContentVisible");
+                                    }
+                                }
+                                else if (label.Text == "Information")
+                                {
+                                    //de
+                                    var navigationData = new ZCMobileNavigationData
+                                    {
+                                        CurrentPage = null,
+                                        CurrentPageTitle = string.Empty,
+                                        NextPage = new Dossier(),
+                                        NextPageTitle = App.PageTitels["dossier"]
+                                    };
+
+                                    PushAsync(navigationData);
+                                    if (App.MasterDetailVM.Isportrait)
+                                    {
+                                        App.UserSession.SideContentVisibility = (!App.UserSession.SideContentVisibility);
+                                        RaisePropertyChanged("SideContentVisible");
+                                    }
+
+                                }
+
+                                else
+                                {
+                                    RemoveAllPages();
+                                    App.MasterDetailVM.Header = "Login Page";
+                                    App.MasterDetailVM.HamburgerVisibility = false;
+                                    App.IsUSerLoggedIn = false;
+                                    App.UserSession.SideContentVisibility = false;
+                                    App.MasterDetailVM.PopAsyncInitialPages(true);
+                                    RemoveAllInitialPages();
+                                }
+                            };
+
+                            lbl.GestureRecognizers.Add(tg);
+                            Grid.SetRow(lbl, rowCount);
+                            if (actual.BubbleCount > 0)
+                            {
+                                BoxView bx = new BoxView();
+                                bx.HeightRequest = 5;
+                                bx.WidthRequest = 5;
+
+                                bx.BackgroundColor = Color.White;
+                                Grid.SetColumn(bx, 1);
+                                Grid.SetRow(bx, rowCount);
+
+                                gd.Children.Add(bx);
+
+                                Label bubblecount = new Label();
+                                //bubblecount.HeightRequest = 10;
+                                //bubblecount.WidthRequest = 10;
+                                bubblecount.Text = actual.BubbleCount.ToString();
+                                bubblecount.VerticalTextAlignment = TextAlignment.Center;
+                                bubblecount.HorizontalOptions = LayoutOptions.Center;
+                                bubblecount.VerticalOptions = LayoutOptions.Center;
+
+                                Grid.SetColumn(bubblecount, 1);
+                                Grid.SetRow(bubblecount, rowCount);
+                                gd.Children.Add(bubblecount);
+                            }
+                            gd.Children.Add(lbl);
+                            rowCount++;
+                        }
+
+                        vResult.Add(new AccordionSource
+                        {
+                            HeaderText = item.HeaderText,
+                            HeaderTextColor = Color.FromHex("#c1eaf6"),
+                            HeaderBackGroundColor = Color.FromHex("#3c9ece"),
+                            ContentItems = gd
+                        });
+                    }
+                    else
                     {
-                        HeaderText = item.HeaderText,
-                        HeaderTextColor = Color.FromHex("#c1eaf6"),
-                        HeaderBackGroundColor = Color.FromHex("#3c9ece"),
-                        ContentItems = gd
-                    });
-                }
-                else
-                {
-                    vResult.Add(new AccordionSource
-                    {
-                        HeaderText = item.HeaderText,
-                        HeaderTextColor = Color.FromHex("#c1eaf6"),
-                        HeaderBackGroundColor = Color.FromHex("#3c9ece"),
-                        ContentItems = gd,
-                    });
+                        vResult.Add(new AccordionSource
+                        {
+                            HeaderText = item.HeaderText,
+                            HeaderTextColor = Color.FromHex("#c1eaf6"),
+                            HeaderBackGroundColor = Color.FromHex("#3c9ece"),
+                            ContentItems = gd,
+                        });
+                    }
                 }
             }
+            catch (Exception ex)
+            {
 
+            }
             return vResult;
         }
 
